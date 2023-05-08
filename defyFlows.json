@@ -475,7 +475,7 @@
         "stateLogEnabled": true,
         "queueLogEnabled": false,
         "failureLogEnabled": false,
-        "tcpHost": "192.168.101.253",
+        "tcpHost": "192.168.101.251",
         "tcpPort": "502",
         "tcpType": "DEFAULT",
         "serialPort": "/dev/ttyUSB",
@@ -486,11 +486,11 @@
         "serialParity": "none",
         "serialConnectionDelay": "100",
         "serialAsciiResponseStartDelimiter": "",
-        "unit_id": "1",
-        "commandDelay": "1",
-        "clientTimeout": "1000",
+        "unit_id": 1,
+        "commandDelay": 1,
+        "clientTimeout": 1000,
         "reconnectOnTimeout": false,
-        "reconnectTimeout": "2000",
+        "reconnectTimeout": 2000,
         "parallelUnitIdsAllowed": false
     },
     {
@@ -6705,7 +6705,7 @@
         "type": "debug",
         "z": "6c2dfeb262f54a31",
         "name": "Final Join",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -6722,7 +6722,7 @@
         "type": "function",
         "z": "6c2dfeb262f54a31",
         "name": "Set Write",
-        "func": "if (msg.lineFlag == \"save\") {\n    msg.filename = msg.payload.fileLocation; //used to write to local file\n    msg.payload = {\n        \"File_Code\": msg.payload.File_Code,\n        \"File_Name\": msg.payload.filename,\n        \"parameterData\": msg.payload.parameterData,\n        \"basic\": msg.payload.basic\n    }\n    return msg;\n}\n",
+        "func": "if (msg.lineFlag == \"save\") {\n    msg.filename = msg.payload.fileLocation; //used to write to local file\n    msg.payload = {\n        \"File_Code\": msg.payload.File_Code,\n        \"File_Name\": msg.payload.filename,\n        \"parameterData\": msg.payload.parameterData,\n        \"basic\": msg.payload.basic\n    }\n    //DELETE\n    flow.set(\"writeData\", msg.payload);\n    return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -7640,7 +7640,7 @@
         "type": "debug",
         "z": "6c2dfeb262f54a31",
         "name": "debug 57",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -8146,7 +8146,7 @@
         "type": "debug",
         "z": "6c2dfeb262f54a31",
         "name": "debug 52",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -8483,7 +8483,26 @@
         "wires": []
     },
     {
-        "id": "b87efa690b46c34f",
+        "id": "63f529b087c8059e",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "name": "Read Float 2W",
+        "func": "var fc=3;\nvar sa=10;\nvar addresses=10*2;\nvar slave_ip=msg.payload.slave_ip;\nmsg.slave_ip= flow.get(\"slaveIP\");\nmsg.payload={value: msg.payload, 'fc': fc, 'unitid': 1, 'address': sa , 'quantity': addresses };\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 320,
+        "wires": [
+            [
+                "570c0e152cb98d1c"
+            ]
+        ]
+    },
+    {
+        "id": "094a475ac270db6b",
         "type": "inject",
         "z": "6c2dfeb262f54a31",
         "name": "",
@@ -8499,15 +8518,220 @@
         "repeat": "",
         "crontab": "",
         "once": false,
-        "onceDelay": 0.1,
+        "onceDelay": "1",
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 240,
-        "y": 2220,
+        "x": 180,
+        "y": 320,
         "wires": [
+            [
+                "63f529b087c8059e"
+            ]
+        ]
+    },
+    {
+        "id": "570c0e152cb98d1c",
+        "type": "modbus-flex-getter",
+        "z": "6c2dfeb262f54a31",
+        "name": "local getter",
+        "showStatusActivities": true,
+        "showErrors": true,
+        "showWarnings": true,
+        "logIOActivities": false,
+        "server": "54dde46e.53267c",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 530,
+        "y": 320,
+        "wires": [
+            [],
+            [
+                "0b7e9d026cbddccb",
+                "ae905b9d72a2f7a3"
+            ]
+        ]
+    },
+    {
+        "id": "0b7e9d026cbddccb",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "name": "Set Float 2W",
+        "func": "const offset = 4; \nlet buf, values = [];\nlet numRegistersRead = msg.payload.buffer.length / 4;\n\nfor (let i = 0; i < numRegistersRead; i++) {\n    buf = Buffer.from(msg.payload.buffer.slice(i*offset, i*offset + offset));\n    values.push(buf.readFloatBE());\n}\n\nmsg.payload.values = values;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 320,
+        "wires": [
+            [
+                "d3ba2acc8ae5672b"
+            ]
+        ]
+    },
+    {
+        "id": "d3ba2acc8ae5672b",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "debug 62",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 860,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "1b39e5b80788244f",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "name": "Write Float 2W",
+        "func": "\nlet arr = msg.payload.values,\n    len = arr.length,\n    hardLen = 10; \n\nvar buf = Buffer.alloc(4);\nvar value;\nvar values = [];\nvar fc = 16;\nvar sa = msg.payload.sa;\nvar addresses = hardLen * 2;\n\nfor (let i = 0; i < hardLen; i++) {\n    value = (i < len) ? arr[i] : \"\"; \n    buf.writeFloatBE(value);\n    values.push((buf[0] * 256 + buf[1]), (buf[2] * 256) + buf[3]);\n}\nmsg.slave_ip = flow.get(\"slaveIP\");\nmsg.payload={\"value\":values , 'fc': fc, 'unitid': 1, 'address': sa , 'quantity': addresses };\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 180,
+        "wires": [
+            [
+                "d2350780b137b5e8",
+                "6c57e55316962a08"
+            ]
+        ]
+    },
+    {
+        "id": "6c57e55316962a08",
+        "type": "modbus-flex-write",
+        "z": "6c2dfeb262f54a31",
+        "name": "",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "server": "54dde46e.53267c",
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 890,
+        "y": 180,
+        "wires": [
+            [],
             []
         ]
+    },
+    {
+        "id": "d2350780b137b5e8",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "debug 63",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "60394ccef09a8457",
+        "type": "inject",
+        "z": "6c2dfeb262f54a31",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 180,
+        "wires": [
+            [
+                "fd8ed02c0ffb7237"
+            ]
+        ]
+    },
+    {
+        "id": "fd8ed02c0ffb7237",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "name": "Get values from writtenData",
+        "func": "let data = flow.get(\"writeData\");\nlet sa = 10 // Starting register for PLC writing\nlet keys = Object.keys(data.parameterData);\nlet i = 0;\n\nlet values = [];\n\nfor (i = 0; i < keys.length; i++) {\n    values.push(data.parameterData[keys[i]].value);\n}\n\nmsg.payload = {\n    values: values,\n    sa : sa\n}\n\nmsg.check = {\n    values: values\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 180,
+        "wires": [
+            [
+                "c6f953abf99251c1",
+                "1b39e5b80788244f"
+            ]
+        ]
+    },
+    {
+        "id": "c6f953abf99251c1",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "debug 64",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "ae905b9d72a2f7a3",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "debug 65",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 260,
+        "wires": []
     },
     {
         "id": "10a34a73.96de26",
