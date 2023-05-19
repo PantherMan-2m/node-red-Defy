@@ -154,6 +154,91 @@
         "icon": "node-red-dashboard/ui_chart.png"
     },
     {
+        "id": "c7f701c7168b803a",
+        "type": "subflow",
+        "name": "HumidUI (2) (2)",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 140,
+                "y": 140,
+                "wires": [
+                    {
+                        "id": "decd3404fa48ec62"
+                    },
+                    {
+                        "id": "190d4f9e06f71b90"
+                    }
+                ]
+            }
+        ],
+        "out": [],
+        "env": [
+            {
+                "name": "deviceID",
+                "type": "dev",
+                "value": "",
+                "ui": {
+                    "icon": "font-awesome/fa-server",
+                    "type": "input",
+                    "opts": {
+                        "types": [
+                            "dev",
+                            "file",
+                            "env"
+                        ]
+                    }
+                }
+            }
+        ],
+        "color": "#3FADB5",
+        "icon": "node-red-dashboard/ui_chart.png"
+    },
+    {
+        "id": "61787a96e3740b32",
+        "type": "subflow",
+        "name": "TempUI (2) (2)",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 120,
+                "y": 249,
+                "wires": [
+                    {
+                        "id": "a0e5a87e15d32bb8"
+                    },
+                    {
+                        "id": "8f05bbe874f46dfc"
+                    }
+                ]
+            }
+        ],
+        "out": [],
+        "env": [
+            {
+                "name": "deviceID",
+                "type": "dev",
+                "value": "",
+                "ui": {
+                    "icon": "font-awesome/fa-server",
+                    "type": "input",
+                    "opts": {
+                        "types": [
+                            "dev",
+                            "file",
+                            "env"
+                        ]
+                    }
+                }
+            }
+        ],
+        "meta": {},
+        "color": "#3FADB5",
+        "icon": "node-red-dashboard/ui_chart.png"
+    },
+    {
         "id": "c175c2ec63061429",
         "type": "group",
         "z": "17fd6e0f1c66137c",
@@ -267,7 +352,9 @@
             "a6e30f8019df8026"
         ],
         "x": 94,
-        "y": 519
+        "y": 519,
+        "w": 1452,
+        "h": 482
     },
     {
         "id": "92aa249eaec5de7d",
@@ -303,7 +390,9 @@
             "a390fd7a79f04326"
         ],
         "x": 134,
-        "y": 1019
+        "y": 1019,
+        "w": 1102,
+        "h": 482
     },
     {
         "id": "a6f0ad5143b4c699",
@@ -333,7 +422,9 @@
             "a8ceb766fa76166e"
         ],
         "x": 134,
-        "y": 1519
+        "y": 1519,
+        "w": 1072,
+        "h": 322
     },
     {
         "id": "2663679731c67ef4",
@@ -364,33 +455,10 @@
             "14b4f15e7efa6d9f",
             "174d49da1c5a3a71"
         ],
-        "x": 554,
-        "y": 39
-    },
-    {
-        "id": "fb743c6fd311d6bb",
-        "type": "group",
-        "z": "6c2dfeb262f54a31",
-        "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "ad716cd4ea8c7136",
-            "96f1c409dbde6642",
-            "f15827fb4efe6a5f",
-            "f5b4a7bd4d1ab765",
-            "8cd7942d92c2a6c4"
-        ],
-        "x": 34,
-        "y": 739,
-        "w": 692,
-        "h": 142
+        "x": 504,
+        "y": 799,
+        "w": 1662,
+        "h": 242
     },
     {
         "id": "43df61af7b7b9663",
@@ -484,14 +552,9 @@
         "id": "dcaa9a10e243e078",
         "type": "group",
         "z": "6c2dfeb262f54a31",
+        "name": "",
         "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
+            "label": true
         },
         "nodes": [
             "cd9dfcba13049524",
@@ -510,7 +573,9 @@
             "02ad3b1deba152a0",
             "b84e5668733433cb",
             "97d64d656ed62a0b",
-            "09a21d2c08dd04bf"
+            "09a21d2c08dd04bf",
+            "61d298b5cfa3e96e",
+            "a021812f258db7c8"
         ],
         "x": 34,
         "y": 2459,
@@ -683,9 +748,10 @@
             "ec50e4bd721ed7c0",
             "a46910031a3f1d1c",
             "44dbecae4687566e",
-            "67bfbb724ce329bc"
+            "67bfbb724ce329bc",
+            "215838f219a62175"
         ],
-        "x": 1154,
+        "x": 1174,
         "y": 1719,
         "w": 1292,
         "h": 342
@@ -766,6 +832,62 @@
         "y": 3679,
         "w": 972,
         "h": 322
+    },
+    {
+        "id": "4f60eedb7398d967",
+        "type": "group",
+        "z": "90f171682dfc3f42",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "1f56a7dfce1bdf69",
+            "2c2e3d9b67bdd849",
+            "66b6270fcfbdd3c2",
+            "3f59c637a1060639",
+            "2456bcb633a3fddd",
+            "c2a927f4ba4fd91c",
+            "f808751ebe227a39",
+            "5b1fe6f123919f2a",
+            "93adf4da80060978",
+            "5bab2cbe2d10740c",
+            "ab54695d8b90815c"
+        ],
+        "x": 54,
+        "y": 2219,
+        "w": 1212,
+        "h": 162
+    },
+    {
+        "id": "e6bcc5d10479e867",
+        "type": "group",
+        "z": "6c2dfeb262f54a31",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "cc71860e04ee28f1",
+            "c1090410677ed7cf",
+            "39bdfdf6150306a8",
+            "aa7b8f253ea918f7",
+            "8bfd37949c01c861"
+        ],
+        "x": 34,
+        "y": 739,
+        "w": 692,
+        "h": 142
     },
     {
         "id": "9a043224f1e79f2a",
@@ -873,8 +995,8 @@
         "type": "junction",
         "z": "90f171682dfc3f42",
         "g": "2663679731c67ef4",
-        "x": 1580,
-        "y": 160,
+        "x": 1530,
+        "y": 920,
         "wires": [
             [
                 "6086a09a605eaa1d"
@@ -886,34 +1008,10 @@
         "type": "junction",
         "z": "90f171682dfc3f42",
         "x": 1260,
-        "y": 740,
+        "y": 1420,
         "wires": [
             [
                 "8dfa706e5138ec4d"
-            ]
-        ]
-    },
-    {
-        "id": "a3f750c8e050bf40",
-        "type": "junction",
-        "z": "6c2dfeb262f54a31",
-        "x": 700,
-        "y": 340,
-        "wires": [
-            [
-                "0afe220ca93a4fd8"
-            ]
-        ]
-    },
-    {
-        "id": "0afe220ca93a4fd8",
-        "type": "junction",
-        "z": "6c2dfeb262f54a31",
-        "x": 1000,
-        "y": 340,
-        "wires": [
-            [
-                "900005884f737772"
             ]
         ]
     },
@@ -939,8 +1037,7 @@
         "y": 2600,
         "wires": [
             [
-                "dc3acc2a853dcfc1",
-                "d551cba248b0b7c0"
+                "dc3acc2a853dcfc1"
             ]
         ]
     },
@@ -954,6 +1051,67 @@
         "wires": [
             [
                 "23281f6c705311eb"
+            ]
+        ]
+    },
+    {
+        "id": "a3f750c8e050bf40",
+        "type": "junction",
+        "z": "6c2dfeb262f54a31",
+        "x": 780,
+        "y": 4320,
+        "wires": [
+            [
+                "0afe220ca93a4fd8"
+            ]
+        ]
+    },
+    {
+        "id": "0afe220ca93a4fd8",
+        "type": "junction",
+        "z": "6c2dfeb262f54a31",
+        "x": 1080,
+        "y": 4320,
+        "wires": [
+            [
+                "900005884f737772"
+            ]
+        ]
+    },
+    {
+        "id": "6da7a57d6db009f7",
+        "type": "junction",
+        "z": "6c2dfeb262f54a31",
+        "x": 1510,
+        "y": 4520,
+        "wires": [
+            [
+                "3f8f40bc873d571c"
+            ]
+        ]
+    },
+    {
+        "id": "e215ac15c95103b4",
+        "type": "junction",
+        "z": "6c2dfeb262f54a31",
+        "x": 260,
+        "y": 360,
+        "wires": [
+            [
+                "51dc87f2d227eccb",
+                "8029e0cc11874064"
+            ]
+        ]
+    },
+    {
+        "id": "1a14a3b123c17efc",
+        "type": "junction",
+        "z": "6c2dfeb262f54a31",
+        "x": 1440,
+        "y": 60,
+        "wires": [
+            [
+                "f38ab8822aa6853e"
             ]
         ]
     },
@@ -1027,9 +1185,9 @@
             },
             "darkTheme": {
                 "default": "#097479",
-                "baseColor": "#097479",
+                "baseColor": "#5691f0",
                 "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "edited": true,
+                "edited": false,
                 "reset": false
             },
             "customTheme": {
@@ -1041,11 +1199,11 @@
             "themeState": {
                 "base-color": {
                     "default": "#097479",
-                    "value": "#097479",
-                    "edited": false
+                    "value": "#5691f0",
+                    "edited": true
                 },
                 "page-titlebar-backgroundColor": {
-                    "value": "#097479",
+                    "value": "#5691f0",
                     "edited": false
                 },
                 "page-backgroundColor": {
@@ -1053,11 +1211,11 @@
                     "edited": false
                 },
                 "page-sidebar-backgroundColor": {
-                    "value": "#333333",
+                    "value": "#ffffff",
                     "edited": false
                 },
                 "group-textColor": {
-                    "value": "#0eb8c0",
+                    "value": "#9cbff6",
                     "edited": false
                 },
                 "group-borderColor": {
@@ -1073,7 +1231,7 @@
                     "edited": false
                 },
                 "widget-backgroundColor": {
-                    "value": "#097479",
+                    "value": "#5691f0",
                     "edited": false
                 },
                 "widget-borderColor": {
@@ -1471,10 +1629,10 @@
     {
         "id": "218e00eac196634f",
         "type": "ui_group",
-        "name": "Basic",
+        "name": "Basic Tests",
         "tab": "8eaf36042374305d",
         "order": 2,
-        "disp": false,
+        "disp": true,
         "width": "6",
         "collapse": false,
         "className": ""
@@ -1564,7 +1722,7 @@
         "type": "ui_tab",
         "name": "Registration",
         "icon": "dashboard",
-        "order": 2,
+        "order": 3,
         "disabled": false,
         "hidden": false
     },
@@ -1584,7 +1742,7 @@
         "type": "ui_tab",
         "name": "Settings",
         "icon": "dashboard",
-        "order": 3,
+        "order": 2,
         "disabled": false,
         "hidden": false
     },
@@ -1622,7 +1780,93 @@
         "className": ""
     },
     {
-        "id": "88a55435dd41644b",
+        "id": "f808231901c3caf8",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "order": 5,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "6df348262e765f3b",
+        "type": "ui_group",
+        "name": "Control",
+        "tab": "f808231901c3caf8",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "87359c9f2c3dfb0a",
+        "type": "ui_group",
+        "name": "Display",
+        "tab": "f808231901c3caf8",
+        "order": 2,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "93c16b2960c7118e",
+        "type": "ui_group",
+        "z": "c7f701c7168b803a",
+        "name": "Humidity",
+        "tab": "e078c6b.429dd38",
+        "order": 3,
+        "disp": true,
+        "width": 19,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "12f4f83a3e9bbadc",
+        "type": "ui_group",
+        "z": "61787a96e3740b32",
+        "name": "Temperature",
+        "tab": "e078c6b.429dd38",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "63bd7a9185936c92",
+        "type": "ui_group",
+        "z": "61787a96e3740b32",
+        "name": "Temperature",
+        "tab": "e078c6b.429dd38",
+        "order": 2,
+        "disp": true,
+        "width": 19,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "98b7b54e9a44d14a",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "bf43e31f08ec221a",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "bf43e31f08ec221a",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "4656944b51e61b35",
         "type": "ui_spacer",
         "z": "6c2dfeb262f54a31",
         "name": "spacer",
@@ -1632,23 +1876,33 @@
         "height": 1
     },
     {
-        "id": "66eb74e8d510b1c7",
+        "id": "3bf33d59bc9d7827",
         "type": "ui_spacer",
         "z": "6c2dfeb262f54a31",
         "name": "spacer",
         "group": "0465010f96f3dad5",
-        "order": 11,
+        "order": 9,
         "width": 1,
         "height": 1
     },
     {
-        "id": "b3926ee509b449a1",
+        "id": "2a74c1cd7482f107",
         "type": "ui_spacer",
         "z": "6c2dfeb262f54a31",
         "name": "spacer",
         "group": "0465010f96f3dad5",
         "order": 13,
         "width": 4,
+        "height": 1
+    },
+    {
+        "id": "a0d4378be8ab366f",
+        "type": "ui_spacer",
+        "z": "6c2dfeb262f54a31",
+        "name": "spacer",
+        "group": "0465010f96f3dad5",
+        "order": 16,
+        "width": 23,
         "height": 1
     },
     {
@@ -1794,6 +2048,148 @@
         ]
     },
     {
+        "id": "decd3404fa48ec62",
+        "type": "ui_gauge",
+        "z": "c7f701c7168b803a",
+        "name": "Humid Gauge",
+        "group": "93c16b2960c7118e",
+        "order": 1,
+        "width": 9,
+        "height": 4,
+        "gtype": "gage",
+        "title": "Humidity",
+        "label": "%",
+        "format": "{{value | number:1}}",
+        "min": "60",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "80",
+        "seg2": "92",
+        "className": "",
+        "x": 440,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "190d4f9e06f71b90",
+        "type": "ui_chart",
+        "z": "c7f701c7168b803a",
+        "name": "Humidity Chart",
+        "group": "93c16b2960c7118e",
+        "order": 2,
+        "width": 10,
+        "height": 4,
+        "label": "Humidity (%)",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "step",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "20",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#2ca02c",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 440,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a0e5a87e15d32bb8",
+        "type": "ui_gauge",
+        "z": "61787a96e3740b32",
+        "name": "TempGauge",
+        "group": "63bd7a9185936c92",
+        "order": 1,
+        "width": 8,
+        "height": 4,
+        "gtype": "gage",
+        "title": "Temperature",
+        "label": "C",
+        "format": "{{value | number:1}}",
+        "min": "40",
+        "max": "60",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "50",
+        "seg2": "56",
+        "className": "",
+        "x": 330,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "8f05bbe874f46dfc",
+        "type": "ui_chart",
+        "z": "61787a96e3740b32",
+        "name": "Temp Chart",
+        "group": "63bd7a9185936c92",
+        "order": 2,
+        "width": 11,
+        "height": 4,
+        "label": "Temperature (C)",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "step",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "20",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "chart",
+        "x": 330,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "0d9323d2167a831c",
         "type": "comment",
         "z": "6c2dfeb262f54a31",
@@ -1807,6 +2203,7 @@
         "id": "cd9dfcba13049524",
         "type": "ui_form",
         "z": "6c2dfeb262f54a31",
+        "d": true,
         "g": "dcaa9a10e243e078",
         "name": "",
         "label": "Basic",
@@ -1887,7 +2284,8 @@
             [
                 "c519c9bb07743518",
                 "dc3acc2a853dcfc1",
-                "1cbdd1443dca930a"
+                "1cbdd1443dca930a",
+                "a021812f258db7c8"
             ]
         ]
     },
@@ -5700,8 +6098,8 @@
         "id": "18ef3063a91b0ba8",
         "type": "function",
         "z": "6c2dfeb262f54a31",
-        "name": "Description",
-        "func": ";if (msg.data != undefined) {\n    msg.payload = msg.data.description;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
+        "name": "Instructions",
+        "func": "if (msg.data != undefined) {\n    msg.payload = msg.data.instructions;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -5721,7 +6119,7 @@
         "type": "function",
         "z": "6c2dfeb262f54a31",
         "name": "Clear",
-        "func": "msg.data = { \n    \"name\": \"\", \n    \"value\": \"\", \n    \"description\": \"\" \n    };\nmsg.complete = \"\";\nreturn msg;",
+        "func": "msg.data = { \n    \"name\": \"\", \n    \"value\": \"\", \n    \"instructions\": \"\" \n    };\nmsg.complete = \"\";\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -5759,7 +6157,7 @@
         "type": "function",
         "z": "6c2dfeb262f54a31",
         "name": "Final",
-        "func": "delete msg.parts;\nif (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\" :        \"\",\n        \"value\":        \"\",\n        \"description\":  \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.description = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for(let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
+        "func": "delete msg.parts;\nif (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\" :        \"\",\n        \"value\":        \"\",\n        \"instructions\":  \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.instructions = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for(let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -5778,8 +6176,8 @@
         "id": "c202f860f300dd1c",
         "type": "function",
         "z": "6c2dfeb262f54a31",
-        "name": "Description",
-        "func": ";if (msg.data != undefined) {\n    msg.payload = msg.data.description;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
+        "name": "Instructions",
+        "func": "if (msg.data != undefined) {\n    msg.payload = msg.data.instructions;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -5798,7 +6196,7 @@
         "type": "function",
         "z": "6c2dfeb262f54a31",
         "name": "Final",
-        "func": "delete msg.parts;\nif (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"description\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.description = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
+        "func": "delete msg.parts;\nif (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"instructions\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.instructions = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -5816,8 +6214,8 @@
         "id": "5359eaba19c58239",
         "type": "function",
         "z": "6c2dfeb262f54a31",
-        "name": "Description",
-        "func": ";if (msg.data != undefined) {\n    msg.payload = msg.data.description;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
+        "name": "Instructions",
+        "func": "if (msg.data != undefined) {\n    msg.payload = msg.data.instructions;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -5835,8 +6233,8 @@
         "id": "ee95a66edfc95802",
         "type": "function",
         "z": "6c2dfeb262f54a31",
-        "name": "Description",
-        "func": ";if (msg.data != undefined) {\n    msg.payload = msg.data.description;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
+        "name": "Instructions",
+        "func": "if (msg.data != undefined) {\n    msg.payload = msg.data.instructions;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -5854,8 +6252,8 @@
         "id": "0e6c49b076b012bc",
         "type": "function",
         "z": "6c2dfeb262f54a31",
-        "name": "Description",
-        "func": ";if (msg.data != undefined) {\n    msg.payload = msg.data.description;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
+        "name": "Instructions",
+        "func": "if (msg.data != undefined) {\n    msg.payload = msg.data.instructions;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -5873,8 +6271,8 @@
         "id": "616cdb8b4a91f8d0",
         "type": "function",
         "z": "6c2dfeb262f54a31",
-        "name": "Description",
-        "func": ";if (msg.data != undefined) {\n    msg.payload = msg.data.description;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
+        "name": "Instructions",
+        "func": "if (msg.data != undefined) {\n    msg.payload = msg.data.instructions;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -5892,8 +6290,8 @@
         "id": "9531ac04bcd23625",
         "type": "function",
         "z": "6c2dfeb262f54a31",
-        "name": "Description",
-        "func": ";if (msg.data != undefined) {\n    msg.payload = msg.data.description;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
+        "name": "Instructions",
+        "func": "if (msg.data != undefined) {\n    msg.payload = msg.data.instructions;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -5911,8 +6309,8 @@
         "id": "fd2a3ef97a49072e",
         "type": "function",
         "z": "6c2dfeb262f54a31",
-        "name": "Description",
-        "func": ";if (msg.data != undefined) {\n    msg.payload = msg.data.description;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
+        "name": "Instructions",
+        "func": "if (msg.data != undefined) {\n    msg.payload = msg.data.instructions;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -5930,8 +6328,8 @@
         "id": "9ab08412c6e74e58",
         "type": "function",
         "z": "6c2dfeb262f54a31",
-        "name": "Description",
-        "func": ";if (msg.data != undefined) {\n    msg.payload = msg.data.description;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
+        "name": "Instructions",
+        "func": "if (msg.data != undefined) {\n    msg.payload = msg.data.instructions;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -5949,8 +6347,8 @@
         "id": "4ddd0b8db61e74a2",
         "type": "function",
         "z": "6c2dfeb262f54a31",
-        "name": "Description",
-        "func": ";if (msg.data != undefined) {\n    msg.payload = msg.data.description;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
+        "name": "Instructions",
+        "func": "if (msg.data != undefined) {\n    msg.payload = msg.data.instructions;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -5968,8 +6366,8 @@
         "id": "c98e11288469df69",
         "type": "function",
         "z": "6c2dfeb262f54a31",
-        "name": "Description",
-        "func": ";if (msg.data != undefined) {\n    msg.payload = msg.data.description;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
+        "name": "Instructions",
+        "func": "if (msg.data != undefined) {\n    msg.payload = msg.data.instructions;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -5987,8 +6385,8 @@
         "id": "7baa406586600e21",
         "type": "function",
         "z": "6c2dfeb262f54a31",
-        "name": "Description",
-        "func": ";if (msg.data != undefined) {\n    msg.payload = msg.data.description;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
+        "name": "Instructions",
+        "func": "if (msg.data != undefined) {\n    msg.payload = msg.data.instructions;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6006,8 +6404,8 @@
         "id": "cefe53cbb9e1e213",
         "type": "function",
         "z": "6c2dfeb262f54a31",
-        "name": "Description",
-        "func": ";if (msg.data != undefined) {\n    msg.payload = msg.data.description;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
+        "name": "Instructions",
+        "func": "if (msg.data != undefined) {\n    msg.payload = msg.data.instructions;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6025,8 +6423,8 @@
         "id": "1d9b742629050d78",
         "type": "function",
         "z": "6c2dfeb262f54a31",
-        "name": "Description",
-        "func": ";if (msg.data != undefined) {\n    msg.payload = msg.data.description;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
+        "name": "Instructions",
+        "func": "if (msg.data != undefined) {\n    msg.payload = msg.data.instructions;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6044,8 +6442,8 @@
         "id": "45b5ae5b0e7f3f32",
         "type": "function",
         "z": "6c2dfeb262f54a31",
-        "name": "Description",
-        "func": ";if (msg.data != undefined) {\n    msg.payload = msg.data.description;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
+        "name": "Instructions",
+        "func": "if (msg.data != undefined) {\n    msg.payload = msg.data.instructions;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6063,8 +6461,8 @@
         "id": "66f0a0394b718051",
         "type": "function",
         "z": "6c2dfeb262f54a31",
-        "name": "Description",
-        "func": ";if (msg.data != undefined) {\n    msg.payload = msg.data.description;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
+        "name": "Instructions",
+        "func": "if (msg.data != undefined) {\n    msg.payload = msg.data.instructions;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6082,8 +6480,8 @@
         "id": "a086fbebea3be518",
         "type": "function",
         "z": "6c2dfeb262f54a31",
-        "name": "Description",
-        "func": ";if (msg.data != undefined) {\n    msg.payload = msg.data.description;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
+        "name": "Instructions",
+        "func": "if (msg.data != undefined) {\n    msg.payload = msg.data.instructions;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6101,8 +6499,8 @@
         "id": "7921f6a6311ffe60",
         "type": "function",
         "z": "6c2dfeb262f54a31",
-        "name": "Description",
-        "func": ";if (msg.data != undefined) {\n    msg.payload = msg.data.description;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
+        "name": "Instructions",
+        "func": "if (msg.data != undefined) {\n    msg.payload = msg.data.instructions;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6120,8 +6518,8 @@
         "id": "5b676dccce7cc180",
         "type": "function",
         "z": "6c2dfeb262f54a31",
-        "name": "Description",
-        "func": ";if (msg.data != undefined) {\n    msg.payload = msg.data.description;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
+        "name": "Instructions",
+        "func": "if (msg.data != undefined) {\n    msg.payload = msg.data.instructions;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6139,8 +6537,8 @@
         "id": "f4ace34ae4baba5f",
         "type": "function",
         "z": "6c2dfeb262f54a31",
-        "name": "Description",
-        "func": ";if (msg.data != undefined) {\n    msg.payload = msg.data.description;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
+        "name": "Instructions",
+        "func": "if (msg.data != undefined) {\n    msg.payload = msg.data.instructions;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6158,8 +6556,8 @@
         "id": "15420c72e5270123",
         "type": "function",
         "z": "6c2dfeb262f54a31",
-        "name": "Description",
-        "func": ";if (msg.data != undefined) {\n    msg.payload = msg.data.description;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
+        "name": "Instructions",
+        "func": "if (msg.data != undefined) {\n    msg.payload = msg.data.instructions;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6177,8 +6575,8 @@
         "id": "91887bc3f41fdc6c",
         "type": "function",
         "z": "6c2dfeb262f54a31",
-        "name": "Description",
-        "func": ";if (msg.data != undefined) {\n    msg.payload = msg.data.description;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
+        "name": "Instructions",
+        "func": "if (msg.data != undefined) {\n    msg.payload = msg.data.instructions;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6196,8 +6594,8 @@
         "id": "2fbbcf3d440564a4",
         "type": "function",
         "z": "6c2dfeb262f54a31",
-        "name": "Description",
-        "func": ";if (msg.data != undefined) {\n    msg.payload = msg.data.description;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
+        "name": "Instructions",
+        "func": "if (msg.data != undefined) {\n    msg.payload = msg.data.instructions;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6215,8 +6613,8 @@
         "id": "de830f886aa8478d",
         "type": "function",
         "z": "6c2dfeb262f54a31",
-        "name": "Description",
-        "func": ";if (msg.data != undefined) {\n    msg.payload = msg.data.description;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
+        "name": "Instructions",
+        "func": "if (msg.data != undefined) {\n    msg.payload = msg.data.instructions;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6234,8 +6632,8 @@
         "id": "01abfbc40c7fe9bf",
         "type": "function",
         "z": "6c2dfeb262f54a31",
-        "name": "Description",
-        "func": ";if (msg.data != undefined) {\n    msg.payload = msg.data.description;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
+        "name": "Instructions",
+        "func": "if (msg.data != undefined) {\n    msg.payload = msg.data.instructions;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6253,8 +6651,8 @@
         "id": "54a933605b719705",
         "type": "function",
         "z": "6c2dfeb262f54a31",
-        "name": "Description",
-        "func": ";if (msg.data != undefined) {\n    msg.payload = msg.data.description;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
+        "name": "Instructions",
+        "func": "if (msg.data != undefined) {\n    msg.payload = msg.data.instructions;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6272,8 +6670,8 @@
         "id": "c1bf03f595415d3d",
         "type": "function",
         "z": "6c2dfeb262f54a31",
-        "name": "Description",
-        "func": ";if (msg.data != undefined) {\n    msg.payload = msg.data.description;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
+        "name": "Instructions",
+        "func": "if (msg.data != undefined) {\n    msg.payload = msg.data.instructions;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6291,8 +6689,8 @@
         "id": "f57777efaeedb11f",
         "type": "function",
         "z": "6c2dfeb262f54a31",
-        "name": "Description",
-        "func": ";if (msg.data != undefined) {\n    msg.payload = msg.data.description;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
+        "name": "Instructions",
+        "func": "if (msg.data != undefined) {\n    msg.payload = msg.data.instructions;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6310,8 +6708,8 @@
         "id": "9d3fcf8824b42eae",
         "type": "function",
         "z": "6c2dfeb262f54a31",
-        "name": "Description",
-        "func": ";if (msg.data != undefined) {\n    msg.payload = msg.data.description;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
+        "name": "Instructions",
+        "func": "if (msg.data != undefined) {\n    msg.payload = msg.data.instructions;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6329,8 +6727,8 @@
         "id": "e47354887ae83eb8",
         "type": "function",
         "z": "6c2dfeb262f54a31",
-        "name": "Description",
-        "func": ";if (msg.data != undefined) {\n    msg.payload = msg.data.description;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
+        "name": "Instructions",
+        "func": "if (msg.data != undefined) {\n    msg.payload = msg.data.instructions;\n} else {\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.value = msg.payload;\n    delete msg.payload;\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6349,7 +6747,7 @@
         "type": "function",
         "z": "6c2dfeb262f54a31",
         "name": "Final",
-        "func": "delete msg.parts;\nif (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"description\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.description = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
+        "func": "delete msg.parts;\nif (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"instructions\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.instructions = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6368,7 +6766,7 @@
         "type": "function",
         "z": "6c2dfeb262f54a31",
         "name": "Final",
-        "func": "delete msg.parts;\nif (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"description\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.description = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
+        "func": "delete msg.parts;\nif (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"instructions\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.instructions = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6387,7 +6785,7 @@
         "type": "function",
         "z": "6c2dfeb262f54a31",
         "name": "Final",
-        "func": "delete msg.parts;\nif (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"description\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.description = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
+        "func": "delete msg.parts;\nif (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"instructions\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.instructions = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6406,7 +6804,7 @@
         "type": "function",
         "z": "6c2dfeb262f54a31",
         "name": "Final",
-        "func": "delete msg.parts;\nif (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"description\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.description = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
+        "func": "delete msg.parts;\nif (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"instructions\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.instructions = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6425,7 +6823,7 @@
         "type": "function",
         "z": "6c2dfeb262f54a31",
         "name": "Final",
-        "func": "delete msg.parts;\nif (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"description\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.description = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
+        "func": "delete msg.parts;\nif (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"instructions\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.instructions = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6444,7 +6842,7 @@
         "type": "function",
         "z": "6c2dfeb262f54a31",
         "name": "Final",
-        "func": "delete msg.parts;\nif (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"description\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.description = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
+        "func": "delete msg.parts;\nif (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"instructions\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.instructions = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6463,7 +6861,7 @@
         "type": "function",
         "z": "6c2dfeb262f54a31",
         "name": "Final",
-        "func": "delete msg.parts;\nif (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"description\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.description = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
+        "func": "delete msg.parts;\nif (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"instructions\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.instructions = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6482,7 +6880,7 @@
         "type": "function",
         "z": "6c2dfeb262f54a31",
         "name": "Final",
-        "func": "delete msg.parts;\nif (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"description\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.description = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
+        "func": "delete msg.parts;\nif (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"instructions\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.instructions = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6501,7 +6899,7 @@
         "type": "function",
         "z": "6c2dfeb262f54a31",
         "name": "Final",
-        "func": "if (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"description\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.description = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
+        "func": "delete msg.parts;\nif (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"instructions\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.instructions = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6520,7 +6918,7 @@
         "type": "function",
         "z": "6c2dfeb262f54a31",
         "name": "Final",
-        "func": "if (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"description\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.description = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
+        "func": "delete msg.parts;\nif (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"instructions\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.instructions = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6539,7 +6937,7 @@
         "type": "function",
         "z": "6c2dfeb262f54a31",
         "name": "Final",
-        "func": "if (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"description\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.description = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
+        "func": "delete msg.parts;\nif (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"instructions\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.instructions = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6558,7 +6956,7 @@
         "type": "function",
         "z": "6c2dfeb262f54a31",
         "name": "Final",
-        "func": "if (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"description\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.description = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
+        "func": "delete msg.parts;\nif (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"instructions\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.instructions = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6577,7 +6975,7 @@
         "type": "function",
         "z": "6c2dfeb262f54a31",
         "name": "Final",
-        "func": "if (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"description\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.description = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
+        "func": "delete msg.parts;\nif (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"instructions\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.instructions = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6596,7 +6994,7 @@
         "type": "function",
         "z": "6c2dfeb262f54a31",
         "name": "Final",
-        "func": "if (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"description\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.description = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
+        "func": "delete msg.parts;\nif (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"instructions\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.instructions = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6615,7 +7013,7 @@
         "type": "function",
         "z": "6c2dfeb262f54a31",
         "name": "Final",
-        "func": "if (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"description\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.description = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
+        "func": "delete msg.parts;\nif (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"instructions\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.instructions = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6634,7 +7032,7 @@
         "type": "function",
         "z": "6c2dfeb262f54a31",
         "name": "Final",
-        "func": "if (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"description\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.description = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
+        "func": "delete msg.parts;\nif (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"instructions\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.instructions = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6653,7 +7051,7 @@
         "type": "function",
         "z": "6c2dfeb262f54a31",
         "name": "Final",
-        "func": "if (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"description\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.description = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
+        "func": "delete msg.parts;\nif (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"instructions\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.instructions = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6672,7 +7070,7 @@
         "type": "function",
         "z": "6c2dfeb262f54a31",
         "name": "Final",
-        "func": "if (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"description\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.description = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
+        "func": "delete msg.parts;\nif (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"instructions\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.instructions = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6691,7 +7089,7 @@
         "type": "function",
         "z": "6c2dfeb262f54a31",
         "name": "Final",
-        "func": "if (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"description\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.description = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
+        "func": "delete msg.parts;\nif (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"instructions\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.instructions = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6710,7 +7108,7 @@
         "type": "function",
         "z": "6c2dfeb262f54a31",
         "name": "Final",
-        "func": "if (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"description\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.description = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
+        "func": "delete msg.parts;\nif (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"instructions\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.instructions = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6729,7 +7127,7 @@
         "type": "function",
         "z": "6c2dfeb262f54a31",
         "name": "Final",
-        "func": "if (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"description\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.description = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
+        "func": "delete msg.parts;\nif (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"instructions\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.instructions = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6748,7 +7146,7 @@
         "type": "function",
         "z": "6c2dfeb262f54a31",
         "name": "Final",
-        "func": "if (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"description\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.description = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
+        "func": "delete msg.parts;\nif (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"instructions\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.instructions = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6767,7 +7165,7 @@
         "type": "function",
         "z": "6c2dfeb262f54a31",
         "name": "Final",
-        "func": "if (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"description\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.description = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
+        "func": "delete msg.parts;\nif (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"instructions\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.instructions = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6786,7 +7184,7 @@
         "type": "function",
         "z": "6c2dfeb262f54a31",
         "name": "Final",
-        "func": "if (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"description\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.description = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
+        "func": "delete msg.parts;\nif (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"instructions\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.instructions = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6805,7 +7203,7 @@
         "type": "function",
         "z": "6c2dfeb262f54a31",
         "name": "Final",
-        "func": "if (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"description\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.description = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
+        "func": "delete msg.parts;\nif (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"instructions\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.instructions = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6824,7 +7222,7 @@
         "type": "function",
         "z": "6c2dfeb262f54a31",
         "name": "Final",
-        "func": "if (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"description\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.description = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
+        "func": "delete msg.parts;\nif (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"instructions\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.instructions = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6843,7 +7241,7 @@
         "type": "function",
         "z": "6c2dfeb262f54a31",
         "name": "Final",
-        "func": "if (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"description\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.description = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
+        "func": "delete msg.parts;\nif (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"instructions\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.instructions = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6862,7 +7260,7 @@
         "type": "function",
         "z": "6c2dfeb262f54a31",
         "name": "Final",
-        "func": "if (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"description\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.description = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
+        "func": "delete msg.parts;\nif (msg.data == undefined) {\n    let output = context.get(\"Stored\") || {\n        \"name\": \"\",\n        \"value\": \"\",\n        \"instructions\": \"\"\n    }\n\n    if (msg.store == undefined) {\n        msg.store = {};\n    }\n    msg.store.instructions = msg.payload;\n\n    let keys = Object.keys(msg.store);\n    let len = keys.length;\n    for (let i = 0; i < len; i++) {\n        output[keys[i]] = msg.store[keys[i]];\n    }\n    context.set(\"Stored\", output);\n    msg.payload = output;\n\n\n    return msg;\n\n} else if (msg.data.name != \"\") {\n    msg.payload = msg.data;\n    return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -7001,7 +7399,7 @@
         "z": "6c2dfeb262f54a31",
         "g": "dcaa9a10e243e078",
         "name": "Set JSON",
-        "func": "msg.payload.basic = msg.payload;\nmsg.topic = \"basic\";\ndelete msg.payload.basic\nreturn msg;",
+        "func": "msg.payload.basic = msg.payload;\nmsg.topic = \"basic\";\nif (msg.payload.basic != undefined)\n    delete msg.payload.basic\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -7054,7 +7452,7 @@
         "type": "function",
         "z": "6c2dfeb262f54a31",
         "name": "Del empties",
-        "func": "msg.topic = \"parameterData\"; //Set topic\ndelete msg.data; // Just no need for this\ndelete msg.payload.save; //Needed this to put lineflag in as member\n\nlet output = {},\n    len = Object.keys(msg.payload).length,\n    keys = Object.keys(msg.payload);\nfor (let i = 0; i < len; i++) {\n    if((msg.payload[keys[i]] != null) && (msg.payload[keys[i]] != \"\")) {\n        output[keys[i]] = msg.payload[keys[i]];\n    }\n}\nmsg.payload = output;\n/*\nmsg.test = {\n    \"length\": len,\n    \"msg.payload\": msg.payload,\n    \"Payload[0]\": msg.payload[keys[0]],\n    \"count\": count,\n    \"output\": output\n}\n*/\nreturn msg;",
+        "func": "msg.topic = \"parameterData\"; //Set topic\ndelete msg.data; // Just no need for this\ndelete msg.payload.save; //Needed this to put lineflag in as member\n\nlet output = {},\n    len = Object.keys(msg.payload).length,\n    keys = Object.keys(msg.payload);\n\nkeys.sort((a, b) => {// sort the keys out to be in order\n    //Each element looks like \"Par##\"\n    const lastA = parseInt(a.slice(3)); // Extract the last two digits of 'a' and convert them to a number\n    const lastB = parseInt(b.slice(3)); // Extract the last two digits of 'b' and convert them to a number\n\n    return lastA - lastB; // Compare the last two digits in ascending order\n});\n\nfor (let i = 0; i < len; i++) {\n    if((msg.payload[keys[i]] != null) && (msg.payload[keys[i]] != \"\")) {\n        output[keys[i]] = msg.payload[keys[i]];\n    }\n}\nmsg.payload = output;\n/*\nmsg.test = {\n    \"length\": len,\n    \"msg.payload\": msg.payload,\n    \"Payload[0]\": msg.payload[keys[0]],\n    \"count\": count,\n    \"output\": output\n}\n*/\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -7216,7 +7614,7 @@
         "tooltip": "",
         "place": "Select option",
         "group": "0465010f96f3dad5",
-        "order": 10,
+        "order": 11,
         "width": 9,
         "height": 1,
         "passthru": false,
@@ -7380,7 +7778,7 @@
         "label": "Search ",
         "tooltip": "",
         "group": "0465010f96f3dad5",
-        "order": 8,
+        "order": 10,
         "width": 7,
         "height": 1,
         "passthru": false,
@@ -7405,7 +7803,7 @@
         "g": "ac5ddaede4537b72",
         "name": "",
         "group": "0465010f96f3dad5",
-        "order": 9,
+        "order": 8,
         "width": 3,
         "height": 1,
         "passthru": false,
@@ -7531,7 +7929,8 @@
             [
                 "cd9dfcba13049524",
                 "97d64d656ed62a0b",
-                "09a21d2c08dd04bf"
+                "09a21d2c08dd04bf",
+                "61d298b5cfa3e96e"
             ]
         ]
     },
@@ -7591,7 +7990,8 @@
         "wires": [
             [
                 "cd9dfcba13049524",
-                "09a21d2c08dd04bf"
+                "09a21d2c08dd04bf",
+                "d551cba248b0b7c0"
             ]
         ]
     },
@@ -8170,111 +8570,6 @@
         "wires": []
     },
     {
-        "id": "ad716cd4ea8c7136",
-        "type": "ui_dropdown",
-        "z": "6c2dfeb262f54a31",
-        "g": "fb743c6fd311d6bb",
-        "name": "",
-        "label": "",
-        "tooltip": "",
-        "place": "Select option",
-        "group": "0465010f96f3dad5",
-        "order": 1,
-        "width": 4,
-        "height": 1,
-        "passthru": true,
-        "multiple": false,
-        "options": [
-            {
-                "label": "",
-                "value": "Parameters 1 - 10",
-                "type": "str"
-            },
-            {
-                "label": "",
-                "value": "Parameters 11 - 20",
-                "type": "str"
-            },
-            {
-                "label": "",
-                "value": "Parameters 21 - 30",
-                "type": "str"
-            }
-        ],
-        "payload": "",
-        "topic": "topic",
-        "topicType": "msg",
-        "className": "",
-        "x": 160,
-        "y": 840,
-        "wires": [
-            [
-                "f15827fb4efe6a5f"
-            ]
-        ]
-    },
-    {
-        "id": "96f1c409dbde6642",
-        "type": "ui_ui_control",
-        "z": "6c2dfeb262f54a31",
-        "g": "fb743c6fd311d6bb",
-        "name": "",
-        "events": "all",
-        "x": 640,
-        "y": 840,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "f15827fb4efe6a5f",
-        "type": "function",
-        "z": "6c2dfeb262f54a31",
-        "g": "fb743c6fd311d6bb",
-        "name": "Set ui control",
-        "func": " /*Realised that a switch isn't really needed if the tab \n    name is the same as the group name*/\n\nswitch (msg.payload) {\n    case \"Parameters 1 - 10\":\n        msg.payload = '{\"group\":{\"hide\":[\"Recipes_Parameter_Names_11_-_20\",\"Recipes_Parameter_Values_11_-_20\",\"Recipes_Parameter_Instructions_11_-_20\",\"Recipes_Parameter_Names_21_-_30\",\"Recipes_Parameter_Values_21_-_30\",\"Recipes_Parameter_Instructions_21_-_30\"],\"show\":[\"Recipes_Parameter_Names_1_-_10\",\"Recipes_Parameter_Values_1_-_10\",\"Recipes_Parameter_Instructions_1_-_10\"]}}';\n        break;\n\n    case \"Parameters 11 - 20\":\n        msg.payload = '{\"group\":{\"hide\":[\"Recipes_Parameter_Names_1_-_10\",\"Recipes_Parameter_Values_1_-_10\",\"Recipes_Parameter_Instructions_1_-_10\",\"Recipes_Parameter_Names_21_-_30\",\"Recipes_Parameter_Values_21_-_30\",\"Recipes_Parameter_Instructions_21_-_30\"],\"show\":[\"Recipes_Parameter_Names_11_-_20\",\"Recipes_Parameter_Values_11_-_20\",\"Recipes_Parameter_Instructions_11_-_20\"]}}';\n        break;\n\n    case \"Parameters 21 - 30\":\n        msg.payload = '{\"group\":{\"hide\":[\"Recipes_Parameter_Names_1_-_10\",\"Recipes_Parameter_Values_1_-_10\",\"Recipes_Parameter_Instructions_1_-_10\",\"Recipes_Parameter_Names_11_-_20\",\"Recipes_Parameter_Values_11_-_20\",\"Recipes_Parameter_Instructions_11_-_20\"],\"show\":[\"Recipes_Parameter_Names_21_-_30\",\"Recipes_Parameter_Values_21_-_30\",\"Recipes_Parameter_Instructions_21_-_30\"]}}';\n        break;\n}\n\n/*\nlet groups = [\"Recipes_Stove 1\", \"Recipes_Stove 2\", \"Recipes_Stove 3\"];\n\nmsg.payload = \"Recipes_\" + msg.payload;\nlet index = groups.indexOf(msg.payload);\nlet pickedOption = groups.splice(index, 1);\nfor (let i = 0; i < groups.length; i++) {\n    groups[i] = '\"' + groups[i].toString().replace(/ /g, \"_\") + '\"';\n}\npickedOption = pickedOption.toString().replace(/ /g, \"_\");\nmsg.payload = '{\"group\":{\"hide\":[' + groups.toString() + '],\"show\":[\"' + pickedOption+'\"]}}';\n*/\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 330,
-        "y": 840,
-        "wires": [
-            [
-                "f5b4a7bd4d1ab765"
-            ]
-        ]
-    },
-    {
-        "id": "f5b4a7bd4d1ab765",
-        "type": "json",
-        "z": "6c2dfeb262f54a31",
-        "g": "fb743c6fd311d6bb",
-        "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": false,
-        "x": 490,
-        "y": 840,
-        "wires": [
-            [
-                "96f1c409dbde6642"
-            ]
-        ]
-    },
-    {
-        "id": "8cd7942d92c2a6c4",
-        "type": "comment",
-        "z": "6c2dfeb262f54a31",
-        "g": "fb743c6fd311d6bb",
-        "name": "Dropdown Parameters",
-        "info": "",
-        "x": 160,
-        "y": 780,
-        "wires": []
-    },
-    {
         "id": "37e5e1cf05f04932",
         "type": "ui_text_input",
         "z": "6c2dfeb262f54a31",
@@ -8671,7 +8966,8 @@
         "name": "Set write out",
         "mode": "link",
         "links": [
-            "11ec4762c9588644"
+            "11ec4762c9588644",
+            "bf6864ec2d7a5b95"
         ],
         "x": 1685,
         "y": 1520,
@@ -8695,279 +8991,6 @@
         "wires": []
     },
     {
-        "id": "f3bfb93f28c5ef12",
-        "type": "inject",
-        "z": "6c2dfeb262f54a31",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 140,
-        "y": 280,
-        "wires": [
-            [
-                "38f4b673f7114c30"
-            ]
-        ]
-    },
-    {
-        "id": "38f4b673f7114c30",
-        "type": "function",
-        "z": "6c2dfeb262f54a31",
-        "name": "Set write -> HMI CSV",
-        "func": "msg.payload = flow.get(\"writeData\");\n\n//Set\n\nlet data = msg.payload,\n    parKeys = Object.keys(data.parameterData),\n    basKey = Object.keys(data.basic),\n    names = [],\n    values = [],\n    descriptions = [],\n    output = [],\n    parameterCount = 20, // Set\n    basicCount = basKey.length,\n    totalCount = basicCount + parameterCount;\n\nmsg.recipeIdentity = data.File_Name;\n// First part is mostly hard coded parameters\noutput.push([data.File_Name, 3, totalCount],\n            [5, 2, 4, 2],\n            [5, 2, 4, 2],\n            [8, 25, 0, 0]);\n\nfor(let i = 0; i < basicCount; i++) {\n    output.push([\"\", data.basic[basKey[i]],\"\"]);\n}\n//Incomplete: Assumption 1 that the length of incoming Parameter data is < \nfor (let i = 0; i < parKeys.length; i++) {/*\n    names.push(data.parameterData[parKeys[i]].name);\n    values.push(data.parameterData[parKeys[i]].value);\n    descriptions.push(data.parameterData[parKeys[i]].description);*/\n    output.push([data.parameterData[parKeys[i]].name, data.parameterData[parKeys[i]].value, data.parameterData[parKeys[i]].description]);\n}\nfor (let i = parKeys.length; i < parameterCount; i++) {// adds the zeros in using Assumption 1\n    output.push([\"\", 0, \"\"]);\n}\nlet text = \"\";\nfor (let i = 0; i < output.length; i++) { // Putting it all into text format\n    text += output[i].toString() + \"\\n\";\n}\n\nmsg.payload = {\n//    output: output,\n    text: text\n}\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 340,
-        "y": 280,
-        "wires": [
-            [
-                "426ffee125b4082b",
-                "5a1366501cd90bb7"
-            ]
-        ]
-    },
-    {
-        "id": "426ffee125b4082b",
-        "type": "debug",
-        "z": "6c2dfeb262f54a31",
-        "name": "Testing recipe",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 560,
-        "y": 240,
-        "wires": []
-    },
-    {
-        "id": "5a1366501cd90bb7",
-        "type": "function",
-        "z": "6c2dfeb262f54a31",
-        "name": "Config Read file",
-        "func": "//Also used for config write\nmsg.filename = \"C:/Users/User/Documents/Coding/Node Red/Recipes/Test.csv\"\n// Settings things up for the bypass\nmsg.payload.filename = msg.filename\nmsg.payload.recipeIdentity = msg.recipeIdentity;\nmsg.topic = \"bypass\";\ndelete msg.filename\n\n\nreturn [{filename: msg.payload.filename}, msg];\n\n//would be used with the line by line file read\nflow.set(\"newFilename\", msg.filename.substr(0, msg.filename.lastIndexOf(\".\")) + \"NEW\" + msg.filename.substr(msg.filename.lastIndexOf(\".\"), msg.filename.length));\n",
-        "outputs": 2,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 580,
-        "y": 280,
-        "wires": [
-            [
-                "c21e13bdf783b6df",
-                "38dde47e0259311b"
-            ],
-            [
-                "59a572483ca29183",
-                "a3f750c8e050bf40"
-            ]
-        ]
-    },
-    {
-        "id": "c21e13bdf783b6df",
-        "type": "debug",
-        "z": "6c2dfeb262f54a31",
-        "name": "debug 85",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 760,
-        "y": 240,
-        "wires": []
-    },
-    {
-        "id": "38dde47e0259311b",
-        "type": "file in",
-        "z": "6c2dfeb262f54a31",
-        "name": "",
-        "filename": "filename",
-        "filenameType": "msg",
-        "format": "utf8",
-        "chunk": false,
-        "sendError": false,
-        "encoding": "none",
-        "allProps": false,
-        "x": 760,
-        "y": 280,
-        "wires": [
-            [
-                "29ad3ee045007331",
-                "0190c7d9cf1f3266"
-            ]
-        ]
-    },
-    {
-        "id": "b9e4fe4c15e2097b",
-        "type": "function",
-        "z": "6c2dfeb262f54a31",
-        "name": "buffer (csv parts reading)",
-        "func": "/*//In the process, if file gets read in line by line\nlet update = context.get(\"update\");\nif (update == undefined) {\n    update = \"\";\n}\n\nif (msg.payload.fileData.indexOf(\"BAA\") == 0) {\n    let msg1 = {\n        payload: \"Check 1\",\n        position: msg.payload.fileData.indexOf(\"BAA\")\n    },\n        msg2 = {\n            payload: \"Check 2\"\n        }\n    return [msg1, msg]\n}\n*/\n\n// reading the file as a whole batch\n\nlet startIndex = msg.payload.fileData.indexOf(msg.payload.recipeIdentity); //Finds the unique key\nif (startIndex != -1) {\n    let regex = \"\\r\\n\\r\\n\", // Finds the double new line (end of section)\n        endIndex = msg.payload.fileData.indexOf(regex, startIndex);\n        //foundSection = msg.payload.fileData.slice(startIndex, endIndex);\n    msg.filename = msg.payload.bypass.filename;\n\n    //Delete and insert\n    msg.payload = msg.payload.fileData.slice(0, startIndex) + msg.payload.bypass.text + msg.payload.fileData.slice(endIndex + 2, msg.payload.fileData.length);\n\n    msg.check = {\n        startIndex: startIndex,\n        endIndex: endIndex,\n        firstPart: msg.payload.slice(0, startIndex),\n        insert: flow.get(\"insertCSV\"),\n        lastPart: msg.payload.slice(endIndex, msg.payload.length)\n\n    };\n} else {\n    msg.payload = msg.payload.fileData + msg.payload.bypass.text;\n}\n\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1290,
-        "y": 280,
-        "wires": [
-            [
-                "50757aa6dc115172",
-                "93809e1cdf796003"
-            ]
-        ]
-    },
-    {
-        "id": "29ad3ee045007331",
-        "type": "debug",
-        "z": "6c2dfeb262f54a31",
-        "name": "debug 86",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 940,
-        "y": 240,
-        "wires": []
-    },
-    {
-        "id": "50757aa6dc115172",
-        "type": "debug",
-        "z": "6c2dfeb262f54a31",
-        "name": "debug 87",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1480,
-        "y": 240,
-        "wires": []
-    },
-    {
-        "id": "0d23a2651ea1ea58",
-        "type": "function",
-        "z": "6c2dfeb262f54a31",
-        "name": "incomplete",
-        "func": "/* So I was thinking that instead of writing every line, line\nfor line into the file, we buffer it.\n*/\n//msg.filename = \"C: /Users/User / Documents / Coding / Node Red / Recipes / Test.csv\"\nmsg.oldFilename = msg.filename;\nmsg.filename = flow.get(\"newFilename\");\nlet returnArr = [];\n(msg.parts.count == undefined) ? \"\" : returnArr = [msg, {payload: \"Check\"}];\nreturn returnArr;\n\nreturn [,{ payload: msg.parts.count }];",
-        "outputs": 2,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1350,
-        "y": 340,
-        "wires": [
-            [
-                "93809e1cdf796003",
-                "d01fbfcf9c41befc"
-            ],
-            [
-                "889c2a410d7f3390"
-            ]
-        ]
-    },
-    {
-        "id": "93809e1cdf796003",
-        "type": "file",
-        "z": "6c2dfeb262f54a31",
-        "name": "",
-        "filename": "filename",
-        "filenameType": "msg",
-        "appendNewline": true,
-        "createDir": true,
-        "overwriteFile": "true",
-        "encoding": "none",
-        "x": 1540,
-        "y": 280,
-        "wires": [
-            [
-                "8e3ef40202b88a27"
-            ]
-        ]
-    },
-    {
-        "id": "8e3ef40202b88a27",
-        "type": "debug",
-        "z": "6c2dfeb262f54a31",
-        "name": "debug 89",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1700,
-        "y": 340,
-        "wires": []
-    },
-    {
-        "id": "889c2a410d7f3390",
-        "type": "debug",
-        "z": "6c2dfeb262f54a31",
-        "name": "debug 90",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1520,
-        "y": 380,
-        "wires": []
-    },
-    {
-        "id": "d01fbfcf9c41befc",
-        "type": "debug",
-        "z": "6c2dfeb262f54a31",
-        "name": "debug 91",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1520,
-        "y": 340,
-        "wires": []
-    },
-    {
         "id": "43df8cb2ca4b719b",
         "type": "function",
         "z": "6c2dfeb262f54a31",
@@ -8985,99 +9008,18 @@
         ]
     },
     {
-        "id": "900005884f737772",
-        "type": "join",
-        "z": "6c2dfeb262f54a31",
-        "name": "",
-        "mode": "custom",
-        "build": "object",
-        "property": "payload",
-        "propertyType": "msg",
-        "key": "topic",
-        "joiner": "\\n",
-        "joinerType": "str",
-        "accumulate": true,
-        "timeout": "",
-        "count": "2",
-        "reduceRight": false,
-        "reduceExp": "",
-        "reduceInit": "",
-        "reduceInitType": "",
-        "reduceFixup": "",
-        "x": 1090,
-        "y": 280,
-        "wires": [
-            [
-                "7304bdf92204260d",
-                "b9e4fe4c15e2097b"
-            ]
-        ]
-    },
-    {
-        "id": "59a572483ca29183",
-        "type": "debug",
-        "z": "6c2dfeb262f54a31",
-        "name": "debug 92",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 760,
-        "y": 320,
-        "wires": []
-    },
-    {
-        "id": "7304bdf92204260d",
-        "type": "debug",
-        "z": "6c2dfeb262f54a31",
-        "name": "debug 93",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1220,
-        "y": 240,
-        "wires": []
-    },
-    {
-        "id": "0190c7d9cf1f3266",
-        "type": "function",
-        "z": "6c2dfeb262f54a31",
-        "name": "Set topic",
-        "func": "msg.topic = \"fileData\";\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 940,
-        "y": 280,
-        "wires": [
-            [
-                "900005884f737772"
-            ]
-        ]
-    },
-    {
         "id": "dc3acc2a853dcfc1",
         "type": "function",
         "z": "6c2dfeb262f54a31",
         "g": "dcaa9a10e243e078",
         "name": "Save check Basic",
-        "func": "let check = flow.get(\"basicFormCheck\");\nif (check == undefined) {\n    context.set(\"basicFormCheck\", false);\n    check = false;\n}\nif (msg.topic == \"basicForm\" || msg.lineFlag == \"fileSelected\") { // If a message comes from the form, it went to join\n    check = true;\n} else if (msg.lineFlag == \"clear\") { // clear means the join node lacks basic form data\n    check = false;\n} else if (msg.lineFlag == \"save\") { // save meanse the join node lacks basic form data\n    check = false;\n}\nflow.set(\"basicFormCheck\", check);\nmsg = {\n    payload : check,\n    topic : \"basicFormCheck\"\n};\nreturn msg;",
+        "func": "let check = flow.get(\"basicFormCheck\");\nif (check == undefined) {\n    context.set(\"basicFormCheck\", false);\n    check = false;\n}\nif (msg.topic == \"basicForm\" || msg.lineFlag == \"JSONdata\") { // If a message comes from the form, it went to join\n    // Just incase the saved Recipe has no Basic Form data\n    let keys = Object.keys(msg.payload);\n    check = true;\n    for (let i = 0; i < keys.length; i++) {\n        if (msg.payload[keys[i]] == \"\") {\n            check = false;\n            break;\n        }\n    }\n    \n} else if (msg.lineFlag == \"clear\") { // clear means the join node lacks basic form data\n    check = false;\n} else if (msg.lineFlag == \"save\") { // save meanse the join node lacks basic form data\n    check = false;\n}\nflow.set(\"basicFormCheck\", check);\nmsg = {\n    payload : check,\n    topic : \"basicFormCheck\"\n};\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 670,
+        "x": 730,
         "y": 2600,
         "wires": [
             [
@@ -9091,7 +9033,7 @@
         "z": "6c2dfeb262f54a31",
         "g": "dcaa9a10e243e078",
         "name": "Save Check Basic",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -9157,8 +9099,8 @@
         "type": "debug",
         "z": "6c2dfeb262f54a31",
         "g": "dcaa9a10e243e078",
-        "name": "debug 94",
-        "active": false,
+        "name": "Clear",
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -9166,8 +9108,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 540,
-        "y": 2560,
+        "x": 450,
+        "y": 2520,
         "wires": []
     },
     {
@@ -9256,7 +9198,7 @@
         "z": "6c2dfeb262f54a31",
         "g": "8f1040046006e799",
         "name": "Save check File Code",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -9274,7 +9216,7 @@
         "z": "6c2dfeb262f54a31",
         "g": "8f1040046006e799",
         "name": "debug 96",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -9500,7 +9442,7 @@
         "g": "578d44d18df9e87c",
         "name": "Input Read Data out",
         "info": "",
-        "x": 1270,
+        "x": 1290,
         "y": 1760,
         "wires": []
     },
@@ -9526,7 +9468,7 @@
         "topic": "",
         "payload": "select JSON_Data from [NodeRed].[dbo].[Recipes] where File_Code = 14635",
         "payloadType": "str",
-        "x": 1290,
+        "x": 1310,
         "y": 1900,
         "wires": [
             [
@@ -9543,7 +9485,7 @@
         "name": "",
         "query": "",
         "outField": "payload",
-        "x": 1420,
+        "x": 1440,
         "y": 1900,
         "wires": [
             [
@@ -9563,7 +9505,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1620,
+        "x": 1640,
         "y": 1900,
         "wires": [
             [
@@ -9594,7 +9536,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2000,
+        "x": 2020,
         "y": 1960,
         "wires": [
             [
@@ -9613,7 +9555,7 @@
             "8de91a6651268b8a",
             "baa6c2563f8b404d"
         ],
-        "x": 1875,
+        "x": 1895,
         "y": 1900,
         "wires": []
     },
@@ -9627,7 +9569,7 @@
         "links": [
             "756ee76f9ccadbd8"
         ],
-        "x": 1875,
+        "x": 1895,
         "y": 1860,
         "wires": []
     },
@@ -9637,7 +9579,7 @@
         "z": "6c2dfeb262f54a31",
         "g": "578d44d18df9e87c",
         "name": "SQL Test",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -9645,7 +9587,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1760,
+        "x": 1780,
         "y": 1820,
         "wires": []
     },
@@ -9658,13 +9600,11 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 1810,
+        "x": 1710,
         "y": 1960,
         "wires": [
             [
-                "4a831eb513b40b2a",
-                "ef386ef09874169f",
-                "5491c556639992d7"
+                "215838f219a62175"
             ]
         ]
     },
@@ -9680,7 +9620,7 @@
         "arraySpltType": "len",
         "stream": false,
         "addname": "topic",
-        "x": 2170,
+        "x": 2190,
         "y": 1960,
         "wires": [
             [
@@ -9701,7 +9641,7 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 1650,
+        "x": 1550,
         "y": 1960,
         "wires": [
             [
@@ -9715,7 +9655,7 @@
         "z": "6c2dfeb262f54a31",
         "g": "578d44d18df9e87c",
         "name": "debug 47",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -9723,7 +9663,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2040,
+        "x": 2060,
         "y": 1880,
         "wires": []
     },
@@ -9739,7 +9679,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2310,
+        "x": 2330,
         "y": 1960,
         "wires": [
             [
@@ -9756,7 +9696,7 @@
         "links": [
             "686eb83bad60e464"
         ],
-        "x": 1495,
+        "x": 1395,
         "y": 2000,
         "wires": [
             [
@@ -9775,7 +9715,7 @@
         "links": [
             "82a83f4a48030b23"
         ],
-        "x": 2405,
+        "x": 2425,
         "y": 1920,
         "wires": []
     },
@@ -9792,7 +9732,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1620,
+        "x": 1520,
         "y": 2020,
         "wires": []
     },
@@ -9802,7 +9742,7 @@
         "z": "6c2dfeb262f54a31",
         "g": "bace55f69fa2fe9f",
         "name": "PLC Write",
-        "info": "",
+        "info": "Currently disconnected",
         "x": 120,
         "y": 3260,
         "wires": []
@@ -9882,7 +9822,7 @@
         "z": "6c2dfeb262f54a31",
         "g": "bace55f69fa2fe9f",
         "name": "Set Data",
-        "func": "let data = msg.payload;\nlet sa, // Starting register for PLC writing\n    keys = Object.keys(data.parameterData),\n    i,\n    entryCount = 20, // Total possible entry cound of the extra ParameterData\n    entryRegisterLength,\n    values = [];\n\n\n// Basic\n// Set x2\nsa = 0, // Set Starting register for PLC writing\nentryRegisterLength = 2; //Num of registers used per entry (because type is float)\nvalues = [];\nlet basicCount = 10; // Set the count of the basic entries\n\nlet basicKeys = Object.keys(data.basic);\nfor (i = 0; i < basicKeys.length; i++) {\n    values.push(data.basic[basicKeys[i]]);\n}\nlet msgBasic = {\n    payload: {\n        values: values,\n        sa: sa,\n        entryCount: basicCount,\n        entryRegisterLength: entryRegisterLength\n    }\n}\n\nsa += basicCount * entryRegisterLength;\n\n// Values\n// Set x2\n//sa = 100, // Starting register for PLC writing\nentryRegisterLength = 2; //Num of registers used per entry\nvalues = [];\n\nfor (i = 0; i < keys.length; i++) {\n    values.push(data.parameterData[keys[i]].value);\n}\nlet msgValues = {\n    payload: {\n        values: values,\n        sa: sa,\n        entryCount: entryCount,\n        entryRegisterLength: entryRegisterLength\n    }\n}\n\nsa += entryCount * entryRegisterLength;\n\n// Names\n//sa = 0, // Starting register for PLC writing\nentryRegisterLength = 10;\nvalues = [];\n\nfor (i = 0; i < keys.length; i++) {\n    values.push(data.parameterData[keys[i]].name);\n}\nlet msgNames = {\n    payload: {\n        values: values,\n        sa: sa,\n        entryCount: entryCount,\n        entryRegisterLength: entryRegisterLength\n    }\n}\n\nsa += entryCount * entryRegisterLength;\n\n// Descriptions\n//sa = 120, // Starting register for PLC writing\nentryRegisterLength = 25;\nvalues = [];\n\nfor (i = 0; i < keys.length; i++) {\n    values.push(data.parameterData[keys[i]].description);\n}\nlet msgDescriptions = {\n    payload: {\n        values: values,\n        sa: sa,\n        entryCount: entryCount,\n        entryRegisterLength: entryRegisterLength\n    }\n}\nreturn [msgBasic, msgValues, msgNames, msgDescriptions];",
+        "func": "let data = msg.payload;\nlet sa, // Starting register for PLC writing\n    keys = Object.keys(data.parameterData),\n    i,\n    entryCount = 20, // Total possible entry cound of the extra ParameterData\n    entryRegisterLength,\n    values = [];\n\n\n// Basic\n// Set x2\nsa = 0, // Set Starting register for PLC writing\nentryRegisterLength = 2; //Num of registers used per entry (because type is float)\nvalues = [];\nlet basicCount = 10; // Set the count of the basic entries\n\nlet basicKeys = Object.keys(data.basic);\nfor (i = 0; i < basicKeys.length; i++) {\n    values.push(data.basic[basicKeys[i]]);\n}\nlet msgBasic = {\n    payload: {\n        values: values,\n        sa: sa,\n        entryCount: basicCount,\n        entryRegisterLength: entryRegisterLength\n    }\n}\n\nsa += basicCount * entryRegisterLength;\n\n// Values\n// Set x2\n//sa = 100, // Starting register for PLC writing\nentryRegisterLength = 2; //Num of registers used per entry\nvalues = [];\n\nfor (i = 0; i < keys.length; i++) {\n    values.push(data.parameterData[keys[i]].value);\n}\nlet msgValues = {\n    payload: {\n        values: values,\n        sa: sa,\n        entryCount: entryCount,\n        entryRegisterLength: entryRegisterLength\n    }\n}\n\nsa += entryCount * entryRegisterLength;\n\n// Names\n//sa = 0, // Starting register for PLC writing\nentryRegisterLength = 10;\nvalues = [];\n\nfor (i = 0; i < keys.length; i++) {\n    values.push(data.parameterData[keys[i]].name);\n}\nlet msgNames = {\n    payload: {\n        values: values,\n        sa: sa,\n        entryCount: entryCount,\n        entryRegisterLength: entryRegisterLength\n    }\n}\n\nsa += entryCount * entryRegisterLength;\n\n// instructions\n//sa = 120, // Starting register for PLC writing\nentryRegisterLength = 25;\nvalues = [];\n\nfor (i = 0; i < keys.length; i++) {\n    values.push(data.parameterData[keys[i]].instructions);\n}\nlet msgInstructions = {\n    payload: {\n        values: values,\n        sa: sa,\n        entryCount: entryCount,\n        entryRegisterLength: entryRegisterLength\n    }\n}\nreturn [msgBasic, msgValues, msgNames, msgInstructions];",
         "outputs": 4,
         "noerr": 0,
         "initialize": "",
@@ -9921,9 +9861,7 @@
         "x": 425,
         "y": 3480,
         "wires": [
-            [
-                "948d8df774b8c958"
-            ]
+            []
         ]
     },
     {
@@ -9950,7 +9888,7 @@
         "z": "6c2dfeb262f54a31",
         "g": "bace55f69fa2fe9f",
         "name": "Write Float 2W",
-        "func": "//Par.Basic\n// Modbus parameters\nvar fc = 16,\n    sa = msg.payload.sa; //Set (this might change)\n\nlet arr = msg.payload.values, // Easier to set this here if the input changes\n    len = arr.length,\n    //Set\n    entryCount = msg.payload.entryCount, // Let's make this the total number of insrances (entries)\n    addresses = entryCount * msg.payload.entryRegisterLength,\n    buf = Buffer.alloc(4),\n    value,\n    values = [];\n\n//incomplete: Check the other ones, need to do error catching for bad coding\nif (len <= entryCount ) { // This should always be the case\n    for (let i = 0; i < len; i++) {\n        value = arr[i];\n        buf.writeFloatBE(value);\n        values.push((buf[0] * 256 + buf[1]), (buf[2] * 256) + buf[3]);\n    }\n    for (let i = len; i < entryCount; i++) {\n        values.push(0,0);\n    }\n} else if (len == 0 ) {\n    //Error handling\n} else if (len > entryCount) {\n    //Incomplete\n}\n\n\nmsg.slave_ip = flow.get(\"slaveIP\");\nmsg.payload={\"value\":values , 'fc': fc, 'unitid': 1, 'address': sa , 'quantity': addresses };\n\n/* Can't remember why this is here\nnode.send(msg);\n\n//ACTIVE\nsa = sa + addresses;\naddresses = 10\n*/\n\n\nreturn msg;",
+        "func": "//Par.Basic\n// Modbus parameters\nvar fc = 16,\n    sa = msg.payload.sa; //Set (this might change)\n\nlet arr = msg.payload.values, // Easier to set this here if the input changes\n    len = arr.length,\n    //Set\n    entryCount = msg.payload.entryCount, // Let's make this the total number of insrances (entries)\n    addresses = entryCount * msg.payload.entryRegisterLength,\n    buf = Buffer.alloc(4),\n    value,\n    values = [];\n\n//incomplete: Check the other ones, need to do error catching for bad coding\nif (len <= entryCount ) { // This should always be the case\n    for (let i = 0; i < len; i++) {\n        value = arr[i];\n        buf.writeFloatBE(value);\n        values.push((buf[0] * 256 + buf[1]), (buf[2] * 256) + buf[3]);\n    }\n    for (let i = len; i < entryCount; i++) {\n        values.push(0,0);\n    }\n} else if (len == 0 ) {\n    //Error handling\n} else if (len > entryCount) {\n    //Incomplete\n}\n\n\nmsg.slave_ip = flow.get(\"slaveIP\");\nmsg.payload={\"value\":values , 'fc': fc, 'unitid': 1, 'address': sa , 'quantity': addresses };\n\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -9970,7 +9908,7 @@
         "z": "6c2dfeb262f54a31",
         "g": "bace55f69fa2fe9f",
         "name": "Write Float 2W",
-        "func": "//Par.Values\n// Modbus parameters\nvar fc = 16,\n    sa = msg.payload.sa; //Set (this might change)\n\nlet arr = msg.payload.values, // Easier to set this here if the input changes\n    len = arr.length,\n    //Set\n    entryCount = msg.payload.entryCount, // Let's make this the total number of insrances (entries)\n    addresses = entryCount * msg.payload.entryRegisterLength,\n    buf = Buffer.alloc(4),\n    value,\n    values = [];\n\n//incomplete: Check the other ones, need to do error catching for bad coding\nif (len <= entryCount ) { // This should always be the case\n    for (let i = 0; i < len; i++) {\n        value = arr[i];\n        buf.writeFloatBE(value);\n        values.push((buf[0] * 256 + buf[1]), (buf[2] * 256) + buf[3]);\n    }\n    for (let i = len; i < entryCount; i++) {\n        values.push(0,0);\n    }\n} else if (len == 0 ) {\n    //Error handling\n} else if (len > entryCount) {\n    //Incomplete\n}\n\n\nmsg.slave_ip = flow.get(\"slaveIP\");\nmsg.payload={\"value\":values , 'fc': fc, 'unitid': 1, 'address': sa , 'quantity': addresses };\n\n/* Can't remember why this is here\nnode.send(msg);\n\n//ACTIVE\nsa = sa + addresses;\naddresses = 10\n*/\n\n\nreturn msg;",
+        "func": "//Par.Values\n// Modbus parameters\nvar fc = 16,\n    sa = msg.payload.sa; //Set (this might change)\n\nlet arr = msg.payload.values, // Easier to set this here if the input changes\n    len = arr.length,\n    //Set\n    entryCount = msg.payload.entryCount, // Let's make this the total number of insrances (entries)\n    addresses = entryCount * msg.payload.entryRegisterLength,\n    buf = Buffer.alloc(4),\n    value,\n    values = [];\n\n//incomplete: Check the other ones, need to do error catching for bad coding\nif (len <= entryCount ) { // This should always be the case\n    for (let i = 0; i < len; i++) {\n        value = arr[i];\n        buf.writeFloatBE(value);\n        values.push((buf[0] * 256 + buf[1]), (buf[2] * 256) + buf[3]);\n    }\n    for (let i = len; i < entryCount; i++) {\n        values.push(0,0);\n    }\n} else if (len == 0 ) {\n    //Error handling\n} else if (len > entryCount) {\n    //Incomplete\n}\n\n\nmsg.slave_ip = flow.get(\"slaveIP\");\nmsg.payload={\"value\":values , 'fc': fc, 'unitid': 1, 'address': sa , 'quantity': addresses };\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -10012,7 +9950,7 @@
         "z": "6c2dfeb262f54a31",
         "g": "bace55f69fa2fe9f",
         "name": "Write Reg as Char",
-        "func": "//Par.Descriptions\nlet fc = 16,\n    sa = msg.payload.sa,\n    adresses = 0,\n\n    arr = msg.payload.values,\n    entryRegisterLength = msg.payload.entryRegisterLength; //Number of registers allowed per instance\n\n//Del: This needs a proper fix\nlet delArr = []\nfor (let i = 0; i < 100; i++) {\n    delArr.push(0);\n}\nmsg.payload = { \"value\": delArr, 'fc': fc, 'unitid': 1, 'address': sa, 'quantity': 100 };\nnode.send(msg);\nmsg.payload = { \"value\": delArr, 'fc': fc, 'unitid': 1, 'address': sa + 100, 'quantity': 100 };\nnode.send(msg);\nmsg.payload = { \"value\": delArr, 'fc': fc, 'unitid': 1, 'address': sa + 200, 'quantity': 100 };\nnode.send(msg);\nmsg.payload = { \"value\": delArr, 'fc': fc, 'unitid': 1, 'address': sa + 300, 'quantity': 100 };\nnode.send(msg);\nmsg.payload = { \"value\": delArr, 'fc': fc, 'unitid': 1, 'address': sa + 400, 'quantity': 100 };\nnode.send(msg);\n    //del done\n\nfor (let i = 0; i < arr.length; i++) { //Loops through each entry that needs to me recorded\n    let len = arr[i].length,\n        buf = Buffer.from(arr[i]),\n        repeat = Math.floor(len / 2.0),\n        remainder = len % 2,\n        value = [];\n    //Incomplete: This is what you need to copy to the float section\n    for (let i = 0; i < repeat && i < entryRegisterLength; i++) { // Loops through the byte pairs of the modbus registers, ignoring the last pair if its an odd number\n        value.push(buf.subarray(i * 2, i * 2 + 2).readInt16BE())\n    }\n    if (remainder) { // If the last pair is odd, set the second byte to 0\n        value.push(Buffer.from([buf[buf.length - 1], 0]).readInt16BE());\n    }\n    for (let i = repeat + remainder; i < entryRegisterLength; i++) {\n        value.push(0);\n    }\n\n    adresses = entryRegisterLength; //Should always = value.length\n    msg.slave_ip = flow.get(\"slaveIP\");\n    msg.payload = { \"value\": value, 'fc': fc, 'unitid': 1, 'address': sa, 'quantity': adresses };\n    sa += entryRegisterLength;\n\n    msg.check = {\n        value: value,\n        valueLength: value.length,//value.length,\n        adresses: adresses\n    };\n    node.send(msg);\n}\n\nreturn null;",
+        "func": "//Par.instructions\nlet fc = 16,\n    sa = msg.payload.sa,\n    adresses = 0,\n\n    arr = msg.payload.values,\n    entryRegisterLength = msg.payload.entryRegisterLength; //Number of registers allowed per instance\n\n//Del: This needs a proper fix\nlet delArr = []\nfor (let i = 0; i < 100; i++) {\n    delArr.push(0);\n}\nmsg.payload = { \"value\": delArr, 'fc': fc, 'unitid': 1, 'address': sa, 'quantity': 100 };\nnode.send(msg);\nmsg.payload = { \"value\": delArr, 'fc': fc, 'unitid': 1, 'address': sa + 100, 'quantity': 100 };\nnode.send(msg);\nmsg.payload = { \"value\": delArr, 'fc': fc, 'unitid': 1, 'address': sa + 200, 'quantity': 100 };\nnode.send(msg);\nmsg.payload = { \"value\": delArr, 'fc': fc, 'unitid': 1, 'address': sa + 300, 'quantity': 100 };\nnode.send(msg);\nmsg.payload = { \"value\": delArr, 'fc': fc, 'unitid': 1, 'address': sa + 400, 'quantity': 100 };\nnode.send(msg);\n    //del done\n\nfor (let i = 0; i < arr.length; i++) { //Loops through each entry that needs to me recorded\n    let len = arr[i].length,\n        buf = Buffer.from(arr[i]),\n        repeat = Math.floor(len / 2.0),\n        remainder = len % 2,\n        value = [];\n    //Incomplete: This is what you need to copy to the float section\n    for (let i = 0; i < repeat && i < entryRegisterLength; i++) { // Loops through the byte pairs of the modbus registers, ignoring the last pair if its an odd number\n        value.push(buf.subarray(i * 2, i * 2 + 2).readInt16BE())\n    }\n    if (remainder) { // If the last pair is odd, set the second byte to 0\n        value.push(Buffer.from([buf[buf.length - 1], 0]).readInt16BE());\n    }\n    for (let i = repeat + remainder; i < entryRegisterLength; i++) {\n        value.push(0);\n    }\n\n    adresses = entryRegisterLength; //Should always = value.length\n    msg.slave_ip = flow.get(\"slaveIP\");\n    msg.payload = { \"value\": value, 'fc': fc, 'unitid': 1, 'address': sa, 'quantity': adresses };\n    sa += entryRegisterLength;\n\n    msg.check = {\n        value: value,\n        valueLength: value.length,//value.length,\n        adresses: adresses\n    };\n    node.send(msg);\n}\n\nreturn null;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -10596,6 +10534,1222 @@
         ]
     },
     {
+        "id": "61d298b5cfa3e96e",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "g": "dcaa9a10e243e078",
+        "name": "Loaded",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 460,
+        "y": 2560,
+        "wires": []
+    },
+    {
+        "id": "a021812f258db7c8",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "g": "dcaa9a10e243e078",
+        "name": "Basic Form",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 2520,
+        "wires": []
+    },
+    {
+        "id": "215838f219a62175",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "g": "578d44d18df9e87c",
+        "name": "Line Flag",
+        "func": "msg.lineFlag = \"JSONdata\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1840,
+        "y": 1960,
+        "wires": [
+            [
+                "4a831eb513b40b2a",
+                "ef386ef09874169f",
+                "5491c556639992d7"
+            ]
+        ]
+    },
+    {
+        "id": "0e2055f1de766c7f",
+        "type": "comment",
+        "z": "6c2dfeb262f54a31",
+        "name": "Wite to HMI CSV",
+        "info": "",
+        "x": 140,
+        "y": 4140,
+        "wires": []
+    },
+    {
+        "id": "f3bfb93f28c5ef12",
+        "type": "inject",
+        "z": "6c2dfeb262f54a31",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 220,
+        "y": 4260,
+        "wires": [
+            [
+                "38f4b673f7114c30"
+            ]
+        ]
+    },
+    {
+        "id": "38f4b673f7114c30",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "name": "Set write -> HMI CSV",
+        "func": "msg.payload = flow.get(\"writeData\");\n\n//Set\n\nlet data = msg.payload,\n    parKeys = Object.keys(data.parameterData),\n    basKey = Object.keys(data.basic),\n    names = [],\n    values = [],\n    instructions = [],\n    output = [],\n    parameterCount = 20, // Set\n    basicCount = basKey.length,\n    totalCount = basicCount + parameterCount;\n\nmsg.recipeIdentity = data.File_Name;\n// First part is mostly hard coded parameters\noutput.push([data.File_Name, 3, totalCount],\n            [5, 2, 4, 2],\n            [5, 2, 4, 2],\n            [8, 25, 0, 0]);\n\nfor(let i = 0; i < basicCount; i++) {\n    output.push([\"\", data.basic[basKey[i]],\"\"]);\n}\n//Incomplete: Assumption 1 that the length of incoming Parameter data is < \nfor (let i = 0; i < parKeys.length; i++) {/*\n    names.push(data.parameterData[parKeys[i]].name);\n    values.push(data.parameterData[parKeys[i]].value);\n    instructions.push(data.parameterData[parKeys[i]].instructions);*/\n    output.push([data.parameterData[parKeys[i]].name, data.parameterData[parKeys[i]].value, data.parameterData[parKeys[i]].instructions]);\n}\nfor (let i = parKeys.length; i < parameterCount; i++) {// adds the zeros in using Assumption 1\n    output.push([\"\", 0, \"\"]);\n}\nlet text = \"\";\nfor (let i = 0; i < output.length; i++) { // Putting it all into text format\n    text += output[i].toString() + \"\\n\";\n}\n\nmsg.payload = {\n//    output: output,\n    text: text\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 4260,
+        "wires": [
+            [
+                "426ffee125b4082b",
+                "5a1366501cd90bb7"
+            ]
+        ]
+    },
+    {
+        "id": "bf6864ec2d7a5b95",
+        "type": "link in",
+        "z": "6c2dfeb262f54a31",
+        "name": "Write to HMI CSV",
+        "links": [
+            "34c7ab41bb4b3dd7"
+        ],
+        "x": 205,
+        "y": 4180,
+        "wires": [
+            [
+                "38f4b673f7114c30"
+            ]
+        ]
+    },
+    {
+        "id": "426ffee125b4082b",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "Testing recipe",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 4220,
+        "wires": []
+    },
+    {
+        "id": "5a1366501cd90bb7",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "name": "Config Read file",
+        "func": "//Also used for config write\nmsg.filename = \"C:/Users/User/Documents/Coding/Node Red/Recipes/Test.csv\"\n// Settings things up for the bypass\nmsg.payload.filename = msg.filename\nmsg.payload.recipeIdentity = msg.recipeIdentity;\nmsg.topic = \"bypass\";\ndelete msg.filename\n\n\nreturn [{filename: msg.payload.filename}, msg];\n\n//would be used with the line by line file read\nflow.set(\"newFilename\", msg.filename.substr(0, msg.filename.lastIndexOf(\".\")) + \"NEW\" + msg.filename.substr(msg.filename.lastIndexOf(\".\"), msg.filename.length));\n",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 4260,
+        "wires": [
+            [
+                "c21e13bdf783b6df",
+                "38dde47e0259311b"
+            ],
+            [
+                "59a572483ca29183",
+                "a3f750c8e050bf40"
+            ]
+        ]
+    },
+    {
+        "id": "c21e13bdf783b6df",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "debug 85",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 4220,
+        "wires": []
+    },
+    {
+        "id": "38dde47e0259311b",
+        "type": "file in",
+        "z": "6c2dfeb262f54a31",
+        "name": "",
+        "filename": "filename",
+        "filenameType": "msg",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 840,
+        "y": 4260,
+        "wires": [
+            [
+                "29ad3ee045007331",
+                "0190c7d9cf1f3266"
+            ]
+        ]
+    },
+    {
+        "id": "59a572483ca29183",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "debug 92",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 4300,
+        "wires": []
+    },
+    {
+        "id": "29ad3ee045007331",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "debug 86",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1020,
+        "y": 4220,
+        "wires": []
+    },
+    {
+        "id": "0190c7d9cf1f3266",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "name": "Set topic",
+        "func": "msg.topic = \"fileData\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1020,
+        "y": 4260,
+        "wires": [
+            [
+                "900005884f737772"
+            ]
+        ]
+    },
+    {
+        "id": "900005884f737772",
+        "type": "join",
+        "z": "6c2dfeb262f54a31",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": true,
+        "timeout": "",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 1170,
+        "y": 4260,
+        "wires": [
+            [
+                "7304bdf92204260d",
+                "b9e4fe4c15e2097b"
+            ]
+        ]
+    },
+    {
+        "id": "7304bdf92204260d",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "debug 93",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1300,
+        "y": 4220,
+        "wires": []
+    },
+    {
+        "id": "b9e4fe4c15e2097b",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "name": "buffer (csv parts reading)",
+        "func": "/*//In the process, if file gets read in line by line\nlet update = context.get(\"update\");\nif (update == undefined) {\n    update = \"\";\n}\n\nif (msg.payload.fileData.indexOf(\"BAA\") == 0) {\n    let msg1 = {\n        payload: \"Check 1\",\n        position: msg.payload.fileData.indexOf(\"BAA\")\n    },\n        msg2 = {\n            payload: \"Check 2\"\n        }\n    return [msg1, msg]\n}\n*/\n\n// reading the file as a whole batch\n\nlet startIndex = msg.payload.fileData.indexOf(msg.payload.bypass.recipeIdentity); //Finds the unique key\nmsg.look = {\n    startIndex: startIndex,\n    search: msg.payload.bypass.recipeIdentity,\n    check: msg.payload.fileData.indexOf(msg.payload.bypass.recipeIdentity)\n}\nif (startIndex != -1) {\n    let regex = \"\\r\\n\", // Finds the double new line (end of section)\n        endIndex = msg.payload.fileData.indexOf(regex, startIndex);\n        //foundSection = msg.payload.fileData.slice(startIndex, endIndex);\n    msg.filename = msg.payload.bypass.filename;\n\n    msg.check = {\n        startIndex: startIndex,\n        endIndex: endIndex,\n        firstPart: msg.payload.fileData.slice(0, startIndex),\n        insert: msg.payload.bypass.text,\n        lastPart: msg.payload.fileData.slice(endIndex, msg.payload.fileData.length)\n\n    };\n\n    //Delete and insert\n    msg.payload = msg.payload.fileData.slice(0, startIndex) + msg.payload.bypass.text + msg.payload.fileData.slice(endIndex + 1, msg.payload.fileData.length);\n} else {\n    msg.payload = msg.payload.fileData + msg.payload.bypass.text;\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1370,
+        "y": 4260,
+        "wires": [
+            [
+                "50757aa6dc115172",
+                "93809e1cdf796003"
+            ]
+        ]
+    },
+    {
+        "id": "50757aa6dc115172",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "debug 87",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1560,
+        "y": 4220,
+        "wires": []
+    },
+    {
+        "id": "93809e1cdf796003",
+        "type": "file",
+        "z": "6c2dfeb262f54a31",
+        "name": "",
+        "filename": "filename",
+        "filenameType": "msg",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1620,
+        "y": 4260,
+        "wires": [
+            [
+                "8e3ef40202b88a27"
+            ]
+        ]
+    },
+    {
+        "id": "0d23a2651ea1ea58",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "name": "incomplete",
+        "func": "/* So I was thinking that instead of writing every line, line\nfor line into the file, we buffer it.\n*/\n//msg.filename = \"C: /Users/User / Documents / Coding / Node Red / Recipes / Test.csv\"\nmsg.oldFilename = msg.filename;\nmsg.filename = flow.get(\"newFilename\");\nlet returnArr = [];\n(msg.parts.count == undefined) ? \"\" : returnArr = [msg, {payload: \"Check\"}];\nreturn returnArr;\n\nreturn [,{ payload: msg.parts.count }];",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1430,
+        "y": 4320,
+        "wires": [
+            [
+                "93809e1cdf796003",
+                "d01fbfcf9c41befc"
+            ],
+            [
+                "889c2a410d7f3390"
+            ]
+        ]
+    },
+    {
+        "id": "8e3ef40202b88a27",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "debug 89",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1780,
+        "y": 4320,
+        "wires": []
+    },
+    {
+        "id": "d01fbfcf9c41befc",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "debug 91",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1600,
+        "y": 4320,
+        "wires": []
+    },
+    {
+        "id": "889c2a410d7f3390",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "debug 90",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1600,
+        "y": 4360,
+        "wires": []
+    },
+    {
+        "id": "677755c14813e997",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "Set Par",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 900,
+        "y": 4460,
+        "wires": []
+    },
+    {
+        "id": "2c826a9b2a9f56c0",
+        "type": "csv",
+        "z": "6c2dfeb262f54a31",
+        "name": "csv",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": "none",
+        "multi": "one",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 1420,
+        "y": 4500,
+        "wires": [
+            [
+                "6da7a57d6db009f7"
+            ]
+        ]
+    },
+    {
+        "id": "a52fe4b7222a7d0a",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "B CSV data (NE)",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1460,
+        "y": 4440,
+        "wires": []
+    },
+    {
+        "id": "14925525dbfba44b",
+        "type": "switch",
+        "z": "6c2dfeb262f54a31",
+        "name": "",
+        "property": "$count(msg.payload)",
+        "propertyType": "jsonata",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1080,
+        "y": 4520,
+        "wires": [
+            [
+                "60022b4a7d70779e"
+            ],
+            [
+                "dd0f60c2e30ca72b"
+            ]
+        ]
+    },
+    {
+        "id": "c74ee60f0ceb9a2e",
+        "type": "fs-file-lister",
+        "z": "6c2dfeb262f54a31",
+        "name": "",
+        "start": "*",
+        "pattern": "",
+        "folders": "*",
+        "hidden": true,
+        "lstype": "files",
+        "path": true,
+        "single": true,
+        "depth": 0,
+        "stat": false,
+        "showWarnings": false,
+        "x": 930,
+        "y": 4520,
+        "wires": [
+            [
+                "14925525dbfba44b",
+                "35ce813ce502f2a3"
+            ]
+        ]
+    },
+    {
+        "id": "062fa2a76456af31",
+        "type": "csv",
+        "z": "6c2dfeb262f54a31",
+        "name": "csv",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": "none",
+        "multi": "one",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 1420,
+        "y": 4540,
+        "wires": [
+            [
+                "6da7a57d6db009f7"
+            ]
+        ]
+    },
+    {
+        "id": "22a6da8aa2e47ee0",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "B CSV data (E)",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1450,
+        "y": 4600,
+        "wires": []
+    },
+    {
+        "id": "60022b4a7d70779e",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "name": "file =! exist",
+        "func": "msg.payload = msg.data;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1260,
+        "y": 4500,
+        "wires": [
+            [
+                "2c826a9b2a9f56c0",
+                "a52fe4b7222a7d0a"
+            ]
+        ]
+    },
+    {
+        "id": "dd0f60c2e30ca72b",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "name": "file == exist",
+        "func": "msg.payload = msg.data;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1260,
+        "y": 4540,
+        "wires": [
+            [
+                "062fa2a76456af31",
+                "22a6da8aa2e47ee0"
+            ]
+        ]
+    },
+    {
+        "id": "35ce813ce502f2a3",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "B File lister",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1100,
+        "y": 4600,
+        "wires": []
+    },
+    {
+        "id": "821b0ad1c5ba4184",
+        "type": "file",
+        "z": "6c2dfeb262f54a31",
+        "name": "Test2",
+        "filename": "filename",
+        "filenameType": "msg",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1860,
+        "y": 4520,
+        "wires": [
+            [
+                "0de1873ef39c7578"
+            ]
+        ]
+    },
+    {
+        "id": "3f8f40bc873d571c",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "name": "Set Par (write for csv)",
+        "func": "//msg.filename = flow.get(\"fullFileName\");\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1640,
+        "y": 4520,
+        "wires": [
+            [
+                "821b0ad1c5ba4184",
+                "42e96b7953889737"
+            ]
+        ]
+    },
+    {
+        "id": "42e96b7953889737",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "File write data",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1870,
+        "y": 4460,
+        "wires": []
+    },
+    {
+        "id": "0de1873ef39c7578",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "Final Write",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2030,
+        "y": 4520,
+        "wires": []
+    },
+    {
+        "id": "b4fb1c11ce207f05",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "name": "Config FL Set Par",
+        "func": "msg.data = msg.payload;\n\n//Setting the payload for filelister node\nmsg.payload = { //Incomplete: This can be loaded from a csv or json file\n    start: \"C:/Users/User/Documents/Coding/Node Red/Recipes/\",\n    pattern: \"Test.csv\"\n}\n\n//Del: Not sure if I'm going to use this\n//Set the parameters needed for the write CSV function\nmsg.columns = \"username, password\";\nmsg.filename = \"C:/Users/User/Documents/Coding/Node Red/Writing CSV/LoginDetails.csv\";\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 4520,
+        "wires": [
+            [
+                "677755c14813e997",
+                "c74ee60f0ceb9a2e"
+            ]
+        ]
+    },
+    {
+        "id": "e7e4857340808e8c",
+        "type": "comment",
+        "z": "6c2dfeb262f54a31",
+        "name": "Not a template",
+        "info": "",
+        "x": 1240,
+        "y": 4440,
+        "wires": []
+    },
+    {
+        "id": "357c7e6f93571503",
+        "type": "inject",
+        "z": "6c2dfeb262f54a31",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "label",
+                "v": "Test Mode: 40A",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 170,
+        "y": 360,
+        "wires": [
+            [
+                "e215ac15c95103b4"
+            ]
+        ]
+    },
+    {
+        "id": "011b83cefd714a97",
+        "type": "inject",
+        "z": "6c2dfeb262f54a31",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "label",
+                "v": "Test Mode: 16A",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 170,
+        "y": 420,
+        "wires": [
+            [
+                "e215ac15c95103b4"
+            ]
+        ]
+    },
+    {
+        "id": "51dc87f2d227eccb",
+        "type": "ui_switch",
+        "z": "6c2dfeb262f54a31",
+        "name": "",
+        "label": "{{msg.label}}",
+        "tooltip": "",
+        "group": "0465010f96f3dad5",
+        "order": 15,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 410,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8029e0cc11874064",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "debug 101",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 390,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "cc71860e04ee28f1",
+        "type": "ui_dropdown",
+        "z": "6c2dfeb262f54a31",
+        "g": "e6bcc5d10479e867",
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "0465010f96f3dad5",
+        "order": 1,
+        "width": 4,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "",
+                "value": "Parameters 1 - 10",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "Parameters 11 - 20",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "Parameters 21 - 30",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 160,
+        "y": 840,
+        "wires": [
+            [
+                "39bdfdf6150306a8"
+            ]
+        ]
+    },
+    {
+        "id": "c1090410677ed7cf",
+        "type": "ui_ui_control",
+        "z": "6c2dfeb262f54a31",
+        "g": "e6bcc5d10479e867",
+        "name": "",
+        "events": "all",
+        "x": 640,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "39bdfdf6150306a8",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "g": "e6bcc5d10479e867",
+        "name": "Set ui control",
+        "func": " /*Realised that a switch isn't really needed if the tab \n    name is the same as the group name*/\n\nswitch (msg.payload) {\n    case \"Parameters 1 - 10\":\n        msg.payload = '{\"group\":{\"hide\":[\"Recipes_Parameter_Names_11_-_20\",\"Recipes_Parameter_Values_11_-_20\",\"Recipes_Parameter_Instructions_11_-_20\",\"Recipes_Parameter_Names_21_-_30\",\"Recipes_Parameter_Values_21_-_30\",\"Recipes_Parameter_Instructions_21_-_30\"],\"show\":[\"Recipes_Parameter_Names_1_-_10\",\"Recipes_Parameter_Values_1_-_10\",\"Recipes_Parameter_Instructions_1_-_10\"]}}';\n        break;\n\n    case \"Parameters 11 - 20\":\n        msg.payload = '{\"group\":{\"hide\":[\"Recipes_Parameter_Names_1_-_10\",\"Recipes_Parameter_Values_1_-_10\",\"Recipes_Parameter_Instructions_1_-_10\",\"Recipes_Parameter_Names_21_-_30\",\"Recipes_Parameter_Values_21_-_30\",\"Recipes_Parameter_Instructions_21_-_30\"],\"show\":[\"Recipes_Parameter_Names_11_-_20\",\"Recipes_Parameter_Values_11_-_20\",\"Recipes_Parameter_Instructions_11_-_20\"]}}';\n        break;\n\n    case \"Parameters 21 - 30\":\n        msg.payload = '{\"group\":{\"hide\":[\"Recipes_Parameter_Names_1_-_10\",\"Recipes_Parameter_Values_1_-_10\",\"Recipes_Parameter_Instructions_1_-_10\",\"Recipes_Parameter_Names_11_-_20\",\"Recipes_Parameter_Values_11_-_20\",\"Recipes_Parameter_Instructions_11_-_20\"],\"show\":[\"Recipes_Parameter_Names_21_-_30\",\"Recipes_Parameter_Values_21_-_30\",\"Recipes_Parameter_Instructions_21_-_30\"]}}';\n        break;\n}\n\n/*\nlet groups = [\"Recipes_Stove 1\", \"Recipes_Stove 2\", \"Recipes_Stove 3\"];\n\nmsg.payload = \"Recipes_\" + msg.payload;\nlet index = groups.indexOf(msg.payload);\nlet pickedOption = groups.splice(index, 1);\nfor (let i = 0; i < groups.length; i++) {\n    groups[i] = '\"' + groups[i].toString().replace(/ /g, \"_\") + '\"';\n}\npickedOption = pickedOption.toString().replace(/ /g, \"_\");\nmsg.payload = '{\"group\":{\"hide\":[' + groups.toString() + '],\"show\":[\"' + pickedOption+'\"]}}';\n*/\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 840,
+        "wires": [
+            [
+                "aa7b8f253ea918f7"
+            ]
+        ]
+    },
+    {
+        "id": "aa7b8f253ea918f7",
+        "type": "json",
+        "z": "6c2dfeb262f54a31",
+        "g": "e6bcc5d10479e867",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 490,
+        "y": 840,
+        "wires": [
+            [
+                "c1090410677ed7cf"
+            ]
+        ]
+    },
+    {
+        "id": "8bfd37949c01c861",
+        "type": "comment",
+        "z": "6c2dfeb262f54a31",
+        "g": "e6bcc5d10479e867",
+        "name": "Dropdown Parameters",
+        "info": "",
+        "x": 160,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "79439506b1a6acc3",
+        "type": "ui_text_input",
+        "z": "6c2dfeb262f54a31",
+        "name": "",
+        "label": "Ground Bond High",
+        "tooltip": "",
+        "group": "218e00eac196634f",
+        "order": 16,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "mode": "number",
+        "delay": 300,
+        "topic": "GB_H",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 1170,
+        "y": 100,
+        "wires": [
+            [
+                "f38ab8822aa6853e"
+            ]
+        ]
+    },
+    {
+        "id": "dcdc69295a6f5f76",
+        "type": "ui_text_input",
+        "z": "6c2dfeb262f54a31",
+        "name": "",
+        "label": "Ground Bond Low",
+        "tooltip": "",
+        "group": "218e00eac196634f",
+        "order": 16,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "mode": "number",
+        "delay": 300,
+        "topic": "GB_L",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 1170,
+        "y": 160,
+        "wires": [
+            [
+                "f38ab8822aa6853e"
+            ]
+        ]
+    },
+    {
+        "id": "c00ecaddc6014250",
+        "type": "ui_text_input",
+        "z": "6c2dfeb262f54a31",
+        "name": "",
+        "label": "ACW High",
+        "tooltip": "",
+        "group": "218e00eac196634f",
+        "order": 16,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "mode": "number",
+        "delay": 300,
+        "topic": "ACW_H",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 1150,
+        "y": 220,
+        "wires": [
+            [
+                "f38ab8822aa6853e"
+            ]
+        ]
+    },
+    {
+        "id": "a93080aeaf3c5e79",
+        "type": "ui_text_input",
+        "z": "6c2dfeb262f54a31",
+        "name": "",
+        "label": "ACW Low",
+        "tooltip": "",
+        "group": "218e00eac196634f",
+        "order": 16,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "mode": "number",
+        "delay": 300,
+        "topic": "ACW_L",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 1140,
+        "y": 280,
+        "wires": [
+            [
+                "f38ab8822aa6853e"
+            ]
+        ]
+    },
+    {
+        "id": "b10bca5a4658bf5c",
+        "type": "ui_text_input",
+        "z": "6c2dfeb262f54a31",
+        "name": "",
+        "label": "Insulation Resistance High",
+        "tooltip": "",
+        "group": "218e00eac196634f",
+        "order": 16,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "mode": "number",
+        "delay": 300,
+        "topic": "IR_H",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 1200,
+        "y": 340,
+        "wires": [
+            [
+                "f38ab8822aa6853e"
+            ]
+        ]
+    },
+    {
+        "id": "9ecb940b93d33cdf",
+        "type": "ui_text_input",
+        "z": "6c2dfeb262f54a31",
+        "name": "",
+        "label": "Insulation Resistance Low",
+        "tooltip": "",
+        "group": "218e00eac196634f",
+        "order": 16,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "mode": "number",
+        "delay": 300,
+        "topic": "IR_L",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 1190,
+        "y": 400,
+        "wires": [
+            [
+                "f38ab8822aa6853e"
+            ]
+        ]
+    },
+    {
+        "id": "9b41e9467bf30ec0",
+        "type": "ui_text_input",
+        "z": "6c2dfeb262f54a31",
+        "name": "",
+        "label": "Earth Leakage Current High",
+        "tooltip": "",
+        "group": "218e00eac196634f",
+        "order": 16,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "mode": "number",
+        "delay": 300,
+        "topic": "ELC_H",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 1200,
+        "y": 460,
+        "wires": [
+            [
+                "f38ab8822aa6853e"
+            ]
+        ]
+    },
+    {
+        "id": "f38ab8822aa6853e",
+        "type": "join",
+        "z": "6c2dfeb262f54a31",
+        "name": "",
+        "mode": "auto",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": "false",
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "x": 1570,
+        "y": 100,
+        "wires": [
+            [
+                "b9fe3a978a99d255"
+            ]
+        ]
+    },
+    {
+        "id": "ac5fb2145e89c0eb",
+        "type": "inject",
+        "z": "6c2dfeb262f54a31",
+        "name": "Trigger",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "complete",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 750,
+        "y": 60,
+        "wires": [
+            [
+                "1a14a3b123c17efc"
+            ]
+        ]
+    },
+    {
+        "id": "b9fe3a978a99d255",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "debug 102",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1750,
+        "y": 40,
+        "wires": []
+    },
+    {
         "id": "0aa53710984a160e",
         "type": "ui_text_input",
         "z": "90f171682dfc3f42",
@@ -10614,7 +11768,7 @@
         "className": "",
         "topicType": "str",
         "x": 330,
-        "y": 160,
+        "y": 840,
         "wires": [
             [
                 "14b4f15e7efa6d9f"
@@ -10640,7 +11794,7 @@
         "className": "",
         "topicType": "str",
         "x": 320,
-        "y": 220,
+        "y": 900,
         "wires": [
             [
                 "14b4f15e7efa6d9f"
@@ -10668,7 +11822,7 @@
         "topic": "Login",
         "topicType": "str",
         "x": 320,
-        "y": 280,
+        "y": 960,
         "wires": [
             [
                 "896b075625b957a9"
@@ -10696,7 +11850,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 320,
-        "y": 340,
+        "y": 1020,
         "wires": [
             [
                 "555e584fc9c1351b"
@@ -10717,7 +11871,7 @@
         "layout": "row-spread",
         "className": "",
         "x": 310,
-        "y": 400,
+        "y": 1080,
         "wires": []
     },
     {
@@ -10741,7 +11895,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 320,
-        "y": 460,
+        "y": 1140,
         "wires": [
             []
         ]
@@ -10762,7 +11916,7 @@
         "templateScope": "local",
         "className": "",
         "x": 180,
-        "y": 60,
+        "y": 740,
         "wires": [
             []
         ]
@@ -10777,7 +11931,7 @@
             "144c30d73ebde27f"
         ],
         "x": 575,
-        "y": 340,
+        "y": 1020,
         "wires": []
     },
     {
@@ -10789,7 +11943,7 @@
             "0d76467924cb1dd7"
         ],
         "x": 95,
-        "y": 160,
+        "y": 840,
         "wires": [
             [
                 "0aa53710984a160e",
@@ -10810,7 +11964,7 @@
         "finalize": "",
         "libs": [],
         "x": 460,
-        "y": 340,
+        "y": 1020,
         "wires": [
             [
                 "0d76467924cb1dd7",
@@ -10840,8 +11994,8 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 630,
-        "y": 160,
+        "x": 580,
+        "y": 920,
         "wires": [
             [
                 "174d49da1c5a3a71",
@@ -10861,7 +12015,7 @@
         "finalize": "",
         "libs": [],
         "x": 450,
-        "y": 280,
+        "y": 960,
         "wires": [
             [
                 "14b4f15e7efa6d9f"
@@ -10882,8 +12036,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 790,
-        "y": 100,
+        "x": 740,
+        "y": 860,
         "wires": []
     },
     {
@@ -10900,8 +12054,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 970,
-        "y": 100,
+        "x": 920,
+        "y": 860,
         "wires": []
     },
     {
@@ -10926,7 +12080,7 @@
         "payload": "admin",
         "payloadType": "str",
         "x": 90,
-        "y": 280,
+        "y": 960,
         "wires": [
             []
         ]
@@ -10953,7 +12107,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 110,
-        "y": 340,
+        "y": 1020,
         "wires": [
             [
                 "c909499c73ee6c20"
@@ -10974,7 +12128,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 610,
-        "y": 400,
+        "y": 1080,
         "wires": []
     },
     {
@@ -10999,7 +12153,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 120,
-        "y": 400,
+        "y": 1080,
         "wires": [
             [
                 "4e39c6a6e5296b51"
@@ -11022,8 +12176,8 @@
         "strings": true,
         "include_empty_strings": "",
         "include_null_values": "",
-        "x": 1490,
-        "y": 140,
+        "x": 1440,
+        "y": 900,
         "wires": [
             [
                 "872ae3d460dd78b6"
@@ -11044,8 +12198,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1530,
-        "y": 80,
+        "x": 1480,
+        "y": 840,
         "wires": []
     },
     {
@@ -11069,8 +12223,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1150,
-        "y": 160,
+        "x": 1100,
+        "y": 920,
         "wires": [
             [
                 "530ad2be100739a1"
@@ -11096,8 +12250,8 @@
         "depth": 0,
         "stat": false,
         "showWarnings": false,
-        "x": 1000,
-        "y": 160,
+        "x": 950,
+        "y": 920,
         "wires": [
             [
                 "3ff6da50a90b1209",
@@ -11121,8 +12275,8 @@
         "strings": true,
         "include_empty_strings": "",
         "include_null_values": "",
-        "x": 1490,
-        "y": 180,
+        "x": 1440,
+        "y": 940,
         "wires": [
             [
                 "872ae3d460dd78b6"
@@ -11143,8 +12297,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1520,
-        "y": 240,
+        "x": 1470,
+        "y": 1000,
         "wires": []
     },
     {
@@ -11159,8 +12313,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1330,
-        "y": 140,
+        "x": 1280,
+        "y": 900,
         "wires": [
             [
                 "09db46c303ad458b",
@@ -11180,8 +12334,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1330,
-        "y": 180,
+        "x": 1280,
+        "y": 940,
         "wires": [
             [
                 "4d2d050d952c2953",
@@ -11203,8 +12357,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1170,
-        "y": 240,
+        "x": 1120,
+        "y": 1000,
         "wires": []
     },
     {
@@ -11219,8 +12373,8 @@
         "createDir": true,
         "overwriteFile": "false",
         "encoding": "none",
-        "x": 1930,
-        "y": 160,
+        "x": 1880,
+        "y": 920,
         "wires": [
             [
                 "ab01de66fe06bf74"
@@ -11239,8 +12393,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1710,
-        "y": 160,
+        "x": 1660,
+        "y": 920,
         "wires": [
             [
                 "1efd318461f8e65b",
@@ -11262,8 +12416,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1940,
-        "y": 100,
+        "x": 1890,
+        "y": 860,
         "wires": []
     },
     {
@@ -11280,8 +12434,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2100,
-        "y": 160,
+        "x": 2050,
+        "y": 920,
         "wires": []
     },
     {
@@ -11296,8 +12450,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 800,
-        "y": 160,
+        "x": 750,
+        "y": 920,
         "wires": [
             [
                 "db18064496eb1045",
@@ -11312,8 +12466,8 @@
         "g": "2663679731c67ef4",
         "name": "Ideas",
         "info": "MSQL has ways to validate whether data\nalready exists. ",
-        "x": 1160,
-        "y": 80,
+        "x": 1110,
+        "y": 840,
         "wires": []
     },
     {
@@ -11323,7 +12477,7 @@
         "name": "Settings page",
         "info": "",
         "x": 90,
-        "y": 560,
+        "y": 1240,
         "wires": []
     },
     {
@@ -11340,7 +12494,7 @@
         "layout": "row-spread",
         "className": "",
         "x": 450,
-        "y": 800,
+        "y": 1480,
         "wires": []
     },
     {
@@ -11389,7 +12543,7 @@
         "splitLayout": "",
         "className": "",
         "x": 130,
-        "y": 740,
+        "y": 1420,
         "wires": [
             [
                 "54ea78c3c478634a",
@@ -11411,7 +12565,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 300,
-        "y": 700,
+        "y": 1380,
         "wires": []
     },
     {
@@ -11426,7 +12580,7 @@
         "finalize": "",
         "libs": [],
         "x": 300,
-        "y": 740,
+        "y": 1420,
         "wires": [
             [
                 "f90afec645303d7a",
@@ -11451,7 +12605,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 460,
-        "y": 700,
+        "y": 1380,
         "wires": []
     },
     {
@@ -11459,7 +12613,7 @@
         "type": "debug",
         "z": "90f171682dfc3f42",
         "name": "Set Par",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -11468,7 +12622,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 650,
-        "y": 680,
+        "y": 1360,
         "wires": []
     },
     {
@@ -11487,7 +12641,7 @@
         "include_empty_strings": "",
         "include_null_values": "",
         "x": 1170,
-        "y": 720,
+        "y": 1400,
         "wires": [
             [
                 "30b771718c579dd1"
@@ -11508,7 +12662,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1210,
-        "y": 660,
+        "y": 1340,
         "wires": []
     },
     {
@@ -11532,7 +12686,7 @@
         "repair": false,
         "outputs": 2,
         "x": 830,
-        "y": 740,
+        "y": 1420,
         "wires": [
             [
                 "18b9cf52d19c8c39"
@@ -11558,7 +12712,7 @@
         "stat": false,
         "showWarnings": false,
         "x": 680,
-        "y": 740,
+        "y": 1420,
         "wires": [
             [
                 "42bc5da63624f1d9",
@@ -11582,7 +12736,7 @@
         "include_empty_strings": "",
         "include_null_values": "",
         "x": 1170,
-        "y": 760,
+        "y": 1440,
         "wires": [
             [
                 "30b771718c579dd1"
@@ -11603,7 +12757,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1200,
-        "y": 820,
+        "y": 1500,
         "wires": []
     },
     {
@@ -11618,7 +12772,7 @@
         "finalize": "",
         "libs": [],
         "x": 1010,
-        "y": 720,
+        "y": 1400,
         "wires": [
             [
                 "7b9e0102ef2077a2",
@@ -11638,7 +12792,7 @@
         "finalize": "",
         "libs": [],
         "x": 1010,
-        "y": 760,
+        "y": 1440,
         "wires": [
             [
                 "3f6f3c687ced4555",
@@ -11660,7 +12814,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 850,
-        "y": 820,
+        "y": 1500,
         "wires": []
     },
     {
@@ -11675,7 +12829,7 @@
         "overwriteFile": "false",
         "encoding": "none",
         "x": 1610,
-        "y": 740,
+        "y": 1420,
         "wires": [
             [
                 "546dbdeddd65b269"
@@ -11694,7 +12848,7 @@
         "finalize": "",
         "libs": [],
         "x": 1390,
-        "y": 740,
+        "y": 1420,
         "wires": [
             [
                 "071c23441ee3c49b",
@@ -11716,7 +12870,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1620,
-        "y": 680,
+        "y": 1360,
         "wires": []
     },
     {
@@ -11733,22 +12887,22 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1780,
-        "y": 740,
+        "y": 1420,
         "wires": []
     },
     {
         "id": "215d088689c2f725",
         "type": "function",
         "z": "90f171682dfc3f42",
-        "name": "Set Par",
+        "name": "Config FL Set Par",
         "func": "msg.data = msg.payload;\n\n//Setting the payload for filelister node\nmsg.payload = { //Incomplete: This can be loaded from a csv or json file\n    start: \"C:/Users/User/Documents/Coding/Node Red/Writing CSV/\",\n    pattern: \"LoginDetails.csv\"\n}\n\n//Set the parameters needed for the write CSV function\nmsg.columns = \"username, password\";\nmsg.filename = \"C:/Users/User/Documents/Coding/Node Red/Writing CSV/LoginDetails.csv\";\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 480,
-        "y": 740,
+        "x": 490,
+        "y": 1420,
         "wires": [
             [
                 "b45d6e2d886ab9e6",
@@ -11769,13 +12923,14 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 460,
-        "y": 840,
+        "y": 1520,
         "wires": []
     },
     {
         "id": "1f56a7dfce1bdf69",
         "type": "inject",
         "z": "90f171682dfc3f42",
+        "g": "4f60eedb7398d967",
         "name": "Load user info",
         "props": [
             {
@@ -11793,8 +12948,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 180,
-        "y": 960,
+        "x": 220,
+        "y": 2340,
         "wires": [
             [
                 "2c2e3d9b67bdd849"
@@ -11805,6 +12960,7 @@
         "id": "2c2e3d9b67bdd849",
         "type": "function",
         "z": "90f171682dfc3f42",
+        "g": "4f60eedb7398d967",
         "name": "Set Par (read file)",
         "func": "msg.filename = \"C:/Users/User/Documents/Coding/Node Red/Writing CSV/LoginDetails.csv\"\nmsg.columns = \"useername, password\";\nreturn msg;",
         "outputs": 1,
@@ -11812,8 +12968,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 370,
-        "y": 960,
+        "x": 410,
+        "y": 2340,
         "wires": [
             [
                 "66b6270fcfbdd3c2"
@@ -11824,6 +12980,7 @@
         "id": "66b6270fcfbdd3c2",
         "type": "file in",
         "z": "90f171682dfc3f42",
+        "g": "4f60eedb7398d967",
         "name": "",
         "filename": "filename",
         "filenameType": "msg",
@@ -11832,8 +12989,8 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 540,
-        "y": 960,
+        "x": 580,
+        "y": 2340,
         "wires": [
             [
                 "3f59c637a1060639",
@@ -11845,9 +13002,10 @@
         "id": "3f59c637a1060639",
         "type": "csv",
         "z": "90f171682dfc3f42",
+        "g": "4f60eedb7398d967",
         "name": "",
         "sep": ",",
-        "hdrin": "",
+        "hdrin": true,
         "hdrout": "none",
         "multi": "one",
         "ret": "\\n",
@@ -11856,8 +13014,8 @@
         "strings": true,
         "include_empty_strings": "",
         "include_null_values": "",
-        "x": 670,
-        "y": 960,
+        "x": 710,
+        "y": 2340,
         "wires": [
             [
                 "2456bcb633a3fddd",
@@ -11869,6 +13027,7 @@
         "id": "2456bcb633a3fddd",
         "type": "debug",
         "z": "90f171682dfc3f42",
+        "g": "4f60eedb7398d967",
         "name": "debug 79",
         "active": false,
         "tosidebar": true,
@@ -11878,14 +13037,15 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 820,
-        "y": 920,
+        "x": 860,
+        "y": 2300,
         "wires": []
     },
     {
         "id": "c2a927f4ba4fd91c",
         "type": "debug",
         "z": "90f171682dfc3f42",
+        "g": "4f60eedb7398d967",
         "name": "debug 80",
         "active": false,
         "tosidebar": true,
@@ -11895,14 +13055,15 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 680,
-        "y": 920,
+        "x": 720,
+        "y": 2300,
         "wires": []
     },
     {
         "id": "f808751ebe227a39",
         "type": "join",
         "z": "90f171682dfc3f42",
+        "g": "4f60eedb7398d967",
         "name": "",
         "mode": "auto",
         "build": "object",
@@ -11915,8 +13076,8 @@
         "timeout": "",
         "count": "",
         "reduceRight": false,
-        "x": 810,
-        "y": 960,
+        "x": 850,
+        "y": 2340,
         "wires": [
             [
                 "5b1fe6f123919f2a",
@@ -11928,6 +13089,7 @@
         "id": "5b1fe6f123919f2a",
         "type": "debug",
         "z": "90f171682dfc3f42",
+        "g": "4f60eedb7398d967",
         "name": "debug 81",
         "active": false,
         "tosidebar": true,
@@ -11936,23 +13098,24 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 960,
-        "y": 920,
+        "x": 1000,
+        "y": 2300,
         "wires": []
     },
     {
         "id": "93adf4da80060978",
         "type": "function",
         "z": "90f171682dfc3f42",
+        "g": "4f60eedb7398d967",
         "name": "Set Flow",
-        "func": "let data = msg.payload,\n    usernames = [],\n    passwords = [];\nfor (let i = 0; i < data.length; i++) {\n    usernames.push(data[i].col1);\n    passwords.push(data[i].col2);\n}\nflow.set(\"usernames\", usernames);\nflow.set(\"passwords\", passwords);\n\nreturn msg;",
+        "func": "let data = msg.payload,\n    usernames = [],\n    passwords = [];\nfor (let i = 0; i < data.length; i++) {\n    //Set\n    usernames.push(data[i].username);\n    passwords.push(data[i].password);\n}\nflow.set(\"usernames\", usernames);\nflow.set(\"passwords\", passwords);\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 960,
-        "y": 960,
+        "x": 1000,
+        "y": 2340,
         "wires": [
             [
                 "5bab2cbe2d10740c"
@@ -11963,6 +13126,7 @@
         "id": "5bab2cbe2d10740c",
         "type": "debug",
         "z": "90f171682dfc3f42",
+        "g": "4f60eedb7398d967",
         "name": "debug 82",
         "active": false,
         "tosidebar": true,
@@ -11972,8 +13136,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1120,
-        "y": 920,
+        "x": 1160,
+        "y": 2300,
         "wires": []
     },
     {
@@ -11998,7 +13162,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 250,
-        "y": 1480,
+        "y": 2160,
         "wires": [
             [
                 "4fdd258cd2c6a9e4"
@@ -12017,7 +13181,7 @@
         "finalize": "",
         "libs": [],
         "x": 450,
-        "y": 1480,
+        "y": 2160,
         "wires": [
             [
                 "cedbaa431a9e9e37"
@@ -12038,17 +13202,17 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 640,
-        "y": 1440,
+        "y": 2120,
         "wires": []
     },
     {
         "id": "c4d3d227d23559d3",
         "type": "comment",
         "z": "90f171682dfc3f42",
-        "name": "Form",
+        "name": "Registration Form",
         "info": "Writes to csv",
-        "x": 90,
-        "y": 640,
+        "x": 130,
+        "y": 1320,
         "wires": []
     },
     {
@@ -12070,13 +13234,6 @@
                 "rows": null
             },
             {
-                "label": "Old Password",
-                "value": "oldPassword",
-                "type": "password",
-                "required": true,
-                "rows": null
-            },
-            {
                 "label": "New Password",
                 "value": "newPassword1",
                 "type": "password",
@@ -12093,7 +13250,6 @@
         ],
         "formValue": {
             "username": "",
-            "oldPassword": "",
             "newPassword1": "",
             "newPassword2": ""
         },
@@ -12104,8 +13260,8 @@
         "topicType": "msg",
         "splitLayout": "",
         "className": "",
-        "x": 150,
-        "y": 1080,
+        "x": 170,
+        "y": 1760,
         "wires": [
             [
                 "762c9f53fc63ea8a"
@@ -12117,14 +13273,14 @@
         "type": "function",
         "z": "90f171682dfc3f42",
         "name": "Checks",
-        "func": "let usernames = flow.get(\"usernames\"),\n    passwords = flow.get(\"passwords\"),\n    index = usernames.indexOf(msg.payload.username);\n\nif (!usernames.includes(msg.payload.username)) { //Already checked with the declaration of index\n    let status = {\n        payload: \"Username does not exist\"\n    }\n    return [, status];\n} else if (msg.payload.oldPassword == passwords[index]) { //checks that the typed in password matches the old password\n    if (msg.payload.newPassword1 == msg.payload.newPassword2) { // checks that the new passwords are the same\n        passwords[index] = msg.payload.newPassword1;\n        msg.payload = {\n            usernames: usernames,\n            passwords: passwords\n        }\n        return [msg, ];\n    }\n} else if(msg.payload.password1 == msg.payload.password2) {\n    msg = {\n        payload : {\n            username: msg.payload.username,\n            password: msg.payload.password1\n        }\n    };\n    let status = {\n        payload: \"\"\n    };\n    return [msg, status];\n} else if (msg.payload.password1 != msg.payload.password2) {\n    let status = {\n        payload: \"The passwords do not match\"\n    }\n    return [,status];\n}\nreturn msg;",
+        "func": "let usernames = flow.get(\"usernames\"),\n    passwords = flow.get(\"passwords\"),\n    index = usernames.indexOf(msg.payload.username);\n\nif (!usernames.includes(msg.payload.username)) { //Already checked with the declaration of index\n    let status = {\n        payload: \"Username does not exist\"\n    }\n    return [, status];\n} else if (msg.payload.newPassword1 == msg.payload.newPassword2) { //checks that the new passwords are the same\n        passwords[index] = msg.payload.newPassword1;\n        msg.payload = {\n            usernames: usernames,\n            passwords: passwords\n        }\n        return [msg, ];\n} else {\n    let status = { // When Password1 doesn't match Password2\n        payload: \"Passwords do not match\"\n    };\n    return [, status];\n}\n",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 320,
-        "y": 1080,
+        "x": 340,
+        "y": 1760,
         "wires": [
             [
                 "279fe8db6719f27f"
@@ -12147,8 +13303,8 @@
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
-        "x": 470,
-        "y": 1140,
+        "x": 490,
+        "y": 1820,
         "wires": []
     },
     {
@@ -12173,7 +13329,7 @@
         "payload": "",
         "payloadType": "str",
         "x": 290,
-        "y": 800,
+        "y": 1480,
         "wires": [
             [
                 "a918d52c5a658719"
@@ -12201,8 +13357,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "str",
-        "x": 310,
-        "y": 1140,
+        "x": 330,
+        "y": 1820,
         "wires": [
             [
                 "eb380d24e28bd310"
@@ -12222,8 +13378,39 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 450,
-        "y": 1020,
+        "x": 470,
+        "y": 1700,
+        "wires": []
+    },
+    {
+        "id": "0ccceff7d73ae9ca",
+        "type": "comment",
+        "z": "90f171682dfc3f42",
+        "name": "Registration Login",
+        "info": "",
+        "x": 110,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "ab54695d8b90815c",
+        "type": "comment",
+        "z": "90f171682dfc3f42",
+        "g": "4f60eedb7398d967",
+        "name": "Load Login Credentials",
+        "info": "CSV Line:\n• Column headers are hard coded in Set Flow\n",
+        "x": 180,
+        "y": 2260,
+        "wires": []
+    },
+    {
+        "id": "b5fbba8c4e1cd4d7",
+        "type": "comment",
+        "z": "90f171682dfc3f42",
+        "name": "Update Password Form",
+        "info": "",
+        "x": 140,
+        "y": 1660,
         "wires": []
     },
     {
@@ -20019,9 +21206,9 @@
         "type": "comment",
         "z": "e28943498755ce53",
         "g": "51589d74d611689a",
-        "name": "Inject directly (ACTIVE)",
+        "name": "Inject directly",
         "info": "Working on storing data and then calling it up yo",
-        "x": 220,
+        "x": 190,
         "y": 580,
         "wires": []
     },
