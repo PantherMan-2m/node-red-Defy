@@ -352,9 +352,7 @@
             "a6e30f8019df8026"
         ],
         "x": 94,
-        "y": 519,
-        "w": 1452,
-        "h": 482
+        "y": 519
     },
     {
         "id": "92aa249eaec5de7d",
@@ -390,9 +388,7 @@
             "a390fd7a79f04326"
         ],
         "x": 134,
-        "y": 1019,
-        "w": 1102,
-        "h": 482
+        "y": 1019
     },
     {
         "id": "a6f0ad5143b4c699",
@@ -422,9 +418,7 @@
             "a8ceb766fa76166e"
         ],
         "x": 134,
-        "y": 1519,
-        "w": 1072,
-        "h": 322
+        "y": 1519
     },
     {
         "id": "2663679731c67ef4",
@@ -456,9 +450,7 @@
             "174d49da1c5a3a71"
         ],
         "x": 504,
-        "y": 799,
-        "w": 1662,
-        "h": 242
+        "y": 799
     },
     {
         "id": "43df61af7b7b9663",
@@ -518,12 +510,13 @@
             "ddf28fd3e1968054",
             "a8817387335deec3",
             "113479bbc86295a4",
-            "486fec372f572af9"
+            "486fec372f572af9",
+            "a513364e1951fda6"
         ],
         "x": 34,
         "y": 1279,
         "w": 972,
-        "h": 322
+        "h": 302
     },
     {
         "id": "e4bfc074446708e2",
@@ -860,9 +853,7 @@
             "ab54695d8b90815c"
         ],
         "x": 54,
-        "y": 2219,
-        "w": 1212,
-        "h": 162
+        "y": 2219
     },
     {
         "id": "e6bcc5d10479e867",
@@ -1091,27 +1082,76 @@
         ]
     },
     {
-        "id": "e215ac15c95103b4",
+        "id": "1a14a3b123c17efc",
         "type": "junction",
         "z": "6c2dfeb262f54a31",
-        "x": 260,
-        "y": 360,
+        "x": 2120,
+        "y": 280,
         "wires": [
             [
-                "51dc87f2d227eccb",
-                "8029e0cc11874064"
+                "517b54151287feac"
             ]
         ]
     },
     {
-        "id": "1a14a3b123c17efc",
+        "id": "60c34f98e1e26dba",
         "type": "junction",
         "z": "6c2dfeb262f54a31",
-        "x": 1440,
-        "y": 60,
+        "x": 1820,
+        "y": 720,
         "wires": [
             [
-                "f38ab8822aa6853e"
+                "cff7a763597986a2",
+                "a4a78451414d1f34"
+            ]
+        ]
+    },
+    {
+        "id": "cff7a763597986a2",
+        "type": "junction",
+        "z": "6c2dfeb262f54a31",
+        "x": 2160,
+        "y": 720,
+        "wires": [
+            [
+                "517b54151287feac"
+            ]
+        ]
+    },
+    {
+        "id": "8210bc989146b289",
+        "type": "junction",
+        "z": "6c2dfeb262f54a31",
+        "x": 1280,
+        "y": 720,
+        "wires": [
+            [
+                "3590ea7d7ffab34f"
+            ]
+        ]
+    },
+    {
+        "id": "c08febe6a2ea67d1",
+        "type": "junction",
+        "z": "6c2dfeb262f54a31",
+        "x": 2600,
+        "y": 320,
+        "wires": [
+            [
+                "a5d2df37afae85ec"
+            ]
+        ]
+    },
+    {
+        "id": "a513364e1951fda6",
+        "type": "junction",
+        "z": "6c2dfeb262f54a31",
+        "g": "8f1040046006e799",
+        "x": 340,
+        "y": 1400,
+        "wires": [
+            [
+                "ce067e37168e1d33"
             ]
         ]
     },
@@ -2203,7 +2243,6 @@
         "id": "cd9dfcba13049524",
         "type": "ui_form",
         "z": "6c2dfeb262f54a31",
-        "d": true,
         "g": "dcaa9a10e243e078",
         "name": "",
         "label": "Basic",
@@ -7437,7 +7476,8 @@
             "79a03bb1edba6504",
             "d266b35bbc25032f",
             "a405fda7c0517634",
-            "a9c4c3a2c9488c0e"
+            "a9c4c3a2c9488c0e",
+            "753803a76c1e9e13"
         ],
         "x": 1215,
         "y": 1520,
@@ -7523,7 +7563,8 @@
         "name": "Trigger out",
         "mode": "link",
         "links": [
-            "37a523ac432e0d6b"
+            "37a523ac432e0d6b",
+            "6a9e30f65e495bca"
         ],
         "x": 485,
         "y": 1980,
@@ -7551,7 +7592,7 @@
         "z": "6c2dfeb262f54a31",
         "g": "2fd3eb0fbfec960e",
         "name": "Final Join",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -7569,7 +7610,7 @@
         "z": "6c2dfeb262f54a31",
         "g": "2fd3eb0fbfec960e",
         "name": "Set Write",
-        "func": "if (msg.lineFlag == \"save\") {\n    msg.filename = msg.payload.fileLocation; //used to write to local file\n    msg.payload = {\n        \"File_Code\": msg.payload.File_Code,\n        \"File_Name\": msg.payload.filename,\n        \"parameterData\": msg.payload.parameterData,\n        \"basic\": msg.payload.basic\n    }\n    //DELETE\n    flow.set(\"writeData\", msg.payload);\n    return msg;\n}\n",
+        "func": "if (msg.lineFlag == \"save\") {\n    msg.filename = msg.payload.fileLocation; //used to write to local file\n    msg.payload = {\n        \"File_Code\": msg.payload.File_Code,\n        \"File_Name\": msg.payload.filename,\n        \"Test_Mode\": msg.payload.testMode || false,\n        \"parameterData\": msg.payload.parameterData,\n        \"basic\": msg.payload.basic\n    }\n    //DELETE\n    flow.set(\"writeData\", msg.payload);\n    return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -7579,10 +7620,10 @@
         "y": 1560,
         "wires": [
             [
-                "b9156f78ebf3843b",
                 "cb690a9660cf7c8a",
-                "c8ca4022d0d77e22",
-                "34c7ab41bb4b3dd7"
+                "34c7ab41bb4b3dd7",
+                "b9156f78ebf3843b",
+                "c8ca4022d0d77e22"
             ]
         ]
     },
@@ -7592,7 +7633,7 @@
         "z": "6c2dfeb262f54a31",
         "g": "2fd3eb0fbfec960e",
         "name": "Set Write",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -8384,23 +8425,6 @@
         ]
     },
     {
-        "id": "c899f2d93bb31988",
-        "type": "MSSQL",
-        "z": "6c2dfeb262f54a31",
-        "mssqlCN": "df8c0b88.91b0a8",
-        "name": "",
-        "query": "",
-        "outField": "payload",
-        "x": 2640,
-        "y": 1060,
-        "wires": [
-            [
-                "0e9b091adacdb5ba",
-                "fe1a48c20ce50f7f"
-            ]
-        ]
-    },
-    {
         "id": "20a3eb8c1e03d0e2",
         "type": "debug",
         "z": "6c2dfeb262f54a31",
@@ -8416,86 +8440,6 @@
         "statusType": "auto",
         "x": 2300,
         "y": 1560,
-        "wires": []
-    },
-    {
-        "id": "fe1a48c20ce50f7f",
-        "type": "function",
-        "z": "6c2dfeb262f54a31",
-        "name": "function 17",
-        "func": "if (msg.payload.length == 0) {\n    msg.payload = \"error\";\n} else {\n    msg.payload = \"no error\";\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 2850,
-        "y": 1060,
-        "wires": [
-            [
-                "2b21c5adc3713009"
-            ]
-        ]
-    },
-    {
-        "id": "8b5e401b9a05911f",
-        "type": "inject",
-        "z": "6c2dfeb262f54a31",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "select * from [NodeRed].[dbo].[Recipes] with (updlock,serializable) where File_Code = 14635",
-        "payloadType": "str",
-        "x": 2390,
-        "y": 1060,
-        "wires": [
-            [
-                "c899f2d93bb31988"
-            ]
-        ]
-    },
-    {
-        "id": "0e9b091adacdb5ba",
-        "type": "debug",
-        "z": "6c2dfeb262f54a31",
-        "name": "debug 59",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2790,
-        "y": 980,
-        "wires": []
-    },
-    {
-        "id": "2b21c5adc3713009",
-        "type": "debug",
-        "z": "6c2dfeb262f54a31",
-        "name": "debug 60",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 3010,
-        "y": 1000,
         "wires": []
     },
     {
@@ -8834,8 +8778,8 @@
             [
                 "3dab220221184841",
                 "113479bbc86295a4",
-                "ce067e37168e1d33",
-                "a8817387335deec3"
+                "a8817387335deec3",
+                "a513364e1951fda6"
             ]
         ]
     },
@@ -8848,13 +8792,13 @@
         "links": [
             "c20be865f12bee03"
         ],
-        "x": 305,
+        "x": 255,
         "y": 1540,
         "wires": [
             [
                 "3dab220221184841",
-                "ce067e37168e1d33",
-                "a8817387335deec3"
+                "a8817387335deec3",
+                "a513364e1951fda6"
             ]
         ]
     },
@@ -8991,23 +8935,6 @@
         "wires": []
     },
     {
-        "id": "43df8cb2ca4b719b",
-        "type": "function",
-        "z": "6c2dfeb262f54a31",
-        "name": "Config Write",
-        "func": "msg.filename = flow.get(\"oldFileName\"); // Currently set in \"Set Write -> HMI CSV\" node (up the line)\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 2850,
-        "y": 240,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "dc3acc2a853dcfc1",
         "type": "function",
         "z": "6c2dfeb262f54a31",
@@ -9100,7 +9027,7 @@
         "z": "6c2dfeb262f54a31",
         "g": "dcaa9a10e243e078",
         "name": "Clear",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -9223,8 +9150,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 520,
-        "y": 1560,
+        "x": 380,
+        "y": 1340,
         "wires": []
     },
     {
@@ -9380,7 +9307,8 @@
             "7cf0eb5e4d7af7a5",
             "35cd53f851e1a767",
             "f4ea55515c41729c",
-            "c7a80db6e1441f4f"
+            "c7a80db6e1441f4f",
+            "fa9015a8110bfeda"
         ],
         "x": 718,
         "y": 2264,
@@ -9553,7 +9481,9 @@
         "mode": "link",
         "links": [
             "8de91a6651268b8a",
-            "baa6c2563f8b404d"
+            "baa6c2563f8b404d",
+            "039d4dbe4e2b78e1",
+            "8cb5814799dcc2af"
         ],
         "x": 1895,
         "y": 1900,
@@ -9655,7 +9585,7 @@
         "z": "6c2dfeb262f54a31",
         "g": "578d44d18df9e87c",
         "name": "debug 47",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -10557,7 +10487,7 @@
         "z": "6c2dfeb262f54a31",
         "g": "dcaa9a10e243e078",
         "name": "Basic Form",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -10635,7 +10565,7 @@
         "type": "function",
         "z": "6c2dfeb262f54a31",
         "name": "Set write -> HMI CSV",
-        "func": "msg.payload = flow.get(\"writeData\");\n\n//Set\n\nlet data = msg.payload,\n    parKeys = Object.keys(data.parameterData),\n    basKey = Object.keys(data.basic),\n    names = [],\n    values = [],\n    instructions = [],\n    output = [],\n    parameterCount = 20, // Set\n    basicCount = basKey.length,\n    totalCount = basicCount + parameterCount;\n\nmsg.recipeIdentity = data.File_Name;\n// First part is mostly hard coded parameters\noutput.push([data.File_Name, 3, totalCount],\n            [5, 2, 4, 2],\n            [5, 2, 4, 2],\n            [8, 25, 0, 0]);\n\nfor(let i = 0; i < basicCount; i++) {\n    output.push([\"\", data.basic[basKey[i]],\"\"]);\n}\n//Incomplete: Assumption 1 that the length of incoming Parameter data is < \nfor (let i = 0; i < parKeys.length; i++) {/*\n    names.push(data.parameterData[parKeys[i]].name);\n    values.push(data.parameterData[parKeys[i]].value);\n    instructions.push(data.parameterData[parKeys[i]].instructions);*/\n    output.push([data.parameterData[parKeys[i]].name, data.parameterData[parKeys[i]].value, data.parameterData[parKeys[i]].instructions]);\n}\nfor (let i = parKeys.length; i < parameterCount; i++) {// adds the zeros in using Assumption 1\n    output.push([\"\", 0, \"\"]);\n}\nlet text = \"\";\nfor (let i = 0; i < output.length; i++) { // Putting it all into text format\n    text += output[i].toString() + \"\\n\";\n}\n\nmsg.payload = {\n//    output: output,\n    text: text\n}\n\nreturn msg;",
+        "func": "msg.payload = flow.get(\"writeData\");\n\n//Set\n\nlet data = msg.payload,\n    parKeys = Object.keys(data.parameterData),\n    basKey = Object.keys(data.basic),\n    names = [],\n    values = [],\n    instructions = [],\n    output = [],\n    parameterCount = 20, // Set\n    basicCount = basKey.length,\n    totalCount = 30; //basicCount + parameterCount;\n\nmsg.recipeIdentity = data.File_Code;\n// First part is mostly hard coded parameters\noutput.push([data.File_Code, 3, totalCount],\n            [5, 2, 4, 2],\n            [5, 2, 4, 2],\n            [8, 25, 0, 0]);\n\nfor(let i = 0; i < basicCount; i++) {\n    output.push([\"\", data.basic[basKey[i]],\"\"]);\n}\n\n//First line of data is special\noutput.push([data.File_Name, data.Test_Mode, 0]);\n\n//Incomplete: Assumption 1 that the length of incoming Parameter data is < \nfor (let i = 0; i < parKeys.length; i++) {/*\n    names.push(data.parameterData[parKeys[i]].name);\n    values.push(data.parameterData[parKeys[i]].value);\n    instructions.push(data.parameterData[parKeys[i]].instructions);*/\n    output.push([data.parameterData[parKeys[i]].name, data.parameterData[parKeys[i]].value, data.parameterData[parKeys[i]].instructions]);\n}\nfor (let i = basicCount + parKeys.length; i < totalCount - 1; i++) {// adds the zeros in using Assumption 1\n    output.push([\"\", 0, \"\"]);\n}\nlet text = \"\";\nfor (let i = 0; i < output.length; i++) { // Putting it all into text format\n    text += output[i].toString() + \"\\n\";\n}\n\nmsg.payload = {\n//    output: output,\n    text: text\n}\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -10662,7 +10592,8 @@
         "y": 4180,
         "wires": [
             [
-                "38f4b673f7114c30"
+                "38f4b673f7114c30",
+                "f44b2641331a775c"
             ]
         ]
     },
@@ -10900,29 +10831,6 @@
         ]
     },
     {
-        "id": "0d23a2651ea1ea58",
-        "type": "function",
-        "z": "6c2dfeb262f54a31",
-        "name": "incomplete",
-        "func": "/* So I was thinking that instead of writing every line, line\nfor line into the file, we buffer it.\n*/\n//msg.filename = \"C: /Users/User / Documents / Coding / Node Red / Recipes / Test.csv\"\nmsg.oldFilename = msg.filename;\nmsg.filename = flow.get(\"newFilename\");\nlet returnArr = [];\n(msg.parts.count == undefined) ? \"\" : returnArr = [msg, {payload: \"Check\"}];\nreturn returnArr;\n\nreturn [,{ payload: msg.parts.count }];",
-        "outputs": 2,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1430,
-        "y": 4320,
-        "wires": [
-            [
-                "93809e1cdf796003",
-                "d01fbfcf9c41befc"
-            ],
-            [
-                "889c2a410d7f3390"
-            ]
-        ]
-    },
-    {
         "id": "8e3ef40202b88a27",
         "type": "debug",
         "z": "6c2dfeb262f54a31",
@@ -10936,39 +10844,6 @@
         "statusType": "auto",
         "x": 1780,
         "y": 4320,
-        "wires": []
-    },
-    {
-        "id": "d01fbfcf9c41befc",
-        "type": "debug",
-        "z": "6c2dfeb262f54a31",
-        "name": "debug 91",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1600,
-        "y": 4320,
-        "wires": []
-    },
-    {
-        "id": "889c2a410d7f3390",
-        "type": "debug",
-        "z": "6c2dfeb262f54a31",
-        "name": "debug 90",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1600,
-        "y": 4360,
         "wires": []
     },
     {
@@ -11284,66 +11159,6 @@
         "wires": []
     },
     {
-        "id": "357c7e6f93571503",
-        "type": "inject",
-        "z": "6c2dfeb262f54a31",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "label",
-                "v": "Test Mode: 40A",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "true",
-        "payloadType": "bool",
-        "x": 170,
-        "y": 360,
-        "wires": [
-            [
-                "e215ac15c95103b4"
-            ]
-        ]
-    },
-    {
-        "id": "011b83cefd714a97",
-        "type": "inject",
-        "z": "6c2dfeb262f54a31",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "label",
-                "v": "Test Mode: 16A",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "false",
-        "payloadType": "bool",
-        "x": 170,
-        "y": 420,
-        "wires": [
-            [
-                "e215ac15c95103b4"
-            ]
-        ]
-    },
-    {
         "id": "51dc87f2d227eccb",
         "type": "ui_switch",
         "z": "6c2dfeb262f54a31",
@@ -11354,10 +11169,10 @@
         "order": 15,
         "width": 6,
         "height": 1,
-        "passthru": true,
-        "decouple": "false",
-        "topic": "topic",
-        "topicType": "msg",
+        "passthru": false,
+        "decouple": "true",
+        "topic": "testMode",
+        "topicType": "str",
         "style": "",
         "onvalue": "true",
         "onvalueType": "bool",
@@ -11369,28 +11184,14 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 410,
+        "x": 550,
         "y": 360,
         "wires": [
-            []
+            [
+                "be028f29fb1daeb1",
+                "753803a76c1e9e13"
+            ]
         ]
-    },
-    {
-        "id": "8029e0cc11874064",
-        "type": "debug",
-        "z": "6c2dfeb262f54a31",
-        "name": "debug 101",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 390,
-        "y": 300,
-        "wires": []
     },
     {
         "id": "cc71860e04ee28f1",
@@ -11501,6 +11302,7 @@
         "id": "79439506b1a6acc3",
         "type": "ui_text_input",
         "z": "6c2dfeb262f54a31",
+        "d": true,
         "name": "",
         "label": "Ground Bond High",
         "tooltip": "",
@@ -11515,11 +11317,11 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 1170,
-        "y": 100,
+        "x": 1890,
+        "y": 300,
         "wires": [
             [
-                "f38ab8822aa6853e"
+                "517b54151287feac"
             ]
         ]
     },
@@ -11527,6 +11329,7 @@
         "id": "dcdc69295a6f5f76",
         "type": "ui_text_input",
         "z": "6c2dfeb262f54a31",
+        "d": true,
         "name": "",
         "label": "Ground Bond Low",
         "tooltip": "",
@@ -11541,11 +11344,11 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 1170,
-        "y": 160,
+        "x": 1890,
+        "y": 360,
         "wires": [
             [
-                "f38ab8822aa6853e"
+                "517b54151287feac"
             ]
         ]
     },
@@ -11553,6 +11356,7 @@
         "id": "c00ecaddc6014250",
         "type": "ui_text_input",
         "z": "6c2dfeb262f54a31",
+        "d": true,
         "name": "",
         "label": "ACW High",
         "tooltip": "",
@@ -11567,11 +11371,11 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 1150,
-        "y": 220,
+        "x": 1870,
+        "y": 420,
         "wires": [
             [
-                "f38ab8822aa6853e"
+                "517b54151287feac"
             ]
         ]
     },
@@ -11579,6 +11383,7 @@
         "id": "a93080aeaf3c5e79",
         "type": "ui_text_input",
         "z": "6c2dfeb262f54a31",
+        "d": true,
         "name": "",
         "label": "ACW Low",
         "tooltip": "",
@@ -11593,11 +11398,11 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 1140,
-        "y": 280,
+        "x": 1860,
+        "y": 480,
         "wires": [
             [
-                "f38ab8822aa6853e"
+                "517b54151287feac"
             ]
         ]
     },
@@ -11605,6 +11410,7 @@
         "id": "b10bca5a4658bf5c",
         "type": "ui_text_input",
         "z": "6c2dfeb262f54a31",
+        "d": true,
         "name": "",
         "label": "Insulation Resistance High",
         "tooltip": "",
@@ -11619,11 +11425,11 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 1200,
-        "y": 340,
+        "x": 1920,
+        "y": 540,
         "wires": [
             [
-                "f38ab8822aa6853e"
+                "517b54151287feac"
             ]
         ]
     },
@@ -11631,6 +11437,7 @@
         "id": "9ecb940b93d33cdf",
         "type": "ui_text_input",
         "z": "6c2dfeb262f54a31",
+        "d": true,
         "name": "",
         "label": "Insulation Resistance Low",
         "tooltip": "",
@@ -11645,11 +11452,11 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 1190,
-        "y": 400,
+        "x": 1910,
+        "y": 600,
         "wires": [
             [
-                "f38ab8822aa6853e"
+                "517b54151287feac"
             ]
         ]
     },
@@ -11657,6 +11464,7 @@
         "id": "9b41e9467bf30ec0",
         "type": "ui_text_input",
         "z": "6c2dfeb262f54a31",
+        "d": true,
         "name": "",
         "label": "Earth Leakage Current High",
         "tooltip": "",
@@ -11671,35 +11479,11 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 1200,
-        "y": 460,
+        "x": 1920,
+        "y": 660,
         "wires": [
             [
-                "f38ab8822aa6853e"
-            ]
-        ]
-    },
-    {
-        "id": "f38ab8822aa6853e",
-        "type": "join",
-        "z": "6c2dfeb262f54a31",
-        "name": "",
-        "mode": "auto",
-        "build": "object",
-        "property": "payload",
-        "propertyType": "msg",
-        "key": "topic",
-        "joiner": "\\n",
-        "joinerType": "str",
-        "accumulate": "false",
-        "timeout": "",
-        "count": "",
-        "reduceRight": false,
-        "x": 1570,
-        "y": 100,
-        "wires": [
-            [
-                "b9fe3a978a99d255"
+                "517b54151287feac"
             ]
         ]
     },
@@ -11725,8 +11509,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 750,
-        "y": 60,
+        "x": 2010,
+        "y": 240,
         "wires": [
             [
                 "1a14a3b123c17efc"
@@ -11742,12 +11526,774 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2430,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "8b5e401b9a05911f",
+        "type": "inject",
+        "z": "6c2dfeb262f54a31",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "select * from [NodeRed].[dbo].[Recipes] with (updlock,serializable) where File_Code = 14635",
+        "payloadType": "str",
+        "x": 110,
+        "y": 620,
+        "wires": [
+            [
+                "c899f2d93bb31988"
+            ]
+        ]
+    },
+    {
+        "id": "c899f2d93bb31988",
+        "type": "MSSQL",
+        "z": "6c2dfeb262f54a31",
+        "mssqlCN": "df8c0b88.91b0a8",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 360,
+        "y": 620,
+        "wires": [
+            [
+                "0e9b091adacdb5ba",
+                "fe1a48c20ce50f7f"
+            ]
+        ]
+    },
+    {
+        "id": "0e9b091adacdb5ba",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "debug 59",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1750,
-        "y": 40,
+        "x": 510,
+        "y": 540,
         "wires": []
+    },
+    {
+        "id": "fe1a48c20ce50f7f",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "name": "function 17",
+        "func": "if (msg.payload.length == 0) {\n    msg.payload = \"error\";\n} else {\n    msg.payload = \"no error\";\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 620,
+        "wires": [
+            [
+                "2b21c5adc3713009"
+            ]
+        ]
+    },
+    {
+        "id": "2b21c5adc3713009",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "debug 60",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 730,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "039d4dbe4e2b78e1",
+        "type": "link in",
+        "z": "6c2dfeb262f54a31",
+        "name": "Basic Tests in",
+        "links": [
+            "5491c556639992d7"
+        ],
+        "x": 1175,
+        "y": 500,
+        "wires": [
+            [
+                "95d97aea64d77131",
+                "3156f4f0d86003a5"
+            ]
+        ]
+    },
+    {
+        "id": "95d97aea64d77131",
+        "type": "change",
+        "z": "6c2dfeb262f54a31",
+        "name": "Set Payload",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.basic",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1290,
+        "y": 460,
+        "wires": [
+            [
+                "b3fc76dda4049346",
+                "fc30dfd1f0cc21cf"
+            ]
+        ]
+    },
+    {
+        "id": "fa9015a8110bfeda",
+        "type": "link in",
+        "z": "6c2dfeb262f54a31",
+        "name": "Basic clear in",
+        "links": [
+            "c20be865f12bee03"
+        ],
+        "x": 1005,
+        "y": 440,
+        "wires": [
+            [
+                "b7d078ea7c3f821e"
+            ]
+        ]
+    },
+    {
+        "id": "b7d078ea7c3f821e",
+        "type": "change",
+        "z": "6c2dfeb262f54a31",
+        "name": "Set Payload",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"GB_H\":\"\",\"GB_L\":\"\",\"ACW_H\":\"\",\"ACW_L\":\"\",\"IR_H\":\"\",\"IR_L\":\"\",\"ELC_H\":\"\"}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1120,
+        "y": 400,
+        "wires": [
+            [
+                "099c81c6e9517cfb",
+                "8210bc989146b289",
+                "9434a0f72f5dcdb1"
+            ]
+        ]
+    },
+    {
+        "id": "3156f4f0d86003a5",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "debug 104",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1300,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "b3fc76dda4049346",
+        "type": "split",
+        "z": "6c2dfeb262f54a31",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "topic",
+        "x": 1450,
+        "y": 460,
+        "wires": [
+            [
+                "c1e62858976a3769",
+                "36a391349769a067"
+            ]
+        ]
+    },
+    {
+        "id": "c1e62858976a3769",
+        "type": "switch",
+        "z": "6c2dfeb262f54a31",
+        "name": "",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "GB_H",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "GB_L",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "ACW_H",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "ACW_L",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "IR_H",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "IR_L",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "ELC_H",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 7,
+        "x": 1590,
+        "y": 460,
+        "wires": [
+            [
+                "79439506b1a6acc3"
+            ],
+            [
+                "dcdc69295a6f5f76"
+            ],
+            [
+                "c00ecaddc6014250"
+            ],
+            [
+                "a93080aeaf3c5e79"
+            ],
+            [
+                "b10bca5a4658bf5c"
+            ],
+            [
+                "9ecb940b93d33cdf"
+            ],
+            [
+                "9b41e9467bf30ec0"
+            ]
+        ]
+    },
+    {
+        "id": "fc30dfd1f0cc21cf",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "debug 105",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1470,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "099c81c6e9517cfb",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "debug 106",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1350,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "77c1c19ba436284e",
+        "type": "split",
+        "z": "6c2dfeb262f54a31",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "topic",
+        "x": 1450,
+        "y": 400,
+        "wires": [
+            [
+                "c1e62858976a3769"
+            ]
+        ]
+    },
+    {
+        "id": "3590ea7d7ffab34f",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "name": "Clear node msg",
+        "func": "if (msg.complete != undefined) {\n    msg = { \n        lineFlag: \"clear\"\n    }\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1600,
+        "y": 720,
+        "wires": [
+            [
+                "60c34f98e1e26dba",
+                "5da121824d3a508a"
+            ]
+        ]
+    },
+    {
+        "id": "5da121824d3a508a",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "debug 107",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1750,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "9434a0f72f5dcdb1",
+        "type": "change",
+        "z": "6c2dfeb262f54a31",
+        "name": "Del trigger",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "complete",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1290,
+        "y": 400,
+        "wires": [
+            [
+                "77c1c19ba436284e"
+            ]
+        ]
+    },
+    {
+        "id": "a4a78451414d1f34",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "debug 108",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1970,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "36a391349769a067",
+        "type": "change",
+        "z": "6c2dfeb262f54a31",
+        "name": "Del trigger",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "parts",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1670,
+        "y": 660,
+        "wires": [
+            [
+                "60c34f98e1e26dba"
+            ]
+        ]
+    },
+    {
+        "id": "306199d1b0477757",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "name": "Checks (Has Sets)",
+        "func": "// Set\nif(msg.lineFlag == \"clear\")\n    return null;\nlet basicFormElements = { // Has the correct order of members\n    \"GB_H\" : \"Ground Bond High\",\n    \"GB_L\": \"Ground Bond Low\",\n    \"ACW_H\": \"ACW_H\",\n    \"ACW_L\": \"ACW_L\",\n    \"IR_H\": \"Insulation Resistance High\",\n    \"IR_L\": \"Insulation Resistance Low\",\n    \"ELC_H\" : \"Earth Leakage Current High\"\n},\n    output = {},\n    missing = [];\n \nif (msg.payload == undefined) { // checks if nothing was in the buffer's context variable, if so, make it empty\n    msg.payload = { // copy basicFormsElements into payload\n        ...basicFormElements\n    };\n    for(var key in msg.payload) {\n        output[key] = -1;\n        missing.push(basicFormElements[key]);\n    }\n} else {\n    for (var key in basicFormElements) {\n        if (msg.payload.hasOwnProperty(key) && msg.payload[key] != \"\") {\n            output[key] = msg.payload[key]\n        } else {\n            missing.push(basicFormElements[key])\n            output[key] = -1;\n        }\n    }\n}\n\nmsg.data  = {\n    output: output,\n    missing: missing\n}\n\nif (missing.length > 0) { // If the full basic form is not filled in\n    let status = 'The following elements have been left out in the \"Basics\" section: || ';\n    for(let i = 0; i < missing.length; i++) {\n        status += missing[i] + \" || \";\n    }\n    msg.payload = status;\n    return [ , msg];\n} else { // if full basic form is completed\n    msg.lineFlag = \"completedWithChecks\";\n    msg.payload = output;\n    delete msg.data; // Not needed once checks are completed.\n    return [msg, ];\n}\n",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2470,
+        "y": 340,
+        "wires": [
+            [
+                "40226ce37f97e01d",
+                "c08febe6a2ea67d1"
+            ],
+            [
+                "071e0510fb46c738"
+            ]
+        ]
+    },
+    {
+        "id": "40226ce37f97e01d",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "debug 109",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2650,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "071e0510fb46c738",
+        "type": "ui_toast",
+        "z": "6c2dfeb262f54a31",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "PROCEED ANYWAY",
+        "cancel": "GO BACK",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 2670,
+        "y": 360,
+        "wires": [
+            [
+                "73d41cef94786e51",
+                "d74b12cee713ed7e"
+            ]
+        ]
+    },
+    {
+        "id": "73d41cef94786e51",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "debug 111",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2850,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "517b54151287feac",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "name": "Buffer",
+        "func": "// Check for trigger\nif (msg.complete != undefined && msg.lineFlag == 'save') { // Buffer trigger is msg.complete existing\n    if (msg.lineFlag == 'completedWithChecks') {\n        // set payload with buffer and clear buffer if final checks have been done, indicated by the msg.lineFlag = \"completedWithChecks\"\n        context.set('buffer', undefined)\n        return [msg, ];\n    }\n    msg.payload = context.get('buffer');\n    return [ ,msg]; // Go to line with checks\n}\n\nif (msg.lineFlag == \"clear\") {\n    context.set('buffer', undefined);\n}\n\n// Retrieve the buffer array from context, or initialize it if it doesn't exist\nvar buffer = context.get('buffer') || {};\n\n// Add the incoming message payload and topic to the buffer\nbuffer[msg.topic] = msg.payload;\n\n// Set the buffer array back to context\ncontext.set('buffer', buffer);\n",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2290,
+        "y": 300,
+        "wires": [
+            [
+                "b9fe3a978a99d255"
+            ],
+            [
+                "306199d1b0477757"
+            ]
+        ],
+        "info": "Message topic = heading in database"
+    },
+    {
+        "id": "54429a976120698f",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "name": "Template Buffer",
+        "func": "// Check for trigger\nif (msg.complete != undefined) {\n    msg.payload = context.get('buffer');\n    return msg;\n}\n\n// Retrieve the buffer array from context, or initialize it if it doesn't exist\nvar buffer = context.get('buffer') || {};\n\n// Add the incoming message payload and topic to the buffer\nbuffer[msg.topic] = msg.payload;\n\n// Set the buffer array back to context\ncontext.set('buffer', buffer);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2680,
+        "y": 20,
+        "wires": [
+            []
+        ],
+        "info": "Message topic = heading in database"
+    },
+    {
+        "id": "d74b12cee713ed7e",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "name": "Set Line Flag",
+        "func": "if (msg.payload == \"PROCEED ANYWAY\") {\n    msg.lineFlag = \"completedWithChecks\";\n    msg.payload = msg.data.output;\n    delete msg.data; // Not needed once checks are completed.\n    return msg;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2850,
+        "y": 360,
+        "wires": [
+            [
+                "a5d2df37afae85ec"
+            ]
+        ]
+    },
+    {
+        "id": "6a9e30f65e495bca",
+        "type": "link in",
+        "z": "6c2dfeb262f54a31",
+        "name": "Basic Buffer in",
+        "links": [
+            "a5d2df37afae85ec",
+            "b4b222f939895c2c"
+        ],
+        "x": 2255,
+        "y": 540,
+        "wires": [
+            [
+                "517b54151287feac"
+            ]
+        ]
+    },
+    {
+        "id": "a5d2df37afae85ec",
+        "type": "link out",
+        "z": "6c2dfeb262f54a31",
+        "name": "Buffer Checks out",
+        "mode": "link",
+        "links": [
+            "6a9e30f65e495bca"
+        ],
+        "x": 2975,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "f44b2641331a775c",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "debug 112",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 420,
+        "y": 4160,
+        "wires": []
+    },
+    {
+        "id": "be028f29fb1daeb1",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "name": "function 18",
+        "func": "// Uncomplete: ACTIVE Need to make check for if test mode hasn't been changed\nif (context.get('previous')) {\n    \n}\nif (msg.payload == true) {\n    msg.label = 'Test Mode: 40A';\n} else {\n    msg.label = 'Test Mode: 16A';\n}\ncontext.set('previous', msg.payload)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 360,
+        "wires": [
+            [
+                "51dc87f2d227eccb",
+                "a6a4e9aa50094f17"
+            ]
+        ]
+    },
+    {
+        "id": "4a8694fcd0a4bf19",
+        "type": "inject",
+        "z": "6c2dfeb262f54a31",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.5",
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 190,
+        "y": 360,
+        "wires": [
+            [
+                "be028f29fb1daeb1"
+            ]
+        ]
+    },
+    {
+        "id": "a6a4e9aa50094f17",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "debug 113",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "753803a76c1e9e13",
+        "type": "link out",
+        "z": "6c2dfeb262f54a31",
+        "name": "Test Mode out",
+        "mode": "link",
+        "links": [
+            "fea68f0b27b3b0b6"
+        ],
+        "x": 645,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "8cb5814799dcc2af",
+        "type": "link in",
+        "z": "6c2dfeb262f54a31",
+        "name": "Test Mode in",
+        "links": [
+            "5491c556639992d7"
+        ],
+        "x": 75,
+        "y": 460,
+        "wires": [
+            [
+                "73ccb1a97169367a"
+            ]
+        ]
+    },
+    {
+        "id": "73ccb1a97169367a",
+        "type": "change",
+        "z": "6c2dfeb262f54a31",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.Test_Mode",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 210,
+        "y": 460,
+        "wires": [
+            [
+                "be028f29fb1daeb1"
+            ]
+        ]
     },
     {
         "id": "0aa53710984a160e",
