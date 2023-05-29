@@ -18,7 +18,7 @@
     {
         "id": "c00c7edc48758726",
         "type": "tab",
-        "label": "FTP things",
+        "label": "Testing",
         "disabled": false,
         "info": "",
         "env": []
@@ -1044,6 +1044,42 @@
         "y": 3639,
         "w": 692,
         "h": 242
+    },
+    {
+        "id": "dae082823c9d1d01",
+        "type": "group",
+        "z": "c00c7edc48758726",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "c891a63d83380320",
+            "9c33923ae87f26b0",
+            "c7a93f48424e91c8",
+            "5827a37590da09cb",
+            "263d72c49c8806ed",
+            "9ec52cf046598a9a",
+            "088efd7a54561a7c",
+            "b71de4744c0474cc",
+            "19d8d9e7b119b01e",
+            "11b11b037d3e51ed",
+            "997df50f70c549a9",
+            "3a33f18d1fd31730",
+            "38d6434be758d0a7",
+            "e83f27a0af8dab0f",
+            "0247aee91f6bd7f5",
+            "f6448b5a5e0363a9"
+        ],
+        "x": 24,
+        "y": 19,
+        "w": 1512,
+        "h": 322
     },
     {
         "id": "9a043224f1e79f2a",
@@ -7724,9 +7760,7 @@
         "x": 425,
         "y": 3080,
         "wires": [
-            [
-                "948d8df774b8c958"
-            ]
+            []
         ]
     },
     {
@@ -7896,7 +7930,7 @@
         "z": "6c2dfeb262f54a31",
         "g": "bace55f69fa2fe9f",
         "name": "Char Write",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -11440,7 +11474,7 @@
         "z": "6c2dfeb262f54a31",
         "g": "664234c9f7128797",
         "name": "Write Recipe File Exist",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -11970,7 +12004,7 @@
         "z": "6c2dfeb262f54a31",
         "g": "664234c9f7128797",
         "name": "debug 128",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -12672,38 +12706,6 @@
         "statusType": "auto",
         "x": 1860,
         "y": 320,
-        "wires": []
-    },
-    {
-        "id": "a96b6664d052bcd3",
-        "type": "catch",
-        "z": "6c2dfeb262f54a31",
-        "name": "",
-        "scope": null,
-        "uncaught": false,
-        "x": 1000,
-        "y": 520,
-        "wires": [
-            [
-                "d5dd855aaeceee93"
-            ]
-        ]
-    },
-    {
-        "id": "d5dd855aaeceee93",
-        "type": "debug",
-        "z": "6c2dfeb262f54a31",
-        "name": "debug 139",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1170,
-        "y": 500,
         "wires": []
     },
     {
@@ -14394,16 +14396,595 @@
         "wires": []
     },
     {
-        "id": "7754de99b060cc3f",
-        "type": "ftp in",
+        "id": "c891a63d83380320",
+        "type": "inject",
         "z": "c00c7edc48758726",
-        "ftp": "05bf051581f2da76",
-        "operation": "list",
-        "filename": "",
-        "localFilename": "",
+        "g": "dae082823c9d1d01",
         "name": "",
-        "x": 230,
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
         "y": 220,
+        "wires": [
+            [
+                "9c33923ae87f26b0"
+            ]
+        ]
+    },
+    {
+        "id": "9c33923ae87f26b0",
+        "type": "function",
+        "z": "c00c7edc48758726",
+        "g": "dae082823c9d1d01",
+        "name": "Config Read",
+        "func": "msg.filename = \"C:/Users/User/Documents/Work/Ateka automation/Projects/Defy/Client requests/products.csv\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 220,
+        "wires": [
+            [
+                "c7a93f48424e91c8"
+            ]
+        ]
+    },
+    {
+        "id": "c7a93f48424e91c8",
+        "type": "file in",
+        "z": "c00c7edc48758726",
+        "g": "dae082823c9d1d01",
+        "name": "",
+        "filename": "filename",
+        "filenameType": "msg",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 500,
+        "y": 220,
+        "wires": [
+            [
+                "263d72c49c8806ed"
+            ]
+        ]
+    },
+    {
+        "id": "b71de4744c0474cc",
+        "type": "join",
+        "z": "c00c7edc48758726",
+        "g": "dae082823c9d1d01",
+        "name": "",
+        "mode": "auto",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": "false",
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "x": 820,
+        "y": 220,
+        "wires": [
+            [
+                "997df50f70c549a9",
+                "3a33f18d1fd31730"
+            ]
+        ]
+    },
+    {
+        "id": "088efd7a54561a7c",
+        "type": "csv",
+        "z": "c00c7edc48758726",
+        "g": "dae082823c9d1d01",
+        "name": "",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": "none",
+        "multi": "one",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 660,
+        "y": 220,
+        "wires": [
+            [
+                "b71de4744c0474cc",
+                "19d8d9e7b119b01e",
+                "11b11b037d3e51ed"
+            ]
+        ]
+    },
+    {
+        "id": "19d8d9e7b119b01e",
+        "type": "function",
+        "z": "c00c7edc48758726",
+        "g": "dae082823c9d1d01",
+        "name": "Calc time difference",
+        "func": "if (context.get('timer') == undefined) {\n    context.set('timer', new Date().getTime())\n} else if (msg.lineFlag == 'trigger') {\n    let currentTime = new Date().getTime();\n    msg.payload = currentTime - context.get('timer');\n    context.set('timer', undefined);\n    return msg;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1200,
+        "y": 140,
+        "wires": [
+            [
+                "38d6434be758d0a7"
+            ]
+        ]
+    },
+    {
+        "id": "997df50f70c549a9",
+        "type": "function",
+        "z": "c00c7edc48758726",
+        "g": "dae082823c9d1d01",
+        "name": "Set Trigger",
+        "func": "msg.lineFlag = 'trigger';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 220,
+        "wires": [
+            [
+                "19d8d9e7b119b01e"
+            ]
+        ]
+    },
+    {
+        "id": "11b11b037d3e51ed",
+        "type": "debug",
+        "z": "c00c7edc48758726",
+        "g": "dae082823c9d1d01",
+        "name": "debug 139",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 790,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "38d6434be758d0a7",
+        "type": "debug",
+        "z": "c00c7edc48758726",
+        "g": "dae082823c9d1d01",
+        "name": "debug 140",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1420,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "3a33f18d1fd31730",
+        "type": "debug",
+        "z": "c00c7edc48758726",
+        "g": "dae082823c9d1d01",
+        "name": "debug 141",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 980,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "263d72c49c8806ed",
+        "type": "debug",
+        "z": "c00c7edc48758726",
+        "g": "dae082823c9d1d01",
+        "name": "debug 142",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "9ec52cf046598a9a",
+        "type": "inject",
+        "z": "c00c7edc48758726",
+        "g": "dae082823c9d1d01",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 300,
+        "wires": [
+            [
+                "5827a37590da09cb"
+            ]
+        ]
+    },
+    {
+        "id": "5827a37590da09cb",
+        "type": "function",
+        "z": "c00c7edc48758726",
+        "g": "dae082823c9d1d01",
+        "name": "Config Read",
+        "func": "msg.filename = \"C:/Users/User/Documents/Work/Ateka automation/Projects/Defy/Client requests/Steps.csv\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 300,
+        "wires": [
+            [
+                "c7a93f48424e91c8"
+            ]
+        ]
+    },
+    {
+        "id": "e83f27a0af8dab0f",
+        "type": "function",
+        "z": "c00c7edc48758726",
+        "g": "dae082823c9d1d01",
+        "name": "Check Size of Payload",
+        "func": "msg.size = Buffer.byteLength(msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 300,
+        "wires": [
+            [
+                "0247aee91f6bd7f5"
+            ]
+        ]
+    },
+    {
+        "id": "0247aee91f6bd7f5",
+        "type": "debug",
+        "z": "c00c7edc48758726",
+        "g": "dae082823c9d1d01",
+        "name": "debug 143",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 940,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "2a4ee2968fd0742c",
+        "type": "function",
+        "z": "c00c7edc48758726",
+        "name": "Set Flow variables",
+        "func": "flow.set('products', msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "15590603a5bbc09e",
+        "type": "inject",
+        "z": "c00c7edc48758726",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 540,
+        "wires": [
+            [
+                "ce0bd01e1c031139"
+            ]
+        ]
+    },
+    {
+        "id": "ce0bd01e1c031139",
+        "type": "function",
+        "z": "c00c7edc48758726",
+        "name": "Config Read",
+        "func": "msg.filename = \"C:/Users/User/Documents/Work/Ateka automation/Projects/Defy/Client requests/products.csv\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 540,
+        "wires": [
+            [
+                "9796b5d77f290f90"
+            ]
+        ]
+    },
+    {
+        "id": "9796b5d77f290f90",
+        "type": "file in",
+        "z": "c00c7edc48758726",
+        "name": "",
+        "filename": "filename",
+        "filenameType": "msg",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 500,
+        "y": 540,
+        "wires": [
+            [
+                "2a4ee2968fd0742c"
+            ]
+        ]
+    },
+    {
+        "id": "59b9cd238764487d",
+        "type": "inject",
+        "z": "c00c7edc48758726",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 620,
+        "wires": [
+            [
+                "61b8cb89a20f7b3d"
+            ]
+        ]
+    },
+    {
+        "id": "61b8cb89a20f7b3d",
+        "type": "function",
+        "z": "c00c7edc48758726",
+        "name": "Config Read",
+        "func": "msg.filename = \"C:/Users/User/Documents/Work/Ateka automation/Projects/Defy/Client requests/Steps.csv\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 620,
+        "wires": [
+            [
+                "56a23a7a7300e35a"
+            ]
+        ]
+    },
+    {
+        "id": "56a23a7a7300e35a",
+        "type": "file in",
+        "z": "c00c7edc48758726",
+        "name": "",
+        "filename": "filename",
+        "filenameType": "msg",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 500,
+        "y": 620,
+        "wires": [
+            [
+                "c9b7d3419b5f6168"
+            ]
+        ]
+    },
+    {
+        "id": "c9b7d3419b5f6168",
+        "type": "function",
+        "z": "c00c7edc48758726",
+        "name": "Set Flow variables",
+        "func": "flow.set('steps', msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f6448b5a5e0363a9",
+        "type": "comment",
+        "z": "c00c7edc48758726",
+        "g": "dae082823c9d1d01",
+        "name": "Check load spead and size ",
+        "info": "",
+        "x": 220,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "ed8144c6f4129aee",
+        "type": "comment",
+        "z": "c00c7edc48758726",
+        "name": "",
+        "info": "",
+        "x": 100,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "9e9f0b040db4c704",
+        "type": "inject",
+        "z": "c00c7edc48758726",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 740,
+        "wires": [
+            [
+                "83a3b7c84ae4b7fc"
+            ]
+        ]
+    },
+    {
+        "id": "83a3b7c84ae4b7fc",
+        "type": "function",
+        "z": "c00c7edc48758726",
+        "name": "Create data from CSV",
+        "func": "let products = flow.get('products'),\n    steps = flow.get('steps'),\n    productHeaders = [],\n    productIndexer = [],\n    stepsHeaders = [],\n    paulHMIcsv = [],\n    arr = [],\n    productCounter  = 1,\n    j = 0;\n\n    //del\n    let counter = 0\n    //\n\n// Separate rows\nproducts = products.split(/\\r?\\n/);\nsteps = steps.split(/\\r?\\n/);\n\nproductHeaders = products.splice(0, 1);\nstepsHeaders = steps.splice(0, 1);\n\nfor (let i = 0; i < products.length; i++) { \n    products[i] = products[i].split(',');\n    productIndexer.push(parseInt(products[i][0]))\n}\n\nfor (let i = 0; i < steps.length; i++) {\n    steps[i] = steps[i].split(',');\n\n    for (let j = 0; j < steps[i].length; j++) {\n        if ((j >= 0) && (j <= 2)) {\n            steps[i][j] = parseInt(steps[i][j]);\n        } else if ((j == 5) || (j == 6)) {\n            steps[i][j] = parseFloat(steps[i][j]);\n        } else if (j == 10) {\n            steps[i][j] =  Boolean(parseInt(steps[i][j]));\n        }\n    }\n    \n    if (counter++ < 0) {\n        node.send({\n            payload: {\n                i: i,\n                productCounter: productCounter,\n                index: productIndexer.indexOf(productCounter),\n                //arr: arr,\n                //paulHMIcsv: paulHMIcsv,\n                //'steps[i][1]': parseFloat(steps[i][1]),\n                //productCounter: productCounter\n            }\n        });\n    }\n    if (steps[i][1] != productCounter) { // Find the instance where product number changes\n        let index = productIndexer.indexOf(productCounter);\n        if (index != -1)\n            paulHMIcsv.push([products[index], arr]);\n        arr = [];\n        productCounter = steps[i][1]; // Set prodcut number to next product number\n    }\n    \n    arr.push(steps[i]);\n\n}\n\n//del\narr = []\nfor(let i = 0; i < paulHMIcsv.length; i++) {\n    arr.push(paulHMIcsv[i][1][0][1]);\n}\nmsg.payload = paulHMIcsv;\n/*//\nmsg.payload = {\n    arr: arr,\n    paulHMIcsv: paulHMIcsv,\n    //productHeaders: productHeaders,\n    //products: products,\n    productIndexer: productIndexer,\n    //steps: steps\n}*/\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 740,
+        "wires": [
+            [
+                "fcad0d90af0d3319",
+                "0a669fd725936c42"
+            ]
+        ]
+    },
+    {
+        "id": "fcad0d90af0d3319",
+        "type": "debug",
+        "z": "c00c7edc48758726",
+        "name": "debug 144",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 530,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "0a669fd725936c42",
+        "type": "function",
+        "z": "c00c7edc48758726",
+        "name": "function 19",
+        "func": "let i = 0;\nlet output = {};\n\noutput = {\n    File_Code: msg.payload[i][0][3],\n    File_Name: msg.payload[i][0][1]\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 740,
         "wires": [
             []
         ]
