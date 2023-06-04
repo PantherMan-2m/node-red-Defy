@@ -1,0 +1,12 @@
+{
+    "name": "Defy",
+    "description": "Basic things and defy things",
+    "version": "0.0.1",
+    "dependencies": {},
+    "node-red": {
+        "settings": {
+            "flowFile": "defyFlows.json",
+            "credentialsFile": "defyFlows_cred.json"
+        }
+    }
+}
