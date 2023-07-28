@@ -437,38 +437,6 @@
         "y": 1519
     },
     {
-        "id": "2663679731c67ef4",
-        "type": "group",
-        "z": "90f171682dfc3f42",
-        "name": "CSV writing",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "db18064496eb1045",
-            "09db46c303ad458b",
-            "e8f798d63887473a",
-            "3ff6da50a90b1209",
-            "d74926522ac62fc7",
-            "4d2d050d952c2953",
-            "c9090c3541f99cd1",
-            "530ad2be100739a1",
-            "9fe4c37df7d8eb60",
-            "ca0ba3a7db614a3b",
-            "1efd318461f8e65b",
-            "6086a09a605eaa1d",
-            "7f9568011153ca1d",
-            "ab01de66fe06bf74",
-            "dfb9fb4ec30d51fd",
-            "872ae3d460dd78b6",
-            "d3c5eb6a6d538c5b",
-            "14b4f15e7efa6d9f",
-            "174d49da1c5a3a71"
-        ],
-        "x": 504,
-        "y": 799
-    },
-    {
         "id": "43df61af7b7b9663",
         "type": "group",
         "z": "6c2dfeb262f54a31",
@@ -534,29 +502,6 @@
         "y": 879,
         "w": 972,
         "h": 302
-    },
-    {
-        "id": "e4bfc074446708e2",
-        "type": "group",
-        "z": "6c2dfeb262f54a31",
-        "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "6af32e127a95b37c",
-            "ae6730362411cdc5",
-            "ad9a723bcdb4d50b"
-        ],
-        "x": 794,
-        "y": 379,
-        "w": 372,
-        "h": 142
     },
     {
         "id": "10237157f7ec9d83",
@@ -689,11 +634,14 @@
             "96b36f22a6198df9",
             "da2edc16fc7322a7",
             "717877cb82065dc3",
-            "d5a6b4aa8c3d3543"
+            "d5a6b4aa8c3d3543",
+            "ddfd29912990aabc",
+            "aedda870dab5e7ab",
+            "5ec057420e7b5bc0"
         ],
         "x": 74,
-        "y": 1859,
-        "w": 1513,
+        "y": 1879,
+        "w": 1652,
         "h": 302
     },
     {
@@ -855,7 +803,7 @@
         ],
         "x": 74,
         "y": 2819,
-        "w": 3112,
+        "w": 2852,
         "h": 467
     },
     {
@@ -1334,9 +1282,7 @@
             "ce1b26d50834a0ff"
         ],
         "x": 34,
-        "y": 39,
-        "w": 1032,
-        "h": 462
+        "y": 39
     },
     {
         "id": "acca45aca7d162a9",
@@ -1360,8 +1306,8 @@
             "2b4327fa36f4764a",
             "8c4d5f66a4a69ab8"
         ],
-        "x": 1614,
-        "y": 1959,
+        "x": 1754,
+        "y": 1899,
         "w": 772,
         "h": 202
     },
@@ -1542,19 +1488,6 @@
         "wires": [
             [
                 "486fec372f572af9"
-            ]
-        ]
-    },
-    {
-        "id": "872ae3d460dd78b6",
-        "type": "junction",
-        "z": "90f171682dfc3f42",
-        "g": "2663679731c67ef4",
-        "x": 1530,
-        "y": 920,
-        "wires": [
-            [
-                "6086a09a605eaa1d"
             ]
         ]
     },
@@ -2251,7 +2184,7 @@
         "type": "junction",
         "z": "6c2dfeb262f54a31",
         "x": 1940,
-        "y": 1180,
+        "y": 1220,
         "wires": [
             [
                 "31e3351497920e04"
@@ -2357,6 +2290,19 @@
         "wires": [
             [
                 "3590ea7d7ffab34f"
+            ]
+        ]
+    },
+    {
+        "id": "84e91daedc58005c",
+        "type": "junction",
+        "z": "6c2dfeb262f54a31",
+        "x": 360,
+        "y": 2400,
+        "wires": [
+            [
+                "a28489025cfc10ce",
+                "378e9be940762295"
             ]
         ]
     },
@@ -2797,7 +2743,7 @@
         "tab": "8eaf36042374305d",
         "order": 1,
         "disp": true,
-        "width": 29,
+        "width": "29",
         "collapse": false,
         "className": ""
     },
@@ -2964,26 +2910,6 @@
         "className": ""
     },
     {
-        "id": "49dde31fc8e43fb9",
-        "type": "ui_tab",
-        "name": "Registration",
-        "icon": "dashboard",
-        "order": 3,
-        "disabled": false,
-        "hidden": false
-    },
-    {
-        "id": "41add6d3ba5596df",
-        "type": "ui_group",
-        "name": "Login",
-        "tab": "49dde31fc8e43fb9",
-        "order": 1,
-        "disp": true,
-        "width": "6",
-        "collapse": false,
-        "className": "login"
-    },
-    {
         "id": "37cb5eb849cdba88",
         "type": "ui_tab",
         "name": "Settings",
@@ -3028,6 +2954,7 @@
     {
         "id": "f808231901c3caf8",
         "type": "ui_tab",
+        "d": true,
         "name": "Home",
         "icon": "dashboard",
         "order": 8,
@@ -3123,7 +3050,7 @@
         "stateLogEnabled": false,
         "queueLogEnabled": false,
         "failureLogEnabled": true,
-        "tcpHost": "192.168.1.6",
+        "tcpHost": "10.27.6.202",
         "tcpPort": "502",
         "tcpType": "DEFAULT",
         "serialPort": "/dev/ttyUSB",
@@ -3156,6 +3083,7 @@
     {
         "id": "3b08fac0.8f06b6",
         "type": "ui_tab",
+        "d": true,
         "name": "Home",
         "icon": "track_changes",
         "order": 4,
@@ -3175,6 +3103,7 @@
     {
         "id": "29ec6908.552b36",
         "type": "ui_tab",
+        "d": true,
         "name": "Home",
         "icon": "track_changes",
         "order": 5,
@@ -3192,43 +3121,111 @@
         "height": ""
     },
     {
-        "id": "941f87740df6aa34",
+        "id": "792b50ea424c35a2",
+        "type": "ui_spacer",
+        "z": "6c2dfeb262f54a31",
+        "name": "spacer",
+        "group": "34ffe0d8e49bd96b",
+        "order": 2,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "6442c3f516a2ed68",
+        "type": "ui_spacer",
+        "z": "6c2dfeb262f54a31",
+        "name": "spacer",
+        "group": "34ffe0d8e49bd96b",
+        "order": 5,
+        "width": 19,
+        "height": 1
+    },
+    {
+        "id": "60f89ca62975bc48",
+        "type": "ui_tab",
+        "name": "Tab 13",
+        "icon": "dashboard",
+        "order": 13
+    },
+    {
+        "id": "494580998616b55b",
+        "type": "ui_group",
+        "name": "Login",
+        "tab": "8eaf36042374305d",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0d89c68354e63974",
         "type": "ui_spacer",
         "z": "6c2dfeb262f54a31",
         "name": "spacer",
         "group": "0465010f96f3dad5",
         "order": 5,
-        "width": 1,
+        "width": 2,
         "height": 1
     },
     {
-        "id": "e2f7a7441fa038c4",
+        "id": "fbc34ce03a5348bc",
         "type": "ui_spacer",
         "z": "6c2dfeb262f54a31",
         "name": "spacer",
         "group": "0465010f96f3dad5",
         "order": 8,
-        "width": 3,
+        "width": 2,
         "height": 1
     },
     {
-        "id": "1b91692fe65ea5b2",
+        "id": "77d6c52c3e5a0961",
         "type": "ui_spacer",
         "z": "6c2dfeb262f54a31",
         "name": "spacer",
         "group": "0465010f96f3dad5",
         "order": 11,
-        "width": 2,
+        "width": 3,
         "height": 1
     },
     {
-        "id": "902714c1148197bd",
+        "id": "c861f5100940a8b6",
         "type": "ui_spacer",
         "z": "6c2dfeb262f54a31",
         "name": "spacer",
         "group": "0465010f96f3dad5",
-        "order": 14,
-        "width": 5,
+        "order": 15,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "708936649ca36748",
+        "type": "ui_spacer",
+        "z": "6c2dfeb262f54a31",
+        "name": "spacer",
+        "group": "0465010f96f3dad5",
+        "order": 16,
+        "width": 29,
+        "height": 1
+    },
+    {
+        "id": "89afe8f8f9664f17",
+        "type": "ui_spacer",
+        "z": "6c2dfeb262f54a31",
+        "name": "spacer",
+        "group": "0465010f96f3dad5",
+        "order": 19,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "e5dc475e55f68e43",
+        "type": "ui_spacer",
+        "z": "6c2dfeb262f54a31",
+        "name": "spacer",
+        "group": "0465010f96f3dad5",
+        "order": 21,
+        "width": 7,
         "height": 1
     },
     {
@@ -3523,24 +3520,6 @@
         "info": "",
         "x": 140,
         "y": 340,
-        "wires": []
-    },
-    {
-        "id": "6af32e127a95b37c",
-        "type": "ui_text",
-        "z": "6c2dfeb262f54a31",
-        "g": "e4bfc074446708e2",
-        "group": "0465010f96f3dad5",
-        "order": 4,
-        "width": 3,
-        "height": 1,
-        "name": "",
-        "label": "User",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "className": "",
-        "x": 1090,
-        "y": 480,
         "wires": []
     },
     {
@@ -6653,36 +6632,6 @@
         ]
     },
     {
-        "id": "ae6730362411cdc5",
-        "type": "inject",
-        "z": "6c2dfeb262f54a31",
-        "g": "e4bfc074446708e2",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "Mr Guy",
-        "payloadType": "str",
-        "x": 920,
-        "y": 480,
-        "wires": [
-            [
-                "6af32e127a95b37c"
-            ]
-        ]
-    },
-    {
         "id": "43ce6fa4c644f3f3",
         "type": "function",
         "z": "6c2dfeb262f54a31",
@@ -6950,8 +6899,8 @@
         "topic": "topic",
         "topicType": "msg",
         "className": "",
-        "x": 1161,
-        "y": 2040,
+        "x": 1300,
+        "y": 2060,
         "wires": [
             [
                 "96b36f22a6198df9",
@@ -6982,10 +6931,10 @@
         "payload": "",
         "payloadType": "str",
         "x": 570,
-        "y": 2040,
+        "y": 2060,
         "wires": [
             [
-                "7c1dcedbb4597942"
+                "ddfd29912990aabc"
             ]
         ]
     },
@@ -7001,8 +6950,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 991,
-        "y": 2040,
+        "x": 1130,
+        "y": 2060,
         "wires": [
             [
                 "25997782b99a6130",
@@ -7024,8 +6973,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1320,
-        "y": 1980,
+        "x": 1459,
+        "y": 2000,
         "wires": []
     },
     {
@@ -7034,7 +6983,7 @@
         "z": "6c2dfeb262f54a31",
         "g": "ac5ddaede4537b72",
         "name": "",
-        "start": "C:\\Users\\User\\Documents\\Coding\\Node Red\\Recipes",
+        "start": "{{msg.filelocation}}",
         "pattern": "*.*",
         "folders": "*",
         "hidden": true,
@@ -7044,8 +6993,8 @@
         "depth": 0,
         "stat": true,
         "showWarnings": true,
-        "x": 821,
-        "y": 2040,
+        "x": 960,
+        "y": 2060,
         "wires": [
             [
                 "da79b47bea4f8cd0",
@@ -7067,8 +7016,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 950,
-        "y": 1980,
+        "x": 1089,
+        "y": 2000,
         "wires": []
     },
     {
@@ -7085,8 +7034,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1121,
-        "y": 1980,
+        "x": 1260,
+        "y": 2000,
         "wires": []
     },
     {
@@ -7109,7 +7058,7 @@
         "className": "",
         "topicType": "str",
         "x": 420,
-        "y": 2100,
+        "y": 2120,
         "wires": [
             [
                 "714536eb9bff0bd0"
@@ -7137,11 +7086,11 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 660,
-        "y": 1940,
+        "x": 620,
+        "y": 1980,
         "wires": [
             [
-                "7c1dcedbb4597942"
+                "ddfd29912990aabc"
             ]
         ]
     },
@@ -7160,7 +7109,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 780,
-        "y": 2100,
+        "y": 2120,
         "wires": []
     },
     {
@@ -7184,11 +7133,11 @@
         "to": "",
         "reg": false,
         "x": 600,
-        "y": 2100,
+        "y": 2120,
         "wires": [
             [
                 "626e278e4cf58f5b",
-                "7c1dcedbb4597942"
+                "ddfd29912990aabc"
             ]
         ]
     },
@@ -7202,8 +7151,8 @@
         "links": [
             "3d7f076cfd4e4c32"
         ],
-        "x": 1446,
-        "y": 2040,
+        "x": 1585,
+        "y": 2060,
         "wires": []
     },
     {
@@ -7218,8 +7167,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1321,
-        "y": 2040,
+        "x": 1460,
+        "y": 2060,
         "wires": [
             [
                 "717877cb82065dc3",
@@ -7241,8 +7190,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1481,
-        "y": 2000,
+        "x": 1620,
+        "y": 2020,
         "wires": []
     },
     {
@@ -7258,7 +7207,7 @@
         "finalize": "",
         "libs": [],
         "x": 260,
-        "y": 2100,
+        "y": 2120,
         "wires": [
             [
                 "6674d2d95cae619d"
@@ -7553,8 +7502,8 @@
         "links": [
             "c20be865f12bee03"
         ],
-        "x": 1026,
-        "y": 2100,
+        "x": 1165,
+        "y": 2120,
         "wires": [
             [
                 "25997782b99a6130"
@@ -7571,7 +7520,7 @@
             "c20be865f12bee03"
         ],
         "x": 145,
-        "y": 2120,
+        "y": 2140,
         "wires": [
             [
                 "72055df34f3ff6d0"
@@ -8041,17 +7990,6 @@
         "wires": []
     },
     {
-        "id": "ad9a723bcdb4d50b",
-        "type": "comment",
-        "z": "6c2dfeb262f54a31",
-        "g": "e4bfc074446708e2",
-        "name": "User",
-        "info": "",
-        "x": 870,
-        "y": 420,
-        "wires": []
-    },
-    {
         "id": "34c7ab41bb4b3dd7",
         "type": "link out",
         "z": "6c2dfeb262f54a31",
@@ -8090,9 +8028,9 @@
         "z": "6c2dfeb262f54a31",
         "g": "10237157f7ec9d83",
         "group": "0465010f96f3dad5",
-        "order": 16,
-        "width": 0,
-        "height": 0,
+        "order": 18,
+        "width": 17,
+        "height": 1,
         "name": "",
         "label": "Status",
         "format": "{{msg.payload}}",
@@ -8416,7 +8354,7 @@
         "name": "Select File",
         "info": "",
         "x": 160,
-        "y": 1900,
+        "y": 1920,
         "wires": []
     },
     {
@@ -8771,7 +8709,7 @@
         "type": "comment",
         "z": "6c2dfeb262f54a31",
         "g": "664234c9f7128797",
-        "name": "Wite to HMI CSV",
+        "name": "Write to HMI CSV",
         "info": "",
         "x": 180,
         "y": 2860,
@@ -10457,7 +10395,7 @@
         "z": "6c2dfeb262f54a31",
         "g": "664234c9f7128797",
         "name": "buffer (csv parts reading)",
-        "func": "// reading the file as a whole batch\n\n//New Whoop whoop fix fix\nlet uniqueKey = \"\",\n    searchStr1 = \"\\r\\n\\r\\n\",\n    startIndex = 0;\n\n//del testing code\nlet i = 0, j = 0, uniqueKeyList = [];\n\nif (msg.payload.fileData.indexOf(searchStr1, startIndex) != -1) { //Checks to see what line breakers are used\n//del\nnode.warn(\"if(1) reached on i: \" + i++);\n\n    while (startIndex !== -1) {\n        startIndex = msg.payload.fileData.indexOf(searchStr1, startIndex);\n        if (startIndex !== -1) {\n            uniqueKey = msg.payload.fileData.substr(startIndex + 4, 50);\n            uniqueKey = uniqueKey.split(',')[0];\n            //del 1\n            node.warn(\"Found Unique Key: \" + uniqueKey);\n            if (uniqueKey.includes(msg.payload.bypass.recipeIdentity)) {\n                node.warn(\"Seems like we got: \" + uniqueKey + \"\\nAt an index of: \" + startIndex);\n                break;\n            }\n            startIndex += searchStr1.length;\n        }\n    }\n    startIndex += 4;\n} else {\n    //del\n    node.warn(\"if(2) reached on i: \" + i++);\n\n    uniqueKey = \"\";\n    let searchStr2 = \"\\n\\n\";\n    startIndex = 0;\n\n    //del\n    node.warn(\"At  statement 2\");\n    while (startIndex !== -1) {\n        startIndex = msg.payload.fileData.indexOf(searchStr2, startIndex);\n        node.warn(\"We got here with startindex: \" + startIndex);\n        if (startIndex !== -1) {\n            uniqueKey = msg.payload.fileData.substr(startIndex + 2, 50);\n            uniqueKey = uniqueKey.split(',')[0];\n            if (uniqueKey.includes(msg.payload.bypass.recipeIdentity)) {\n                node.warn(\"Seems like we got: \" + uniqueKey + \"\\nAt an index of: \" + startIndex);\n                break;\n            }\n            startIndex += searchStr1.length;\n        }\n    }\n    startIndex += 2;\n}\n////\n\n\n//My checks, just leaving it here for now. I seemed to have come back to it quite a bit.\nmsg.look = {\n    startIndex: startIndex,\n    search: msg.payload.bypass.recipeIdentity,\n    check: msg.payload.fileData.indexOf(msg.payload.bypass.recipeIdentity),\n    uniqueKey: uniqueKey\n}\n////\n\nif (startIndex != -1) {\n    let end1 = \"\\r\\n\\r\\n\", // Finds the double new line (end of section)\n        end2 = \"\\n\\n\",\n        endIndex = -1;\n    if (msg.payload.fileData.indexOf(end1, startIndex) == -1) {\n        if (msg.payload.fileData.indexOf(end2, startIndex) == -1) {\n            node.warn('Cannot find end of index insert into HMI Recipe csv');\n        } else {\n            endIndex = msg.payload.fileData.indexOf(end2, startIndex);\n        }\n    } else {\n        endIndex = msg.payload.fileData.indexOf(end1, startIndex) + 2;\n    }\n        \n        //foundSection = msg.payload.fileData.slice(startIndex, endIndex);\n    msg.filename = msg.payload.bypass.filename;\n\n    msg.check = {\n        startIndex: startIndex,\n        endIndex: endIndex,\n        firstPart: msg.payload.fileData.slice(0, startIndex),\n        insert: msg.payload.bypass.text,\n        lastPart: msg.payload.fileData.slice(endIndex + 2, msg.payload.fileData.length)\n\n    };\n\n    //Delete and insert\n    msg.payload = msg.payload.fileData.slice(0, startIndex) + msg.payload.bypass.text + msg.payload.fileData.slice(endIndex + 2, msg.payload.fileData.length);\n} else {\n    msg.payload = msg.payload.fileData + msg.payload.bypass.text;\n}\n\nreturn msg;\n",
+        "func": "// reading the file as a whole batch\n\n//New Whoop whoop fix fix\nlet uniqueKey = \"\",\n    searchStr1 = \"\\r\\n\\r\\n\",\n    startIndex = 100;\n\n//del testing code\nlet i = 0, j = 0, uniqueKeyList = [];\n\nif (msg.payload.fileData.indexOf(searchStr1, startIndex) !== -1) { //Checks to see what line breakers are used\n//del\n//node.warn(\"if(1) reached on i: \" + i++);\n\n    while (startIndex !== -1) {\n        startIndex = msg.payload.fileData.indexOf(searchStr1, startIndex);\n        //node.warn('start index before: ' + startIndex);\n        if (startIndex !== -1) {\n            uniqueKey = msg.payload.fileData.substr(startIndex + 4, 50);\n            uniqueKey = uniqueKey.split(',')[0];\n            //del 1\n            //node.warn(\"Found Unique Key: \" + uniqueKey);\n            if (uniqueKey.includes(msg.payload.bypass.recipeIdentity)) {\n                //node.warn(\"Seems like we got: \" + uniqueKey + \"\\nAt an index of: \" + startIndex);\n                break;\n            }\n            startIndex += searchStr1.length;\n            //node.warn('start index after: ' + startIndex);\n        }\n    }\n    startIndex += 4;\n} else {\n    //del\n    //node.warn(\"if(2) reached on i: \" + i++);\n\n    uniqueKey = \"\";\n    let searchStr2 = \"\\n\\n\";\n    startIndex = 0;\n\n    //del\n    //node.warn(\"At  statement 2\");\n    while (startIndex !== -1) {\n        startIndex = msg.payload.fileData.indexOf(searchStr2, startIndex);\n        //node.warn(\"We got here with startindex: \" + startIndex);\n        if (startIndex !== -1) {\n            uniqueKey = msg.payload.fileData.substr(startIndex + 2, 50);\n            uniqueKey = uniqueKey.split(',')[0];\n            if (uniqueKey.includes(msg.payload.bypass.recipeIdentity)) {\n                //node.warn(\"Seems like we got: \" + uniqueKey + \"\\nAt an index of: \" + startIndex);\n                break;\n            }\n            startIndex += searchStr1.length;\n        }\n    }\n    startIndex += 2;\n}\nstartIndex = (startIndex < 10) ? -1 : startIndex;\n//node.warn('Final startIndex: ' + startIndex);\n////\n\n\n//My checks, just leaving it here for now. I seemed to have come back to it quite a bit.\nmsg.look = {\n    startIndex: startIndex,\n    search: msg.payload.bypass.recipeIdentity,\n    check: msg.payload.fileData.indexOf(msg.payload.bypass.recipeIdentity),\n    uniqueKey: uniqueKey\n}\n////\n\nif (startIndex != -1) {\n    let end1 = \"\\r\\n\\r\\n\", // Finds the double new line (end of section)\n        end2 = \"\\n\\n\",\n        endIndex = -1;\n    if (msg.payload.fileData.indexOf(end1, startIndex) == -1) {\n        if (msg.payload.fileData.indexOf(end2, startIndex) == -1) {\n            node.warn('Cannot find end of index insert into HMI Recipe csv');\n        } else {\n            endIndex = msg.payload.fileData.indexOf(end2, startIndex);\n        }\n    } else {\n        endIndex = msg.payload.fileData.indexOf(end1, startIndex) + 2;\n    }\n        \n        //foundSection = msg.payload.fileData.slice(startIndex, endIndex);\n    msg.filename = msg.payload.bypass.filename;\n\n    msg.check = {\n        startIndex: startIndex,\n        endIndex: endIndex,\n        firstPart: msg.payload.fileData.slice(0, startIndex),\n        insert: msg.payload.bypass.text,\n        lastPart: msg.payload.fileData.slice(endIndex + 2, msg.payload.fileData.length)\n\n    };\n\n\n    //Delete and insert\n    msg.payload = msg.payload.fileData.slice(0, startIndex) + msg.payload.bypass.text + msg.payload.fileData.slice(endIndex + 2, msg.payload.fileData.length);\n} else {\n    msg.payload = msg.payload.fileData + msg.payload.bypass.text;\n}\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -10478,7 +10416,7 @@
         "z": "6c2dfeb262f54a31",
         "g": "664234c9f7128797",
         "name": "Write Recipe File Exist",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -10496,13 +10434,13 @@
         "z": "6c2dfeb262f54a31",
         "g": "664234c9f7128797",
         "name": "",
-        "filename": "C:/Users/User/Documents/Coding/Node Red/Recipes/NewEnRcpTESTING.csv",
-        "filenameType": "str",
+        "filename": "filename",
+        "filenameType": "msg",
         "appendNewline": false,
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 2880,
+        "x": 2660,
         "y": 3200,
         "wires": [
             [
@@ -10563,7 +10501,7 @@
         "z": "6c2dfeb262f54a31",
         "g": "664234c9f7128797",
         "name": "Set write -> HMI CSV",
-        "func": "msg.payload = flow.get(\"writeData\");\n\n//Set\n\nlet data = msg.payload,\n    parKeys = Object.keys(data.parameterData),\n    basKey = Object.keys(data.basic),\n    names = [],\n    values = [],\n    instructions = [],\n    output = [],\n    parameterCount = 20, // Set\n    basicCount = basKey.length,\n    totalCount = 35, //basicCount + parameterCount;\n    count = 1;\n\nmsg.recipeIdentity = data.File_Code;\n// First part is mostly hard coded parameters\noutput.push([data.File_Code, 5, totalCount, , , ,],\n            [8, 20, 0, 0, , ,],\n            [5, 2, 4, 2, , ,],\n            [5, 2, 4, 2, , ,],\n            [0, 1, 0, 0, , ,],\n            [8, 25, 0, 0, , ,]);\n\n//First line of data is special\noutput.push([count++, data.File_Name, 0, 0, + data.Powered_Inspection, ,]);\n\n//del\nlet basicHeaders = [\"Ground Bond\", \"ACW Test\", \"Insulation Resistance\", \"Earth Leakage\"],\n    j = 0,\n    i = 0;\n\nfor(i = 0; i < basicCount - 1; i++) {\n    output.push([count++, basicHeaders[j++], data.basic[basKey[i++]], data.basic[basKey[i]], 0, ,]);\n}\noutput.push([count++, basicHeaders[j++], data.basic[basKey[i]], 0, 0, ,])\n\n//Incomplete: Assumption 1 that the length of incoming Parameter data is < \nfor (let i = 0; i < parKeys.length; i++) {/*\n    names.push(data.parameterData[parKeys[i]].name);\n    values.push(data.parameterData[parKeys[i]].value);\n    instructions.push(data.parameterData[parKeys[i]].instructions);*/\n    output.push([count++, data.parameterData[parKeys[i]].name.substring(0, 40), data.parameterData[parKeys[i]].value_H, data.parameterData[parKeys[i]].value_L, + data.parameterData[parKeys[i]].ifTestFailStop, data.parameterData[parKeys[i]].instructions.substring(0, 50)]);\n}/*\nfor (let i = basicCount + parKeys.length; i < totalCount - 1; i++) {// adds the zeros in using Assumption 1\n    output.push([count++, , 0, 0, 0,\"\"]);\n}*/\nwhile (count <= totalCount) {\n    output.push([count++, , 0, 0, 0, \"\"]);\n}\nlet text = \"\";\n//del\nnode.send([, {output: output}]);\n//\nfor (let i = 0; i < output.length; i++) { // Putting it all into text format\n    text += output[i].toString() + \"\\r\\n\";\n}\n\ntext += '\\r\\n';\n\nmsg.payload = {\n//    output: output,\n    text: text\n}\n\nreturn msg;",
+        "func": "msg.payload = flow.get(\"writeData\");\n\n//Set\n\nlet data = msg.payload,\n    parKeys = Object.keys(data.parameterData),\n    basKey = Object.keys(data.basic),\n    names = [],\n    values = [],\n    instructions = [],\n    output = [],\n    parameterCount = 20, // Set\n    basicCount = basKey.length,\n    totalCount = 35, //basicCount + parameterCount;\n    count = 1;\n//Active: This can probably be moved elsewhere\n/*\ntemp = {};\nfor (let i = 1; i < 3; i += 2) {\n    temp[basKey[i--]] = \n}\n*/\n//\nmsg.recipeIdentity = data.File_Code;\n// First part is mostly hard coded parameters\noutput.push([data.File_Code, 5, totalCount, , , ,],\n            [8, 20, 0, 0, , ,],\n            [5, 2, 4, 2, , ,],\n            [5, 2, 4, 2, , ,],\n            [0, 1, 0, 0, , ,],\n            [8, 25, 0, 0, , ,]);\n\n//First line of data is special\noutput.push([count++, data.File_Name, 0, 0, + data.Powered_Inspection, ,]);\n\n//del\nlet basicHeaders = [\"Ground Bond\", \"ACW Test\", \"Insulation Resistance\", \"Earth Leakage\"],\n    j = 0,\n    i = 0;\n\nfor(i = 1; i < basicCount - 1; i += 3) {\n    //node.warn('start i: ' + i);\n    output.push([count++, basicHeaders[j++], data.basic[basKey[i--]], data.basic[basKey[i]], 0, ,]);\n    //node.warn('end i: ' + i);\n}\n\n//node.warn('final i: ' + i);\noutput.push([count++, basicHeaders[j++], data.basic[basKey[--i]], 0, 0, ,])\n\n//Incomplete: Assumption 1 that the length of incoming Parameter data is < \nfor (let i = 0; i < parKeys.length; i++) {/*\n    names.push(data.parameterData[parKeys[i]].name);\n    values.push(data.parameterData[parKeys[i]].value);\n    instructions.push(data.parameterData[parKeys[i]].instructions);*/\n    output.push([count++, data.parameterData[parKeys[i]].name.substring(0, 40), data.parameterData[parKeys[i]].value_L, data.parameterData[parKeys[i]].value_H, + data.parameterData[parKeys[i]].ifTestFailStop, data.parameterData[parKeys[i]].instructions.substring(0, 50)]);\n}/*\nfor (let i = basicCount + parKeys.length; i < totalCount - 1; i++) {// adds the zeros in using Assumption 1\n    output.push([count++, , 0, 0, 0,\"\"]);\n}*/\nwhile (count <= totalCount) {\n    output.push([count++, , 0, 0, 0, \"\"]);\n}\nlet text = \"\";\n//del\nnode.send([, {output: output}]);\n//\nfor (let i = 0; i < output.length; i++) { // Putting it all into text format\n    text += output[i].toString() + \"\\r\\n\";\n}\n\ntext += '\\r\\n';\n\nmsg.payload = {\n//    output: output,\n    text: text\n}\n\nreturn msg;",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
@@ -10587,7 +10525,7 @@
         "z": "6c2dfeb262f54a31",
         "g": "664234c9f7128797",
         "name": "Testing recipe",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -10641,7 +10579,7 @@
         "z": "6c2dfeb262f54a31",
         "g": "664234c9f7128797",
         "name": "debug 112",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -10704,7 +10642,7 @@
         "type": "function",
         "z": "6c2dfeb262f54a31",
         "name": "Start up Flow Variables",
-        "func": "\n\nflow.set('recipeJSONlocation', \"C:/Users/User/Documents/Coding/Node Red/Recipes/\"); // Note that this ends with a /\nflow.set('HMIcsvLocation', \"C:/Users/User/Documents/Coding/Node Red/Recipes/\");\nflow.set('HMIrecipeName', 'NewEnRcp.csv');\nglobal.set('userCredentialsLocation', 'C:/Users/User/Documents/Work/Ateka automation/Projects/Defy/CSVs/');\nglobal.set('userCredentialsFilename', 'userCredentials.csv');\nif (flow.get('testResultID') == undefined) {\n    flow.set('testResultID', 236);\n}\nflow.set('stepResultsCSVlocation', 'C:/Users/User/Documents/Work/Ateka automation/Projects/Defy/CSVs/')\nreturn msg;\n",
+        "func": "\n\nflow.set('recipeJSONlocation', \"C:/Users/User/Documents/Coding/Node Red/Recipes/\"); // Note that this ends with a /\nflow.set('HMIcsvLocation', \"C:/Users/User/Documents/Coding/Node Red/Recipes/\");\nflow.set('HMIrecipeName', 'NewEnRcp.csv');\nglobal.set('userCredentialsLocation', 'C:/Users/User/Documents/Work/Ateka automation/Projects/Defy/CSVs/');\nglobal.set('userCredentialsFilename', 'userCredentials.csv');\nflow.set('dashboardCredentialsLocation', 'C:/Users/User/Documents/Work/Ateka automation/Projects/Defy/CSVs/'); // CSV file with login data for Dashboard usage\nflow.set('dashboardCredentialsName', 'dashboardCredentials.csv');\n\nif (flow.get('testResultID') == undefined) {\n    flow.set('testResultID', 236);\n}\nflow.set('stepResultsCSVlocation', 'C:/Users/User/Documents/Work/Ateka automation/Projects/Defy/CSVs/')\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -11409,7 +11347,7 @@
         "type": "debug",
         "z": "6c2dfeb262f54a31",
         "name": "debug 136",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -13637,7 +13575,8 @@
             [
                 "7bc74e839404994a",
                 "1c06331bc6a62fb8",
-                "986dcda44872dbf9"
+                "986dcda44872dbf9",
+                "3101ffadd9315b82"
             ]
         ]
     },
@@ -13716,7 +13655,7 @@
         "finalize": "",
         "libs": [],
         "x": 2010,
-        "y": 1220,
+        "y": 1260,
         "wires": [
             [
                 "7f42b6e9796289d9",
@@ -13750,7 +13689,7 @@
         "payload": "",
         "payloadType": "str",
         "x": 1830,
-        "y": 1220,
+        "y": 1260,
         "wires": [
             [
                 "31e3351497920e04",
@@ -13776,7 +13715,7 @@
         "allowrate": false,
         "outputs": 1,
         "x": 2190,
-        "y": 1220,
+        "y": 1260,
         "wires": [
             [
                 "067deaf06730b153"
@@ -13788,7 +13727,7 @@
         "type": "debug",
         "z": "6c2dfeb262f54a31",
         "name": "debug 176",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -13797,7 +13736,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 2210,
-        "y": 1160,
+        "y": 1200,
         "wires": []
     },
     {
@@ -13805,7 +13744,7 @@
         "type": "debug",
         "z": "6c2dfeb262f54a31",
         "name": "debug 175",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -13814,7 +13753,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 2210,
-        "y": 1320,
+        "y": 1360,
         "wires": []
     },
     {
@@ -13828,7 +13767,7 @@
             "8b7c478948dce28d"
         ],
         "x": 2205,
-        "y": 1260,
+        "y": 1300,
         "wires": []
     },
     {
@@ -13845,7 +13784,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 2030,
-        "y": 1140,
+        "y": 1180,
         "wires": []
     },
     {
@@ -13870,7 +13809,7 @@
         "delayOnStart": false,
         "startDelayTime": "",
         "x": 2360,
-        "y": 1220,
+        "y": 1260,
         "wires": [
             [
                 "c2c9735da2d44354",
@@ -13892,8 +13831,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2520,
-        "y": 1100,
+        "x": 2510,
+        "y": 1160,
         "wires": []
     },
     {
@@ -14743,10 +14682,10 @@
         "g": "6cedbe20f6116441",
         "group": "0465010f96f3dad5",
         "name": "CSS",
-        "order": 15,
+        "order": 17,
         "width": 0,
         "height": 0,
-        "format": "<style>\n  body {\n    background: -webkit-linear-gradient(\n    55deg,\n    #282C33 0%,\n    #3e4147 50%,\n    #282C33 100%\n    ) !important;\n  }\n  #Dashboard_Recipes{\n    //background-image: url(\"C:\\Users\\User\\Pictures\\Image1.jpg\");\n    //background-color: blue;\n    border-style: none;\n\n  }\n  /*Header background colour*/\n  md-content[ng-if=\"main.loaded\"] md-toolbar {\n    background-color: #2C506B !important;\n    box-shadow: 2px 2px 3px #2C506B;\n  }\n\n  /*Header Text*/\n  h1 {\n    color: #faebd7 !important;\n    font-weight: 500 !important;\n  }\n\n  /*Background colour*/\n  md-content[ng-if=\"main.loaded\"] section {\n    //background-color: #282C33;\n  }\n  /*Group name colour*/\n  p[class=\"nr-dashboard-cardtitle\"] {\n    //color: #706F6F !important;\n    color: #faebd7 !important;\n  }\n\n  /*Buttons */\n  /*Default*/\n  button {\n    background-color: #3981B8 !important;\n    border-radius: 8px !important;\n    box-shadow: 2px 2px 3px rgba(44, 80, 107, 1) !important;\n    border-radius: 6px !important;\n  }\n  button:hover {\n    background-color: rgba(57, 129, 184, 0.7) !important;\n    border-radius: 6px !important;\n  }\n  .save button:hover, button.nr-dashboard-form-button[type=\"submit\"]:hover {\n  background-color: rgba(26, 199, 40, 1) !important;\n  border-radius: 6px !important;\n\n  color: black !important;\n  }\n  .clear button:hover, button.nr-dashboard-form-button[type=\"button\"]:hover{\n  background-color: #e31e35 !important;\n  color black !important;\n  }\n  /*Default switch icons (when switched on)*/\n  /*Switch bar*/\n  md-switch.md-checked .md-bar { \n    background-color: #13851c!important;\n  }\n  /*switch ball*/\n  md-switch.md-checked .md-thumb {\n    background-color: #1ac728 !important;\n  }\n  /*Menu button*/\n  button[aria-label=\"menu button\"] {\n    background: transparent !important;\n    box-shadow: none !important;\n  }\n  /*Refresh button on Settings tab*/\n  md-card[node-class=\"indent\"] {\n    margin-left: 16px !important;\n  }\n\n  /*Side Nav*/\n  button.md-no-style.md-button {\n    background-color: transparent !important;\n    border-radius: 0px !important;\n  }\n  .nr-menu-item-active div button { \n    border-right: 4px solid #3981B8 !important;\n  }\n  body.nr-dashboard-theme md-sidenav div.md-list-item-inner { /*Side nav Text*/\n    color: #95B0D5 !important;\n  }\n  md-sidenav {\n    box-shadow: 2px 2px 3px #2C506B;\n  }\n\n  /*Input fields*/\n  md-input-container.md-default-theme .md-input, md-input-container .md-input, .md-select-value {\n    border-color: #EfA705 !important;\n  }\n\n  /*All Panels*/\n  ui-card-panel {\n    border-radius: 6px;\n    box-shadow: 0px 0px 3px #2C506B;\n    border-style: none !important;\n    background-color: rgba(51,51,51,255) !important;\n  }\n  #Recipes_Test_Name {\n    display: grid !important;\n    place-items: center !important;\n  }\n  /*Status message*/\n  [node-id=d6300eb99d1c25a1] [class=\"value\"] {\n    color: #e31e35 !important;\n  }\n  .save button  {\n    border: none;\n    border-radius: 8px;\n    text-align: center;\n    width: 50% ;\n    transition-duration: 0.4s;\n    background-color: #ddffdd;\n    color: white;         \n  }\n\n  /*Table rows*/\n  .tabulator-headers > div {\n    background-color: #f5ca69 !important;\n  }\n  .tabulator-row.tabulator-selectable.tabulator-row-odd {\n    background-color: #b0cde3 !important;\n  }\n  .tabulator-row.tabulator-selectable.tabulator-row-even {\n    background-color: #f9dc9b !important;\n  }\n  .chart {\n    //background-color: green;\n  }\n</style>",
+        "format": "<style>\n  body {\n    background: -webkit-linear-gradient(\n    55deg,\n    #282C33 0%,\n    #3e4147 50%,\n    #282C33 100%\n    ) !important;\n  }\n  #Dashboard_Recipes{\n    //background-image: url(\"C:\\Users\\User\\Pictures\\Image1.jpg\");\n    //background-color: blue;\n    border-style: none;\n\n  }\n  /*Header background colour*/\n  md-content[ng-if=\"main.loaded\"] md-toolbar {\n    background-color: #2C506B !important;\n    box-shadow: 2px 2px 3px #2C506B;\n  }\n\n  /*Header Text*/\n  h1 {\n    color: #faebd7 !important;\n    font-weight: 500 !important;\n  }\n\n  /*Background colour*/\n  md-content[ng-if=\"main.loaded\"] section {\n    //background-color: #282C33;\n  }\n  /*Group name colour*/\n  p[class=\"nr-dashboard-cardtitle\"] {\n    //color: #706F6F !important;\n    color: #faebd7 !important;\n  }\n\n  /*Buttons */\n  /*Default*/\n  button {\n    background-color: #3981B8 !important;\n    border-radius: 8px !important;\n    box-shadow: 2px 2px 3px rgba(44, 80, 107, 1) !important;\n    border-radius: 6px !important;\n  }\n  button:hover {\n    background-color: rgba(57, 129, 184, 0.7) !important;\n    border-radius: 6px !important;\n  }\n  .logout {\n    margin-bottom: 5px;\n    padding-bottom: 10px;\n  }\n  .save button:hover, button.nr-dashboard-form-button[type=\"submit\"]:hover {\n  background-color: rgba(26, 199, 40, 1) !important;\n  border-radius: 6px !important;\n\n  color: black !important;\n  }\n  .clear button:hover, button.nr-dashboard-form-button[type=\"button\"]:hover{\n  background-color: #e31e35 !important;\n  color black !important;\n  }\n  /*Default switch icons (when switched on)*/\n  /*Switch bar*/\n  md-switch.md-checked .md-bar { \n    background-color: #13851c!important;\n  }\n  /*switch ball*/\n  md-switch.md-checked .md-thumb {\n    background-color: #1ac728 !important;\n  }\n  /*Menu button*/\n  button[aria-label=\"menu button\"] {\n    background: transparent !important;\n    box-shadow: none !important;\n  }\n  /*Refresh button on Settings tab*/\n  md-card[node-class=\"indent\"] {\n    margin-left: 16px !important;\n  }\n\n  /*Side Nav*/\n  button.md-no-style.md-button {\n    background-color: transparent !important;\n    border-radius: 0px !important;\n  }\n  .nr-menu-item-active div button { \n    border-right: 4px solid #3981B8 !important;\n  }\n  body.nr-dashboard-theme md-sidenav div.md-list-item-inner { /*Side nav Text*/\n    color: #95B0D5 !important;\n  }\n  md-sidenav {\n    box-shadow: 2px 2px 3px #2C506B;\n  }\n\n  /*Input fields*/\n  md-input-container.md-default-theme .md-input, md-input-container .md-input, .md-select-value {\n    border-color: #EfA705 !important;\n  }\n\n  /*All Panels*/\n  ui-card-panel {\n    border-radius: 6px;\n    box-shadow: 0px 0px 3px #2C506B;\n    border-style: none !important;\n    background-color: rgba(51,51,51,255) !important;\n  }\n  #Recipes_Test_Name {\n    display: grid !important;\n    place-items: center !important;\n  }\n  /*Status message*/\n  [node-id=d6300eb99d1c25a1] [class=\"value\"] {\n    color: #e31e35 !important;\n  }\n  .save button  {\n    border: none;\n    border-radius: 8px;\n    text-align: center;\n    width: 50% ;\n    transition-duration: 0.4s;\n    background-color: #ddffdd;\n    color: white;         \n  }\n\n  /*Table rows*/\n  .tabulator-headers > div {\n    background-color: #f5ca69 !important;\n  }\n  .tabulator-row.tabulator-selectable.tabulator-row-odd {\n    background-color: #b0cde3 !important;\n  }\n  .tabulator-row.tabulator-selectable.tabulator-row-even {\n    background-color: #f9dc9b !important;\n  }\n  .chart {\n    //background-color: green;\n  }\n</style>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
@@ -15018,8 +14957,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1980,
-        "y": 2080,
+        "x": 2120,
+        "y": 2020,
         "wires": [
             [
                 "f3242e7aa08bbe15",
@@ -15040,8 +14979,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2130,
-        "y": 2040,
+        "x": 2270,
+        "y": 1980,
         "wires": []
     },
     {
@@ -15054,8 +14993,8 @@
         "links": [
             "fea68f0b27b3b0b6"
         ],
-        "x": 2345,
-        "y": 2020,
+        "x": 2485,
+        "y": 1960,
         "wires": []
     },
     {
@@ -15068,8 +15007,8 @@
             "5491c556639992d7",
             "c20be865f12bee03"
         ],
-        "x": 1805,
-        "y": 2120,
+        "x": 1945,
+        "y": 2060,
         "wires": [
             [
                 "d7861c4242485729",
@@ -15084,8 +15023,8 @@
         "g": "acca45aca7d162a9",
         "name": "Test Mode Switch",
         "info": "",
-        "x": 1720,
-        "y": 2000,
+        "x": 1860,
+        "y": 1940,
         "wires": []
     },
     {
@@ -15115,8 +15054,8 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 2180,
-        "y": 2080,
+        "x": 2320,
+        "y": 2020,
         "wires": [
             [
                 "71740d665d2b24ce"
@@ -15137,8 +15076,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1910,
-        "y": 2020,
+        "x": 2050,
+        "y": 1960,
         "wires": []
     },
     {
@@ -15802,7 +15741,7 @@
         "wires": [
             [
                 "7b10c851263941dc",
-                "9d94911ae6152387"
+                "3b22aeefea9d7f3d"
             ]
         ],
         "info": "Message topic = heading in database"
@@ -15813,9 +15752,9 @@
         "z": "6c2dfeb262f54a31",
         "name": "",
         "group": "0465010f96f3dad5",
-        "order": 16,
-        "width": "3",
-        "height": "1",
+        "order": 14,
+        "width": 3,
+        "height": 1,
         "passthru": false,
         "label": "Delete",
         "tooltip": "",
@@ -15869,17 +15808,6 @@
         "statusType": "auto",
         "x": 3430,
         "y": 2220,
-        "wires": []
-    },
-    {
-        "id": "9d94911ae6152387",
-        "type": "link out",
-        "z": "6c2dfeb262f54a31",
-        "name": "Delete Recipe out",
-        "mode": "link",
-        "links": [],
-        "x": 3365,
-        "y": 2300,
         "wires": []
     },
     {
@@ -16305,7 +16233,7 @@
         "label": "ACW High",
         "tooltip": "",
         "group": "218e00eac196634f",
-        "order": 3,
+        "order": 5,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -16333,7 +16261,7 @@
         "label": "ACW Low",
         "tooltip": "",
         "group": "218e00eac196634f",
-        "order": 4,
+        "order": 6,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -16361,7 +16289,7 @@
         "label": "Insulation Resistance High",
         "tooltip": "",
         "group": "218e00eac196634f",
-        "order": 5,
+        "order": 3,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -16389,7 +16317,7 @@
         "label": "Insulation Resistance Low",
         "tooltip": "",
         "group": "218e00eac196634f",
-        "order": 6,
+        "order": 4,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -16974,6 +16902,831 @@
         "wires": []
     },
     {
+        "id": "ddfd29912990aabc",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "g": "ac5ddaede4537b72",
+        "name": "Config FL",
+        "func": "msg.payload = { \n    \"start\": flow.get('recipeJSONlocation'),\n    \"pattern\":\"*.json\"\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 2060,
+        "wires": [
+            [
+                "7c1dcedbb4597942",
+                "aedda870dab5e7ab"
+            ]
+        ]
+    },
+    {
+        "id": "aedda870dab5e7ab",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "g": "ac5ddaede4537b72",
+        "name": "debug 279",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1010,
+        "y": 1960,
+        "wires": []
+    },
+    {
+        "id": "6af32e127a95b37c",
+        "type": "ui_text",
+        "z": "6c2dfeb262f54a31",
+        "group": "0465010f96f3dad5",
+        "order": 4,
+        "width": 3,
+        "height": 1,
+        "name": "",
+        "label": "{{msg.level}}",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 930,
+        "y": 2660,
+        "wires": []
+    },
+    {
+        "id": "ad9a723bcdb4d50b",
+        "type": "comment",
+        "z": "6c2dfeb262f54a31",
+        "name": "User",
+        "info": "",
+        "x": 150,
+        "y": 2240,
+        "wires": []
+    },
+    {
+        "id": "a28489025cfc10ce",
+        "type": "ui_ui_control",
+        "z": "6c2dfeb262f54a31",
+        "name": "",
+        "events": "all",
+        "x": 600,
+        "y": 2400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4996386920bb8d3c",
+        "type": "inject",
+        "z": "6c2dfeb262f54a31",
+        "name": "Show normal",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"group\":{\"hide\":[\"Recipes_Parameter_Names_11_-_20\",\"Recipes_Parameter_Values_11_-_20\",\"Recipes_Parameter_Instructions_11_-_20\",\"Recipes_Stop_On_Fail_11_-_20\",\"Recipes_Parameter_Names_21_-_30\",\"Recipes_Parameter_Values_21_-_30\",\"Recipes_Parameter_Instructions_21_-_30\",\"Recipes_Login\"],\"show\":[\"Recipes_Parameter_Names_1_-_10\",\"Recipes_Parameter_Values_1_-_10\",\"Recipes_Parameter_Instructions_1_-_10\",\"Recipes_Stop_On_Fail_1_-_10\",\"Recipes_Test_Name\",\"Recipes_Basic_Tests\"]}}",
+        "payloadType": "json",
+        "x": 230,
+        "y": 2360,
+        "wires": [
+            [
+                "84e91daedc58005c"
+            ]
+        ]
+    },
+    {
+        "id": "7c7e5b99b6221b5e",
+        "type": "inject",
+        "z": "6c2dfeb262f54a31",
+        "name": "Login",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"group\":{\"hide\":[\"Recipes_Parameter_Names_11_-_20\",\"Recipes_Parameter_Values_11_-_20\",\"Recipes_Parameter_Instructions_11_-_20\",\"Recipes_Stop_On_Fail_11_-_20\",\"Recipes_Parameter_Names_21_-_30\",\"Recipes_Parameter_Values_21_-_30\",\"Recipes_Parameter_Instructions_21_-_30\",\"Recipes_Parameter_Names_1_-_10\",\"Recipes_Parameter_Values_1_-_10\",\"Recipes_Parameter_Instructions_1_-_10\",\"Recipes_Stop_On_Fail_1_-_10\",\"Recipes_Test_Name\",\"Recipes_Basic_Tests\",\"Settings_Registration\",\"Settings_Update_Password\",\"Settings_User_database\"],\"show\":[\"Recipes_Login\"]}}",
+        "payloadType": "json",
+        "x": 250,
+        "y": 2420,
+        "wires": [
+            [
+                "84e91daedc58005c"
+            ]
+        ]
+    },
+    {
+        "id": "378e9be940762295",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "debug 281",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 490,
+        "y": 2340,
+        "wires": []
+    },
+    {
+        "id": "50ada39cbcb7b7dc",
+        "type": "ui_form",
+        "z": "6c2dfeb262f54a31",
+        "name": "",
+        "label": "",
+        "group": "494580998616b55b",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Username",
+                "value": "Username",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Password",
+                "value": "Password",
+                "type": "password",
+                "required": false,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "Username": "",
+            "Password": ""
+        },
+        "payload": "",
+        "submit": "Login",
+        "cancel": "Clear",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 390,
+        "y": 2660,
+        "wires": [
+            [
+                "8eaf613363ce0437",
+                "d1b617b1b2243281"
+            ]
+        ]
+    },
+    {
+        "id": "5ba436835e73730b",
+        "type": "inject",
+        "z": "6c2dfeb262f54a31",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 170,
+        "y": 2520,
+        "wires": [
+            [
+                "077f30a3ad8d59c5"
+            ]
+        ]
+    },
+    {
+        "id": "077f30a3ad8d59c5",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "name": "Config FL",
+        "func": "msg.payload = {\n    \"start\": flow.get('dashboardCredentialsLocation'),\n    \"pattern\": flow.get('dashboardCredentialsName')\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 2520,
+        "wires": [
+            [
+                "259618f3c3f1c763"
+            ]
+        ]
+    },
+    {
+        "id": "259618f3c3f1c763",
+        "type": "fs-file-lister",
+        "z": "6c2dfeb262f54a31",
+        "name": "",
+        "start": "/",
+        "pattern": "*.*",
+        "folders": "*",
+        "hidden": true,
+        "lstype": "files",
+        "path": true,
+        "single": true,
+        "depth": 0,
+        "stat": false,
+        "showWarnings": true,
+        "x": 500,
+        "y": 2520,
+        "wires": [
+            [
+                "0689c3d5b8c63a48"
+            ]
+        ]
+    },
+    {
+        "id": "0689c3d5b8c63a48",
+        "type": "switch",
+        "z": "6c2dfeb262f54a31",
+        "name": "",
+        "property": "$count(msg.payload)",
+        "propertyType": "jsonata",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "gt",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 650,
+        "y": 2520,
+        "wires": [
+            [
+                "f51a4752f116f9ab"
+            ],
+            [
+                "cc244f0312530514"
+            ]
+        ]
+    },
+    {
+        "id": "f51a4752f116f9ab",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "name": "Error",
+        "func": "msg.payload = \"The Credential data cannot be found, please contact admin.\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 790,
+        "y": 2460,
+        "wires": [
+            [
+                "10a6e1396d0d3594"
+            ]
+        ]
+    },
+    {
+        "id": "10a6e1396d0d3594",
+        "type": "ui_toast",
+        "z": "6c2dfeb262f54a31",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 950,
+        "y": 2460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cc244f0312530514",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "name": "Config Read File",
+        "func": "msg.filename = flow.get('dashboardCredentialsLocation') + flow.get('dashboardCredentialsName');\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 2520,
+        "wires": [
+            [
+                "668ae53183045f48"
+            ]
+        ]
+    },
+    {
+        "id": "668ae53183045f48",
+        "type": "file in",
+        "z": "6c2dfeb262f54a31",
+        "name": "",
+        "filename": "filename",
+        "filenameType": "msg",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 1020,
+        "y": 2520,
+        "wires": [
+            [
+                "9d6cf8016eb059a7",
+                "74d6958f57bef9df"
+            ]
+        ]
+    },
+    {
+        "id": "2ff131820ef162ec",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "CSV",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1310,
+        "y": 2440,
+        "wires": []
+    },
+    {
+        "id": "9d6cf8016eb059a7",
+        "type": "csv",
+        "z": "6c2dfeb262f54a31",
+        "name": "",
+        "sep": ",",
+        "hdrin": true,
+        "hdrout": "none",
+        "multi": "mult",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 1170,
+        "y": 2520,
+        "wires": [
+            [
+                "2ff131820ef162ec",
+                "e020644240df67b0"
+            ]
+        ]
+    },
+    {
+        "id": "5ec057420e7b5bc0",
+        "type": "comment",
+        "z": "6c2dfeb262f54a31",
+        "g": "ac5ddaede4537b72",
+        "name": "active",
+        "info": "",
+        "x": 800,
+        "y": 2000,
+        "wires": []
+    },
+    {
+        "id": "74d6958f57bef9df",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "Raw data",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1150,
+        "y": 2400,
+        "wires": []
+    },
+    {
+        "id": "e020644240df67b0",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "name": "Set Par from Data",
+        "func": "/*\n    The headers for the columns of the dashboardCredentials\n    are hard coded.\n*/\nlet length = msg.payload.length,\n    usernames = [],\n    passwords = [],\n    userLevel = [],\n    credentialData = {};\nif (length <= 1) {\n    //The file is incorrectly set up\n    // Dev error handling\n} else {\n    for (let i = 0; i < length; i++) {\n        usernames.push(msg.payload[i].Username.toString());\n        passwords.push(msg.payload[i].Password.toString());\n        userLevel.push(msg.payload[i].Level);\n    }\n    //Set up the flows\n    credentialData = {\n        usernames: usernames,\n        passwords: passwords,\n        userLevel: userLevel\n    }\n    flow.set('credentialData', credentialData);\n    //checks\n    msg.check = {\n        credentialData: credentialData\n    }\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1340,
+        "y": 2520,
+        "wires": [
+            [
+                "43e0c530d1cb5e8d"
+            ]
+        ]
+    },
+    {
+        "id": "43e0c530d1cb5e8d",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "debug 283",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "check",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1520,
+        "y": 2460,
+        "wires": []
+    },
+    {
+        "id": "8eaf613363ce0437",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "debug 284",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 590,
+        "y": 2600,
+        "wires": []
+    },
+    {
+        "id": "d1b617b1b2243281",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "name": "Check credentials",
+        "func": "let credentialData = flow.get('credentialData');\nlet usernameIndex = credentialData.usernames.indexOf(msg.payload.Username);\nif (msg.payload.Username == \"\" && msg.payload.Password == \"\") { //Case when the credentials are empty, logging in Guest\n    msg = {\n        userInfo: {\n            username: \"Guest\",\n            userLevel: 'Guest'\n        }\n    }\n    return [msg,];\n} else if (usernameIndex !== -1) { // Username exists\n    if (credentialData.passwords[usernameIndex] == msg.payload.Password ) { //Password matches\n        node.warn('We got here');\n        let userLevel = 'Error';\n        switch (credentialData.userLevel[usernameIndex]) {\n            case 1:\n                userLevel = 'Guest'\n                break;\n            case 2:\n                userLevel = 'Operator'\n                break;\n            case 3:\n                userLevel = 'Admin'\n                break;\n        }\n        msg = {\n            userInfo: {\n                username: credentialData.usernames[usernameIndex],\n                userLevel: userLevel,\n            }\n        }\n        return [msg, ];\n    } else{\n        msg.payload = 'Either the username or password are incorrect';\n        return [ ,msg];\n    }\n} else {\n    msg.payload = 'Either the username or password are incorrect';\n    return [ ,msg];\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 2660,
+        "wires": [
+            [
+                "0ce3360d1d743743"
+            ],
+            [
+                "a0d2c009823496ed",
+                "6ee53091dbb0e592"
+            ]
+        ]
+    },
+    {
+        "id": "3951360479b6652e",
+        "type": "inject",
+        "z": "6c2dfeb262f54a31",
+        "name": "Auto inject Credentials",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.5",
+        "topic": "",
+        "payload": "{\"Username\":\"admin\",\"Password\":\"admin\"}",
+        "payloadType": "json",
+        "x": 200,
+        "y": 2660,
+        "wires": [
+            [
+                "50ada39cbcb7b7dc"
+            ]
+        ]
+    },
+    {
+        "id": "a0d2c009823496ed",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "debug 286",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 790,
+        "y": 2760,
+        "wires": []
+    },
+    {
+        "id": "6ee53091dbb0e592",
+        "type": "ui_toast",
+        "z": "6c2dfeb262f54a31",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 790,
+        "y": 2700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0ce3360d1d743743",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "name": "ui control",
+        "func": "//Show the normal page\nmsg.payload = { \"group\": { \"hide\": [\"Recipes_Parameter_Names_11_-_20\", \"Recipes_Parameter_Values_11_-_20\", \"Recipes_Parameter_Instructions_11_-_20\", \"Recipes_Stop_On_Fail_11_-_20\", \"Recipes_Parameter_Names_21_-_30\", \"Recipes_Parameter_Values_21_-_30\", \"Recipes_Parameter_Instructions_21_-_30\", \"Recipes_Login\"], \"show\": [\"Recipes_Parameter_Names_1_-_10\", \"Recipes_Parameter_Values_1_-_10\", \"Recipes_Parameter_Instructions_1_-_10\", \"Recipes_Stop_On_Fail_1_-_10\", \"Recipes_Test_Name\", \"Recipes_Basic_Tests\"] } };\nlet msg1 = {\n    payload: msg.userInfo.username,\n    level: msg.userInfo.userLevel\n}\nreturn [msg, msg1];",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 2640,
+        "wires": [
+            [
+                "2a17fac4bc6e1221"
+            ],
+            [
+                "6af32e127a95b37c"
+            ]
+        ]
+    },
+    {
+        "id": "604175417bdb4031",
+        "type": "ui_text",
+        "z": "6c2dfeb262f54a31",
+        "group": "494580998616b55b",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "",
+        "format": "To log in as a Guest press LOGIN while all fields are empty.",
+        "layout": "row-left",
+        "className": "",
+        "x": 390,
+        "y": 2700,
+        "wires": []
+    },
+    {
+        "id": "2a17fac4bc6e1221",
+        "type": "ui_ui_control",
+        "z": "6c2dfeb262f54a31",
+        "name": "",
+        "events": "all",
+        "x": 940,
+        "y": 2600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bc7f9440bd330086",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "debug 287",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1230,
+        "y": 2580,
+        "wires": []
+    },
+    {
+        "id": "41f626f1327d3ed7",
+        "type": "ui_button",
+        "z": "6c2dfeb262f54a31",
+        "name": "",
+        "group": "0465010f96f3dad5",
+        "order": 20,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "LOGOUT",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "clear logout",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1060,
+        "y": 2700,
+        "wires": [
+            [
+                "7d1c595851ca4658"
+            ]
+        ]
+    },
+    {
+        "id": "7d1c595851ca4658",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "name": "Config ui control",
+        "func": "msg.payload = { \"group\": { \"hide\": [\"Recipes_Parameter_Names_11_-_20\", \"Recipes_Parameter_Values_11_-_20\", \"Recipes_Parameter_Instructions_11_-_20\", \"Recipes_Stop_On_Fail_11_-_20\", \"Recipes_Parameter_Names_21_-_30\", \"Recipes_Parameter_Values_21_-_30\", \"Recipes_Parameter_Instructions_21_-_30\", \"Recipes_Parameter_Names_1_-_10\", \"Recipes_Parameter_Values_1_-_10\", \"Recipes_Parameter_Instructions_1_-_10\", \"Recipes_Stop_On_Fail_1_-_10\", \"Recipes_Test_Name\", \"Recipes_Basic_Tests\"], \"show\": [\"Recipes_Login\"] } };\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1240,
+        "y": 2700,
+        "wires": [
+            [
+                "6424fe9d163271c7"
+            ]
+        ]
+    },
+    {
+        "id": "6424fe9d163271c7",
+        "type": "ui_ui_control",
+        "z": "6c2dfeb262f54a31",
+        "name": "",
+        "events": "all",
+        "x": 1420,
+        "y": 2700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e738e4fd70baf647",
+        "type": "link out",
+        "z": "6c2dfeb262f54a31",
+        "name": "Trigger listener out",
+        "mode": "link",
+        "links": [
+            "4bd08e17390a6e11"
+        ],
+        "x": 3095,
+        "y": 2000,
+        "wires": []
+    },
+    {
+        "id": "3101ffadd9315b82",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "name": "Clear msg",
+        "func": "msg = {\n    payload: \"\",\n    topic: \"\"\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2970,
+        "y": 1980,
+        "wires": [
+            [
+                "e738e4fd70baf647"
+            ]
+        ]
+    },
+    {
+        "id": "4bd08e17390a6e11",
+        "type": "link in",
+        "z": "6c2dfeb262f54a31",
+        "name": "Initialise PLC checking in",
+        "links": [
+            "e738e4fd70baf647"
+        ],
+        "x": 1855,
+        "y": 1340,
+        "wires": [
+            [
+                "31e3351497920e04"
+            ]
+        ]
+    },
+    {
+        "id": "8b9fd71f247fb190",
+        "type": "modbus-write",
+        "z": "6c2dfeb262f54a31",
+        "name": "",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "",
+        "dataType": "Coil",
+        "adr": "7500",
+        "quantity": "1",
+        "server": "da9fe7a69397cf03",
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 3040,
+        "y": 1300,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "82ccf2bea16bdfdb",
+        "type": "link in",
+        "z": "6c2dfeb262f54a31",
+        "name": "link in 1",
+        "links": [],
+        "x": 2625,
+        "y": 1360,
+        "wires": [
+            [
+                "717db19b1919d2a0"
+            ]
+        ]
+    },
+    {
+        "id": "717db19b1919d2a0",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "name": "Set Payload",
+        "func": "msg.paylaod = 0;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2780,
+        "y": 1300,
+        "wires": [
+            [
+                "8b9fd71f247fb190"
+            ]
+        ]
+    },
+    {
         "id": "4952dd022abb75ad",
         "type": "function",
         "z": "31496c5ec25fc448",
@@ -17490,161 +18243,10 @@
         ]
     },
     {
-        "id": "0aa53710984a160e",
-        "type": "ui_text_input",
-        "z": "90f171682dfc3f42",
-        "name": "",
-        "label": "Username",
-        "tooltip": "",
-        "group": "41add6d3ba5596df",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "mode": "text",
-        "delay": 300,
-        "topic": "username",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 330,
-        "y": 840,
-        "wires": [
-            [
-                "14b4f15e7efa6d9f"
-            ]
-        ]
-    },
-    {
-        "id": "71e576eb9123bfdc",
-        "type": "ui_text_input",
-        "z": "90f171682dfc3f42",
-        "name": "",
-        "label": "Password",
-        "tooltip": "",
-        "group": "41add6d3ba5596df",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "mode": "password",
-        "delay": 300,
-        "topic": "password",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 320,
-        "y": 900,
-        "wires": [
-            [
-                "14b4f15e7efa6d9f"
-            ]
-        ]
-    },
-    {
-        "id": "4e39c6a6e5296b51",
-        "type": "ui_button",
-        "z": "90f171682dfc3f42",
-        "name": "",
-        "group": "41add6d3ba5596df",
-        "order": 3,
-        "width": 3,
-        "height": 1,
-        "passthru": false,
-        "label": "LOGIN",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "Login",
-        "topicType": "str",
-        "x": 320,
-        "y": 960,
-        "wires": [
-            [
-                "896b075625b957a9"
-            ]
-        ]
-    },
-    {
-        "id": "c909499c73ee6c20",
-        "type": "ui_button",
-        "z": "90f171682dfc3f42",
-        "name": "",
-        "group": "41add6d3ba5596df",
-        "order": 4,
-        "width": 3,
-        "height": 1,
-        "passthru": true,
-        "label": "CANCEL",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 320,
-        "y": 1020,
-        "wires": [
-            [
-                "555e584fc9c1351b"
-            ]
-        ]
-    },
-    {
-        "id": "c68d3f40cbd87933",
-        "type": "ui_text",
-        "z": "90f171682dfc3f42",
-        "group": "41add6d3ba5596df",
-        "order": 5,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "Status ",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "className": "",
-        "x": 310,
-        "y": 1080,
-        "wires": []
-    },
-    {
-        "id": "9ece35e3298eed0c",
-        "type": "ui_button",
-        "z": "90f171682dfc3f42",
-        "name": "",
-        "group": "41add6d3ba5596df",
-        "order": 6,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "LOGOUT",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 320,
-        "y": 1140,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "2a99dc5d1f16aca5",
         "type": "ui_template",
         "z": "90f171682dfc3f42",
-        "group": "41add6d3ba5596df",
+        "group": "",
         "name": "",
         "order": 7,
         "width": 0,
@@ -17655,560 +18257,11 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 200,
-        "y": 680,
+        "x": 280,
+        "y": 1280,
         "wires": [
             []
         ]
-    },
-    {
-        "id": "0d76467924cb1dd7",
-        "type": "link out",
-        "z": "90f171682dfc3f42",
-        "name": "Cancel out",
-        "mode": "link",
-        "links": [
-            "144c30d73ebde27f"
-        ],
-        "x": 575,
-        "y": 1020,
-        "wires": []
-    },
-    {
-        "id": "144c30d73ebde27f",
-        "type": "link in",
-        "z": "90f171682dfc3f42",
-        "name": "Cancel in",
-        "links": [
-            "0d76467924cb1dd7"
-        ],
-        "x": 95,
-        "y": 840,
-        "wires": [
-            [
-                "0aa53710984a160e",
-                "71e576eb9123bfdc",
-                "c68d3f40cbd87933"
-            ]
-        ]
-    },
-    {
-        "id": "555e584fc9c1351b",
-        "type": "function",
-        "z": "90f171682dfc3f42",
-        "name": "Cancel",
-        "func": "msg.payload = \"\";\nmsg.lineFlag = \"clear\";\nmsg.complete = \"\"; // Used to clear the buffer\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 460,
-        "y": 1020,
-        "wires": [
-            [
-                "0d76467924cb1dd7",
-                "14b4f15e7efa6d9f",
-                "1e3d168d3edef02c"
-            ]
-        ]
-    },
-    {
-        "id": "14b4f15e7efa6d9f",
-        "type": "join",
-        "z": "90f171682dfc3f42",
-        "g": "2663679731c67ef4",
-        "name": "",
-        "mode": "custom",
-        "build": "object",
-        "property": "payload",
-        "propertyType": "msg",
-        "key": "topic",
-        "joiner": "\\n",
-        "joinerType": "str",
-        "accumulate": true,
-        "timeout": "",
-        "count": "",
-        "reduceRight": false,
-        "reduceExp": "",
-        "reduceInit": "",
-        "reduceInitType": "",
-        "reduceFixup": "",
-        "x": 580,
-        "y": 920,
-        "wires": [
-            [
-                "174d49da1c5a3a71",
-                "d3c5eb6a6d538c5b"
-            ]
-        ]
-    },
-    {
-        "id": "896b075625b957a9",
-        "type": "function",
-        "z": "90f171682dfc3f42",
-        "name": "Login",
-        "func": "msg.payload = \"\";\nmsg.lineFlag = \"login\";\nmsg.complete = \"\"; // Used to clear the buffer\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 450,
-        "y": 960,
-        "wires": [
-            [
-                "14b4f15e7efa6d9f"
-            ]
-        ]
-    },
-    {
-        "id": "174d49da1c5a3a71",
-        "type": "debug",
-        "z": "90f171682dfc3f42",
-        "g": "2663679731c67ef4",
-        "name": "Join",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 740,
-        "y": 860,
-        "wires": []
-    },
-    {
-        "id": "db18064496eb1045",
-        "type": "debug",
-        "z": "90f171682dfc3f42",
-        "g": "2663679731c67ef4",
-        "name": "Set Par",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 920,
-        "y": 860,
-        "wires": []
-    },
-    {
-        "id": "b9868f10502a8d1a",
-        "type": "inject",
-        "z": "90f171682dfc3f42",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "1",
-        "topic": "",
-        "payload": "admin",
-        "payloadType": "str",
-        "x": 90,
-        "y": 960,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "55a5ec712037d2e7",
-        "type": "inject",
-        "z": "90f171682dfc3f42",
-        "name": "clear",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "0.5",
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 110,
-        "y": 1020,
-        "wires": [
-            [
-                "c909499c73ee6c20"
-            ]
-        ]
-    },
-    {
-        "id": "1e3d168d3edef02c",
-        "type": "debug",
-        "z": "90f171682dfc3f42",
-        "name": "Clear",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 610,
-        "y": 1080,
-        "wires": []
-    },
-    {
-        "id": "300263c8963d1f65",
-        "type": "inject",
-        "z": "90f171682dfc3f42",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": "1.5",
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 120,
-        "y": 1080,
-        "wires": [
-            [
-                "4e39c6a6e5296b51"
-            ]
-        ]
-    },
-    {
-        "id": "09db46c303ad458b",
-        "type": "csv",
-        "z": "90f171682dfc3f42",
-        "g": "2663679731c67ef4",
-        "name": "csv",
-        "sep": ",",
-        "hdrin": "",
-        "hdrout": "all",
-        "multi": "one",
-        "ret": "\\n",
-        "temp": "",
-        "skip": "0",
-        "strings": true,
-        "include_empty_strings": "",
-        "include_null_values": "",
-        "x": 1440,
-        "y": 900,
-        "wires": [
-            [
-                "872ae3d460dd78b6"
-            ]
-        ]
-    },
-    {
-        "id": "e8f798d63887473a",
-        "type": "debug",
-        "z": "90f171682dfc3f42",
-        "g": "2663679731c67ef4",
-        "name": "B CSV data (NE)",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1480,
-        "y": 840,
-        "wires": []
-    },
-    {
-        "id": "3ff6da50a90b1209",
-        "type": "switch",
-        "z": "90f171682dfc3f42",
-        "g": "2663679731c67ef4",
-        "name": "",
-        "property": "$count(msg.payload)",
-        "propertyType": "jsonata",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "0",
-                "vt": "num"
-            },
-            {
-                "t": "else"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 1100,
-        "y": 920,
-        "wires": [
-            [
-                "530ad2be100739a1"
-            ],
-            [
-                "9fe4c37df7d8eb60"
-            ]
-        ]
-    },
-    {
-        "id": "d74926522ac62fc7",
-        "type": "fs-file-lister",
-        "z": "90f171682dfc3f42",
-        "g": "2663679731c67ef4",
-        "name": "",
-        "start": "*",
-        "pattern": "",
-        "folders": "*",
-        "hidden": true,
-        "lstype": "files",
-        "path": true,
-        "single": true,
-        "depth": 0,
-        "stat": false,
-        "showWarnings": false,
-        "x": 950,
-        "y": 920,
-        "wires": [
-            [
-                "3ff6da50a90b1209",
-                "ca0ba3a7db614a3b"
-            ]
-        ]
-    },
-    {
-        "id": "4d2d050d952c2953",
-        "type": "csv",
-        "z": "90f171682dfc3f42",
-        "g": "2663679731c67ef4",
-        "name": "csv",
-        "sep": ",",
-        "hdrin": "",
-        "hdrout": "none",
-        "multi": "one",
-        "ret": "\\n",
-        "temp": "",
-        "skip": "0",
-        "strings": true,
-        "include_empty_strings": "",
-        "include_null_values": "",
-        "x": 1440,
-        "y": 940,
-        "wires": [
-            [
-                "872ae3d460dd78b6"
-            ]
-        ]
-    },
-    {
-        "id": "c9090c3541f99cd1",
-        "type": "debug",
-        "z": "90f171682dfc3f42",
-        "g": "2663679731c67ef4",
-        "name": "B CSV data (E)",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1470,
-        "y": 1000,
-        "wires": []
-    },
-    {
-        "id": "530ad2be100739a1",
-        "type": "function",
-        "z": "90f171682dfc3f42",
-        "g": "2663679731c67ef4",
-        "name": "file =! exist",
-        "func": "msg.payload = msg.data;\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1280,
-        "y": 900,
-        "wires": [
-            [
-                "09db46c303ad458b",
-                "e8f798d63887473a"
-            ]
-        ]
-    },
-    {
-        "id": "9fe4c37df7d8eb60",
-        "type": "function",
-        "z": "90f171682dfc3f42",
-        "g": "2663679731c67ef4",
-        "name": "file == exist",
-        "func": "msg.payload = msg.data;\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1280,
-        "y": 940,
-        "wires": [
-            [
-                "4d2d050d952c2953",
-                "c9090c3541f99cd1"
-            ]
-        ]
-    },
-    {
-        "id": "ca0ba3a7db614a3b",
-        "type": "debug",
-        "z": "90f171682dfc3f42",
-        "g": "2663679731c67ef4",
-        "name": "B File lister",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1120,
-        "y": 1000,
-        "wires": []
-    },
-    {
-        "id": "1efd318461f8e65b",
-        "type": "file",
-        "z": "90f171682dfc3f42",
-        "g": "2663679731c67ef4",
-        "name": "Test2",
-        "filename": "filename",
-        "filenameType": "msg",
-        "appendNewline": false,
-        "createDir": true,
-        "overwriteFile": "false",
-        "encoding": "none",
-        "x": 1880,
-        "y": 920,
-        "wires": [
-            [
-                "ab01de66fe06bf74"
-            ]
-        ]
-    },
-    {
-        "id": "6086a09a605eaa1d",
-        "type": "function",
-        "z": "90f171682dfc3f42",
-        "g": "2663679731c67ef4",
-        "name": "Set Par (write for csv)",
-        "func": "//msg.filename = flow.get(\"fullFileName\");\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1660,
-        "y": 920,
-        "wires": [
-            [
-                "1efd318461f8e65b",
-                "7f9568011153ca1d"
-            ]
-        ]
-    },
-    {
-        "id": "7f9568011153ca1d",
-        "type": "debug",
-        "z": "90f171682dfc3f42",
-        "g": "2663679731c67ef4",
-        "name": "File write data",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1890,
-        "y": 860,
-        "wires": []
-    },
-    {
-        "id": "ab01de66fe06bf74",
-        "type": "debug",
-        "z": "90f171682dfc3f42",
-        "g": "2663679731c67ef4",
-        "name": "Final Write",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2050,
-        "y": 920,
-        "wires": []
-    },
-    {
-        "id": "d3c5eb6a6d538c5b",
-        "type": "function",
-        "z": "90f171682dfc3f42",
-        "g": "2663679731c67ef4",
-        "name": "Set Par",
-        "func": "if (msg.lineFlag = \"login\") { // Avoids saving the \"clear\" button press\n    delete msg.payload.Login;\n    msg.data = msg.payload;\n\n    //Setting the payload for filelister node\n    msg.payload = { //Incomplete: This can be loaded from a csv or json file\n        start: \"C:/Users/User/Documents/Coding/Node Red/Writing CSV/\",\n        pattern: \"LoginDetails.csv\"\n    }\n\n    //Set the parameters needed for the write CSV function\n    msg.columns = \"username, password\";\n    msg.filename = \"C:/Users/User/Documents/Coding/Node Red/Writing CSV/LoginDetails.csv\";\n    return msg;\n}\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 750,
-        "y": 920,
-        "wires": [
-            [
-                "db18064496eb1045",
-                "d74926522ac62fc7"
-            ]
-        ]
-    },
-    {
-        "id": "dfb9fb4ec30d51fd",
-        "type": "comment",
-        "z": "90f171682dfc3f42",
-        "g": "2663679731c67ef4",
-        "name": "Ideas",
-        "info": "MSQL has ways to validate whether data\nalready exists. ",
-        "x": 1110,
-        "y": 840,
-        "wires": []
     },
     {
         "id": "86d352ede94cfc61",
@@ -18910,16 +18963,6 @@
         "wires": []
     },
     {
-        "id": "0ccceff7d73ae9ca",
-        "type": "comment",
-        "z": "90f171682dfc3f42",
-        "name": "Registration Login",
-        "info": "",
-        "x": 110,
-        "y": 780,
-        "wires": []
-    },
-    {
         "id": "b5fbba8c4e1cd4d7",
         "type": "comment",
         "z": "90f171682dfc3f42",
@@ -19083,151 +19126,6 @@
         "statusType": "auto",
         "x": 830,
         "y": 40,
-        "wires": []
-    },
-    {
-        "id": "b7dff285.69049",
-        "type": "inject",
-        "z": "90f171682dfc3f42",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "[{\"Name\":\"<b>Yokoi</b>\",\"Age\":\"30\",\"Color\":\"lime\",\"Prog\":70,\"Star\":\"3\"},{\"Name\":\"<i>DCJ</i>\",\"Age\":\"50\",\"Color\":\"dodgerblue\",\"Prog\":\"45\",\"Star\":2,\"Pass\":false,\"web\":\"\"},{\"Name\":\"Nick\",\"Age\":\"40\",\"Color\":\"darkred\",\"Prog\":95,\"Star\":\"5\",\"Pass\":true,\"web\":\"http://nodered.org\"},{\"Name\":\"Oli\"}]",
-        "payloadType": "json",
-        "x": 670,
-        "y": 380,
-        "wires": [
-            [
-                "7d48e13.90ee22"
-            ]
-        ]
-    },
-    {
-        "id": "cb53cb76.5fd0d8",
-        "type": "inject",
-        "z": "90f171682dfc3f42",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "[{\"Name\":\"<b>Yokoi</b>\",\"Age\":\"30\",\"Color\":\"lime\",\"Prog\":20,\"Star\":\"1\"},{\"Name\":\"<i>DCJ</i>\",\"Age\":\"50\",\"Color\":\"dodgerblue\",\"Prog\":\"80\",\"Star\":4,\"Pass\":true,\"web\":\"\"},{\"Name\":\"Nick\",\"Age\":\"40\",\"Color\":\"red\",\"Prog\":90,\"Star\":\"5\",\"Pass\":true,\"web\":\"http://nodered.org\"},{\"Name\":\"Oli\"}]",
-        "payloadType": "json",
-        "x": 670,
-        "y": 420,
-        "wires": [
-            [
-                "7d48e13.90ee22"
-            ]
-        ]
-    },
-    {
-        "id": "7d48e13.90ee22",
-        "type": "ui_table",
-        "z": "90f171682dfc3f42",
-        "group": "571a38b1.5e3638",
-        "name": "People",
-        "order": 1,
-        "width": "8",
-        "height": "3",
-        "columns": [
-            {
-                "field": "Name",
-                "title": "Who",
-                "width": "200",
-                "align": "left",
-                "formatter": "html",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "Age",
-                "title": "Age",
-                "width": "40",
-                "align": "center",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "Color",
-                "title": "",
-                "width": "5%",
-                "align": "left",
-                "formatter": "color",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "Star",
-                "title": "%",
-                "width": "100",
-                "align": "left",
-                "formatter": "star",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "Pass",
-                "title": "",
-                "width": "5%",
-                "align": "center",
-                "formatter": "tickCross",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "Prog",
-                "title": "",
-                "width": "80",
-                "align": "left",
-                "formatter": "progress",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "web",
-                "title": "URL",
-                "width": "",
-                "align": "left",
-                "formatter": "link",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            }
-        ],
-        "outputs": 0,
-        "cts": false,
-        "x": 880,
-        "y": 380,
         "wires": []
     },
     {
