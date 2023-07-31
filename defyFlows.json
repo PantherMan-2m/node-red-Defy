@@ -437,39 +437,6 @@
         "y": 1519
     },
     {
-        "id": "43df61af7b7b9663",
-        "type": "group",
-        "z": "6c2dfeb262f54a31",
-        "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "37e5e1cf05f04932",
-            "d749b9f44a2a2ba1",
-            "1de9dfdf901990fa",
-            "756ee76f9ccadbd8",
-            "4f48d873ac6baeca",
-            "7c1e899a2651d759",
-            "b6bd57aa234737be",
-            "a405fda7c0517634",
-            "1edb47acfa9dbac7",
-            "cb07a673fdfc2653",
-            "8dc188d1df343704",
-            "859e77fbb03e40f0",
-            "337b76a428a81ab5"
-        ],
-        "x": 74,
-        "y": 539,
-        "w": 902,
-        "h": 322
-    },
-    {
         "id": "8f1040046006e799",
         "type": "group",
         "z": "6c2dfeb262f54a31",
@@ -1447,6 +1414,39 @@
         "h": 322
     },
     {
+        "id": "43df61af7b7b9663",
+        "type": "group",
+        "z": "6c2dfeb262f54a31",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "37e5e1cf05f04932",
+            "d749b9f44a2a2ba1",
+            "1de9dfdf901990fa",
+            "756ee76f9ccadbd8",
+            "4f48d873ac6baeca",
+            "7c1e899a2651d759",
+            "b6bd57aa234737be",
+            "a405fda7c0517634",
+            "1edb47acfa9dbac7",
+            "cb07a673fdfc2653",
+            "8dc188d1df343704",
+            "859e77fbb03e40f0",
+            "337b76a428a81ab5"
+        ],
+        "x": 1754,
+        "y": 2119,
+        "w": 902,
+        "h": 322
+    },
+    {
         "id": "9a043224f1e79f2a",
         "type": "junction",
         "z": "9d61395e.8839f8",
@@ -2263,7 +2263,7 @@
         "id": "e70117d17e776031",
         "type": "junction",
         "z": "6c2dfeb262f54a31",
-        "x": 3460,
+        "x": 4100,
         "y": 2700,
         "wires": [
             [
@@ -2275,7 +2275,7 @@
         "id": "66599bbdc0cbe8eb",
         "type": "junction",
         "z": "6c2dfeb262f54a31",
-        "x": 3760,
+        "x": 4360,
         "y": 2700,
         "wires": [
             [
@@ -7208,7 +7208,8 @@
         "name": "selected file out",
         "mode": "link",
         "links": [
-            "3d7f076cfd4e4c32"
+            "3d7f076cfd4e4c32",
+            "46a6c78d1dcd6ef0"
         ],
         "x": 1585,
         "y": 2060,
@@ -7697,217 +7698,6 @@
         "wires": []
     },
     {
-        "id": "37e5e1cf05f04932",
-        "type": "ui_text_input",
-        "z": "6c2dfeb262f54a31",
-        "g": "43df61af7b7b9663",
-        "name": "",
-        "label": "File Name",
-        "tooltip": "",
-        "group": "0465010f96f3dad5",
-        "order": 2,
-        "width": 5,
-        "height": 1,
-        "passthru": false,
-        "mode": "text",
-        "delay": 300,
-        "topic": "filename",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 470,
-        "y": 780,
-        "wires": [
-            [
-                "1de9dfdf901990fa",
-                "859e77fbb03e40f0"
-            ]
-        ]
-    },
-    {
-        "id": "d749b9f44a2a2ba1",
-        "type": "function",
-        "z": "6c2dfeb262f54a31",
-        "g": "43df61af7b7b9663",
-        "name": "Checking",
-        "func": "if (msg.lineFlag == \"fileSelected\") {\n    msg.payload = msg.filenameShort;\n    return msg;\n} else if (msg.lineFlag == \"SQL\") {\n    msg.payload = msg.payload.File_Name;\n} else if (msg.lineFlag == 'JSONdata') {\n    msg.payload = msg.payload.File_Name;\n} else if (msg.topic == 'clear') {\n    msg.payload = \"\";\n} else {\n    return null;\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 300,
-        "y": 780,
-        "wires": [
-            [
-                "37e5e1cf05f04932",
-                "4f48d873ac6baeca",
-                "7c1e899a2651d759",
-                "859e77fbb03e40f0"
-            ]
-        ]
-    },
-    {
-        "id": "1de9dfdf901990fa",
-        "type": "function",
-        "z": "6c2dfeb262f54a31",
-        "g": "43df61af7b7b9663",
-        "name": "Set Par Flow",
-        "func": "msg.topic = \"filename\";\n\nif (msg.filenameShort != undefined) { //Checks if the filename has been loaded from a database\n    node.send({ topic: \"filename\", payload: msg.filenameShort });\n    //node.send({ topic: \"fileLocation\", payload: msg.filename });\n    return null;\n} else { // Or any other message that gets received\n    node.send({ topic: \"filename\", payload: msg.payload })\n    //node.send({ topic: \"fileLocation\", payload: flow.get('recipeJSONlocation') + msg.payload + '.json' });\n}\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 650,
-        "y": 780,
-        "wires": [
-            [
-                "b6bd57aa234737be",
-                "a405fda7c0517634"
-            ]
-        ]
-    },
-    {
-        "id": "756ee76f9ccadbd8",
-        "type": "link in",
-        "z": "6c2dfeb262f54a31",
-        "g": "43df61af7b7b9663",
-        "name": "Filename in",
-        "links": [
-            "38ff2dcc2e41b6fa",
-            "5491c556639992d7",
-            "c20be865f12bee03"
-        ],
-        "x": 145,
-        "y": 760,
-        "wires": [
-            [
-                "d749b9f44a2a2ba1",
-                "1edb47acfa9dbac7"
-            ]
-        ]
-    },
-    {
-        "id": "4f48d873ac6baeca",
-        "type": "function",
-        "z": "6c2dfeb262f54a31",
-        "g": "43df61af7b7b9663",
-        "name": "fileSelected",
-        "func": "if (msg.filenameShort != undefined) {\n    return msg;\n} else if (msg.lineFlag == \"SQL\") {\n    return {\n        payload: msg.payload\n    };\n}\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 470,
-        "y": 820,
-        "wires": [
-            [
-                "1de9dfdf901990fa",
-                "cb07a673fdfc2653"
-            ]
-        ]
-    },
-    {
-        "id": "7c1e899a2651d759",
-        "type": "debug",
-        "z": "6c2dfeb262f54a31",
-        "g": "43df61af7b7b9663",
-        "name": "debug 58",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 440,
-        "y": 720,
-        "wires": []
-    },
-    {
-        "id": "b6bd57aa234737be",
-        "type": "debug",
-        "z": "6c2dfeb262f54a31",
-        "g": "43df61af7b7b9663",
-        "name": "Filename",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 840,
-        "y": 780,
-        "wires": []
-    },
-    {
-        "id": "a405fda7c0517634",
-        "type": "link out",
-        "z": "6c2dfeb262f54a31",
-        "g": "43df61af7b7b9663",
-        "name": "Filename out",
-        "mode": "link",
-        "links": [
-            "2fb51950723c283f",
-            "fea68f0b27b3b0b6"
-        ],
-        "x": 765,
-        "y": 740,
-        "wires": []
-    },
-    {
-        "id": "1edb47acfa9dbac7",
-        "type": "debug",
-        "z": "6c2dfeb262f54a31",
-        "g": "43df61af7b7b9663",
-        "name": "debug 52",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 260,
-        "y": 720,
-        "wires": []
-    },
-    {
-        "id": "cb07a673fdfc2653",
-        "type": "debug",
-        "z": "6c2dfeb262f54a31",
-        "g": "43df61af7b7b9663",
-        "name": "debug 51",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 700,
-        "y": 820,
-        "wires": []
-    },
-    {
-        "id": "8dc188d1df343704",
-        "type": "comment",
-        "z": "6c2dfeb262f54a31",
-        "g": "43df61af7b7b9663",
-        "name": "File Name",
-        "info": "",
-        "x": 160,
-        "y": 580,
-        "wires": []
-    },
-    {
         "id": "3dab220221184841",
         "type": "ui_text_input",
         "z": "6c2dfeb262f54a31",
@@ -8122,44 +7912,6 @@
         ]
     },
     {
-        "id": "859e77fbb03e40f0",
-        "type": "function",
-        "z": "6c2dfeb262f54a31",
-        "g": "43df61af7b7b9663",
-        "name": "Save check Filename",
-        "func": "let check = flow.get(\"filenameCheck\");\nif (check == undefined) {\n    context.set(\"filenameCheck\", false);\n    check = false;\n}\n if (msg.payload == \"\") { // clear means the join node lacks basic form data\n    check = false;\n} else { // save meanse the join node lacks basic form data\n    check = true;\n}\nflow.set(\"filenameCheck\", check);\nmsg = {\n    payload : check,\n    topic: \"filenameCheck\"\n};\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 680,
-        "y": 660,
-        "wires": [
-            [
-                "337b76a428a81ab5"
-            ]
-        ]
-    },
-    {
-        "id": "337b76a428a81ab5",
-        "type": "debug",
-        "z": "6c2dfeb262f54a31",
-        "g": "43df61af7b7b9663",
-        "name": "debug 95",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 870,
-        "y": 600,
-        "wires": []
-    },
-    {
         "id": "ce067e37168e1d33",
         "type": "function",
         "z": "6c2dfeb262f54a31",
@@ -8293,7 +8045,8 @@
         "name": "Clear in",
         "links": [
             "717877cb82065dc3",
-            "364a72862b9511e5"
+            "364a72862b9511e5",
+            "c6b6ead33ab7fcbd"
         ],
         "x": 955,
         "y": 1300,
@@ -8360,7 +8113,8 @@
             "c7a80db6e1441f4f",
             "fa9015a8110bfeda",
             "21a6805e17ec8f57",
-            "2fb51950723c283f"
+            "2fb51950723c283f",
+            "9ff766c71fea5ab8"
         ],
         "x": 1445,
         "y": 1320,
@@ -15150,7 +14904,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 3310,
+        "x": 3950,
         "y": 2580,
         "wires": [
             [
@@ -15180,7 +14934,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 3170,
+        "x": 3790,
         "y": 2600,
         "wires": [
             [
@@ -15205,7 +14959,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 3490,
+        "x": 4130,
         "y": 2540,
         "wires": []
     },
@@ -15224,7 +14978,7 @@
         "depth": 0,
         "stat": false,
         "showWarnings": true,
-        "x": 3000,
+        "x": 3640,
         "y": 2600,
         "wires": [
             [
@@ -15245,7 +14999,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 3320,
+        "x": 3960,
         "y": 2640,
         "wires": [
             [
@@ -15263,7 +15017,7 @@
         "type": "debug",
         "z": "6c2dfeb262f54a31",
         "name": "File Listener",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -15271,7 +15025,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 3410,
+        "x": 4050,
         "y": 2720,
         "wires": []
     },
@@ -15286,11 +15040,12 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2810,
+        "x": 3450,
         "y": 2600,
         "wires": [
             [
-                "9ad732b56228fc50"
+                "9ad732b56228fc50",
+                "959c63b1785562ea"
             ]
         ]
     },
@@ -15307,7 +15062,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 3150,
+        "x": 3790,
         "y": 2560,
         "wires": []
     },
@@ -15324,7 +15079,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 3510,
+        "x": 4150,
         "y": 2600,
         "wires": []
     },
@@ -15340,7 +15095,7 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 3520,
+        "x": 4160,
         "y": 2640,
         "wires": [
             [
@@ -15354,7 +15109,7 @@
         "type": "debug",
         "z": "6c2dfeb262f54a31",
         "name": "Bypass Recipe File Exists",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -15362,7 +15117,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 3560,
+        "x": 4200,
         "y": 2680,
         "wires": []
     },
@@ -15377,8 +15132,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 3800,
-        "y": 2440,
+        "x": 3230,
+        "y": 2600,
         "wires": [
             [
                 "795a5fe4afbfac2b"
@@ -15390,7 +15145,7 @@
         "type": "debug",
         "z": "6c2dfeb262f54a31",
         "name": "Read CSV",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -15398,8 +15153,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 3700,
-        "y": 2600,
+        "x": 4330,
+        "y": 2540,
         "wires": []
     },
     {
@@ -15413,7 +15168,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 3700,
+        "x": 4320,
         "y": 2640,
         "wires": [
             [
@@ -15429,8 +15184,8 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 3640,
-        "y": 2440,
+        "x": 3070,
+        "y": 2600,
         "wires": [
             [
                 "07e34ff94187852f",
@@ -15458,7 +15213,7 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 3840,
+        "x": 4450,
         "y": 2640,
         "wires": [
             [
@@ -15479,8 +15234,8 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 3490,
-        "y": 2440,
+        "x": 2920,
+        "y": 2600,
         "wires": [
             [
                 "8e1de2b94b437deb"
@@ -15499,8 +15254,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 3770,
-        "y": 2480,
+        "x": 3200,
+        "y": 2640,
         "wires": []
     },
     {
@@ -15516,8 +15271,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 3930,
-        "y": 2720,
+        "x": 4570,
+        "y": 2700,
         "wires": []
     },
     {
@@ -15525,13 +15280,13 @@
         "type": "function",
         "z": "6c2dfeb262f54a31",
         "name": "buffer (csv parts reading)",
-        "func": "\nlet startIndex = msg.payload.fileData.indexOf(msg.payload.bypass.recipeIdentity); //Finds the unique key\nmsg.look = {\n    startIndex: startIndex,\n    search: msg.payload.bypass.recipeIdentity,\n}\nif (startIndex != -1) { // Unique key exists:\n    let end1 = \"\\r\\n\\r\\n\", // Finds the double new line (end of section)\n        end2 = \"\\n\\n\",\n        endIndex = -1;\n    if (msg.payload.fileData.indexOf(end1, startIndex) == -1) { // Looks if end of file does not exist\n        if (msg.payload.fileData.indexOf(end2, startIndex) == -1) { // Really looks if end of file does not exist\n            node.warn('Cannot find end of index insert into HMI Recipe csv');\n        } else {\n            endIndex = msg.payload.fileData.indexOf(end2, startIndex);\n        }\n    } else {\n        endIndex = msg.payload.fileData.indexOf(end1, startIndex) + 2;\n    }\n        \n        //foundSection = msg.payload.fileData.slice(startIndex, endIndex);\n    //msg.filename = msg.payload.bypass.filename;\n    //del\n    msg.filename = 'C: /Users/User / Documents / Coding / Node Red / Recipes / testing.csv';\n\n    msg.check = {\n        startIndex: startIndex,\n        endIndex: endIndex,\n        firstPart: msg.payload.fileData.slice(0, startIndex),\n        insert: msg.payload.bypass.text,\n        lastPart: msg.payload.fileData.slice(endIndex + 2, msg.payload.fileData.length)\n\n    };\n\n    //Delete and insert\n    msg.payload = msg.payload.fileData.slice(0, startIndex) + msg.payload.fileData.slice(endIndex + 2, msg.payload.fileData.length);\n} else {\n    //msg.payload = msg.payload.fileData + msg.payload.bypass.text;\n    //active: add a warning that the file was not changed\n}\n\nreturn msg;\n",
+        "func": "\nlet startIndex = msg.payload.fileData.indexOf(msg.payload.bypass.recipeIdentity); //Finds the unique key\nmsg.look = {\n    startIndex: startIndex,\n    search: msg.payload.bypass.recipeIdentity,\n}\nnode.warn('startIndex before ifs: ' + startIndex);\nif (startIndex != -1) { // Unique key exists:\n    let end1 = \"\\r\\n\\r\\n\", // Finds the double new line (end of section)\n        end2 = \"\\n\\n\",\n        endIndex = -1;\n    if (msg.payload.fileData.indexOf(end1, startIndex) == -1) { // Looks if end of file does not exist\n        if (msg.payload.fileData.indexOf(end2, startIndex) == -1) { // Really looks if end of file does not exist\n            node.warn('Cannot find end of index insert into HMI Recipe csv');\n        } else {\n            endIndex = msg.payload.fileData.indexOf(end2, startIndex);\n        }\n    } else {\n        endIndex = msg.payload.fileData.indexOf(end1, startIndex) + 2;\n    }\n        \n        //foundSection = msg.payload.fileData.slice(startIndex, endIndex);\n    //msg.filename = msg.payload.bypass.filename;\n    //del\n    msg.filename = 'C:/Users/User/Documents/Coding/Node Red/Recipes/deleteTesting.csv';\n    //msg.filename = flow.get('HMIcsvLocation') + flow.get('HMIrecipeName');\n    msg.check = {\n        startIndex: startIndex,\n        endIndex: endIndex,\n        firstPart: msg.payload.fileData.slice(0, startIndex),\n        insert: msg.payload.bypass.text,\n        lastPart: msg.payload.fileData.slice(endIndex + 2, msg.payload.fileData.length)\n\n    };\n\n    //Delete and insert\n    msg.payload = msg.payload.fileData.slice(0, startIndex) + msg.payload.fileData.slice(endIndex + 2, msg.payload.fileData.length);\n} else {\n    msg.payload = msg.payload.fileData;\n    //active: add a warning that the file was not changed\n}\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 4050,
+        "x": 4630,
         "y": 2640,
         "wires": [
             [
@@ -15562,8 +15317,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 3310,
-        "y": 2400,
+        "x": 2750,
+        "y": 2600,
         "wires": [
             [
                 "28b176bdcfa9722c"
@@ -15587,7 +15342,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 4230,
+        "x": 4890,
         "y": 2520,
         "wires": []
     },
@@ -15602,11 +15357,11 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 4260,
+        "x": 4840,
         "y": 2640,
         "wires": [
             [
-                "5c8b65bc83bdb2a9"
+                "582b67c51b73f965"
             ]
         ]
     },
@@ -15625,8 +15380,8 @@
         "depth": 0,
         "stat": false,
         "showWarnings": true,
-        "x": 3150,
-        "y": 2400,
+        "x": 2590,
+        "y": 2600,
         "wires": [
             [
                 "509043aec753b639",
@@ -15639,7 +15394,7 @@
         "type": "debug",
         "z": "6c2dfeb262f54a31",
         "name": "Does not exist",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -15647,8 +15402,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 3500,
-        "y": 2380,
+        "x": 2940,
+        "y": 2560,
         "wires": []
     },
     {
@@ -15664,25 +15419,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 3450,
-        "y": 2480,
-        "wires": []
-    },
-    {
-        "id": "5c8b65bc83bdb2a9",
-        "type": "debug",
-        "z": "6c2dfeb262f54a31",
-        "name": "debug 278",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 4420,
-        "y": 2580,
+        "x": 2930,
+        "y": 2640,
         "wires": []
     },
     {
@@ -15696,8 +15434,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2990,
-        "y": 2400,
+        "x": 2430,
+        "y": 2600,
         "wires": [
             [
                 "74ac44fd89593798",
@@ -15717,45 +15455,15 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 3330,
-        "y": 2360,
+        "x": 2770,
+        "y": 2560,
         "wires": []
-    },
-    {
-        "id": "bcc392f485e87339",
-        "type": "inject",
-        "z": "6c2dfeb262f54a31",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": "0.5",
-        "topic": "",
-        "payload": "{\"fileLocation\":\"C:/Users/User/Documents/Coding/Node Red/Recipes/ab (123).json\"}",
-        "payloadType": "json",
-        "x": 2790,
-        "y": 2400,
-        "wires": [
-            [
-                "647e04bb087214d6",
-                "3b22aeefea9d7f3d"
-            ]
-        ]
     },
     {
         "id": "74ac44fd89593798",
         "type": "debug",
         "z": "6c2dfeb262f54a31",
-        "name": "debug 272",
+        "name": "FL 1",
         "active": false,
         "tosidebar": true,
         "console": false,
@@ -15764,143 +15472,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 3150,
-        "y": 2360,
-        "wires": []
-    },
-    {
-        "id": "647e04bb087214d6",
-        "type": "debug",
-        "z": "6c2dfeb262f54a31",
-        "name": "debug 271",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2940,
-        "y": 2360,
-        "wires": []
-    },
-    {
-        "id": "8f1e40768e5d634f",
-        "type": "function",
-        "z": "6c2dfeb262f54a31",
-        "name": "Template Buffer",
-        "func": "//Hard coded: The buffer should have a single member with known key\nlet bufferKey = 'filename';\n\n// Retrieve the buffer array from context, or initialize it if it doesn't exist\nvar buffer = context.get('buffer') || {};\n\n// Check for progress trigger\nif ((msg.topic == 'delete') && (buffer[bufferKey] != undefined)) {\n    node.warn(buffer[bufferKey]);\n    msg.payload = {\n        filePath: flow.get('recipeJSONlocation') + buffer[bufferKey] + '.json',\n        filename: buffer[bufferKey] + '.json'\n    }\n    context.set('buffer', undefined);\n    msg.lineFlag = 'deleteRecipe';\n    let obj = JSON.parse(JSON.stringify(msg));\n    flow.set('AAA', obj);\n    return msg;\n} else \n\n// Clear check\nif (msg.topic == 'clear') {\n    context.set('buffer', undefined)\n} else \n\n// Add the incoming message payload and topic to the buffer\nif (msg.topic == bufferKey) {\nbuffer[msg.topic] = msg.payload;\n//node.warn(msg.payload);\ncontext.set('buffer', buffer);\n}\n\n\n\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 3240,
-        "y": 2260,
-        "wires": [
-            [
-                "7b10c851263941dc",
-                "3b22aeefea9d7f3d"
-            ]
-        ],
-        "info": "Message topic = heading in database"
-    },
-    {
-        "id": "ee2b12fe49a320a6",
-        "type": "ui_button",
-        "z": "6c2dfeb262f54a31",
-        "name": "",
-        "group": "0465010f96f3dad5",
-        "order": 14,
-        "width": 3,
-        "height": 1,
-        "passthru": false,
-        "label": "Delete",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "clear",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "delete",
-        "topicType": "str",
-        "x": 2990,
-        "y": 2260,
-        "wires": [
-            [
-                "8f1e40768e5d634f",
-                "304a1dae2a3e025f"
-            ]
-        ]
-    },
-    {
-        "id": "2fb51950723c283f",
-        "type": "link in",
-        "z": "6c2dfeb262f54a31",
-        "name": "Delete Recipe in",
-        "links": [
-            "a405fda7c0517634",
-            "c20be865f12bee03"
-        ],
-        "x": 3085,
-        "y": 2320,
-        "wires": [
-            [
-                "8f1e40768e5d634f",
-                "e2c796d776279fac"
-            ]
-        ]
-    },
-    {
-        "id": "7b10c851263941dc",
-        "type": "debug",
-        "z": "6c2dfeb262f54a31",
-        "name": "debug 257",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 3430,
-        "y": 2220,
-        "wires": []
-    },
-    {
-        "id": "304a1dae2a3e025f",
-        "type": "debug",
-        "z": "6c2dfeb262f54a31",
-        "name": "debug 258",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 3150,
-        "y": 2160,
-        "wires": []
-    },
-    {
-        "id": "e2c796d776279fac",
-        "type": "debug",
-        "z": "6c2dfeb262f54a31",
-        "name": "debug 254",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 3230,
-        "y": 2200,
+        "x": 2590,
+        "y": 2560,
         "wires": []
     },
     {
@@ -17264,7 +16837,7 @@
         "height": 0,
         "name": "(Settings) Login Text",
         "label": "",
-        "format": "msg.payload = 'To log in as a Guest press LOGIN while all fields are empty.';",
+        "format": "To log in as a Guest press LOGIN while all fields are empty.",
         "layout": "row-left",
         "className": "",
         "x": 1280,
@@ -17595,6 +17168,402 @@
         "info": "",
         "x": 290,
         "y": 2700,
+        "wires": []
+    },
+    {
+        "id": "8f1e40768e5d634f",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "name": "Template Buffer",
+        "func": "//Hard coded: The buffer should have a single member with known key\nlet bufferKey = 'filename';\n\n// Retrieve the buffer array from context, or initialize it if it doesn't exist\nvar buffer = context.get('buffer') || {};\n\n// Check for progress trigger\nif ((msg.topic == 'delete') && (buffer[bufferKey] != undefined)) {\n    msg.payload = {\n        filePath: flow.get('recipeJSONlocation') + buffer[bufferKey],\n        filename: buffer[bufferKey]\n    }\n    context.set('buffer', undefined);\n    msg.lineFlag = 'deleteRecipe';\n    let obj = JSON.parse(JSON.stringify(msg));\n    flow.set('AAA', obj);\n    return msg;\n} else \n\n// Add the incoming message payload and topic to the buffer\nif (bufferKey in msg) {\n    buffer[bufferKey] = msg.filename.split('\\\\').pop();\n    context.set('buffer', buffer);\n} else \n\n// Clear check\nif (msg.topic == 'clear') {\n    context.set('buffer', undefined)\n}\n\n\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2260,
+        "y": 2600,
+        "wires": [
+            [
+                "7b10c851263941dc",
+                "3b22aeefea9d7f3d"
+            ]
+        ],
+        "info": "Message topic = heading in database"
+    },
+    {
+        "id": "ee2b12fe49a320a6",
+        "type": "ui_button",
+        "z": "6c2dfeb262f54a31",
+        "name": "",
+        "group": "0465010f96f3dad5",
+        "order": 14,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "Delete",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "clear",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "delete",
+        "topicType": "str",
+        "x": 2050,
+        "y": 2600,
+        "wires": [
+            [
+                "8f1e40768e5d634f",
+                "c6b6ead33ab7fcbd"
+            ]
+        ]
+    },
+    {
+        "id": "7b10c851263941dc",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "debug 257",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2430,
+        "y": 2560,
+        "wires": []
+    },
+    {
+        "id": "2fb51950723c283f",
+        "type": "link in",
+        "z": "6c2dfeb262f54a31",
+        "name": "Delete Recipe in",
+        "links": [
+            "c20be865f12bee03"
+        ],
+        "x": 2125,
+        "y": 2660,
+        "wires": [
+            [
+                "8f1e40768e5d634f",
+                "89f11ae79f0dbf5f"
+            ]
+        ]
+    },
+    {
+        "id": "89f11ae79f0dbf5f",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "debug 280",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2270,
+        "y": 2680,
+        "wires": []
+    },
+    {
+        "id": "37e5e1cf05f04932",
+        "type": "ui_text_input",
+        "z": "6c2dfeb262f54a31",
+        "g": "43df61af7b7b9663",
+        "name": "",
+        "label": "File Name",
+        "tooltip": "",
+        "group": "0465010f96f3dad5",
+        "order": 2,
+        "width": 5,
+        "height": 1,
+        "passthru": false,
+        "mode": "text",
+        "delay": 300,
+        "topic": "filename",
+        "sendOnBlur": false,
+        "className": "",
+        "topicType": "str",
+        "x": 2150,
+        "y": 2360,
+        "wires": [
+            [
+                "1de9dfdf901990fa",
+                "859e77fbb03e40f0"
+            ]
+        ]
+    },
+    {
+        "id": "d749b9f44a2a2ba1",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "g": "43df61af7b7b9663",
+        "name": "Checking",
+        "func": "if (msg.lineFlag == \"fileSelected\") {\n    msg.payload = msg.filenameShort;\n    return msg;\n} else if (msg.lineFlag == \"SQL\") {\n    msg.payload = msg.payload.File_Name;\n} else if (msg.lineFlag == 'JSONdata') {\n    msg.payload = msg.payload.File_Name;\n} else if (msg.topic == 'clear') {\n    msg.payload = \"\";\n} else {\n    return null;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1980,
+        "y": 2360,
+        "wires": [
+            [
+                "37e5e1cf05f04932",
+                "4f48d873ac6baeca",
+                "7c1e899a2651d759",
+                "859e77fbb03e40f0"
+            ]
+        ]
+    },
+    {
+        "id": "1de9dfdf901990fa",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "g": "43df61af7b7b9663",
+        "name": "Set Par Flow",
+        "func": "msg.topic = \"filename\";\n\nif (msg.filenameShort != undefined) { //Checks if the filename has been loaded from a database\n    node.send({ \n        topic: \"filename\",\n        payload: msg.filenameShort\n        });\n    //node.send({ topic: \"fileLocation\", payload: msg.filename });\n    return null;\n} else { // Or any other message that gets received\n    node.send({ topic: \"filename\", payload: msg.payload })\n    //node.send({ topic: \"fileLocation\", payload: flow.get('recipeJSONlocation') + msg.payload + '.json' });\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2330,
+        "y": 2360,
+        "wires": [
+            [
+                "b6bd57aa234737be",
+                "a405fda7c0517634"
+            ]
+        ]
+    },
+    {
+        "id": "756ee76f9ccadbd8",
+        "type": "link in",
+        "z": "6c2dfeb262f54a31",
+        "g": "43df61af7b7b9663",
+        "name": "Filename in",
+        "links": [
+            "38ff2dcc2e41b6fa",
+            "5491c556639992d7",
+            "c20be865f12bee03"
+        ],
+        "x": 1825,
+        "y": 2340,
+        "wires": [
+            [
+                "d749b9f44a2a2ba1",
+                "1edb47acfa9dbac7"
+            ]
+        ]
+    },
+    {
+        "id": "4f48d873ac6baeca",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "g": "43df61af7b7b9663",
+        "name": "fileSelected",
+        "func": "if (msg.filenameShort != undefined) {\n    return msg;\n} else if (msg.lineFlag == \"SQL\") {\n    return {\n        payload: msg.payload\n    };\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2150,
+        "y": 2400,
+        "wires": [
+            [
+                "1de9dfdf901990fa",
+                "cb07a673fdfc2653"
+            ]
+        ]
+    },
+    {
+        "id": "7c1e899a2651d759",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "g": "43df61af7b7b9663",
+        "name": "debug 58",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2120,
+        "y": 2300,
+        "wires": []
+    },
+    {
+        "id": "b6bd57aa234737be",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "g": "43df61af7b7b9663",
+        "name": "Filename",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2520,
+        "y": 2360,
+        "wires": []
+    },
+    {
+        "id": "a405fda7c0517634",
+        "type": "link out",
+        "z": "6c2dfeb262f54a31",
+        "g": "43df61af7b7b9663",
+        "name": "Filename out",
+        "mode": "link",
+        "links": [
+            "fea68f0b27b3b0b6"
+        ],
+        "x": 2445,
+        "y": 2320,
+        "wires": []
+    },
+    {
+        "id": "1edb47acfa9dbac7",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "g": "43df61af7b7b9663",
+        "name": "debug 52",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1940,
+        "y": 2300,
+        "wires": []
+    },
+    {
+        "id": "cb07a673fdfc2653",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "g": "43df61af7b7b9663",
+        "name": "debug 51",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2380,
+        "y": 2400,
+        "wires": []
+    },
+    {
+        "id": "8dc188d1df343704",
+        "type": "comment",
+        "z": "6c2dfeb262f54a31",
+        "g": "43df61af7b7b9663",
+        "name": "File Name",
+        "info": "",
+        "x": 1840,
+        "y": 2160,
+        "wires": []
+    },
+    {
+        "id": "859e77fbb03e40f0",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "g": "43df61af7b7b9663",
+        "name": "Save check Filename",
+        "func": "let check = flow.get(\"filenameCheck\");\nif (check == undefined) {\n    context.set(\"filenameCheck\", false);\n    check = false;\n}\n if (msg.payload == \"\") { // clear means the join node lacks basic form data\n    check = false;\n} else { // save meanse the join node lacks basic form data\n    check = true;\n}\nflow.set(\"filenameCheck\", check);\nmsg = {\n    payload : check,\n    topic: \"filenameCheck\"\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2360,
+        "y": 2240,
+        "wires": [
+            [
+                "337b76a428a81ab5"
+            ]
+        ]
+    },
+    {
+        "id": "337b76a428a81ab5",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "g": "43df61af7b7b9663",
+        "name": "debug 95",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2550,
+        "y": 2180,
+        "wires": []
+    },
+    {
+        "id": "c6b6ead33ab7fcbd",
+        "type": "link out",
+        "z": "6c2dfeb262f54a31",
+        "name": "Delete Button out",
+        "mode": "link",
+        "links": [
+            "3d7f076cfd4e4c32"
+        ],
+        "x": 2165,
+        "y": 2540,
+        "wires": []
+    },
+    {
+        "id": "959c63b1785562ea",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "FL 2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3610,
+        "y": 2500,
+        "wires": []
+    },
+    {
+        "id": "582b67c51b73f965",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "debug 281",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 4860,
+        "y": 2800,
         "wires": []
     },
     {
