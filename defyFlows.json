@@ -1483,70 +1483,6 @@
         "h": 242
     },
     {
-        "id": "70592e241de32532",
-        "type": "group",
-        "z": "6c2dfeb262f54a31",
-        "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "79439506b1a6acc3",
-            "c1e62858976a3769",
-            "517b54151287feac",
-            "d1d3234b068b85f6",
-            "b3fc76dda4049346",
-            "77c1c19ba436284e",
-            "dcdc69295a6f5f76",
-            "c00ecaddc6014250",
-            "a93080aeaf3c5e79",
-            "b10bca5a4658bf5c",
-            "9ecb940b93d33cdf",
-            "9b41e9467bf30ec0",
-            "cff7a763597986a2",
-            "6a9e30f65e495bca",
-            "b9fe3a978a99d255",
-            "306199d1b0477757",
-            "d235074ffad9a339",
-            "fb7182813481b720",
-            "95d97aea64d77131",
-            "60c34f98e1e26dba",
-            "9434a0f72f5dcdb1",
-            "40226ce37f97e01d",
-            "071e0510fb46c738",
-            "c08febe6a2ea67d1",
-            "e65f384ee41cf598",
-            "899982ab2aee5dab",
-            "03d1c3ba697c94e4",
-            "b19f1d350c2fabd7",
-            "039d4dbe4e2b78e1",
-            "fc30dfd1f0cc21cf",
-            "3590ea7d7ffab34f",
-            "a4a78451414d1f34",
-            "b7d078ea7c3f821e",
-            "73d41cef94786e51",
-            "d74b12cee713ed7e",
-            "a5d2df37afae85ec",
-            "3156f4f0d86003a5",
-            "8210bc989146b289",
-            "5da121824d3a508a",
-            "fa9015a8110bfeda",
-            "099c81c6e9517cfb",
-            "bf90850384938521",
-            "8a84e81f560c21e0",
-            "a5f50c3adfd68f30"
-        ],
-        "x": 14,
-        "y": 359,
-        "w": 2172,
-        "h": 702
-    },
-    {
         "id": "9a043224f1e79f2a",
         "type": "junction",
         "z": "9d61395e.8839f8",
@@ -2402,9 +2338,8 @@
         "id": "cff7a763597986a2",
         "type": "junction",
         "z": "6c2dfeb262f54a31",
-        "g": "70592e241de32532",
-        "x": 1220,
-        "y": 980,
+        "x": 1640,
+        "y": 940,
         "wires": [
             [
                 "517b54151287feac"
@@ -2415,9 +2350,8 @@
         "id": "60c34f98e1e26dba",
         "type": "junction",
         "z": "6c2dfeb262f54a31",
-        "g": "70592e241de32532",
-        "x": 660,
-        "y": 980,
+        "x": 1080,
+        "y": 940,
         "wires": [
             [
                 "cff7a763597986a2",
@@ -2429,9 +2363,8 @@
         "id": "c08febe6a2ea67d1",
         "type": "junction",
         "z": "6c2dfeb262f54a31",
-        "g": "70592e241de32532",
-        "x": 1660,
-        "y": 580,
+        "x": 2080,
+        "y": 540,
         "wires": [
             [
                 "a5d2df37afae85ec"
@@ -2442,12 +2375,311 @@
         "id": "8210bc989146b289",
         "type": "junction",
         "z": "6c2dfeb262f54a31",
-        "g": "70592e241de32532",
-        "x": 340,
-        "y": 980,
+        "x": 760,
+        "y": 940,
         "wires": [
             [
                 "3590ea7d7ffab34f"
+            ]
+        ]
+    },
+    {
+        "id": "06f629eaaab136d7",
+        "type": "junction",
+        "z": "6c2dfeb262f54a31",
+        "x": 1280,
+        "y": 500,
+        "wires": [
+            [
+                "9323c14a8cd433da",
+                "9dccbe810699e434"
+            ]
+        ]
+    },
+    {
+        "id": "8f7cb562d41b8b5d",
+        "type": "junction",
+        "z": "6c2dfeb262f54a31",
+        "x": 1020,
+        "y": 500,
+        "wires": [
+            [
+                "06f629eaaab136d7",
+                "53bc6d05453164e1"
+            ]
+        ]
+    },
+    {
+        "id": "addd01cd05cec765",
+        "type": "junction",
+        "z": "6c2dfeb262f54a31",
+        "x": 400,
+        "y": 500,
+        "wires": [
+            [
+                "9fc4b59f185c006e"
+            ]
+        ]
+    },
+    {
+        "id": "643cd93a1a646fcf",
+        "type": "junction",
+        "z": "6c2dfeb262f54a31",
+        "x": 1280,
+        "y": 540,
+        "wires": [
+            [
+                "7e8e9285ac4d4af7"
+            ]
+        ]
+    },
+    {
+        "id": "9198bb0cdc6fe3d6",
+        "type": "junction",
+        "z": "6c2dfeb262f54a31",
+        "x": 1020,
+        "y": 540,
+        "wires": [
+            [
+                "643cd93a1a646fcf"
+            ]
+        ]
+    },
+    {
+        "id": "fa831abc7da41e90",
+        "type": "junction",
+        "z": "6c2dfeb262f54a31",
+        "x": 620,
+        "y": 500,
+        "wires": [
+            [
+                "72e02e9f9b6ba534",
+                "86db4bedc72c93e1",
+                "8cb57e408fc465c5",
+                "aebf85de92113483"
+            ]
+        ]
+    },
+    {
+        "id": "0788349311d3e9bd",
+        "type": "junction",
+        "z": "6c2dfeb262f54a31",
+        "x": 1280,
+        "y": 560,
+        "wires": [
+            [
+                "bedb18ee343c6347",
+                "65be6ad7c1bea905"
+            ]
+        ]
+    },
+    {
+        "id": "df1fd1941c5b395f",
+        "type": "junction",
+        "z": "6c2dfeb262f54a31",
+        "x": 1020,
+        "y": 560,
+        "wires": [
+            [
+                "0788349311d3e9bd",
+                "399295b176020939"
+            ]
+        ]
+    },
+    {
+        "id": "4c4b6a2e98592723",
+        "type": "junction",
+        "z": "6c2dfeb262f54a31",
+        "x": 1280,
+        "y": 600,
+        "wires": [
+            [
+                "ea2d055881e36cfe"
+            ]
+        ]
+    },
+    {
+        "id": "5661c235efdcfa2c",
+        "type": "junction",
+        "z": "6c2dfeb262f54a31",
+        "x": 1020,
+        "y": 600,
+        "wires": [
+            [
+                "4c4b6a2e98592723"
+            ]
+        ]
+    },
+    {
+        "id": "685f7c6252fbf069",
+        "type": "junction",
+        "z": "6c2dfeb262f54a31",
+        "x": 1280,
+        "y": 620,
+        "wires": [
+            [
+                "2a096eb5b729ad7a",
+                "e60e9cb6f7c09950"
+            ]
+        ]
+    },
+    {
+        "id": "18a6019dbf51f4b8",
+        "type": "junction",
+        "z": "6c2dfeb262f54a31",
+        "x": 1020,
+        "y": 620,
+        "wires": [
+            [
+                "685f7c6252fbf069",
+                "fe3347238adb2776"
+            ]
+        ]
+    },
+    {
+        "id": "368d37e7008cea73",
+        "type": "junction",
+        "z": "6c2dfeb262f54a31",
+        "x": 1280,
+        "y": 660,
+        "wires": [
+            [
+                "dc4d189a7a019648"
+            ]
+        ]
+    },
+    {
+        "id": "53629911f5459ce1",
+        "type": "junction",
+        "z": "6c2dfeb262f54a31",
+        "x": 1020,
+        "y": 660,
+        "wires": [
+            [
+                "368d37e7008cea73"
+            ]
+        ]
+    },
+    {
+        "id": "d75a92667a98eb57",
+        "type": "junction",
+        "z": "6c2dfeb262f54a31",
+        "x": 1280,
+        "y": 680,
+        "wires": [
+            [
+                "f4819242d6b630f6",
+                "f3749122349010b8"
+            ]
+        ]
+    },
+    {
+        "id": "b0d452d7a86250cc",
+        "type": "junction",
+        "z": "6c2dfeb262f54a31",
+        "x": 1020,
+        "y": 680,
+        "wires": [
+            [
+                "d75a92667a98eb57",
+                "c48701d31a705a25"
+            ]
+        ]
+    },
+    {
+        "id": "677d85a17326c45a",
+        "type": "junction",
+        "z": "6c2dfeb262f54a31",
+        "x": 1280,
+        "y": 720,
+        "wires": [
+            [
+                "ef896cd52b629bbd"
+            ]
+        ]
+    },
+    {
+        "id": "edad1ed751f9f35a",
+        "type": "junction",
+        "z": "6c2dfeb262f54a31",
+        "x": 1020,
+        "y": 720,
+        "wires": [
+            [
+                "677d85a17326c45a"
+            ]
+        ]
+    },
+    {
+        "id": "9dccbe810699e434",
+        "type": "junction",
+        "z": "6c2dfeb262f54a31",
+        "x": 1540,
+        "y": 500,
+        "wires": [
+            [
+                "7e8e9285ac4d4af7"
+            ]
+        ]
+    },
+    {
+        "id": "65be6ad7c1bea905",
+        "type": "junction",
+        "z": "6c2dfeb262f54a31",
+        "x": 1540,
+        "y": 560,
+        "wires": [
+            [
+                "ea2d055881e36cfe"
+            ]
+        ]
+    },
+    {
+        "id": "e60e9cb6f7c09950",
+        "type": "junction",
+        "z": "6c2dfeb262f54a31",
+        "x": 1540,
+        "y": 620,
+        "wires": [
+            [
+                "dc4d189a7a019648"
+            ]
+        ]
+    },
+    {
+        "id": "f3749122349010b8",
+        "type": "junction",
+        "z": "6c2dfeb262f54a31",
+        "x": 1540,
+        "y": 680,
+        "wires": [
+            [
+                "ef896cd52b629bbd"
+            ]
+        ]
+    },
+    {
+        "id": "fc805a8187a29356",
+        "type": "junction",
+        "z": "6c2dfeb262f54a31",
+        "x": 620,
+        "y": 460,
+        "wires": [
+            [
+                "4bb4261eb33f56d6",
+                "c07227c42b3fd36d"
+            ]
+        ]
+    },
+    {
+        "id": "4bb4261eb33f56d6",
+        "type": "junction",
+        "z": "6c2dfeb262f54a31",
+        "x": 1600,
+        "y": 460,
+        "wires": [
+            [
+                "517b54151287feac"
             ]
         ]
     },
@@ -2877,7 +3109,7 @@
         "type": "ui_tab",
         "name": "Recipes",
         "icon": "accessible",
-        "order": 2,
+        "order": 1,
         "disabled": false,
         "hidden": false
     },
@@ -3059,7 +3291,7 @@
         "type": "ui_tab",
         "name": "Settings",
         "icon": "dashboard",
-        "order": 1,
+        "order": 2,
         "disabled": false,
         "hidden": false
     },
@@ -7012,8 +7244,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 3260,
-        "y": 300,
+        "x": 3340,
+        "y": 320,
         "wires": [
             []
         ],
@@ -16727,121 +16959,18 @@
         "wires": []
     },
     {
-        "id": "79439506b1a6acc3",
-        "type": "ui_text_input",
-        "z": "6c2dfeb262f54a31",
-        "g": "70592e241de32532",
-        "name": "",
-        "label": "Ground Bond High",
-        "tooltip": "",
-        "group": "218e00eac196634f",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "mode": "number",
-        "delay": 300,
-        "topic": "GB_H",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 950,
-        "y": 560,
-        "wires": [
-            [
-                "517b54151287feac",
-                "d1d3234b068b85f6"
-            ]
-        ]
-    },
-    {
-        "id": "c1e62858976a3769",
-        "type": "switch",
-        "z": "6c2dfeb262f54a31",
-        "g": "70592e241de32532",
-        "name": "",
-        "property": "topic",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "GB_H",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "GB_L",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "ACW_H",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "ACW_L",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "IR_H",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "IR_L",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "ELC_H",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 7,
-        "x": 650,
-        "y": 720,
-        "wires": [
-            [
-                "79439506b1a6acc3"
-            ],
-            [
-                "dcdc69295a6f5f76"
-            ],
-            [
-                "c00ecaddc6014250"
-            ],
-            [
-                "a93080aeaf3c5e79"
-            ],
-            [
-                "b10bca5a4658bf5c"
-            ],
-            [
-                "9ecb940b93d33cdf"
-            ],
-            [
-                "9b41e9467bf30ec0"
-            ]
-        ]
-    },
-    {
         "id": "517b54151287feac",
         "type": "function",
         "z": "6c2dfeb262f54a31",
-        "g": "70592e241de32532",
         "name": "Buffer",
-        "func": "// Check for trigger\nif (msg.complete != undefined && msg.topic == 'save') { // Buffer trigger is msg.complete existing\n    if (msg.lineFlag == 'completedWithChecks') {\n        // set payload with buffer and clear buffer if final checks have been done, indicated by the msg.lineFlag = \"completedWithChecks\"\n        //context.set('buffer', undefined)\n        return [msg, ];\n    }\n    msg.payload = context.get('buffer');\n    return [ ,msg]; // Go to line with checks\n}\n\nif (msg.lineFlag == \"clear\") {\n    context.set('buffer', undefined);\n}\n\n// Retrieve the buffer array from context, or initialize it if it doesn't exist\nvar buffer = context.get('buffer') || {};\n\n// Add / Delete the incoming message payload and topic to the buffer\nif ((msg.payload == null) && (msg.topic in buffer)) {// If field is cleared\n    delete buffer[msg.topic];\n} else { // if any other data point comes through thats not empty, save it\n    buffer[msg.topic] = msg.payload;\n}\n\n// Set the buffer array back to context\ncontext.set('buffer', buffer);\n",
+        "func": "// Check for trigger\nif (msg.complete != undefined && msg.lineFlag == 'save') { // Buffer trigger is msg.complete existing (save)\n//node.warn('You\\'re savng things');\n    if (msg.lineFlag == 'completedWithChecks') {\n        // set payload with buffer and clear buffer if final checks have been done, indicated by the msg.lineFlag = \"completedWithChecks\"\n        //context.set('buffer', undefined)\n        return [msg, ];\n    }\n    msg.payload = context.get('buffer');\n    return [ ,msg]; // Go to line with checks\n} else if (msg.lineFlag == 'JSONdata') { //Catching the Feed line data\n//node.warn('Storing JSON data');\n    context.set('buffer', msg.data);\n} else if (msg.lineFlag == \"clear\") { // Catching clear message\n//node.warn('Clearing data');\n    context.set('buffer', undefined);\n} else { // Catches normal data inputing\n//node.warn('Inputing normal data');\n    // Retrieve the buffer array from context, or initialize it if it doesn't exist\n    var buffer = context.get('buffer') || {};\n\n    // Add / Delete the incoming message payload and topic to the buffer\n    if ((msg.payload == null) && (msg.topic in buffer)) {// If field is cleared\n        delete buffer[msg.topic];\n    } else { // if any other data point comes through thats not empty, save it\n        buffer[msg.topic] = msg.payload;\n    }\n\n    // Set the buffer array back to context\n    context.set('buffer', buffer);\n}\n\n\n",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1350,
-        "y": 560,
+        "x": 1770,
+        "y": 520,
         "wires": [
             [
                 "d235074ffad9a339",
@@ -16855,246 +16984,20 @@
         "info": "Message topic = heading in database"
     },
     {
-        "id": "d1d3234b068b85f6",
-        "type": "debug",
-        "z": "6c2dfeb262f54a31",
-        "g": "70592e241de32532",
-        "name": "debug 118",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1250,
-        "y": 420,
-        "wires": []
-    },
-    {
-        "id": "b3fc76dda4049346",
-        "type": "split",
-        "z": "6c2dfeb262f54a31",
-        "g": "70592e241de32532",
-        "name": "",
-        "splt": "\\n",
-        "spltType": "str",
-        "arraySplt": 1,
-        "arraySpltType": "len",
-        "stream": false,
-        "addname": "topic",
-        "x": 510,
-        "y": 720,
-        "wires": [
-            [
-                "c1e62858976a3769",
-                "60c34f98e1e26dba"
-            ]
-        ]
-    },
-    {
-        "id": "77c1c19ba436284e",
-        "type": "split",
-        "z": "6c2dfeb262f54a31",
-        "g": "70592e241de32532",
-        "name": "",
-        "splt": "\\n",
-        "spltType": "str",
-        "arraySplt": 1,
-        "arraySpltType": "len",
-        "stream": false,
-        "addname": "topic",
-        "x": 510,
-        "y": 660,
-        "wires": [
-            [
-                "c1e62858976a3769"
-            ]
-        ]
-    },
-    {
-        "id": "dcdc69295a6f5f76",
-        "type": "ui_text_input",
-        "z": "6c2dfeb262f54a31",
-        "g": "70592e241de32532",
-        "name": "",
-        "label": "Ground Bond Low",
-        "tooltip": "",
-        "group": "218e00eac196634f",
-        "order": 3,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "mode": "number",
-        "delay": 300,
-        "topic": "GB_L",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 950,
-        "y": 620,
-        "wires": [
-            [
-                "517b54151287feac",
-                "d1d3234b068b85f6"
-            ]
-        ]
-    },
-    {
-        "id": "c00ecaddc6014250",
-        "type": "ui_text_input",
-        "z": "6c2dfeb262f54a31",
-        "g": "70592e241de32532",
-        "name": "",
-        "label": "ACW High",
-        "tooltip": "",
-        "group": "218e00eac196634f",
-        "order": 6,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "mode": "number",
-        "delay": 300,
-        "topic": "ACW_H",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 930,
-        "y": 680,
-        "wires": [
-            [
-                "517b54151287feac",
-                "d1d3234b068b85f6"
-            ]
-        ]
-    },
-    {
-        "id": "a93080aeaf3c5e79",
-        "type": "ui_text_input",
-        "z": "6c2dfeb262f54a31",
-        "g": "70592e241de32532",
-        "name": "",
-        "label": "ACW Low",
-        "tooltip": "",
-        "group": "218e00eac196634f",
-        "order": 7,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "mode": "number",
-        "delay": 300,
-        "topic": "ACW_L",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 920,
-        "y": 740,
-        "wires": [
-            [
-                "517b54151287feac",
-                "d1d3234b068b85f6"
-            ]
-        ]
-    },
-    {
-        "id": "b10bca5a4658bf5c",
-        "type": "ui_text_input",
-        "z": "6c2dfeb262f54a31",
-        "g": "70592e241de32532",
-        "name": "",
-        "label": "Insulation Resistance High",
-        "tooltip": "",
-        "group": "218e00eac196634f",
-        "order": 4,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "mode": "number",
-        "delay": 300,
-        "topic": "IR_H",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 980,
-        "y": 800,
-        "wires": [
-            [
-                "517b54151287feac",
-                "d1d3234b068b85f6"
-            ]
-        ]
-    },
-    {
-        "id": "9ecb940b93d33cdf",
-        "type": "ui_text_input",
-        "z": "6c2dfeb262f54a31",
-        "g": "70592e241de32532",
-        "name": "",
-        "label": "Insulation Resistance Low",
-        "tooltip": "",
-        "group": "218e00eac196634f",
-        "order": 5,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "mode": "number",
-        "delay": 300,
-        "topic": "IR_L",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 970,
-        "y": 860,
-        "wires": [
-            [
-                "517b54151287feac",
-                "d1d3234b068b85f6"
-            ]
-        ]
-    },
-    {
-        "id": "9b41e9467bf30ec0",
-        "type": "ui_text_input",
-        "z": "6c2dfeb262f54a31",
-        "g": "70592e241de32532",
-        "name": "",
-        "label": "Earth Leakage Current High",
-        "tooltip": "",
-        "group": "218e00eac196634f",
-        "order": 8,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "mode": "number",
-        "delay": 300,
-        "topic": "ELC_H",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 980,
-        "y": 920,
-        "wires": [
-            [
-                "517b54151287feac",
-                "d1d3234b068b85f6"
-            ]
-        ]
-    },
-    {
         "id": "6a9e30f65e495bca",
         "type": "link in",
         "z": "6c2dfeb262f54a31",
-        "g": "70592e241de32532",
         "name": "Basic Buffer in",
         "links": [
             "a5d2df37afae85ec",
             "b4b222f939895c2c"
         ],
-        "x": 1295,
-        "y": 760,
+        "x": 1715,
+        "y": 720,
         "wires": [
             [
-                "517b54151287feac"
+                "517b54151287feac",
+                "9af343f3d1944ad8"
             ]
         ]
     },
@@ -17102,7 +17005,6 @@
         "id": "b9fe3a978a99d255",
         "type": "debug",
         "z": "6c2dfeb262f54a31",
-        "g": "70592e241de32532",
         "name": "debug 102",
         "active": false,
         "tosidebar": true,
@@ -17112,24 +17014,23 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1490,
-        "y": 440,
+        "x": 1910,
+        "y": 380,
         "wires": []
     },
     {
         "id": "306199d1b0477757",
         "type": "function",
         "z": "6c2dfeb262f54a31",
-        "g": "70592e241de32532",
         "name": "Checks (Has Sets)",
-        "func": "// Set\nif(msg.lineFlag == \"clear\")\n    return null;\nlet basicFormElements = { // Has the correct order of members\n    \"GB_H\" : \"Ground Bond High\",\n    \"GB_L\": \"Ground Bond Low\",\n    \"ACW_H\": \"ACW_H\",\n    \"ACW_L\": \"ACW_L\",\n    \"IR_H\": \"Insulation Resistance High\",\n    \"IR_L\": \"Insulation Resistance Low\",\n    \"ELC_H\" : \"Earth Leakage Current High\"\n},\n    output = {},\n    missing = [];\n \nif (msg.payload == undefined) { // checks if nothing was in the buffer's context variable, if so, make it empty\n    msg.payload = { // copy basicFormsElements into payload\n        ...basicFormElements\n    };\n    for(var key in msg.payload) {\n        output[key] = -1;\n        missing.push(basicFormElements[key]);\n    }\n} else {\n    for (var key in basicFormElements) {\n        if (msg.payload.hasOwnProperty(key) && msg.payload[key] != \"\") {\n            output[key] = msg.payload[key]\n        } else {\n            missing.push(basicFormElements[key])\n            output[key] = -1;\n        }\n    }\n}\n\nmsg.data  = {\n    output: output,\n    missing: missing\n}\n\nif (missing.length > 0) { // If the full basic form is not filled in\n    let status = 'The following elements have been left out in the \"Basics\" section: || ';\n    for(let i = 0; i < missing.length; i++) {\n        status += missing[i] + \" || \";\n    }\n    msg.payload = status;\n    return [ , msg];\n} else { // if full basic form is completed\n    msg.lineFlag = \"completedWithChecks\";\n    msg.payload = output;\n    delete msg.data; // Not needed once checks are completed.\n    return [msg, ];\n}\n",
+        "func": "// Set\nif(msg.lineFlag == \"clear\")\n    return null;\nlet basicFormElements = { // Has the correct order of things\n    \"GB\": {\n        \"value\": \"\",\n        \"upperTol\": \"\",\n        \"lowerTol\": \"\"\n    },\n    \"ACW\": {\n        \"value\": \"\",\n        \"upperTol\": \"\",\n        \"lowerTol\": \"\"\n    },\n    \"IR\": {\n        \"value\": \"\",\n        \"upperTol\": \"\",\n        \"lowerTol\": \"\"\n    },\n    \"EL\": {\n        \"value\": \"\",\n        \"upperTol\": \"\",\n        \"lowerTol\": \"\"\n    }\n},\n    basicFormElementsNames = {\n        \"GB\" : \"Ground Bond Value(s)\",\n        \"ACW\": \"ACW Value(s)\",\n        \"IR\": \"Insulation Resistance Value(s)\",\n        \"EL\": \"Earth Leakage Value(s)\"\n    },\n    output = {},\n    temp = {},\n    missing = [];\n \nif (msg.payload == undefined) { // checks if nothing was in the buffer's context variable, if so, make it empty\n    msg.payload = { // copy basicFormsElements into payload\n        ...basicFormElements\n    };\n    for(var key1 in msg.payload) { // Goes through and creates the empty basic data\n        for (var key2 in msg.payload[key1]) {\n            temp[key2] = -1;\n        }\n        output[key1] = temp;\n        missing.push(basicFormElementsNames[key1]);\n    }\n} else {\n    for (var key1 in basicFormElements) { // Goes through and creates the empty basic data\n        if (key1 in msg.payload && msg.payload[key1] != \"\") { // Check if key exists in current payload\n            for (var key2 in basicFormElements[key1]) { // Loop through members of each basic test\n                if (key2 in msg.payload[key1]) { // Check if each member in basic test exist\n                   temp[key2] = msg.payload[key1][key2]; \n                } else { //Looking at members in basic test\n                    temp[key2] = -1;\n                    if (!(missing.includes(basicFormElementsNames[key1]))) { // checks to see if missing arr does not have text error msg\n                        missing.push(basicFormElementsNames[key1]);\n                    }\n                }\n            }\n            output[key1] = (temp)\n            temp = {}\n        } else { // Looking at basic tests\n            for (key2 in basicFormElements[key1]) {\n                temp[key2] = -1;\n            }\n            output[key1] = temp;\n            temp = {};\n            missing.push(basicFormElementsNames[key1])\n        }\n    }\n}\n\nmsg.data  = {\n    output: output, //Used in second node downstream to assign payload\n    missing: missing\n}\n\nif (missing.length > 0) { // If the full basic form is not filled in\n    let status = 'The following elements have been left out in the \"Basics\" section: || ';\n    for(let i = 0; i < missing.length; i++) {\n        status += missing[i] + \" || \";\n    }\n    msg.payload = status;\n    return [ , msg];\n} else { // if full basic form is completed\n    msg.lineFlag = \"completedWithChecks\";\n    msg.payload = output;\n    delete msg.data; // Not needed once checks are completed.\n    return [msg, ];\n}\n\n",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1530,
-        "y": 600,
+        "x": 1950,
+        "y": 560,
         "wires": [
             [
                 "40226ce37f97e01d",
@@ -17137,7 +17038,8 @@
             ],
             [
                 "071e0510fb46c738",
-                "a5f50c3adfd68f30"
+                "a5f50c3adfd68f30",
+                "a8e5c3f63ac47823"
             ]
         ]
     },
@@ -17145,7 +17047,6 @@
         "id": "d235074ffad9a339",
         "type": "function",
         "z": "6c2dfeb262f54a31",
-        "g": "70592e241de32532",
         "name": "Send Join / Save Return",
         "func": "// Set things up for the Final join node\nlet joinNodeMsg = {\n    payload : msg.payload,\n    topic   : 'basic'\n}\n\nlet saveMsg = {\n    payload : \"\",\n    topic   : 'save',\n    lineFlag: 'save',\n    complete: ''\n}\nreturn [joinNodeMsg, saveMsg];",
         "outputs": 2,
@@ -17153,8 +17054,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1550,
-        "y": 540,
+        "x": 1970,
+        "y": 500,
         "wires": [
             [
                 "e65f384ee41cf598",
@@ -17170,9 +17071,8 @@
         "id": "fb7182813481b720",
         "type": "debug",
         "z": "6c2dfeb262f54a31",
-        "g": "70592e241de32532",
         "name": "debug 115",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -17180,72 +17080,16 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1520,
-        "y": 660,
+        "x": 1940,
+        "y": 620,
         "wires": []
-    },
-    {
-        "id": "95d97aea64d77131",
-        "type": "change",
-        "z": "6c2dfeb262f54a31",
-        "g": "70592e241de32532",
-        "name": "Set Payload",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "payload.basic",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 350,
-        "y": 720,
-        "wires": [
-            [
-                "b3fc76dda4049346",
-                "fc30dfd1f0cc21cf"
-            ]
-        ]
-    },
-    {
-        "id": "9434a0f72f5dcdb1",
-        "type": "change",
-        "z": "6c2dfeb262f54a31",
-        "g": "70592e241de32532",
-        "name": "Del trigger",
-        "rules": [
-            {
-                "t": "delete",
-                "p": "complete",
-                "pt": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 350,
-        "y": 660,
-        "wires": [
-            [
-                "77c1c19ba436284e"
-            ]
-        ]
     },
     {
         "id": "40226ce37f97e01d",
         "type": "debug",
         "z": "6c2dfeb262f54a31",
-        "g": "70592e241de32532",
         "name": "debug 109",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -17253,15 +17097,14 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1730,
-        "y": 660,
+        "x": 2230,
+        "y": 520,
         "wires": []
     },
     {
         "id": "071e0510fb46c738",
         "type": "ui_toast",
         "z": "6c2dfeb262f54a31",
-        "g": "70592e241de32532",
         "position": "dialog",
         "displayTime": "3",
         "highlight": "",
@@ -17273,8 +17116,8 @@
         "className": "",
         "topic": "",
         "name": "",
-        "x": 1730,
-        "y": 620,
+        "x": 2150,
+        "y": 580,
         "wires": [
             [
                 "73d41cef94786e51",
@@ -17286,7 +17129,6 @@
         "id": "e65f384ee41cf598",
         "type": "debug",
         "z": "6c2dfeb262f54a31",
-        "g": "70592e241de32532",
         "name": "debug 114",
         "active": false,
         "tosidebar": true,
@@ -17296,15 +17138,14 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1730,
-        "y": 400,
+        "x": 2130,
+        "y": 360,
         "wires": []
     },
     {
         "id": "899982ab2aee5dab",
         "type": "debug",
         "z": "6c2dfeb262f54a31",
-        "g": "70592e241de32532",
         "name": "debug 117",
         "active": false,
         "tosidebar": true,
@@ -17314,43 +17155,40 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1770,
-        "y": 440,
+        "x": 2190,
+        "y": 400,
         "wires": []
     },
     {
         "id": "03d1c3ba697c94e4",
         "type": "link out",
         "z": "6c2dfeb262f54a31",
-        "g": "70592e241de32532",
         "name": "Basic out",
         "mode": "link",
         "links": [
             "fea68f0b27b3b0b6"
         ],
-        "x": 1705,
-        "y": 500,
+        "x": 2125,
+        "y": 460,
         "wires": []
     },
     {
         "id": "b19f1d350c2fabd7",
         "type": "link out",
         "z": "6c2dfeb262f54a31",
-        "g": "70592e241de32532",
         "name": "Save Out From Basic",
         "mode": "link",
         "links": [
             "37a523ac432e0d6b"
         ],
-        "x": 1745,
-        "y": 520,
+        "x": 2165,
+        "y": 480,
         "wires": []
     },
     {
         "id": "039d4dbe4e2b78e1",
         "type": "link in",
         "z": "6c2dfeb262f54a31",
-        "g": "70592e241de32532",
         "name": "Basic Tests in",
         "links": [
             "5491c556639992d7"
@@ -17359,34 +17197,14 @@
         "y": 760,
         "wires": [
             [
-                "95d97aea64d77131",
-                "3156f4f0d86003a5"
+                "a6a1f7a83c9a8a9a"
             ]
         ]
-    },
-    {
-        "id": "fc30dfd1f0cc21cf",
-        "type": "debug",
-        "z": "6c2dfeb262f54a31",
-        "g": "70592e241de32532",
-        "name": "debug 105",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 530,
-        "y": 760,
-        "wires": []
     },
     {
         "id": "3590ea7d7ffab34f",
         "type": "function",
         "z": "6c2dfeb262f54a31",
-        "g": "70592e241de32532",
         "name": "Clear node msg",
         "func": "if (msg.complete != undefined) {\n    msg = { \n        lineFlag: \"clear\"\n    }\n}\nreturn msg;",
         "outputs": 1,
@@ -17394,8 +17212,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 460,
-        "y": 980,
+        "x": 880,
+        "y": 940,
         "wires": [
             [
                 "60c34f98e1e26dba",
@@ -17407,7 +17225,6 @@
         "id": "a4a78451414d1f34",
         "type": "debug",
         "z": "6c2dfeb262f54a31",
-        "g": "70592e241de32532",
         "name": "debug 108",
         "active": false,
         "tosidebar": true,
@@ -17417,45 +17234,14 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 830,
-        "y": 1020,
+        "x": 1250,
+        "y": 980,
         "wires": []
-    },
-    {
-        "id": "b7d078ea7c3f821e",
-        "type": "change",
-        "z": "6c2dfeb262f54a31",
-        "g": "70592e241de32532",
-        "name": "Set Payload",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "{\"GB_H\":\"\",\"GB_L\":\"\",\"ACW_H\":\"\",\"ACW_L\":\"\",\"IR_H\":\"\",\"IR_L\":\"\",\"ELC_H\":\"\"}",
-                "tot": "json"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 180,
-        "y": 660,
-        "wires": [
-            [
-                "9434a0f72f5dcdb1",
-                "099c81c6e9517cfb",
-                "8210bc989146b289"
-            ]
-        ]
     },
     {
         "id": "73d41cef94786e51",
         "type": "debug",
         "z": "6c2dfeb262f54a31",
-        "g": "70592e241de32532",
         "name": "debug 111",
         "active": false,
         "tosidebar": true,
@@ -17465,15 +17251,14 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1910,
-        "y": 660,
+        "x": 2330,
+        "y": 620,
         "wires": []
     },
     {
         "id": "d74b12cee713ed7e",
         "type": "function",
         "z": "6c2dfeb262f54a31",
-        "g": "70592e241de32532",
         "name": "Set Line Flag",
         "func": "if (msg.payload == \"PROCEED ANYWAY\") {\n    msg.lineFlag = \"completedWithChecks\";\n    msg.payload = msg.data.output;\n    delete msg.data; // Not needed once checks are completed.\n    return msg;\n}\n",
         "outputs": 1,
@@ -17481,8 +17266,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1910,
-        "y": 620,
+        "x": 2330,
+        "y": 580,
         "wires": [
             [
                 "a5d2df37afae85ec",
@@ -17494,38 +17279,19 @@
         "id": "a5d2df37afae85ec",
         "type": "link out",
         "z": "6c2dfeb262f54a31",
-        "g": "70592e241de32532",
         "name": "Buffer Checks out",
         "mode": "link",
         "links": [
             "6a9e30f65e495bca"
         ],
-        "x": 2035,
-        "y": 580,
-        "wires": []
-    },
-    {
-        "id": "3156f4f0d86003a5",
-        "type": "debug",
-        "z": "6c2dfeb262f54a31",
-        "g": "70592e241de32532",
-        "name": "debug 104",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 360,
-        "y": 780,
+        "x": 2455,
+        "y": 540,
         "wires": []
     },
     {
         "id": "5da121824d3a508a",
         "type": "debug",
         "z": "6c2dfeb262f54a31",
-        "g": "70592e241de32532",
         "name": "debug 107",
         "active": false,
         "tosidebar": true,
@@ -17535,15 +17301,14 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 630,
-        "y": 1020,
+        "x": 1050,
+        "y": 980,
         "wires": []
     },
     {
         "id": "fa9015a8110bfeda",
         "type": "link in",
         "z": "6c2dfeb262f54a31",
-        "g": "70592e241de32532",
         "name": "Basic clear in",
         "links": [
             "c20be865f12bee03"
@@ -17552,35 +17317,16 @@
         "y": 700,
         "wires": [
             [
-                "b7d078ea7c3f821e"
+                "47be9509daa1c04b"
             ]
         ]
-    },
-    {
-        "id": "099c81c6e9517cfb",
-        "type": "debug",
-        "z": "6c2dfeb262f54a31",
-        "g": "70592e241de32532",
-        "name": "debug 106",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 410,
-        "y": 620,
-        "wires": []
     },
     {
         "id": "bf90850384938521",
         "type": "debug",
         "z": "6c2dfeb262f54a31",
-        "g": "70592e241de32532",
-        "name": "debug 116",
-        "active": false,
+        "name": "Set Line Flag",
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -17588,15 +17334,14 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2070,
-        "y": 660,
+        "x": 2490,
+        "y": 620,
         "wires": []
     },
     {
         "id": "8a84e81f560c21e0",
         "type": "comment",
         "z": "6c2dfeb262f54a31",
-        "g": "70592e241de32532",
         "name": "Basic",
         "info": "",
         "x": 90,
@@ -17607,15 +17352,1084 @@
         "id": "a5f50c3adfd68f30",
         "type": "link out",
         "z": "6c2dfeb262f54a31",
-        "g": "70592e241de32532",
         "name": "Basic Error out",
         "mode": "link",
         "links": [
             "c7a80db6e1441f4f"
         ],
-        "x": 1685,
-        "y": 740,
+        "x": 2105,
+        "y": 700,
         "wires": []
+    },
+    {
+        "id": "47be9509daa1c04b",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "Basic Clear IN",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 180,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "a6a1f7a83c9a8a9a",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "Basic Data in",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 370,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "79439506b1a6acc3",
+        "type": "ui_text_input",
+        "z": "6c2dfeb262f54a31",
+        "name": "Ground Bond",
+        "label": "{{msg.label}}",
+        "tooltip": "",
+        "group": "218e00eac196634f",
+        "order": 2,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "mode": "number",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 890,
+        "y": 520,
+        "wires": [
+            [
+                "46a420304f511f09",
+                "9198bb0cdc6fe3d6"
+            ]
+        ]
+    },
+    {
+        "id": "a71b06b6aa2a7ca7",
+        "type": "ui_text_input",
+        "z": "6c2dfeb262f54a31",
+        "name": "Upper Tolerance",
+        "label": "{{msg.label}}",
+        "tooltip": "",
+        "group": "218e00eac196634f",
+        "order": 2,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "mode": "number",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 1180,
+        "y": 520,
+        "wires": [
+            [
+                "86f7147f3a0eae1d",
+                "643cd93a1a646fcf"
+            ]
+        ]
+    },
+    {
+        "id": "8ba01020f0859762",
+        "type": "ui_text_input",
+        "z": "6c2dfeb262f54a31",
+        "name": "Lower Tolerance",
+        "label": "{{msg.label}}",
+        "tooltip": "",
+        "group": "218e00eac196634f",
+        "order": 2,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "mode": "number",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 1460,
+        "y": 520,
+        "wires": [
+            [
+                "7e8e9285ac4d4af7"
+            ]
+        ]
+    },
+    {
+        "id": "fff175cb635b92ee",
+        "type": "inject",
+        "z": "6c2dfeb262f54a31",
+        "name": "New Data structure",
+        "props": [
+            {
+                "p": "payload.basic",
+                "v": "{\"GB\":{\"value\":10,\"upperTol\":8,\"lowerTol\":9,\"upperVal\":1,\"lowerVal\":2},\"ACW\":{\"value\":20,\"upperTol\":10,\"lowerTol\":12,\"upperVal\":1,\"lowerVal\":2},\"IR\":{\"value\":13,\"upperTol\":20,\"lowerTol\":12,\"upperVal\":1,\"lowerVal\":2},\"EL\":{\"value\":120,\"upperTol\":16,\"lowerTol\":8,\"upperVal\":3,\"lowerVal\":4}}",
+                "vt": "json"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            },
+            {
+                "p": "labels",
+                "v": "{\"upperTol\":\"Upper Tolerance %\",\"lowerTol\":\"Upper Tolerance %\"}",
+                "vt": "json"
+            },
+            {
+                "p": "lineFlag",
+                "v": "JSONdata",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 250,
+        "y": 500,
+        "wires": [
+            [
+                "772cd7af9c6323ad",
+                "addd01cd05cec765"
+            ]
+        ]
+    },
+    {
+        "id": "0e57f864cf2de31e",
+        "type": "inject",
+        "z": "6c2dfeb262f54a31",
+        "name": "Test",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"group\":{\"hide\":[\"Recipes_Parameter_Names_11_-_20\",\"Recipes_Parameter_Values_11_-_20\",\"Recipes_Parameter_Instructions_11_-_20\",\"Recipes_Stop_On_Fail_11_-_20\",\"Recipes_Parameter_Names_21_-_30\",\"Recipes_Parameter_Values_21_-_30\",\"Recipes_Parameter_Instructions_21_-_30\",\"Recipes_Login\",\"Settings_Login\"],\"show\":[\"Recipes_Parameter_Names_1_-_10\",\"Recipes_Parameter_Values_1_-_10\",\"Recipes_Parameter_Instructions_1_-_10\",\"Recipes_Stop_On_Fail_1_-_10\",\"Recipes_Test_Name\",\"Recipes_Basic_Tests\",\"Settings_Insufficient_Rights\"]}}",
+        "payloadType": "json",
+        "x": 630,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "53bc6d05453164e1",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "name": "Set payload",
+        "func": "//line info defined in the this line's leading function\nlet functionInfo = msg.functionInfo[1];\nmsg.topic = functionInfo.topic\nmsg.label = functionInfo.label\n//dataKey is definied by the lines leading function \nmsg.payload = msg.data[msg.dataKey].upperTol //Sets payload\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1065,
+        "y": 520,
+        "wires": [
+            [
+                "a71b06b6aa2a7ca7"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "9323c14a8cd433da",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "name": "Set payload",
+        "func": "//line info defined in the this line's leading function\nlet functionInfo = msg.functionInfo[2];\nmsg.topic = functionInfo.topic\nmsg.label = functionInfo.label\n//dataKey is definied by the lines leading function \nmsg.payload = msg.data[msg.dataKey].lowerTol //Sets payload\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1345,
+        "y": 520,
+        "wires": [
+            [
+                "8ba01020f0859762"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "b0395f2d2b283ff5",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "name": "Set payload",
+        "func": "//line info defined in the this line's leading function\nlet functionInfo = msg.functionInfo[0];\nmsg.topic = functionInfo.topic\nmsg.label = functionInfo.label\n//dataKey is definied by the lines leading function \nmsg.payload = msg.data[msg.dataKey].value //Sets payload\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 785,
+        "y": 520,
+        "wires": [
+            [
+                "79439506b1a6acc3"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "772cd7af9c6323ad",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "New Data structure",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 530,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "46a420304f511f09",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "After GB_V",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1150,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "86f7147f3a0eae1d",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "After Upper Tolerance",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1400,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "2e9e80c68d3c4b58",
+        "type": "inject",
+        "z": "6c2dfeb262f54a31",
+        "name": "New Data structure (clear)",
+        "props": [
+            {
+                "p": "payload.basic",
+                "v": "{\"GB\":{\"value\":\"\",\"upperTol\":\"\",\"lowerTol\":\"\",\"upperVal\":\"\",\"lowerVal\":\"\"},\"ACW\":{\"value\":\"\",\"upperTol\":\"\",\"lowerTol\":\"\",\"upperVal\":\"\",\"lowerVal\":\"\"},\"IR\":{\"value\":\"\",\"upperTol\":\"\",\"lowerTol\":\"\",\"upperVal\":\"\",\"lowerVal\":\"\"},\"EL\":{\"value\":\"\",\"upperTol\":\"\",\"lowerTol\":\"\",\"upperVal\":\"\",\"lowerVal\":\"\"}}",
+                "vt": "json"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            },
+            {
+                "p": "lineFlag",
+                "v": "clear",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 220,
+        "y": 560,
+        "wires": [
+            [
+                "b2e7a6ef2b69c1ac",
+                "addd01cd05cec765"
+            ]
+        ]
+    },
+    {
+        "id": "b2e7a6ef2b69c1ac",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "New Data structure (clear)",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 550,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "7dac7ad1da48a1f9",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "Inputted data",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1690,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "9fc4b59f185c006e",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "name": "Grab data",
+        "func": "msg.data = msg.payload.basic; // Assume this is the setup of the stored data, but also clear has to be structured this way\n\nif (msg.lineFlag == 'clear' || msg.lineFlag == 'save' || msg.lineFlag == 'JSONdata') { \n    return [msg, msg];\n}\n//Setting up the Feed Lines data\n//msg.dataKeys = Object.keys(msg.data);\nmsg.labels = { \n    \"upperTol\": \"Upper Tolerance %\", \n    \"lowerTol\": \"Upper Tolerance %\" \n    }\nreturn [ ,msg];",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 500,
+        "wires": [
+            [
+                "fc805a8187a29356"
+            ],
+            [
+                "fa831abc7da41e90"
+            ]
+        ]
+    },
+    {
+        "id": "72e02e9f9b6ba534",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "name": "Set loaded line",
+        "func": "msg.dataKey = 'GB';\nmsg.functionInfo = [\n    {\n        \"topic\": \"value\",\n        \"label\": \"Ground Bond Value\"\n    },\n    {\n        \"topic\": \"upperTol\",\n        \"label\": \"Upper Tolerance %\"\n    },\n    {\n        \"topic\": \"lowerTol\",\n        \"label\": \"Lower Tolerance %\"\n    }\n]\nif (msg.dataKey in msg.data) {\n    return msg;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 725,
+        "y": 500,
+        "wires": [
+            [
+                "b0395f2d2b283ff5",
+                "8f7cb562d41b8b5d",
+                "264ef17a2f0a1d0a"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "264ef17a2f0a1d0a",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "debug 287",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 950,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "648b704962cd7cb4",
+        "type": "ui_text_input",
+        "z": "6c2dfeb262f54a31",
+        "name": "ACW",
+        "label": "{{msg.label}}",
+        "tooltip": "",
+        "group": "218e00eac196634f",
+        "order": 2,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "mode": "number",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 870,
+        "y": 580,
+        "wires": [
+            [
+                "5661c235efdcfa2c"
+            ]
+        ]
+    },
+    {
+        "id": "620b5fb0977fafbe",
+        "type": "ui_text_input",
+        "z": "6c2dfeb262f54a31",
+        "name": "Upper Tolerance",
+        "label": "{{msg.label}}",
+        "tooltip": "",
+        "group": "218e00eac196634f",
+        "order": 2,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "mode": "number",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 1180,
+        "y": 580,
+        "wires": [
+            [
+                "4c4b6a2e98592723"
+            ]
+        ]
+    },
+    {
+        "id": "9e06961882e23a35",
+        "type": "ui_text_input",
+        "z": "6c2dfeb262f54a31",
+        "name": "Lower Tolerance",
+        "label": "{{msg.label}}",
+        "tooltip": "",
+        "group": "218e00eac196634f",
+        "order": 2,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "mode": "number",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 1460,
+        "y": 580,
+        "wires": [
+            [
+                "ea2d055881e36cfe"
+            ]
+        ]
+    },
+    {
+        "id": "399295b176020939",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "name": "Set payload",
+        "func": "//line info defined in the this line's leading function\nlet functionInfo = msg.functionInfo[1];\nmsg.topic = functionInfo.topic\nmsg.label = functionInfo.label\n//dataKey is definied by the lines leading function \nmsg.payload = msg.data[msg.dataKey].upperTol //Sets payload\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1065,
+        "y": 580,
+        "wires": [
+            [
+                "620b5fb0977fafbe"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "bedb18ee343c6347",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "name": "Set payload",
+        "func": "//line info defined in the this line's leading function\nlet functionInfo = msg.functionInfo[2];\nmsg.topic = functionInfo.topic\nmsg.label = functionInfo.label\n//dataKey is definied by the lines leading function \nmsg.payload = msg.data[msg.dataKey].lowerTol //Sets payload\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1345,
+        "y": 580,
+        "wires": [
+            [
+                "9e06961882e23a35"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "2fb8b9d1af7859d8",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "name": "Set payload",
+        "func": "//line info defined in the this line's leading function\nlet functionInfo = msg.functionInfo[0];\nmsg.topic = functionInfo.topic\nmsg.label = functionInfo.label\n//dataKey is definied by the lines leading function \nmsg.payload = msg.data[msg.dataKey].value //Sets payload\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 785,
+        "y": 580,
+        "wires": [
+            [
+                "648b704962cd7cb4"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "86db4bedc72c93e1",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "name": "Set loaded line",
+        "func": "msg.dataKey = 'ACW';\nmsg.functionInfo = [\n    {\n        \"topic\": \"value\",\n        \"label\": \"ACW Value\"\n    },\n    {\n        \"topic\": \"upperTol\",\n        \"label\": \"Upper Tolerance %\"\n    },\n    {\n        \"topic\": \"lowerTol\",\n        \"label\": \"Lower Tolerance %\"\n    }\n]\nif (msg.dataKey in msg.data) {\n    return msg;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 725,
+        "y": 560,
+        "wires": [
+            [
+                "2fb8b9d1af7859d8",
+                "df1fd1941c5b395f"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "64540ab6ef54df04",
+        "type": "ui_text_input",
+        "z": "6c2dfeb262f54a31",
+        "name": "IR",
+        "label": "{{msg.label}}",
+        "tooltip": "",
+        "group": "218e00eac196634f",
+        "order": 2,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "mode": "number",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 870,
+        "y": 640,
+        "wires": [
+            [
+                "53629911f5459ce1"
+            ]
+        ]
+    },
+    {
+        "id": "6a8b42eb09f61512",
+        "type": "ui_text_input",
+        "z": "6c2dfeb262f54a31",
+        "name": "Upper Tolerance",
+        "label": "{{msg.label}}",
+        "tooltip": "",
+        "group": "218e00eac196634f",
+        "order": 2,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "mode": "number",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 1180,
+        "y": 640,
+        "wires": [
+            [
+                "368d37e7008cea73"
+            ]
+        ]
+    },
+    {
+        "id": "2826b8fce3f78243",
+        "type": "ui_text_input",
+        "z": "6c2dfeb262f54a31",
+        "name": "Lower Tolerance",
+        "label": "{{msg.label}}",
+        "tooltip": "",
+        "group": "218e00eac196634f",
+        "order": 2,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "mode": "number",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 1460,
+        "y": 640,
+        "wires": [
+            [
+                "dc4d189a7a019648"
+            ]
+        ]
+    },
+    {
+        "id": "fe3347238adb2776",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "name": "Set payload",
+        "func": "//line info defined in the this line's leading function\nlet functionInfo = msg.functionInfo[1];\nmsg.topic = functionInfo.topic\nmsg.label = functionInfo.label\n//dataKey is definied by the lines leading function \nmsg.payload = msg.data[msg.dataKey].upperTol //Sets payload\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1065,
+        "y": 640,
+        "wires": [
+            [
+                "6a8b42eb09f61512"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "2a096eb5b729ad7a",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "name": "Set payload",
+        "func": "//line info defined in the this line's leading function\nlet functionInfo = msg.functionInfo[2];\nmsg.topic = functionInfo.topic\nmsg.label = functionInfo.label\n//dataKey is definied by the lines leading function \nmsg.payload = msg.data[msg.dataKey].lowerTol //Sets payload\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1345,
+        "y": 640,
+        "wires": [
+            [
+                "2826b8fce3f78243"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "6074901c2154d650",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "name": "Set payload",
+        "func": "//line info defined in the this line's leading function\nlet functionInfo = msg.functionInfo[0];\nmsg.topic = functionInfo.topic\nmsg.label = functionInfo.label\n//dataKey is definied by the lines leading function \nmsg.payload = msg.data[msg.dataKey].value //Sets payload\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 785,
+        "y": 640,
+        "wires": [
+            [
+                "64540ab6ef54df04"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "8cb57e408fc465c5",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "name": "Set loaded line",
+        "func": "msg.dataKey = 'IR';\nmsg.functionInfo = [\n    {\n        \"topic\": \"value\",\n        \"label\": \"IR Value\"\n    },\n    {\n        \"topic\": \"upperTol\",\n        \"label\": \"Upper Tolerance %\"\n    },\n    {\n        \"topic\": \"lowerTol\",\n        \"label\": \"Lower Tolerance %\"\n    }\n]\nif (msg.dataKey in msg.data) {\n    return msg;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 725,
+        "y": 620,
+        "wires": [
+            [
+                "6074901c2154d650",
+                "18a6019dbf51f4b8"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "23bcac963ec3db9e",
+        "type": "ui_text_input",
+        "z": "6c2dfeb262f54a31",
+        "name": "Earth Leakage",
+        "label": "{{msg.label}}",
+        "tooltip": "",
+        "group": "218e00eac196634f",
+        "order": 2,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "mode": "number",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 900,
+        "y": 700,
+        "wires": [
+            [
+                "edad1ed751f9f35a"
+            ]
+        ]
+    },
+    {
+        "id": "35bd6a039503688e",
+        "type": "ui_text_input",
+        "z": "6c2dfeb262f54a31",
+        "name": "Upper Tolerance",
+        "label": "{{msg.label}}",
+        "tooltip": "",
+        "group": "218e00eac196634f",
+        "order": 2,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "mode": "number",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 1180,
+        "y": 700,
+        "wires": [
+            [
+                "677d85a17326c45a"
+            ]
+        ]
+    },
+    {
+        "id": "c868f96cbdde6b5a",
+        "type": "ui_text_input",
+        "z": "6c2dfeb262f54a31",
+        "name": "Lower Tolerance",
+        "label": "{{msg.label}}",
+        "tooltip": "",
+        "group": "218e00eac196634f",
+        "order": 2,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "mode": "number",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 1460,
+        "y": 700,
+        "wires": [
+            [
+                "ef896cd52b629bbd"
+            ]
+        ]
+    },
+    {
+        "id": "c48701d31a705a25",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "name": "Set payload",
+        "func": "//line info defined in the this line's leading function\nlet functionInfo = msg.functionInfo[1];\nmsg.topic = functionInfo.topic\nmsg.label = functionInfo.label\n//dataKey is definied by the lines leading function \nmsg.payload = msg.data[msg.dataKey].upperTol //Sets payload\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1065,
+        "y": 700,
+        "wires": [
+            [
+                "35bd6a039503688e"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "f4819242d6b630f6",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "name": "Set payload",
+        "func": "//line info defined in the this line's leading function\nlet functionInfo = msg.functionInfo[2];\nmsg.topic = functionInfo.topic\nmsg.label = functionInfo.label\n//dataKey is definied by the lines leading function \nmsg.payload = msg.data[msg.dataKey].lowerTol //Sets payload\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1345,
+        "y": 700,
+        "wires": [
+            [
+                "c868f96cbdde6b5a"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "b868f68bd9f8c96a",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "name": "Set payload",
+        "func": "//line info defined in the this line's leading function\nlet functionInfo = msg.functionInfo[0];\nmsg.topic = functionInfo.topic\nmsg.label = functionInfo.label\n//dataKey is definied by the lines leading function \nmsg.payload = msg.data[msg.dataKey].value //Sets payload\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 785,
+        "y": 700,
+        "wires": [
+            [
+                "23bcac963ec3db9e"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "aebf85de92113483",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "name": "Set loaded line",
+        "func": "msg.dataKey = 'EL';\nmsg.functionInfo = [\n    {\n        \"topic\": \"value\",\n        \"label\": \"Earth Leakage Value\"\n    },\n    {\n        \"topic\": \"upperTol\",\n        \"label\": \"Upper Tolerance %\"\n    },\n    {\n        \"topic\": \"lowerTol\",\n        \"label\": \"Lower Tolerance %\"\n    }\n]\nif (msg.dataKey in msg.data) {\n    return msg;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 725,
+        "y": 680,
+        "wires": [
+            [
+                "b868f68bd9f8c96a",
+                "b0d452d7a86250cc"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "7e8e9285ac4d4af7",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "name": "End line data management",
+        "func": "let buffer = context.get('buffer') || {};\nlet dataKey = context.get('dataKey') || undefined;\n\n//From feed line, save the object name (how it's stored)\nif ('dataKey' in msg) { // msg from Feed Line (clear and Data)\n    context.set('dataKey', msg.dataKey)\n\n    if (msg.lineFlag == 'clear') { //Clear message\n        context.set('buffer', undefined)\n    } else if (msg.lineFlag == 'JSONData') { //stored Data line\n        //Nothing to add here, leaving it for reference\n    } \n    return []; \n} else { // Normal data\n    buffer[msg.topic] = msg.payload\n    context.set('buffer', buffer);\n}\nif (Object.values(buffer).every(value => value === null)) { //Catches when all values are zero / null\n    buffer = null;\n    context.set('buffer', undefined)\n}\nmsg = {\n    payload: (buffer == undefined) ? null : buffer,\n    topic: dataKey\n}\nif (msg.topic != undefined) {\n    return msg;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1585,
+        "y": 540,
+        "wires": [
+            [
+                "7dac7ad1da48a1f9",
+                "517b54151287feac"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "ea2d055881e36cfe",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "name": "End line data management",
+        "func": "let buffer = context.get('buffer') || {};\nlet dataKey = context.get('dataKey') || undefined;\n\n//From feed line, save the object name (how it's stored)\nif ('dataKey' in msg) { // msg from Feed Line (clear and Data)\n    context.set('dataKey', msg.dataKey)\n\n    if (msg.lineFlag == 'clear') { //Clear message\n        context.set('buffer', undefined)\n    } else if (msg.lineFlag == 'JSONData') { //stored Data line\n        //Nothing to add here, leaving it for reference\n    }\n    return [];\n} else { // Normal data\n    buffer[msg.topic] = msg.payload\n    context.set('buffer', buffer);\n}\nif (Object.values(buffer).every(value => value === null)) { //Catches when all values are zero / null\n    buffer = null;\n    context.set('buffer', undefined)\n}\nmsg = {\n    payload: (buffer == undefined) ? null : buffer,\n    topic: dataKey\n}\nif (msg.topic != undefined) {\n    return msg;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1585,
+        "y": 600,
+        "wires": [
+            [
+                "517b54151287feac"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "dc4d189a7a019648",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "name": "End line data management",
+        "func": "let buffer = context.get('buffer') || {};\nlet dataKey = context.get('dataKey') || undefined;\n\n//From feed line, save the object name (how it's stored)\nif ('dataKey' in msg) { // msg from Feed Line (clear and Data)\n    context.set('dataKey', msg.dataKey)\n\n    if (msg.lineFlag == 'clear') { //Clear message\n        context.set('buffer', undefined)\n    } else if (msg.lineFlag == 'JSONData') { //stored Data line\n        //Nothing to add here, leaving it for reference\n    }\n    return [];\n} else { // Normal data\n    buffer[msg.topic] = msg.payload\n    context.set('buffer', buffer);\n}\nif (Object.values(buffer).every(value => value === null)) { //Catches when all values are zero / null\n    buffer = null;\n    context.set('buffer', undefined)\n}\nmsg = {\n    payload: (buffer == undefined) ? null : buffer,\n    topic: dataKey\n}\nif (msg.topic != undefined) {\n    return msg;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1585,
+        "y": 660,
+        "wires": [
+            [
+                "517b54151287feac"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "ef896cd52b629bbd",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "name": "End line data management",
+        "func": "let buffer = context.get('buffer') || {};\nlet dataKey = context.get('dataKey') || undefined;\n\n//From feed line, save the object name (how it's stored)\nif ('dataKey' in msg) { // msg from Feed Line (clear and Data)\n    context.set('dataKey', msg.dataKey)\n\n    if (msg.lineFlag == 'clear') { //Clear message\n        context.set('buffer', undefined)\n    } else if (msg.lineFlag == 'JSONData') { //stored Data line\n        //Nothing to add here, leaving it for reference\n    }\n    return [];\n} else { // Normal data\n    buffer[msg.topic] = msg.payload\n    context.set('buffer', buffer);\n}\nif (Object.values(buffer).every(value => value === null)) { //Catches when all values are zero / null\n    buffer = null;\n    context.set('buffer', undefined)\n}\nmsg = {\n    payload: (buffer == undefined) ? null : buffer,\n    topic: dataKey\n}\nif (msg.topic != undefined) {\n    return msg;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1585,
+        "y": 720,
+        "wires": [
+            [
+                "517b54151287feac"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "9af343f3d1944ad8",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "Basic Save in ",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1860,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "c07227c42b3fd36d",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "Basic Bypass",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "a8e5c3f63ac47823",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "Checks (bottom)",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2210,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "7b247c72e12e39f7",
+        "type": "inject",
+        "z": "6c2dfeb262f54a31",
+        "name": "New Data structure",
+        "props": [
+            {
+                "p": "payload.basic",
+                "v": "{\"GB\":{\"value\":1,\"upperTol\":2,\"lowerTol\":3},\"IR\":{\"value\":4,\"upperTol\":5,\"lowerTol\":6},\"EL\":{\"value\":7,\"upperTol\":8,\"lowerTol\":9}}",
+                "vt": "json"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            },
+            {
+                "p": "labels",
+                "v": "{\"upperTol\":\"Upper Tolerance %\",\"lowerTol\":\"Upper Tolerance %\"}",
+                "vt": "json"
+            },
+            {
+                "p": "lineFlag",
+                "v": "JSONdata",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 250,
+        "y": 440,
+        "wires": [
+            [
+                "addd01cd05cec765"
+            ]
+        ]
     },
     {
         "id": "2a99dc5d1f16aca5",
