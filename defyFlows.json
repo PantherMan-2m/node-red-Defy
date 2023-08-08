@@ -1423,7 +1423,8 @@
             "dacc99015ddc50b4",
             "ce9e314b2ee5db14",
             "f3faffe6a0f822d1",
-            "3b96d386eb8e1a7a"
+            "3b96d386eb8e1a7a",
+            "792e18f0a5c5bef2"
         ],
         "x": 3514,
         "y": 3319,
@@ -3120,7 +3121,7 @@
         "tab": "8eaf36042374305d",
         "order": 1,
         "disp": true,
-        "width": "29",
+        "width": 31,
         "collapse": false,
         "className": ""
     },
@@ -3410,7 +3411,7 @@
     {
         "id": "7415190bef9e3adb",
         "type": "ftp",
-        "host": "192.168.1.7",
+        "host": "10.27.6.208",
         "port": "",
         "secureOptions": "",
         "user": "ateka1",
@@ -3427,7 +3428,7 @@
         "stateLogEnabled": false,
         "queueLogEnabled": false,
         "failureLogEnabled": true,
-        "tcpHost": "10.27.6.202",
+        "tcpHost": "10.27.6.203",
         "tcpPort": "502",
         "tcpType": "DEFAULT",
         "serialPort": "/dev/ttyUSB",
@@ -3517,76 +3518,6 @@
         "className": ""
     },
     {
-        "id": "7d9cd408eac432e2",
-        "type": "ui_spacer",
-        "z": "6c2dfeb262f54a31",
-        "name": "spacer",
-        "group": "0465010f96f3dad5",
-        "order": 5,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "4845917d96d2ed7b",
-        "type": "ui_spacer",
-        "z": "6c2dfeb262f54a31",
-        "name": "spacer",
-        "group": "0465010f96f3dad5",
-        "order": 8,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "fab4972c37c762cb",
-        "type": "ui_spacer",
-        "z": "6c2dfeb262f54a31",
-        "name": "spacer",
-        "group": "0465010f96f3dad5",
-        "order": 11,
-        "width": 3,
-        "height": 1
-    },
-    {
-        "id": "33b2f0b86ccd5fe4",
-        "type": "ui_spacer",
-        "z": "6c2dfeb262f54a31",
-        "name": "spacer",
-        "group": "0465010f96f3dad5",
-        "order": 15,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "4d31147ec2802af5",
-        "type": "ui_spacer",
-        "z": "6c2dfeb262f54a31",
-        "name": "spacer",
-        "group": "0465010f96f3dad5",
-        "order": 16,
-        "width": 29,
-        "height": 1
-    },
-    {
-        "id": "7ee45b1a065c845e",
-        "type": "ui_spacer",
-        "z": "6c2dfeb262f54a31",
-        "name": "spacer",
-        "group": "0465010f96f3dad5",
-        "order": 19,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "f90c1d2904fe9207",
-        "type": "ui_spacer",
-        "z": "6c2dfeb262f54a31",
-        "name": "spacer",
-        "group": "0465010f96f3dad5",
-        "order": 21,
-        "width": 7,
-        "height": 1
-    },
-    {
         "id": "c0eb4edf7837f066",
         "type": "ui_spacer",
         "z": "6c2dfeb262f54a31",
@@ -3620,6 +3551,76 @@
         "width": "6",
         "collapse": false,
         "className": ""
+    },
+    {
+        "id": "3c0a8b18ed9f3d62",
+        "type": "ui_spacer",
+        "z": "6c2dfeb262f54a31",
+        "name": "spacer",
+        "group": "0465010f96f3dad5",
+        "order": 5,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "522baf8a82f522fd",
+        "type": "ui_spacer",
+        "z": "6c2dfeb262f54a31",
+        "name": "spacer",
+        "group": "0465010f96f3dad5",
+        "order": 8,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "bb27b84e89a24cfe",
+        "type": "ui_spacer",
+        "z": "6c2dfeb262f54a31",
+        "name": "spacer",
+        "group": "0465010f96f3dad5",
+        "order": 11,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "83c088987df40ef5",
+        "type": "ui_spacer",
+        "z": "6c2dfeb262f54a31",
+        "name": "spacer",
+        "group": "0465010f96f3dad5",
+        "order": 15,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "fa099a8516a1b3d7",
+        "type": "ui_spacer",
+        "z": "6c2dfeb262f54a31",
+        "name": "spacer",
+        "group": "0465010f96f3dad5",
+        "order": 16,
+        "width": 31,
+        "height": 1
+    },
+    {
+        "id": "42314c6f58517ad7",
+        "type": "ui_spacer",
+        "z": "6c2dfeb262f54a31",
+        "name": "spacer",
+        "group": "0465010f96f3dad5",
+        "order": 19,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "11471916b74e1192",
+        "type": "ui_spacer",
+        "z": "6c2dfeb262f54a31",
+        "name": "spacer",
+        "group": "0465010f96f3dad5",
+        "order": 21,
+        "width": 9,
+        "height": 1
     },
     {
         "id": "37193b5976b8907d",
@@ -8914,7 +8915,7 @@
         "z": "6c2dfeb262f54a31",
         "g": "664234c9f7128797",
         "name": "Set write -> HMI CSV",
-        "func": "msg.payload = flow.get(\"writeData\");\n\n//Set\n\nlet data = msg.payload,\n    parKeys = Object.keys(data.parameterData),\n    basKey = Object.keys(data.basic),\n    names = [],\n    values = [],\n    instructions = [],\n    output = [],\n    parameterCount = 20, // Set\n    basicCount = basKey.length,\n    totalCount = 35, //basicCount + parameterCount;\n    count = 1;\n//Active: This can probably be moved elsewhere\n/*\ntemp = {};\nfor (let i = 1; i < 3; i += 2) {\n    temp[basKey[i--]] = \n}\n*/\n//\nmsg.recipeIdentity = data.File_Code;\n// First part is mostly hard coded parameters\noutput.push([data.File_Code, 5, totalCount, , , ,],\n            [8, 20, 0, 0, , ,],\n            [5, 2, 4, 2, , ,],\n            [5, 2, 4, 2, , ,],\n            [0, 1, 0, 0, , ,],\n            [8, 25, 0, 0, , ,]);\n\n//First line of data is special\noutput.push([count++, data.File_Name, 0, 0, + data.Powered_Inspection, ,]);\n\n//del\nlet basicHeaders = [\"Ground Bond\", \"ACW Test\", \"Insulation Resistance\", \"Earth Leakage\"],\n    j = 0,\n    i = 0;\n\nfor(i = 1; i < basicCount - 1; i += 3) {\n    //node.warn('start i: ' + i);\n    output.push([count++, basicHeaders[j++], data.basic[basKey[i--]], data.basic[basKey[i]], 0, ,]);\n    //node.warn('end i: ' + i);\n}\n\n//node.warn('final i: ' + i);\noutput.push([count++, basicHeaders[j++], data.basic[basKey[--i]], 0, 0, ,])\n\n//Incomplete: Assumption 1 that the length of incoming Parameter data is < \nfor (let i = 0; i < parKeys.length; i++) {/*\n    names.push(data.parameterData[parKeys[i]].name);\n    values.push(data.parameterData[parKeys[i]].value);\n    instructions.push(data.parameterData[parKeys[i]].instructions);*/\n    output.push([count++, data.parameterData[parKeys[i]].name.substring(0, 40), data.parameterData[parKeys[i]].value_L, data.parameterData[parKeys[i]].value_H, + data.parameterData[parKeys[i]].ifTestFailStop, data.parameterData[parKeys[i]].instructions.substring(0, 50)]);\n}/*\nfor (let i = basicCount + parKeys.length; i < totalCount - 1; i++) {// adds the zeros in using Assumption 1\n    output.push([count++, , 0, 0, 0,\"\"]);\n}*/\nwhile (count <= totalCount) {\n    output.push([count++, , 0, 0, 0, \"\"]);\n}\nlet text = \"\";\n//del\nnode.send([, {output: output}]);\n//\nfor (let i = 0; i < output.length; i++) { // Putting it all into text format\n    text += output[i].toString() + \"\\r\\n\";\n}\n\ntext += '\\r\\n';\n\nmsg.payload = {\n//    output: output,\n    text: text\n}\n\nreturn msg;",
+        "func": "msg.payload = flow.get(\"writeData\");\n\n//Set\nlet data = msg.payload,\n    parKeys,\n    basKey;\n\nif (msg.payload.parameterData != undefined) {\n    parKeys = Object.keys(msg.payload.parameterData) || [];\n} else {\n    parKeys = []\n}\nif (msg.payload.basic != undefined) {\n    basKey = Object.keys(msg.payload.basic) || [];\n} else {\n    basKey = []\n}\n    \nlet names = [],\n    values = [],\n    instructions = [],\n    output = [],\n    parameterCount = 20, // Set\n    basicCount = basKey.length,\n    totalCount = 35, //basicCount + parameterCount;\n    count = 1;\n//Active: This can probably be moved elsewhere\n/*\ntemp = {};\nfor (let i = 1; i < 3; i += 2) {\n    temp[basKey[i--]] = \n}\n*/\n//\nmsg.recipeIdentity = data.File_Code;\n// First part is mostly hard coded parameters\noutput.push([data.File_Code, 5, totalCount, , , ,],\n            [8, 20, 0, 0, , ,],\n            [5, 2, 4, 2, , ,],\n            [5, 2, 4, 2, , ,],\n            [0, 1, 0, 0, , ,],\n            [8, 25, 0, 0, , ,]);\n\n//First line of data is special\noutput.push([count++, data.File_Name, 0, 0, + data.Powered_Inspection, ,]);\n\n//del\nlet basicHeaders = [\"Ground Bond\", \"ACW Test\", \"Insulation Resistance\", \"Earth Leakage\"],\n    j = 0,\n    i = 0;\n\nfor(i = 0; i < basicCount; i++) {\n    //node.warn('start i: ' + i);\n    output.push([count++, basicHeaders[j++], data.basic[basKey[i]].lowerVal, data.basic[basKey[i]].upperVal, 0, ,]);\n    //node.warn('end i: ' + i);\n}\n\n//node.warn('final i: ' + i);\n//output.push([count++, basicHeaders[j++], data.basic[basKey[--i]], 0, 0, ,]) // used for initial\n\n//Incomplete: Assumption 1 that the length of incoming Parameter data is < \nfor (let i = 0; i < parKeys.length; i++) {/*\n    names.push(data.parameterData[parKeys[i]].name);\n    values.push(data.parameterData[parKeys[i]].value);\n    instructions.push(data.parameterData[parKeys[i]].instructions);*/\n    output.push([count++, data.parameterData[parKeys[i]].name.substring(0, 40), data.parameterData[parKeys[i]].value_L, data.parameterData[parKeys[i]].value_H, + data.parameterData[parKeys[i]].ifTestFailStop, data.parameterData[parKeys[i]].instructions.substring(0, 50)]);\n}/*\nfor (let i = basicCount + parKeys.length; i < totalCount - 1; i++) {// adds the zeros in using Assumption 1\n    output.push([count++, , 0, 0, 0,\"\"]);\n}*/\nwhile (count <= totalCount) {\n    output.push([count++, , 0, 0, 0, \"\"]);\n}\nlet text = \"\";\n//del\nnode.send([, {output: output}]);\n//\nfor (let i = 0; i < output.length; i++) { // Putting it all into text format\n    text += output[i].toString() + \"\\r\\n\";\n}\n\ntext += '\\r\\n';\n\nmsg.payload = {\n//    output: output,\n    text: text\n}\n\nmsg.check = {\n    basKey: basKey,\n    parKeys: parKeys\n}\nreturn msg;",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
@@ -11153,7 +11154,7 @@
         "type": "function",
         "z": "6c2dfeb262f54a31",
         "name": "config File Lister",
-        "func": "msg.payload = {\n    start: 'C:/Users/User/Documents/Coding/Node Red/Recipes',\n    pattern: '*.json'\n}  \nmsg.search = 810004100;\nreturn msg;",
+        "func": "msg.payload = {\n    start: 'C:/Users/User/Documents/Coding/Node Red/Recipes',\n    pattern: '*.json'\n}  \nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -11260,7 +11261,7 @@
         "type": "function",
         "z": "6c2dfeb262f54a31",
         "name": "Split",
-        "func": "for (let i = 0; i < msg.payload.length; i++) {\n    node.send({\n        filename : msg.payload[i],\n        topic: i,\n        search: 8100084100\n    })\n}\n",
+        "func": "let testResults = flow.get('testResults') || {};\ntestResults.recipeID\nfor (let i = 0; i < msg.payload.length; i++) {\n    node.send({\n        filename : msg.payload[i],\n        topic: i,\n        search: testResults.recipeID\n    })\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -11280,7 +11281,7 @@
         "type": "function",
         "z": "6c2dfeb262f54a31",
         "name": "Buffer",
-        "func": "//infinite loop preventer\nlet loop = context.get('loop') || 0;\n/*\ncontext.set('loop', ++loop);\nif (loop >=  200) {\n    return null;\n}*/\n\n// Check for trigger\nif (msg.lineFlag == 'sqlHandshake') {\n//Looking for my value\nlet test = JSON.parse(msg.payload);\nif (test.File_Code == msg.search) {\n    context.set('ID', undefined);\n    context.set('buffer', undefined);\n    flow.set('test', test);\n    return [, msg];\n}\n\n    let ID = context.get('ID');\n    let index = ID.indexOf(msg.topic);\n    let buffer = context.get('buffer');\n    if (index != -1) {\n        buffer.splice(index, 1);\n        ID.splice(index, 1);\n} else {\n        node.warn('Index not found');\n    }\n    msg = {\n        ...buffer[0]\n    }\n    msg.ID = ID;\n    \n    context.set('buffer', buffer);\n    context.set('ID', ID);\n\n    //Testing checks //del\n    msg.check = {\n        buffer: buffer, \n        ID: ID,\n        loop: loop\n    }\n    if (ID[0] == undefined) {\n        /*//del\n        node.send({\n            payload: \"we got undefined business\"\n        });*/\n        context.set('buffer', []);\n        context.set('ID', []);\n        context.set('waiting', false);\n        /*\n        node.send({\n            payload: \"No more buffer\",\n            topic: 'bufferCleared'\n            });\n            */\n    } else {\n        return [msg, ];\n    }  \n} else {\n    // Retrieve the buffer array from context, or initialize it if it doesn't exist\n    var buffer = context.get('buffer') || [];\n    var ID = context.get('ID') || [];\n    let waiting = context.get('waiting');\n    if (waiting == undefined) {\n        waiting = false;\n        context.set('waiting', true) // Sets for the next time this node is called\n    } \n\n    // Add the incoming message payload and topic to the buffer\n    buffer.push(msg);\n    ID.push(msg.topic);\n\n    // Set the buffer array back to context\n    context.set('buffer', buffer);\n    context.set('ID', ID);\n\n    msg = {\n        ...buffer[0]\n    }\n    msg.ID = ID;\n\n    //Testing checks //del\n    msg.check = {\n        buffer: buffer,\n        ID: ID,\n        loop: loop\n    }\n\n    if (waiting) { // If we're waiting we do not return\n\n    } else {\n        if (buffer.length > 0)\n            context.set('waiting', true);\n            return [msg, ];\n    }\n}\n\n",
+        "func": "//infinite loop preventer\nlet loop = context.get('loop') || 0;\n/*\ncontext.set('loop', ++loop);\nif (loop >=  200) {\n    return null;\n}*/\n\n// Check for trigger\nif (msg.lineFlag == 'sqlHandshake') {\n    //Looking for my value\n    let test = JSON.parse(msg.payload);\n    if (test.File_Code == msg.search) {\n        context.set('ID', undefined);\n        context.set('buffer', undefined);\n        flow.set('test', test);\n        return [, msg];\n    }\n\n    let ID = context.get('ID');\n    let index = ID.indexOf(msg.topic);\n    let buffer = context.get('buffer');\n    if (index != -1) {\n        buffer.splice(index, 1);\n        ID.splice(index, 1);\n    } else {\n        node.warn('Index not found');\n    }\n    msg = {\n        ...buffer[0]\n    }\n    msg.ID = ID;\n    \n    context.set('buffer', buffer);\n    context.set('ID', ID);\n\n    //Testing checks //del\n    msg.check = {\n        buffer: buffer, \n        ID: ID,\n        loop: loop\n    }\n    if (ID[0] == undefined) {\n        /*//del\n        node.send({\n            payload: \"we got undefined business\"\n        });*/\n        context.set('buffer', []);\n        context.set('ID', []);\n        context.set('waiting', false);\n        /*\n        node.send({\n            payload: \"No more buffer\",\n            topic: 'bufferCleared'\n            });\n            */\n    } else {\n        return [msg, ];\n    }  \n} else {\n    // Retrieve the buffer array from context, or initialize it if it doesn't exist\n    var buffer = context.get('buffer') || [];\n    var ID = context.get('ID') || [];\n    let waiting = context.get('waiting');\n    if (waiting == undefined) {\n        waiting = false;\n        context.set('waiting', true) // Sets for the next time this node is called\n    } \n\n    // Add the incoming message payload and topic to the buffer\n    buffer.push(msg);\n    ID.push(msg.topic);\n\n    // Set the buffer array back to context\n    context.set('buffer', buffer);\n    context.set('ID', ID);\n\n    msg = {\n        ...buffer[0]\n    }\n    msg.ID = ID;\n\n    //Testing checks //del\n    msg.check = {\n        buffer: buffer,\n        ID: ID,\n        loop: loop\n    }\n\n    if (waiting) { // If we're waiting we do not return\n\n    } else {\n        if (buffer.length > 0)\n            context.set('waiting', true);\n            return [msg, ];\n    }\n}\n\n",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
@@ -11305,7 +11306,7 @@
         "type": "debug",
         "z": "6c2dfeb262f54a31",
         "name": "debug 185",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -12279,7 +12280,7 @@
         "type": "function",
         "z": "6c2dfeb262f54a31",
         "name": "Call Batch three",
-        "func": "// Batch three:\n//Parameters Values\t    15 200\tfloat\t40 Reg\t20 Entries\n//Parameters Voltage\t15 250\tfloat\t40 Reg\t20 Entries\n\nlet fc = 3,\n    sa = 15200,\n    quantity = 100;\n\nmsg.payload = { value: msg.payload, 'fc': fc, 'unitid': 1, 'address': sa, 'quantity': quantity };\nreturn msg;",
+        "func": "// Batch three:\n//Parameters Power & Voltage (coupled)\t    15 200\tfloat\t80 Reg\t40 Entries\n\nlet fc = 3,\n    sa = 15200,\n    quantity = 100;\n\nmsg.payload = { value: msg.payload, 'fc': fc, 'unitid': 1, 'address': sa, 'quantity': quantity };\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -12325,7 +12326,7 @@
         "type": "function",
         "z": "6c2dfeb262f54a31",
         "name": "Read Buffer",
-        "func": "// Batch three:\n//Parameters Values\t    15 200\tfloat\t40 Reg\t20 Entries\n//Parameters Voltage\t15 250\tfloat\t40 Reg\t20 Entries\n\nlet charOutput = [],\n    //Set\n    charBuf = [],\n    floatBuf = [\n        msg.payload.buffer.slice(0, 80),\n        msg.payload.buffer.slice(100, 180)\n        ], \n    charBufRegLength = [],\n    floatBufRegLength = [20, 20],\n    arr = [];\n\n// Reading it the right way\nfor (let i = 0; i < charBuf.length; i++) { // Go through character calls\n    let text = \"\";\n\n    /*//Doesn't work with Delta, seems they switch the high and low bits of a register\n    for (let i = offset; i < offset + entryRegisterLength * 2; i++) { // 2 buffers for every register\n        text += String.fromCharCode(msg.payload.buffer[i]);\n    }\n    */\n    for (let j = 0; j < charBufRegLength[i] * 2; j++) { // 2 buffers for every register\n        text += String.fromCharCode(charBuf[i][j + 1]);\n        text += String.fromCharCode(charBuf[i][j]);\n        j++;\n    }\n    charOutput.push(text);\n}\n\nconst offset = 4; // buffer length of a Float\nlet buf,\n    floatValues = [];\n\nfor (let i = 0; i < floatBufRegLength.length; i++) {\n    for (let j = 0; j < floatBufRegLength[i]; j++) {\n        //The way Node-Red writes it\n        //buf = Buffer.from(msg.payload.buffer.slice(i * offset, i * offset + offset));\n        //Our PLCs seem to read them backwards (2nd reg first)\n        buf = floatBuf[i].slice(j * offset, j * offset + offset);\n        buf = [buf[2], buf[3], buf[0], buf[1]];\n        buf = Buffer.from(buf);\n        arr.push(buf.readFloatBE());\n    }\n    floatValues.push(arr);\n    arr = [];\n}\n\n\nmsg.check = {\n    charOutput: charOutput,\n    floatValues: floatValues,\n    floatBuf: floatBuf,\n    charBuf: charBuf\n}\n\nlet testResults = flow.get('testResults') || {};\ntestResults.parameterResults = floatValues[0];\ntestResults.parameterVoltages = floatValues[1];\nflow.set('testResults', testResults)\n\nreturn msg;",
+        "func": "// Batch three:\n//Parameters Power & Voltage (coupled)\t    15 200\tfloat\t80 Reg\t40 Entries\n\nlet charOutput = [],\n    //Set\n    charBuf = [],\n    floatBuf = [\n        msg.payload.buffer.slice(0, 80),\n        msg.payload.buffer.slice(100, 180)\n        ], \n    charBufRegLength = [],\n    floatBufRegLength = [20, 20],\n    arr = [];\n\n// Reading it the right way\nfor (let i = 0; i < charBuf.length; i++) { // Go through character calls\n    let text = \"\";\n\n    /*//Doesn't work with Delta, seems they switch the high and low bits of a register\n    for (let i = offset; i < offset + entryRegisterLength * 2; i++) { // 2 buffers for every register\n        text += String.fromCharCode(msg.payload.buffer[i]);\n    }\n    */\n    for (let j = 0; j < charBufRegLength[i] * 2; j++) { // 2 buffers for every register\n        text += String.fromCharCode(charBuf[i][j + 1]);\n        text += String.fromCharCode(charBuf[i][j]);\n        j++;\n    }\n    charOutput.push(text);\n}\n\nconst offset = 4; // buffer length of a Float\nlet buf,\n    floatValues = [];\n\nfor (let i = 0; i < floatBufRegLength.length; i++) {\n    for (let j = 0; j < floatBufRegLength[i]; j++) {\n        //The way Node-Red writes it\n        //buf = Buffer.from(msg.payload.buffer.slice(i * offset, i * offset + offset));\n        //Our PLCs seem to read them backwards (2nd reg first)\n        buf = floatBuf[i].slice(j * offset, j * offset + offset);\n        buf = [buf[2], buf[3], buf[0], buf[1]];\n        buf = Buffer.from(buf);\n        arr.push(buf.readFloatBE());\n    }\n    floatValues.push(arr);\n    arr = [];\n}\n\n\nmsg.check = {\n    charOutput: charOutput,\n    floatValues: floatValues,\n    floatBuf: floatBuf,\n    charBuf: charBuf\n}\n\nlet testResults = flow.get('testResults') || {};\ntestResults.parameterResults = floatValues[0];\ntestResults.parameterVoltages = floatValues[1];\nflow.set('testResults', testResults)\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -13654,8 +13655,8 @@
         "wires": [
             [
                 "cb690a9660cf7c8a",
-                "b9156f78ebf3843b",
-                "34c7ab41bb4b3dd7"
+                "34c7ab41bb4b3dd7",
+                "b9156f78ebf3843b"
             ]
         ]
     },
@@ -14718,7 +14719,7 @@
         "label": "Powered on inpsection",
         "tooltip": "",
         "group": "218e00eac196634f",
-        "order": 9,
+        "order": 14,
         "width": 0,
         "height": 0,
         "passthru": true,
@@ -15030,7 +15031,7 @@
         "z": "6c2dfeb262f54a31",
         "g": "bdb8c3cb821603ff",
         "group": "494580998616b55b",
-        "order": 2,
+        "order": 1,
         "width": 0,
         "height": 0,
         "name": "Referral login msg (Recipe)",
@@ -16170,7 +16171,8 @@
         "y": 3440,
         "wires": [
             [
-                "dc9c85c407d1c0ab"
+                "dc9c85c407d1c0ab",
+                "792e18f0a5c5bef2"
             ]
         ]
     },
@@ -16963,7 +16965,7 @@
         "type": "function",
         "z": "6c2dfeb262f54a31",
         "name": "Buffer",
-        "func": "// Check for trigger\nif (msg.complete != undefined && msg.lineFlag == 'save') { // Buffer trigger is msg.complete existing (save)\n//node.warn('You\\'re savng things');\n    if (msg.lineFlag == 'completedWithChecks') {\n        // set payload with buffer and clear buffer if final checks have been done, indicated by the msg.lineFlag = \"completedWithChecks\"\n        //context.set('buffer', undefined)\n        return [msg, ];\n    }\n    msg.payload = context.get('buffer');\n    return [ ,msg]; // Go to line with checks\n} else if (msg.lineFlag == 'JSONdata') { //Catching the Feed line data\n//node.warn('Storing JSON data');\n    context.set('buffer', msg.data);\n} else if (msg.lineFlag == \"clear\") { // Catching clear message\n//node.warn('Clearing data');\n    context.set('buffer', undefined);\n} else { // Catches normal data inputing\n//node.warn('Inputing normal data');\n    // Retrieve the buffer array from context, or initialize it if it doesn't exist\n    var buffer = context.get('buffer') || {};\n\n    // Add / Delete the incoming message payload and topic to the buffer\n    if ((msg.payload == null) && (msg.topic in buffer)) {// If field is cleared\n        delete buffer[msg.topic];\n    } else { // if any other data point comes through thats not empty, save it\n        buffer[msg.topic] = msg.payload;\n    }\n\n    // Set the buffer array back to context\n    context.set('buffer', buffer);\n}\n\n\n",
+        "func": "// Check for trigger\nif (msg.complete != undefined && msg.topic == 'save') { // Buffer trigger is msg.complete existing (save)\n//node.warn('You\\'re savng things');\n    if (msg.lineFlag == 'completedWithChecks') {\n        // set payload with buffer and clear buffer if final checks have been done, indicated by the msg.lineFlag = \"completedWithChecks\"\n        //context.set('buffer', undefined)\n        return [msg, ];\n    }\n    msg.payload = context.get('buffer');\n    return [ ,msg]; // Go to line with checks\n} else if (msg.lineFlag == 'JSONdata') { //Catching the Feed line data\n//node.warn('Storing JSON data');\n    context.set('buffer', msg.data);\n} else if (msg.lineFlag == \"clear\") { // Catching clear message\n//node.warn('Clearing data');\n    context.set('buffer', undefined);\n} else { // Catches normal data inputing\n//node.warn('Inputing normal data');\n    // Retrieve the buffer array from context, or initialize it if it doesn't exist\n    var buffer = context.get('buffer') || {};\n\n    // Add / Delete the incoming message payload and topic to the buffer\n    if ((msg.payload == null) && (msg.topic in buffer)) {// If field is cleared\n        delete buffer[msg.topic];\n    } else { // if any other data point comes through thats not empty, save it\n        buffer[msg.topic] = msg.payload;\n    }\n\n    // Set the buffer array back to context\n    context.set('buffer', buffer);\n}\n\n\n",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
@@ -16973,8 +16975,8 @@
         "y": 520,
         "wires": [
             [
-                "d235074ffad9a339",
-                "b9fe3a978a99d255"
+                "b9fe3a978a99d255",
+                "9eb6147d495f9105"
             ],
             [
                 "306199d1b0477757",
@@ -17010,8 +17012,8 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
         "x": 1910,
@@ -17023,7 +17025,7 @@
         "type": "function",
         "z": "6c2dfeb262f54a31",
         "name": "Checks (Has Sets)",
-        "func": "// Set\nif(msg.lineFlag == \"clear\")\n    return null;\nlet basicFormElements = { // Has the correct order of things\n    \"GB\": {\n        \"value\": \"\",\n        \"upperTol\": \"\",\n        \"lowerTol\": \"\"\n    },\n    \"ACW\": {\n        \"value\": \"\",\n        \"upperTol\": \"\",\n        \"lowerTol\": \"\"\n    },\n    \"IR\": {\n        \"value\": \"\",\n        \"upperTol\": \"\",\n        \"lowerTol\": \"\"\n    },\n    \"EL\": {\n        \"value\": \"\",\n        \"upperTol\": \"\",\n        \"lowerTol\": \"\"\n    }\n},\n    basicFormElementsNames = {\n        \"GB\" : \"Ground Bond Value(s)\",\n        \"ACW\": \"ACW Value(s)\",\n        \"IR\": \"Insulation Resistance Value(s)\",\n        \"EL\": \"Earth Leakage Value(s)\"\n    },\n    output = {},\n    temp = {},\n    missing = [];\n \nif (msg.payload == undefined) { // checks if nothing was in the buffer's context variable, if so, make it empty\n    msg.payload = { // copy basicFormsElements into payload\n        ...basicFormElements\n    };\n    for(var key1 in msg.payload) { // Goes through and creates the empty basic data\n        for (var key2 in msg.payload[key1]) {\n            temp[key2] = -1;\n        }\n        output[key1] = temp;\n        missing.push(basicFormElementsNames[key1]);\n    }\n} else {\n    for (var key1 in basicFormElements) { // Goes through and creates the empty basic data\n        if (key1 in msg.payload && msg.payload[key1] != \"\") { // Check if key exists in current payload\n            for (var key2 in basicFormElements[key1]) { // Loop through members of each basic test\n                if (key2 in msg.payload[key1]) { // Check if each member in basic test exist\n                   temp[key2] = msg.payload[key1][key2]; \n                } else { //Looking at members in basic test\n                    temp[key2] = -1;\n                    if (!(missing.includes(basicFormElementsNames[key1]))) { // checks to see if missing arr does not have text error msg\n                        missing.push(basicFormElementsNames[key1]);\n                    }\n                }\n            }\n            output[key1] = (temp)\n            temp = {}\n        } else { // Looking at basic tests\n            for (key2 in basicFormElements[key1]) {\n                temp[key2] = -1;\n            }\n            output[key1] = temp;\n            temp = {};\n            missing.push(basicFormElementsNames[key1])\n        }\n    }\n}\n\nmsg.data  = {\n    output: output, //Used in second node downstream to assign payload\n    missing: missing\n}\n\nif (missing.length > 0) { // If the full basic form is not filled in\n    let status = 'The following elements have been left out in the \"Basics\" section: || ';\n    for(let i = 0; i < missing.length; i++) {\n        status += missing[i] + \" || \";\n    }\n    msg.payload = status;\n    return [ , msg];\n} else { // if full basic form is completed\n    msg.lineFlag = \"completedWithChecks\";\n    msg.payload = output;\n    delete msg.data; // Not needed once checks are completed.\n    return [msg, ];\n}\n\n",
+        "func": "// Set\nif(msg.lineFlag == \"clear\")\n    return null;\nlet basicFormElements = { // Has the correct order of things\n    \"GB\": {\n        \"value\": \"\",\n        \"upperTol\": \"\",\n        \"lowerTol\": \"\"\n    },\n    \"ACW\": {\n        \"value\": \"\",\n        \"upperTol\": \"\",\n        \"lowerTol\": \"\"\n    },\n    \"IR\": {\n        \"value\": \"\",\n        \"upperTol\": \"\",\n        \"lowerTol\": \"\"\n    },\n    \"EL\": {\n        \"value\": \"\",\n        \"upperTol\": \"\",\n        \"lowerTol\": \"\"\n    }\n},\n    basicFormElementsNames = {\n        \"GB\" : \"Ground Bond Value(s)\",\n        \"ACW\": \"ACW Value(s)\",\n        \"IR\": \"Insulation Resistance Value(s)\",\n        \"EL\": \"Earth Leakage Value(s)\"\n    },\n    output = {},\n    temp = {},\n    missing = [];\n \nif (msg.payload == undefined) { // checks if nothing was in the buffer's context variable, if so, make it empty\n    msg.payload = { // copy basicFormsElements into payload\n        ...basicFormElements\n    };\n    for(var key1 in msg.payload) { // Goes through and creates the empty basic data\n        for (var key2 in msg.payload[key1]) {\n            temp[key2] = -1;\n        }\n        output[key1] = temp;\n        missing.push(basicFormElementsNames[key1]);\n    }\n} else {\n    for (var key1 in basicFormElements) { // Goes through and creates the empty basic data\n        if (key1 in msg.payload && msg.payload[key1] != \"\") { // Check if key exists in current payload\n            for (var key2 in basicFormElements[key1]) { // Loop through members of each basic test\n                if (key2 in msg.payload[key1]) { // Check if each member in basic test exist\n                    temp[key2] = (msg.payload[key1][key2] != null) ? msg.payload[key1][key2] : -1; \n                } else { //Looking at members in basic test\n                    temp[key2] = -1;\n                    if (!(missing.includes(basicFormElementsNames[key1]))) { // checks to see if missing arr does not have text error msg\n                        missing.push(basicFormElementsNames[key1]);\n                    }\n                }\n            }\n            output[key1] = (temp)\n            temp = {}\n        } else { // Looking at basic tests\n            for (key2 in basicFormElements[key1]) {\n                temp[key2] = -1;\n            }\n            output[key1] = temp;\n            temp = {};\n            missing.push(basicFormElementsNames[key1])\n        }\n    }\n}\n\nmsg.data  = {\n    output: output, //Used in second node downstream to assign payload\n    missing: missing\n}\n\nif (missing.length > 0) { // If the full basic form is not filled in\n    let status = 'The following elements have been left out in the \"Basics\" section: || ';\n    for(let i = 0; i < missing.length; i++) {\n        status += missing[i] + \" || \";\n    }\n    msg.payload = status;\n    return [ , msg];\n} else { // if full basic form is completed\n    msg.lineFlag = \"completedWithChecks\";\n    msg.payload = output;\n    delete msg.data; // Not needed once checks are completed.\n    return [msg, ];\n}\n\n",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
@@ -17054,7 +17056,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1970,
+        "x": 2150,
         "y": 500,
         "wires": [
             [
@@ -17072,7 +17074,7 @@
         "type": "debug",
         "z": "6c2dfeb262f54a31",
         "name": "debug 115",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -17089,7 +17091,7 @@
         "type": "debug",
         "z": "6c2dfeb262f54a31",
         "name": "debug 109",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -17097,8 +17099,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2230,
-        "y": 520,
+        "x": 2250,
+        "y": 720,
         "wires": []
     },
     {
@@ -17138,7 +17140,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2130,
+        "x": 2310,
         "y": 360,
         "wires": []
     },
@@ -17155,7 +17157,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2190,
+        "x": 2370,
         "y": 400,
         "wires": []
     },
@@ -17168,7 +17170,7 @@
         "links": [
             "fea68f0b27b3b0b6"
         ],
-        "x": 2125,
+        "x": 2305,
         "y": 460,
         "wires": []
     },
@@ -17181,7 +17183,7 @@
         "links": [
             "37a523ac432e0d6b"
         ],
-        "x": 2165,
+        "x": 2345,
         "y": 480,
         "wires": []
     },
@@ -17197,7 +17199,8 @@
         "y": 760,
         "wires": [
             [
-                "a6a1f7a83c9a8a9a"
+                "a6a1f7a83c9a8a9a",
+                "addd01cd05cec765"
             ]
         ]
     },
@@ -17313,11 +17316,12 @@
         "links": [
             "c20be865f12bee03"
         ],
-        "x": 65,
-        "y": 700,
+        "x": 105,
+        "y": 660,
         "wires": [
             [
-                "47be9509daa1c04b"
+                "47be9509daa1c04b",
+                "f8f22ece88ec980d"
             ]
         ]
     },
@@ -17326,7 +17330,7 @@
         "type": "debug",
         "z": "6c2dfeb262f54a31",
         "name": "Set Line Flag",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -17374,8 +17378,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 180,
-        "y": 660,
+        "x": 240,
+        "y": 600,
         "wires": []
     },
     {
@@ -17383,7 +17387,7 @@
         "type": "debug",
         "z": "6c2dfeb262f54a31",
         "name": "Basic Data in",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -17404,8 +17408,8 @@
         "tooltip": "",
         "group": "218e00eac196634f",
         "order": 2,
-        "width": "2",
-        "height": "1",
+        "width": 2,
+        "height": 1,
         "passthru": false,
         "mode": "number",
         "delay": 300,
@@ -17430,9 +17434,9 @@
         "label": "{{msg.label}}",
         "tooltip": "",
         "group": "218e00eac196634f",
-        "order": 2,
-        "width": "2",
-        "height": "1",
+        "order": 3,
+        "width": 2,
+        "height": 1,
         "passthru": false,
         "mode": "number",
         "delay": 300,
@@ -17457,9 +17461,9 @@
         "label": "{{msg.label}}",
         "tooltip": "",
         "group": "218e00eac196634f",
-        "order": 2,
-        "width": "2",
-        "height": "1",
+        "order": 4,
+        "width": 2,
+        "height": 1,
         "passthru": false,
         "mode": "number",
         "delay": 300,
@@ -17483,7 +17487,7 @@
         "props": [
             {
                 "p": "payload.basic",
-                "v": "{\"GB\":{\"value\":10,\"upperTol\":8,\"lowerTol\":9,\"upperVal\":1,\"lowerVal\":2},\"ACW\":{\"value\":20,\"upperTol\":10,\"lowerTol\":12,\"upperVal\":1,\"lowerVal\":2},\"IR\":{\"value\":13,\"upperTol\":20,\"lowerTol\":12,\"upperVal\":1,\"lowerVal\":2},\"EL\":{\"value\":120,\"upperTol\":16,\"lowerTol\":8,\"upperVal\":3,\"lowerVal\":4}}",
+                "v": "{\"GB\":{\"value\":100,\"upperTol\":8,\"lowerTol\":12},\"ACW\":{\"value\":200,\"upperTol\":10,\"lowerTol\":12},\"IR\":{\"value\":150,\"upperTol\":3,\"lowerTol\":6},\"EL\":{\"value\":120,\"upperTol\":0,\"lowerTol\":0}}",
                 "vt": "json"
             },
             {
@@ -17504,10 +17508,10 @@
         "repeat": "",
         "crontab": "",
         "once": false,
-        "onceDelay": 0.1,
+        "onceDelay": "0.5",
         "topic": "",
-        "x": 250,
-        "y": 500,
+        "x": 190,
+        "y": 2160,
         "wires": [
             [
                 "772cd7af9c6323ad",
@@ -17682,10 +17686,7 @@
         "x": 220,
         "y": 560,
         "wires": [
-            [
-                "b2e7a6ef2b69c1ac",
-                "addd01cd05cec765"
-            ]
+            []
         ]
     },
     {
@@ -17749,7 +17750,7 @@
         "type": "function",
         "z": "6c2dfeb262f54a31",
         "name": "Set loaded line",
-        "func": "msg.dataKey = 'GB';\nmsg.functionInfo = [\n    {\n        \"topic\": \"value\",\n        \"label\": \"Ground Bond Value\"\n    },\n    {\n        \"topic\": \"upperTol\",\n        \"label\": \"Upper Tolerance %\"\n    },\n    {\n        \"topic\": \"lowerTol\",\n        \"label\": \"Lower Tolerance %\"\n    }\n]\nif (msg.dataKey in msg.data) {\n    return msg;\n}\n",
+        "func": "msg.dataKey = 'GB';\nmsg.functionInfo = [\n    {\n        \"topic\": \"value\",\n        \"label\": \"Ground Bond\"\n    },\n    {\n        \"topic\": \"upperTol\",\n        \"label\": \"\"\n    },\n    {\n        \"topic\": \"lowerTol\",\n        \"label\": \"\"\n    }\n]\nif (msg.dataKey in msg.data) {\n    return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -17791,9 +17792,9 @@
         "label": "{{msg.label}}",
         "tooltip": "",
         "group": "218e00eac196634f",
-        "order": 2,
-        "width": "2",
-        "height": "1",
+        "order": 5,
+        "width": 2,
+        "height": 1,
         "passthru": false,
         "mode": "number",
         "delay": 300,
@@ -17817,9 +17818,9 @@
         "label": "{{msg.label}}",
         "tooltip": "",
         "group": "218e00eac196634f",
-        "order": 2,
-        "width": "2",
-        "height": "1",
+        "order": 6,
+        "width": 2,
+        "height": 1,
         "passthru": false,
         "mode": "number",
         "delay": 300,
@@ -17843,9 +17844,9 @@
         "label": "{{msg.label}}",
         "tooltip": "",
         "group": "218e00eac196634f",
-        "order": 2,
-        "width": "2",
-        "height": "1",
+        "order": 7,
+        "width": 2,
+        "height": 1,
         "passthru": false,
         "mode": "number",
         "delay": 300,
@@ -17926,7 +17927,7 @@
         "type": "function",
         "z": "6c2dfeb262f54a31",
         "name": "Set loaded line",
-        "func": "msg.dataKey = 'ACW';\nmsg.functionInfo = [\n    {\n        \"topic\": \"value\",\n        \"label\": \"ACW Value\"\n    },\n    {\n        \"topic\": \"upperTol\",\n        \"label\": \"Upper Tolerance %\"\n    },\n    {\n        \"topic\": \"lowerTol\",\n        \"label\": \"Lower Tolerance %\"\n    }\n]\nif (msg.dataKey in msg.data) {\n    return msg;\n}\n",
+        "func": "msg.dataKey = 'ACW';\nmsg.functionInfo = [\n    {\n        \"topic\": \"value\",\n        \"label\": \"ACW\"\n    },\n    {\n        \"topic\": \"upperTol\",\n        \"label\": \"\"\n    },\n    {\n        \"topic\": \"lowerTol\",\n        \"label\": \"\"\n    }\n]\nif (msg.dataKey in msg.data) {\n    return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -17950,9 +17951,9 @@
         "label": "{{msg.label}}",
         "tooltip": "",
         "group": "218e00eac196634f",
-        "order": 2,
-        "width": "2",
-        "height": "1",
+        "order": 8,
+        "width": 2,
+        "height": 1,
         "passthru": false,
         "mode": "number",
         "delay": 300,
@@ -17976,9 +17977,9 @@
         "label": "{{msg.label}}",
         "tooltip": "",
         "group": "218e00eac196634f",
-        "order": 2,
-        "width": "2",
-        "height": "1",
+        "order": 9,
+        "width": 2,
+        "height": 1,
         "passthru": false,
         "mode": "number",
         "delay": 300,
@@ -18002,9 +18003,9 @@
         "label": "{{msg.label}}",
         "tooltip": "",
         "group": "218e00eac196634f",
-        "order": 2,
-        "width": "2",
-        "height": "1",
+        "order": 10,
+        "width": 2,
+        "height": 1,
         "passthru": false,
         "mode": "number",
         "delay": 300,
@@ -18085,7 +18086,7 @@
         "type": "function",
         "z": "6c2dfeb262f54a31",
         "name": "Set loaded line",
-        "func": "msg.dataKey = 'IR';\nmsg.functionInfo = [\n    {\n        \"topic\": \"value\",\n        \"label\": \"IR Value\"\n    },\n    {\n        \"topic\": \"upperTol\",\n        \"label\": \"Upper Tolerance %\"\n    },\n    {\n        \"topic\": \"lowerTol\",\n        \"label\": \"Lower Tolerance %\"\n    }\n]\nif (msg.dataKey in msg.data) {\n    return msg;\n}\n",
+        "func": "msg.dataKey = 'IR';\nmsg.functionInfo = [\n    {\n        \"topic\": \"value\",\n        \"label\": \"IR\"\n    },\n    {\n        \"topic\": \"upperTol\",\n        \"label\": \"\"\n    },\n    {\n        \"topic\": \"lowerTol\",\n        \"label\": \"\"\n    }\n]\nif (msg.dataKey in msg.data) {\n    return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -18109,9 +18110,9 @@
         "label": "{{msg.label}}",
         "tooltip": "",
         "group": "218e00eac196634f",
-        "order": 2,
-        "width": "2",
-        "height": "1",
+        "order": 11,
+        "width": 2,
+        "height": 1,
         "passthru": false,
         "mode": "number",
         "delay": 300,
@@ -18135,9 +18136,9 @@
         "label": "{{msg.label}}",
         "tooltip": "",
         "group": "218e00eac196634f",
-        "order": 2,
-        "width": "2",
-        "height": "1",
+        "order": 12,
+        "width": 2,
+        "height": 1,
         "passthru": false,
         "mode": "number",
         "delay": 300,
@@ -18161,9 +18162,9 @@
         "label": "{{msg.label}}",
         "tooltip": "",
         "group": "218e00eac196634f",
-        "order": 2,
-        "width": "2",
-        "height": "1",
+        "order": 13,
+        "width": 2,
+        "height": 1,
         "passthru": false,
         "mode": "number",
         "delay": 300,
@@ -18244,7 +18245,7 @@
         "type": "function",
         "z": "6c2dfeb262f54a31",
         "name": "Set loaded line",
-        "func": "msg.dataKey = 'EL';\nmsg.functionInfo = [\n    {\n        \"topic\": \"value\",\n        \"label\": \"Earth Leakage Value\"\n    },\n    {\n        \"topic\": \"upperTol\",\n        \"label\": \"Upper Tolerance %\"\n    },\n    {\n        \"topic\": \"lowerTol\",\n        \"label\": \"Lower Tolerance %\"\n    }\n]\nif (msg.dataKey in msg.data) {\n    return msg;\n}\n",
+        "func": "msg.dataKey = 'EL';\nmsg.functionInfo = [\n    {\n        \"topic\": \"value\",\n        \"label\": \"Earth Leakage\"\n    },\n    {\n        \"topic\": \"upperTol\",\n        \"label\": \"\"\n    },\n    {\n        \"topic\": \"lowerTol\",\n        \"label\": \"\"\n    }\n]\nif (msg.dataKey in msg.data) {\n    return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -18275,8 +18276,8 @@
         "y": 540,
         "wires": [
             [
-                "7dac7ad1da48a1f9",
-                "517b54151287feac"
+                "517b54151287feac",
+                "7dac7ad1da48a1f9"
             ]
         ],
         "l": false
@@ -18346,7 +18347,7 @@
         "type": "debug",
         "z": "6c2dfeb262f54a31",
         "name": "Basic Save in ",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -18363,7 +18364,7 @@
         "type": "debug",
         "z": "6c2dfeb262f54a31",
         "name": "Basic Bypass",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -18380,7 +18381,7 @@
         "type": "debug",
         "z": "6c2dfeb262f54a31",
         "name": "Checks (bottom)",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -18400,7 +18401,7 @@
         "props": [
             {
                 "p": "payload.basic",
-                "v": "{\"GB\":{\"value\":1,\"upperTol\":2,\"lowerTol\":3},\"IR\":{\"value\":4,\"upperTol\":5,\"lowerTol\":6},\"EL\":{\"value\":7,\"upperTol\":8,\"lowerTol\":9}}",
+                "v": "{\"GB\":{\"value\":100,\"upperTol\":20,\"lowerTol\":15},\"IR\":{\"value\":200,\"upperTol\":10,\"lowerTol\":22},\"EL\":{\"value\":400,\"upperTol\":50,\"lowerTol\":60}}",
                 "vt": "json"
             },
             {
@@ -18430,6 +18431,150 @@
                 "addd01cd05cec765"
             ]
         ]
+    },
+    {
+        "id": "9eb6147d495f9105",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "name": "Calc values",
+        "func": "let upperVal, lowerVal\n//Going to be using the logic of setting \nfor (var key in msg.payload) { //Checks each test in basics\n    if (msg.payload[key].value < 0) { // Empty values are forced to equal -1\n        msg.payload[key].upperVal = -1;\n        msg.payload[key].lowerVal = -1;\n    } else {\n        if (msg.payload[key].upperTol < 0) {\n            msg.payload[key].upperVal = -1;\n        } else {\n            msg.payload[key].upperVal = msg.payload[key].value + msg.payload[key].value * msg.payload[key].upperTol / 100.0;\n        }\n        if (msg.payload[key].lowerTol < 0) {\n            msg.payload[key].lowerVal = -1;\n        } else {\n            msg.payload[key].lowerVal = msg.payload[key].value - msg.payload[key].value * msg.payload[key].lowerTol / 100.0;\n        }\n    }\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1940,
+        "y": 500,
+        "wires": [
+            [
+                "fe33b174df8546ad",
+                "d235074ffad9a339"
+            ]
+        ]
+    },
+    {
+        "id": "fe33b174df8546ad",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "name": "debug 288",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2070,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "dfbdde3fdc784092",
+        "type": "comment",
+        "z": "6c2dfeb262f54a31",
+        "name": "Notes",
+        "info": "HMI not connected\nwrite json disconnected\n",
+        "x": 810,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "b4af2d25ef2d0ac9",
+        "type": "ui_text",
+        "z": "6c2dfeb262f54a31",
+        "group": "218e00eac196634f",
+        "order": 1,
+        "width": "2",
+        "height": "1",
+        "name": "Value Label",
+        "label": "",
+        "format": "Value",
+        "layout": "row-center",
+        "className": "",
+        "x": 870,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "34b7442112b489aa",
+        "type": "ui_text",
+        "z": "6c2dfeb262f54a31",
+        "group": "218e00eac196634f",
+        "order": 1,
+        "width": "2",
+        "height": "1",
+        "name": "Upper Tolerance",
+        "label": "",
+        "format": "Upper Tolerance",
+        "layout": "row-right",
+        "className": "",
+        "x": 1040,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "49f6e7937c095566",
+        "type": "ui_text",
+        "z": "6c2dfeb262f54a31",
+        "group": "218e00eac196634f",
+        "order": 1,
+        "width": "2",
+        "height": "1",
+        "name": "Lower Tolerance",
+        "label": "",
+        "format": "Lower Tolerance",
+        "layout": "row-center",
+        "className": "",
+        "x": 1220,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "f8f22ece88ec980d",
+        "type": "function",
+        "z": "6c2dfeb262f54a31",
+        "name": "Set Clear Basic",
+        "func": "msg.payload = {\n    basic : {\n        \"GB\": {\n            \"value\": \"\",\n            \"upperTol\": \"\",\n            \"lowerTol\": \"\",\n            \"upperVal\": \"\",\n            \"lowerVal\": \"\"\n        },\n        \"ACW\": {\n            \"value\": \"\",\n            \"upperTol\": \"\",\n            \"lowerTol\": \"\",\n            \"upperVal\": \"\",\n            \"lowerVal\": \"\"\n        },\n        \"IR\": {\n            \"value\": \"\",\n            \"upperTol\": \"\",\n            \"lowerTol\": \"\",\n            \"upperVal\": \"\",\n            \"lowerVal\": \"\"\n        },\n        \"EL\": {\n            \"value\": \"\",\n            \"upperTol\": \"\",\n            \"lowerTol\": \"\",\n            \"upperVal\": \"\",\n            \"lowerVal\": \"\"\n        }\n    }\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 640,
+        "wires": [
+            [
+                "addd01cd05cec765"
+            ]
+        ]
+    },
+    {
+        "id": "cab0eb25b0f27e16",
+        "type": "comment",
+        "z": "6c2dfeb262f54a31",
+        "name": "Current changes",
+        "info": "Changed Basic section. \n    • Clear is set in basic\n    • storing all data, percentages and values\n\nChanges in Set write -> HMI CSV\n    • Both basic and parameter section has been updated to handle undefined (empty) cases\n",
+        "x": 950,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "792e18f0a5c5bef2",
+        "type": "debug",
+        "z": "6c2dfeb262f54a31",
+        "g": "807ab1f8485a35d8",
+        "name": "debug 289",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3810,
+        "y": 3380,
+        "wires": []
     },
     {
         "id": "2a99dc5d1f16aca5",
@@ -29843,7 +29988,7 @@
         "name": "",
         "label": "Basic",
         "group": "218e00eac196634f",
-        "order": 1,
+        "order": 15,
         "width": 0,
         "height": 0,
         "options": [
