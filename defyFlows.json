@@ -1341,62 +1341,6 @@
         "h": 122
     },
     {
-        "id": "3d96432f2707d5b9",
-        "type": "group",
-        "z": "18a7ffc09fc6eb29",
-        "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "4d97256b81ea5d71",
-            "9ec55fa2fbda9f0a",
-            "43ed187d88352ccc",
-            "17045099558f1cc4",
-            "703bca2ed96a963c",
-            "c6f978c010797a85",
-            "c54b9f962880af80",
-            "ee819b6e408a323e",
-            "881debac28ce0d1c",
-            "8c5c4f6fba27988a",
-            "37935ee26551b59c",
-            "b7d670f1be6808ab",
-            "ae25d314d7e54019",
-            "07e015a9424fcb79",
-            "78f2b9bab1f25ec0",
-            "cd7d687aed4d1295",
-            "53b17e6ea06afca5",
-            "7d6ad27c5d534fa8",
-            "fb8a82a779e17bcb",
-            "59d649b5eea840a0",
-            "236c22d379da2d32",
-            "4da074b02b4def1e",
-            "ac5da62c113d4e55",
-            "11e124c584953c86",
-            "4ef8de7f639e5aea",
-            "66b0fd6da94ac194",
-            "4b848aff1f2a2885",
-            "4218c34177306dcf",
-            "4592adeecc86c591",
-            "43e9df946fe59724",
-            "d789332bb2ac8b93",
-            "d75f43d52a70b6d5",
-            "8d9ec08ea406741d",
-            "2fec95ed1bf5c595",
-            "e3c44730f87df273",
-            "6c1999fdda29d014"
-        ],
-        "x": 3034,
-        "y": 3119,
-        "w": 1422,
-        "h": 462
-    },
-    {
         "id": "29fdf49c57332f39",
         "type": "group",
         "z": "18a7ffc09fc6eb29",
@@ -5207,8 +5151,8 @@
         "y": 1520,
         "wires": [
             [
-                "13ea5f9e73e768b7",
-                "e2ebcb89eb8a385e"
+                "e2ebcb89eb8a385e",
+                "13ea5f9e73e768b7"
             ]
         ]
     },
@@ -5476,7 +5420,6 @@
         "id": "e3c44730f87df273",
         "type": "junction",
         "z": "18a7ffc09fc6eb29",
-        "g": "3d96432f2707d5b9",
         "x": 3460,
         "y": 3360,
         "wires": [
@@ -5713,7 +5656,6 @@
         "id": "6c1999fdda29d014",
         "type": "junction",
         "z": "18a7ffc09fc6eb29",
-        "g": "3d96432f2707d5b9",
         "x": 3180,
         "y": 3200,
         "wires": [
@@ -6723,6 +6665,14 @@
         "server": "GIOVANNI\\SQLEXPRESS",
         "encyption": true,
         "database": "Defy"
+    },
+    {
+        "id": "7cf223fe452c25b2",
+        "type": "MSSQL-CN",
+        "name": "Defy MSSQL",
+        "server": "10.27.0.16",
+        "encyption": true,
+        "database": "Ateka_db"
     },
     {
         "id": "d2727ddfa00b147b",
@@ -8857,7 +8807,7 @@
         "z": "18a7ffc09fc6eb29",
         "g": "9abed4f82199aefc",
         "name": "Notes",
-        "info": "",
+        "info": "13ea5f9e73e768b7 disconnected",
         "x": 670,
         "y": 60,
         "wires": []
@@ -18600,8 +18550,8 @@
         "links": [
             "06de241923fb3027"
         ],
-        "x": 705,
-        "y": 1560,
+        "x": 715,
+        "y": 1580,
         "wires": []
     },
     {
@@ -19251,7 +19201,7 @@
         "z": "18a7ffc09fc6eb29",
         "g": "29fdf49c57332f39",
         "name": "Buffer input",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -19309,7 +19259,7 @@
         "z": "18a7ffc09fc6eb29",
         "g": "29fdf49c57332f39",
         "name": "Top",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -19327,7 +19277,7 @@
         "z": "18a7ffc09fc6eb29",
         "g": "29fdf49c57332f39",
         "name": "Bottom",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -21822,6 +21772,7 @@
         "id": "e07697f2708e0850",
         "type": "ui_text",
         "z": "18a7ffc09fc6eb29",
+        "d": true,
         "g": "a59b805b8c8f97f5",
         "group": "8ea8176a04b0b27a",
         "order": 1,
@@ -21861,6 +21812,7 @@
         "id": "bee524873fb60211",
         "type": "ui_switch",
         "z": "18a7ffc09fc6eb29",
+        "d": true,
         "g": "a59b805b8c8f97f5",
         "name": "",
         "label": "",
@@ -22889,7 +22841,6 @@
         "id": "4d97256b81ea5d71",
         "type": "comment",
         "z": "18a7ffc09fc6eb29",
-        "g": "3d96432f2707d5b9",
         "name": "Dashboard login",
         "info": "",
         "x": 3140,
@@ -22900,7 +22851,6 @@
         "id": "9ec55fa2fbda9f0a",
         "type": "inject",
         "z": "18a7ffc09fc6eb29",
-        "g": "3d96432f2707d5b9",
         "name": "Autoload",
         "props": [
             {
@@ -22930,7 +22880,6 @@
         "id": "43ed187d88352ccc",
         "type": "function",
         "z": "18a7ffc09fc6eb29",
-        "g": "3d96432f2707d5b9",
         "name": "Config FL",
         "func": "msg.payload = {\n    \"start\": flow.get('dashboardCredentialsLocation'),\n    \"pattern\": flow.get('dashboardCredentialsName')\n}\nreturn msg;",
         "outputs": 1,
@@ -22950,7 +22899,6 @@
         "id": "17045099558f1cc4",
         "type": "fs-file-lister",
         "z": "18a7ffc09fc6eb29",
-        "g": "3d96432f2707d5b9",
         "name": "",
         "start": "/",
         "pattern": "*.*",
@@ -22974,7 +22922,6 @@
         "id": "703bca2ed96a963c",
         "type": "switch",
         "z": "18a7ffc09fc6eb29",
-        "g": "3d96432f2707d5b9",
         "name": "",
         "property": "$count(msg.payload)",
         "propertyType": "jsonata",
@@ -23008,7 +22955,6 @@
         "id": "c6f978c010797a85",
         "type": "function",
         "z": "18a7ffc09fc6eb29",
-        "g": "3d96432f2707d5b9",
         "name": "Error",
         "func": "msg.payload = \"The Credential data cannot be found, please contact admin.\";\nreturn msg;",
         "outputs": 1,
@@ -23028,7 +22974,6 @@
         "id": "c54b9f962880af80",
         "type": "ui_toast",
         "z": "18a7ffc09fc6eb29",
-        "g": "3d96432f2707d5b9",
         "position": "dialog",
         "displayTime": "3",
         "highlight": "",
@@ -23050,7 +22995,6 @@
         "id": "ee819b6e408a323e",
         "type": "function",
         "z": "18a7ffc09fc6eb29",
-        "g": "3d96432f2707d5b9",
         "name": "Config Read File",
         "func": "msg.filename = flow.get('dashboardCredentialsLocation') + flow.get('dashboardCredentialsName');\n\nreturn msg;",
         "outputs": 1,
@@ -23070,7 +23014,6 @@
         "id": "881debac28ce0d1c",
         "type": "file in",
         "z": "18a7ffc09fc6eb29",
-        "g": "3d96432f2707d5b9",
         "name": "",
         "filename": "filename",
         "filenameType": "msg",
@@ -23091,7 +23034,6 @@
         "id": "8c5c4f6fba27988a",
         "type": "csv",
         "z": "18a7ffc09fc6eb29",
-        "g": "3d96432f2707d5b9",
         "name": "",
         "sep": ",",
         "hdrin": true,
@@ -23115,7 +23057,6 @@
         "id": "37935ee26551b59c",
         "type": "function",
         "z": "18a7ffc09fc6eb29",
-        "g": "3d96432f2707d5b9",
         "name": "Set Par from Data",
         "func": "/*\n    The headers for the columns of the dashboardCredentials\n    are hard coded.\n*/\nlet length = msg.payload.length,\n    usernames = [],\n    passwords = [],\n    userLevel = [],\n    credentialData = {};\nif (length <= 1) {\n    //The file is incorrectly set up\n    // Dev error handling\n} else {\n    for (let i = 0; i < length; i++) {\n        usernames.push(msg.payload[i].Username.toString());\n        passwords.push(msg.payload[i].Password.toString());\n        userLevel.push(msg.payload[i].Level);\n    }\n    //Set up the flows\n    credentialData = {\n        usernames: usernames,\n        passwords: passwords,\n        userLevel: userLevel\n    }\n    flow.set('credentialData', credentialData);\n    //checks\n    msg.check = {\n        credentialData: credentialData\n    }\n}\nreturn msg;",
         "outputs": 1,
@@ -23133,7 +23074,6 @@
         "id": "b7d670f1be6808ab",
         "type": "ui_text",
         "z": "18a7ffc09fc6eb29",
-        "g": "3d96432f2707d5b9",
         "group": "18ea443589aff38f",
         "order": 2,
         "width": 0,
@@ -23151,7 +23091,6 @@
         "id": "ae25d314d7e54019",
         "type": "ui_text",
         "z": "18a7ffc09fc6eb29",
-        "g": "3d96432f2707d5b9",
         "group": "494580998616b55b",
         "order": 1,
         "width": 0,
@@ -23169,7 +23108,6 @@
         "id": "07e015a9424fcb79",
         "type": "ui_form",
         "z": "18a7ffc09fc6eb29",
-        "g": "3d96432f2707d5b9",
         "name": "",
         "label": "Dashboard Login",
         "group": "18ea443589aff38f",
@@ -23215,7 +23153,6 @@
         "id": "78f2b9bab1f25ec0",
         "type": "function",
         "z": "18a7ffc09fc6eb29",
-        "g": "3d96432f2707d5b9",
         "name": "Check credentials",
         "func": "let credentialData = flow.get('credentialData');\nlet usernameIndex = credentialData.usernames.indexOf(msg.payload.Username);\nif (msg.payload.Username == \"\" && msg.payload.Password == \"\") { //Case when the credentials are empty, logging in Guest\n    msg = {\n        userInfo: {\n            username: \"Guest\",\n            userLevel: 'Guest'\n        }\n    }\n    return [msg,];\n} else if (usernameIndex !== -1) { // Username exists\n    if (credentialData.passwords[usernameIndex] == msg.payload.Password ) { //Password matches\n        let userLevel = 'Error';\n        switch (credentialData.userLevel[usernameIndex]) {\n            case 1:\n                userLevel = 'Guest'\n                flow.set('userLevel', 'guest');\n                break;\n            case 2:\n                userLevel = 'Operator'\n                flow.set('userLevel', 'operator')\n                break;\n            case 3:\n                userLevel = 'Admin'\n                flow.set('userLevel', 'admin')\n                break;\n        }\n        msg = {\n            userInfo: {\n                username: credentialData.usernames[usernameIndex],\n                userLevel: userLevel,\n            }\n        }\n        return [msg, ];\n    }else {\n        msg.payload = 'Either the username or password are incorrect';\n        return [ ,msg];\n    }\n} else {\n     if (msg.payload.Username == \"dev\" && msg.payload.Password == \"Peanut\") { // Hard coded access for dev\n        msg = {\n            userInfo: {\n                username: 'Developer',\n                userLevel: 'Admin',\n            }\n        }\n        return [msg,];\n    } else {\n         msg.payload = 'Either the username or password are incorrect';\n         return [, msg];\n    }\n}",
         "outputs": 2,
@@ -23227,7 +23164,8 @@
         "y": 3400,
         "wires": [
             [
-                "cd7d687aed4d1295"
+                "cd7d687aed4d1295",
+                "ef11eb710c3c7d22"
             ],
             [
                 "53b17e6ea06afca5"
@@ -23238,9 +23176,8 @@
         "id": "cd7d687aed4d1295",
         "type": "function",
         "z": "18a7ffc09fc6eb29",
-        "g": "3d96432f2707d5b9",
         "name": "ui control",
-        "func": "let msg1 = {};\n\n//Show the normal page\nif (msg.topic == 'logout') {\n    node.warn('check msg.topic');\n    msg.payload = {\n        \"group\": {\n            \"hide\": [\n                \"Recipes_Parameter_Names_11_-_20\",\n                \"Recipes_Parameter_Values_11_-_20\",\n                \"Recipes_Parameter_Instructions_11_-_20\",\n                \"Recipes_Stop_On_Fail_11_-_20\",\n                \"Recipes_Parameter_Names_21_-_30\",\n                \"Recipes_Parameter_Values_21_-_30\",\n                \"Recipes_Parameter_Instructions_21_-_30\",\n                \"Recipes_Parameter_Names_1_-_10\",\n                \"Recipes_Parameter_Values_1_-_10\",\n                \"Recipes_Parameter_Instructions_1_-_10\",\n                \"Recipes_Stop_On_Fail_1_-_10\",\n                \"Recipes_Test_Name\",\n                \"Recipes_Basic_Tests\",\n                \"Settings_Registration\",\n                \"Settings_Update_Password\",\n                \"Settings_User_database\",\n                \"Settings_Insufficient_Rights\",\n                \"Settings_Delete\",\n                \"Testers_Communication_status\"\n            ],\n            \"show\": [\n                \"Recipes_Login\",\n                \"Settings_Login\"\n            ]\n        }\n    }\n} else if ('userInfo' in msg) {\n    node.warn('Check 1')\n    if (msg.userInfo.userLevel == 'Operator') {\n        msg.payload = {\n            \"group\": {\n                \"hide\": [\n                    \"Recipes_Parameter_Names_11_-_20\",\n                    \"Recipes_Parameter_Values_11_-_20\",\n                    \"Recipes_Parameter_Instructions_11_-_20\",\n                    \"Recipes_Stop_On_Fail_11_-_20\",\n                    \"Recipes_Parameter_Names_21_-_30\",\n                    \"Recipes_Parameter_Values_21_-_30\",\n                    \"Recipes_Parameter_Instructions_21_-_30\",\n                    \"Recipes_Login\",\n                    \"Settings_Login\"\n                ],\n                \"show\": [\n                    \"Recipes_Parameter_Names_1_-_10\",\n                    \"Recipes_Parameter_Values_1_-_10\",\n                    \"Recipes_Parameter_Instructions_1_-_10\",\n                    \"Recipes_Stop_On_Fail_1_-_10\",\n                    \"Recipes_Test_Name\",\n                    \"Recipes_Basic_Tests\",\n                    \"Settings_Insufficient_Rights\",\n                    \"Testers_Communication_status\"\n                ]\n            }\n        };\n    } else if (msg.userInfo.userLevel == 'Admin') {\n        msg.payload = {\n            \"group\": {\n                \"hide\": [\n                    \"Recipes_Parameter_Names_11_-_20\",\n                    \"Recipes_Parameter_Values_11_-_20\",\n                    \"Recipes_Parameter_Instructions_11_-_20\",\n                    \"Recipes_Stop_On_Fail_11_-_20\",\n                    \"Recipes_Parameter_Names_21_-_30\",\n                    \"Recipes_Parameter_Values_21_-_30\",\n                    \"Recipes_Parameter_Instructions_21_-_30\",\n                    \"Recipes_Login\",\n                    \"Settings_Login\",\n                    \"Settings_Insufficient_Rights\"\n                ],\n                \"show\": [\n                    \"Recipes_Parameter_Names_1_-_10\",\n                    \"Recipes_Parameter_Values_1_-_10\",\n                    \"Recipes_Parameter_Instructions_1_-_10\",\n                    \"Recipes_Stop_On_Fail_1_-_10\",\n                    \"Recipes_Test_Name\",\n                    \"Recipes_Basic_Tests\",\n                    \"Settings_Registration\",\n                    \"Settings_Update_Password\",\n                    \"Settings_User_database\",\n                    \"Settings_Delete\",\n                    \"Testers_Communication_status\"\n                ]\n            }\n        };\n    }\n\n    //Used for login\n    msg1 = {\n        payload: msg.userInfo.username,\n        level: msg.userInfo.userLevel\n    }\n}\nreturn [msg, msg1];",
+        "func": "let msg1 = {};\n\n//Show the normal page\nif (msg.topic == 'logout') {\n    msg.payload = {\n        \"group\": {\n            \"hide\": [\n                \"Recipes_Parameter_Names_11_-_20\",\n                \"Recipes_Parameter_Values_11_-_20\",\n                \"Recipes_Parameter_Instructions_11_-_20\",\n                \"Recipes_Stop_On_Fail_11_-_20\",\n                \"Recipes_Parameter_Names_21_-_30\",\n                \"Recipes_Parameter_Values_21_-_30\",\n                \"Recipes_Parameter_Instructions_21_-_30\",\n                \"Recipes_Parameter_Names_1_-_10\",\n                \"Recipes_Parameter_Values_1_-_10\",\n                \"Recipes_Parameter_Instructions_1_-_10\",\n                \"Recipes_Stop_On_Fail_1_-_10\",\n                \"Recipes_Test_Name\",\n                \"Recipes_Basic_Tests\",\n                \"Settings_Registration\",\n                \"Settings_Update_Password\",\n                \"Settings_User_database\",\n                \"Settings_Insufficient_Rights\",\n                \"Settings_Delete\",\n                \"Testers_Communication_status\"\n            ],\n            \"show\": [\n                \"Recipes_Login\",\n                \"Settings_Login\"\n            ]\n        }\n    }\n} else if ('userInfo' in msg) { // If user is being logged in\n    if (msg.userInfo.userLevel == 'Operator') {\n        msg.payload = {\n            \"group\": {\n                \"hide\": [\n                    \"Recipes_Parameter_Names_11_-_20\",\n                    \"Recipes_Parameter_Values_11_-_20\",\n                    \"Recipes_Parameter_Instructions_11_-_20\",\n                    \"Recipes_Stop_On_Fail_11_-_20\",\n                    \"Recipes_Parameter_Names_21_-_30\",\n                    \"Recipes_Parameter_Values_21_-_30\",\n                    \"Recipes_Parameter_Instructions_21_-_30\",\n                    \"Recipes_Login\",\n                    \"Settings_Login\"\n                ],\n                \"show\": [\n                    \"Recipes_Parameter_Names_1_-_10\",\n                    \"Recipes_Parameter_Values_1_-_10\",\n                    \"Recipes_Parameter_Instructions_1_-_10\",\n                    \"Recipes_Stop_On_Fail_1_-_10\",\n                    \"Recipes_Test_Name\",\n                    \"Recipes_Basic_Tests\",\n                    \"Settings_Insufficient_Rights\",\n                    \"Testers_Communication_status\"\n                ]\n            }\n        };\n    } else if (msg.userInfo.userLevel == 'Admin') {\n        msg.payload = {\n            \"group\": {\n                \"hide\": [\n                    \"Recipes_Parameter_Names_11_-_20\",\n                    \"Recipes_Parameter_Values_11_-_20\",\n                    \"Recipes_Parameter_Instructions_11_-_20\",\n                    \"Recipes_Stop_On_Fail_11_-_20\",\n                    \"Recipes_Parameter_Names_21_-_30\",\n                    \"Recipes_Parameter_Values_21_-_30\",\n                    \"Recipes_Parameter_Instructions_21_-_30\",\n                    \"Recipes_Login\",\n                    \"Settings_Login\",\n                    \"Settings_Insufficient_Rights\"\n                ],\n                \"show\": [\n                    \"Recipes_Parameter_Names_1_-_10\",\n                    \"Recipes_Parameter_Values_1_-_10\",\n                    \"Recipes_Parameter_Instructions_1_-_10\",\n                    \"Recipes_Stop_On_Fail_1_-_10\",\n                    \"Recipes_Test_Name\",\n                    \"Recipes_Basic_Tests\",\n                    \"Settings_Registration\",\n                    \"Settings_Update_Password\",\n                    \"Settings_User_database\",\n                    \"Settings_Delete\",\n                    \"Testers_Communication_status\"\n                ]\n            }\n        };\n    }\n\n    // Set system logged in variables\n    let dashboardInfo = global.get('dashboardInfo') || {}\n    dashboardInfo.user = {\n        username: msg.userInfo.username,\n        userLevel: msg.userInfo.userLevel\n    }\n    global.set('dashboardInfo', dashboardInfo)\n/*\n    // Write to dashboard and write dashboard login event using\n    msg1 = {\n        payload: msg.userInfo.username,\n        level: msg.userInfo.userLevel,\n        dashboardInfo: {\n            username:   global.get('dashboardInfo').userInfo.username,\n            userLevel:  global.get('dashboardInfo').userInfo.userLevel,\n            event:      'Logged in',\n            changed:    'Nothing',\n            current:    '',\n            previous:   '',\n            timestamp:  new Date().toISOString\n        }\n    }*/\n}\n\nreturn [msg, msg1];",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
@@ -23263,7 +23200,6 @@
         "id": "53b17e6ea06afca5",
         "type": "ui_toast",
         "z": "18a7ffc09fc6eb29",
-        "g": "3d96432f2707d5b9",
         "position": "dialog",
         "displayTime": "3",
         "highlight": "",
@@ -23285,7 +23221,6 @@
         "id": "7d6ad27c5d534fa8",
         "type": "ui_ui_control",
         "z": "18a7ffc09fc6eb29",
-        "g": "3d96432f2707d5b9",
         "name": "",
         "events": "all",
         "x": 3740,
@@ -23298,7 +23233,6 @@
         "id": "fb8a82a779e17bcb",
         "type": "ui_text",
         "z": "18a7ffc09fc6eb29",
-        "g": "3d96432f2707d5b9",
         "group": "0465010f96f3dad5",
         "order": 4,
         "width": 3,
@@ -23316,7 +23250,6 @@
         "id": "59d649b5eea840a0",
         "type": "ui_button",
         "z": "18a7ffc09fc6eb29",
-        "g": "3d96432f2707d5b9",
         "name": "",
         "group": "0465010f96f3dad5",
         "order": 18,
@@ -23345,7 +23278,6 @@
         "id": "236c22d379da2d32",
         "type": "ui_text",
         "z": "18a7ffc09fc6eb29",
-        "g": "3d96432f2707d5b9",
         "group": "d343b6541bd84142",
         "order": 0,
         "width": 0,
@@ -23363,7 +23295,6 @@
         "id": "4da074b02b4def1e",
         "type": "comment",
         "z": "18a7ffc09fc6eb29",
-        "g": "3d96432f2707d5b9",
         "name": "Read dashboardCredentials.csv",
         "info": "",
         "x": 3290,
@@ -23374,7 +23305,6 @@
         "id": "ac5da62c113d4e55",
         "type": "inject",
         "z": "18a7ffc09fc6eb29",
-        "g": "3d96432f2707d5b9",
         "name": "Logout",
         "props": [
             {
@@ -25464,7 +25394,6 @@
         "id": "11e124c584953c86",
         "type": "comment",
         "z": "18a7ffc09fc6eb29",
-        "g": "3d96432f2707d5b9",
         "name": "Logout Timer",
         "info": "",
         "x": 3330,
@@ -25686,7 +25615,6 @@
         "id": "4ef8de7f639e5aea",
         "type": "function",
         "z": "18a7ffc09fc6eb29",
-        "g": "3d96432f2707d5b9",
         "name": "Check triggers",
         "func": "if (msg.payload == 'Yes') { // Recieved from user dashboard query\n    context.set('isUserActive', true)\n} else if (msg.payload == 'No' || msg.payload == 0) {\n    msg.payload = 'logout'\n    msg.topic = 'logout'\n    return msg\n} ",
         "outputs": 1,
@@ -25707,7 +25635,6 @@
         "id": "66b0fd6da94ac194",
         "type": "function",
         "z": "18a7ffc09fc6eb29",
-        "g": "3d96432f2707d5b9",
         "name": "function 57",
         "func": "let msg2 = {payload: msg.payload, reset: true}; //resets the trigger if a response is given\nif (msg.payload == 'Yes') {\n    return [msg, msg2]\n} else {\n    return [ , msg2]\n}\n",
         "outputs": 2,
@@ -25732,7 +25659,6 @@
         "id": "4b848aff1f2a2885",
         "type": "trigger",
         "z": "18a7ffc09fc6eb29",
-        "g": "3d96432f2707d5b9",
         "name": "",
         "op1": "",
         "op2": "0",
@@ -25758,7 +25684,6 @@
         "id": "4218c34177306dcf",
         "type": "ui_toast",
         "z": "18a7ffc09fc6eb29",
-        "g": "3d96432f2707d5b9",
         "position": "dialog",
         "displayTime": "3",
         "highlight": "",
@@ -25782,7 +25707,6 @@
         "id": "4592adeecc86c591",
         "type": "function",
         "z": "18a7ffc09fc6eb29",
-        "g": "3d96432f2707d5b9",
         "name": "Set payloads",
         "func": "if (msg.payload == 0) {\n    let msg1 = {\n        payload: 'Are you still using the dashboard?'\n    }\n    return[msg1, msg]\n}\n",
         "outputs": 2,
@@ -25805,7 +25729,6 @@
         "id": "43e9df946fe59724",
         "type": "trigger",
         "z": "18a7ffc09fc6eb29",
-        "g": "3d96432f2707d5b9",
         "name": "",
         "op1": "",
         "op2": "0",
@@ -25831,7 +25754,6 @@
         "id": "d789332bb2ac8b93",
         "type": "inject",
         "z": "18a7ffc09fc6eb29",
-        "g": "3d96432f2707d5b9",
         "name": "",
         "props": [
             {
@@ -25862,7 +25784,6 @@
         "id": "d75f43d52a70b6d5",
         "type": "function",
         "z": "18a7ffc09fc6eb29",
-        "g": "3d96432f2707d5b9",
         "name": "Gate",
         "func": "if (msg.topic != \"logout\") {\n    return msg;\n}",
         "outputs": 1,
@@ -25882,7 +25803,6 @@
         "id": "8d9ec08ea406741d",
         "type": "debug",
         "z": "18a7ffc09fc6eb29",
-        "g": "3d96432f2707d5b9",
         "name": "debug 480",
         "active": true,
         "tosidebar": true,
@@ -25900,7 +25820,6 @@
         "id": "2fec95ed1bf5c595",
         "type": "debug",
         "z": "18a7ffc09fc6eb29",
-        "g": "3d96432f2707d5b9",
         "name": "debug 481",
         "active": true,
         "tosidebar": true,
@@ -25997,6 +25916,23 @@
                 "c93e50142be51fde"
             ]
         ]
+    },
+    {
+        "id": "ef11eb710c3c7d22",
+        "type": "debug",
+        "z": "18a7ffc09fc6eb29",
+        "name": "debug 486",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3620,
+        "y": 3480,
+        "wires": []
     },
     {
         "id": "833bf51add1f6b28",
@@ -26149,7 +26085,7 @@
         "type": "function",
         "z": "30b839ab81bb1134",
         "name": "Call Batch two",
-        "func": "// Batch two:\n//Dead short\t15 100\tfloat\t2 Reg\n//Earth bond\t15 102\tfloat\t2 Reg\n//IR\t        15 104\tfloat\t2 Reg\n//ACW\t        15 106\tfloat\t2 Reg\n//ELC\t        15 108\tfloat\t2 Reg\n// Float arr of size 5, reg = 10\n\nlet fc = 3,\n    sa = 15100,\n    quantity = 10;\n\nmsg.payload = { value: msg.payload, 'fc': fc, 'unitid': 1, 'address': sa, 'quantity': quantity };\nreturn msg;",
+        "func": "// Batch two:\n//Dead short\t15 100\tfloat\t2 Reg 0\n//Earth bond\t15 102\tfloat\t2 Reg 1\n//IR\t        15 104\tfloat\t2 Reg 2\n//ACW\t        15 106\tfloat\t2 Reg 3\n//ELC\t        15 108\tfloat\t2 Reg 4\n// Float arr of size 5, reg = 10\n\nlet fc = 3,\n    sa = 15100,\n    quantity = 10;\n\nmsg.payload = { value: msg.payload, 'fc': fc, 'unitid': 1, 'address': sa, 'quantity': quantity };\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -26828,7 +26764,7 @@
         "type": "function",
         "z": "30b839ab81bb1134",
         "name": "Create data from PLC",
-        "func": "let results = flow.get('testResults'),\n    test = flow.get('test'),\n    testResultID = results.testResultID,\n    parCount = results.parCount,\n    headers = [ // Step ID gets done by MSQL\n        \"Test_Result_ID\",\n        \"Step_Number\",\n        \"Measurement\",\n        \"Max_Allowed\",\n        \"Min_Allowed\",\n        \"Result\",\n        \"Reason\",\n        \"Step_Name\",\n        \"Instructions\"\n    ],\n    output = [],\n    arr = [],\n    i = 0,\n    stepNum = 1,\n    basicStepNameHeaders = ['Dead Short', 'Ground Bond', 'ACW Test', 'Insulation Resistance', 'Earth Leakage'],\n    basicKeys = Object.keys(test.basic),\n    allParameterKeys = Object.keys(test.parameterData),\n    singleParameterKeys = Object.keys(test.parameterData[allParameterKeys[0]])\n\nmsg.headers = headers;\nmsg.results = results\n\n//Because dead short isn't in the recipe sent\narr.push(testResultID);\narr.push(stepNum); // Step Number\narr.push(parseFloat(results.basicResults[0].toFixed(2))); //Value\narr.push(1000)//max\narr.push(0)//min\narr.push(results.coilBasic[0]) // Result\narr.push((results.coilBasic[0]) ? results.basicResults[0].toFixed(2) + 'mA is within range' : results.basicResults[0].toFixed(2) + 'mA is out of range') // Reason\narr.push(basicStepNameHeaders[stepNum - 1]) // stepName\narr.push(\"\"); // Instructions\nstepNum++;\noutput.push(arr);\narr = [];\n\n// Basic section\nfor (i = 0; i < basicStepNameHeaders.length - 2; i++) { // Basic section\n    arr.push(testResultID);\n    arr.push(stepNum);\n    arr.push(parseFloat(results.basicResults[stepNum - 1].toFixed(2))); //Value\n    arr.push(test.basic[basicKeys[i]].upperVal)//max\n    arr.push(test.basic[basicKeys[i]].lowerVal)//min\n    arr.push(results.coilBasic[stepNum - 1]) // Result\n    arr.push((results.coilBasic[stepNum - 1]) ? results.basicResults[stepNum - 1].toFixed(2) + 'mA is within range' : results.basicResults[stepNum - 1].toFixed(2) +'mA is out of range') // Reason\n    arr.push(basicStepNameHeaders[stepNum - 1]) // stepName\n    arr.push(\"\"); // Instructions\n    stepNum++;\n    output.push(arr);\n    arr = [];\n}\n// Last basic element doesn't have the min value\narr.push(testResultID);\narr.push(stepNum);\narr.push(parseFloat(results.basicResults[stepNum - 1].toFixed(2))); //Value\narr.push(test.basic[basicKeys[i]].upperVal)//max\narr.push(test.basic[basicKeys[i]].lowerVal)//min\narr.push(results.coilBasic[stepNum - 1]) // Result\narr.push((results.coilBasic[stepNum - 1]) ? results.basicResults[stepNum - 1].toFixed(2) + 'mA is within range' : results.basicResults[stepNum - 1].toFixed(2) + 'mA is out of range') // Reason\narr.push(basicStepNameHeaders[stepNum - 1]) // stepName\narr.push(\"\"); // Instructions\nstepNum++;\noutput.push(arr);\narr = [];\n\n//Parameter section \n\nfor (let i = 0; i < parCount; i++) {\n    arr.push(testResultID);\n    arr.push(stepNum);\n    arr.push(parseFloat(results.parameterResults[i].toFixed(2))); //Value\n    arr.push(test.parameterData[allParameterKeys[i]].upperVal)//max\n    arr.push(test.parameterData[allParameterKeys[i]].lowerVal)//min\n    arr.push(results.coilPar[i]) // Result\n    arr.push((results.coilPar[i]) ? results.parameterResults[i].toFixed(2) + 'W is within range' : results.parameterResults[i].toFixed(2) + 'W is out of range') // Reason\n    arr.push(test.parameterData[allParameterKeys[i]][singleParameterKeys[0]]) // stepName\n    arr.push(test.parameterData[allParameterKeys[i]].instructions) // Instructions\n    stepNum++;\n    output.push(arr);\n    arr = [];\n}\nflow.set('testResultID', flow.get('testResultID') + 1);\n\nmsg.check = {\n    test: test, \n    results: results\n}\n\nmsg.payload = output;\nreturn msg;\n",
+        "func": "let results = flow.get('testResults'),\n    test = flow.get('test'),\n    testResultID = results.testResultID,\n    parCount = results.parCount,\n    headers = [ // Step ID gets done by MSQL\n        \"Test_Result_ID\",\n        \"Step_Number\",\n        \"Measurement\",\n        \"Max_Allowed\",\n        \"Min_Allowed\",\n        \"Result\",\n        \"Reason\",\n        \"Step_Name\",\n        \"Instructions\"\n    ],\n    output = [],\n    arr = [],\n    i = 0,\n    stepNum = 1,\n    basicStepNameHeaders = ['Dead Short', 'Ground Bond', 'ACW Test', 'Insulation Resistance', 'Earth Leakage'],\n    basicKeys = Object.keys(test.basic),\n    allParameterKeys = Object.keys(test.parameterData),\n    singleParameterKeys = Object.keys(test.parameterData[allParameterKeys[0]])\n\nmsg.headers = headers;\nmsg.results = results\n\n//Because dead short isn't in the recipe sent\narr.push(testResultID);\narr.push(stepNum); // Step Number\narr.push(parseFloat(results.basicResults[0].toFixed(2))); //Value\narr.push(1000)//max\narr.push(0)//min\narr.push(results.coilBasic[0]) // Result\narr.push('')//(results.coilBasic[0]) ? results.basicResults[0].toFixed(2) + 'mA is within range' : results.basicResults[0].toFixed(2) + 'mA is out of range') // Reason\narr.push(basicStepNameHeaders[stepNum - 1]) // stepName\narr.push(\"\"); // Instructions\nstepNum++;\noutput.push(arr);\narr = [];\n\n// Basic section\nfor (i = 0; i < basicStepNameHeaders.length - 2; i++) { // Basic section\n    arr.push(testResultID);\n    arr.push(stepNum);\n    arr.push(parseFloat(results.basicResults[stepNum - 1].toFixed(2))); //Value\n    arr.push(test.basic[basicKeys[i]].upperVal)//max\n    arr.push(test.basic[basicKeys[i]].lowerVal)//min\n    arr.push(results.coilBasic[stepNum - 1]) // Result\n    arr.push((results.coilBasic[stepNum - 1]) ? results.basicResults[stepNum - 1].toFixed(2) + 'mA is within range' : results.basicResults[stepNum - 1].toFixed(2) +'mA is out of range') // Reason\n    arr.push(basicStepNameHeaders[stepNum - 1]) // stepName\n    arr.push(\"\"); // Instructions\n    stepNum++;\n    output.push(arr);\n    arr = [];\n}\n// Last basic element doesn't have the min value\narr.push(testResultID);\narr.push(stepNum);\narr.push(parseFloat(results.basicResults[stepNum - 1].toFixed(2))); //Value\narr.push(test.basic[basicKeys[i]].upperVal)//max\narr.push(test.basic[basicKeys[i]].lowerVal)//min\narr.push(results.coilBasic[stepNum - 1]) // Result\narr.push((results.coilBasic[stepNum - 1]) ? results.basicResults[stepNum - 1].toFixed(2) + 'mA is within range' : results.basicResults[stepNum - 1].toFixed(2) + 'mA is out of range') // Reason\narr.push(basicStepNameHeaders[stepNum - 1]) // stepName\narr.push(\"\"); // Instructions\nstepNum++;\noutput.push(arr);\narr = [];\n\n//Parameter section \n\nfor (let i = 0; i < parCount; i++) {\n    arr.push(testResultID);\n    arr.push(stepNum);\n    arr.push(parseFloat(results.parameterResults[i].toFixed(2))); //Value\n    arr.push(test.parameterData[allParameterKeys[i]].upperVal)//max\n    arr.push(test.parameterData[allParameterKeys[i]].lowerVal)//min\n    arr.push(results.coilPar[i]) // Result\n    arr.push((results.coilPar[i]) ? results.parameterResults[i].toFixed(2) + 'W is within range' : results.parameterResults[i].toFixed(2) + 'W is out of range') // Reason\n    arr.push(test.parameterData[allParameterKeys[i]][singleParameterKeys[0]]) // stepName\n    arr.push(test.parameterData[allParameterKeys[i]].instructions) // Instructions\n    stepNum++;\n    output.push(arr);\n    arr = [];\n}\nflow.set('testResultID', flow.get('testResultID') + 1);\n\nmsg.check = {\n    test: test, \n    results: results\n}\n\nmsg.payload = output;\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -30102,7 +30038,7 @@
         "type": "debug",
         "z": "30b839ab81bb1134",
         "name": "local",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -30136,7 +30072,7 @@
         "type": "debug",
         "z": "30b839ab81bb1134",
         "name": "PLC machine switch bit off in",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -30153,7 +30089,7 @@
         "type": "debug",
         "z": "30b839ab81bb1134",
         "name": "ATEKA4",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -30170,7 +30106,7 @@
         "type": "debug",
         "z": "30b839ab81bb1134",
         "name": "ATEKA3",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -30187,7 +30123,7 @@
         "type": "debug",
         "z": "30b839ab81bb1134",
         "name": "ATEKA2",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -30204,7 +30140,7 @@
         "type": "debug",
         "z": "30b839ab81bb1134",
         "name": "ATEKA1",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -30413,7 +30349,7 @@
         "type": "debug",
         "z": "30b839ab81bb1134",
         "name": "PLC machine switch bit off out",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -33419,7 +33355,7 @@
         "type": "debug",
         "z": "30b839ab81bb1134",
         "name": "ATEKA5",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -33482,7 +33418,7 @@
         "type": "debug",
         "z": "30b839ab81bb1134",
         "name": "ATEKA6",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -33545,7 +33481,7 @@
         "type": "debug",
         "z": "30b839ab81bb1134",
         "name": "ATEKA7",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -33608,7 +33544,7 @@
         "type": "debug",
         "z": "30b839ab81bb1134",
         "name": "ATEKA8",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -34967,6 +34903,488 @@
         "statusType": "auto",
         "x": 1310,
         "y": 2780,
+        "wires": []
+    },
+    {
+        "id": "177ba660bfcb731c",
+        "type": "inject",
+        "z": "30b839ab81bb1134",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 3880,
+        "wires": [
+            [
+                "96581afa71053a4f"
+            ]
+        ]
+    },
+    {
+        "id": "96581afa71053a4f",
+        "type": "function",
+        "z": "30b839ab81bb1134",
+        "name": "Get tables",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 3880,
+        "wires": [
+            [
+                "8dda82e4c6659abc"
+            ]
+        ]
+    },
+    {
+        "id": "8dda82e4c6659abc",
+        "type": "MSSQL",
+        "z": "30b839ab81bb1134",
+        "mssqlCN": "7cf223fe452c25b2",
+        "name": "",
+        "query": "USE [ATEKA_DB]; --Replace with your actual database name\n\nSELECT TABLE_NAME\nFROM INFORMATION_SCHEMA.TABLES\nWHERE TABLE_TYPE = 'BASE TABLE';",
+        "outField": "payload",
+        "x": 460,
+        "y": 3880,
+        "wires": [
+            [
+                "ccfd43d0218c84f8"
+            ]
+        ]
+    },
+    {
+        "id": "ccfd43d0218c84f8",
+        "type": "function",
+        "z": "30b839ab81bb1134",
+        "name": "function 58",
+        "func": "let text = ''\nfor (let obj in msg.payload) {\n    text += msg.payload[obj].TABLE_NAME + '\\n'\n}\nmsg.payload = text\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 3880,
+        "wires": [
+            [
+                "7fb1d0cae379145c",
+                "9fa9d1e977de5e00"
+            ]
+        ]
+    },
+    {
+        "id": "7fb1d0cae379145c",
+        "type": "file",
+        "z": "30b839ab81bb1134",
+        "name": "",
+        "filename": "C:/Users/User/Documents/Work/Ateka automation/Projects/Defy/Database/TableNames.txt",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1070,
+        "y": 3880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9fa9d1e977de5e00",
+        "type": "debug",
+        "z": "30b839ab81bb1134",
+        "name": "debug 490",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 790,
+        "y": 3820,
+        "wires": []
+    },
+    {
+        "id": "588b1314fefc9fbd",
+        "type": "comment",
+        "z": "30b839ab81bb1134",
+        "name": "Query Database structure",
+        "info": "",
+        "x": 150,
+        "y": 3820,
+        "wires": []
+    },
+    {
+        "id": "362f16e85072fd64",
+        "type": "inject",
+        "z": "30b839ab81bb1134",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 3940,
+        "wires": [
+            [
+                "60344bf70e655ad7"
+            ]
+        ]
+    },
+    {
+        "id": "60344bf70e655ad7",
+        "type": "file in",
+        "z": "30b839ab81bb1134",
+        "name": "",
+        "filename": "C:/Users/User/Documents/Work/Ateka automation/Projects/Defy/Database/TableNames.txt",
+        "filenameType": "str",
+        "format": "lines",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 530,
+        "y": 3940,
+        "wires": [
+            [
+                "c880cbf6e2456e45",
+                "2aefe170bda4a66a"
+            ]
+        ]
+    },
+    {
+        "id": "c880cbf6e2456e45",
+        "type": "debug",
+        "z": "30b839ab81bb1134",
+        "name": "debug 492",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 970,
+        "y": 4020,
+        "wires": []
+    },
+    {
+        "id": "2aefe170bda4a66a",
+        "type": "function",
+        "z": "30b839ab81bb1134",
+        "name": "Send Queries",
+        "func": "msg.bufferID = msg.payload\nmsg.payload = `\nUSE [ATEKA_DB]; -- Replace with your actual database name\n\n-- Replace 'YourTableName' with the actual name of your table\nDECLARE @tableName NVARCHAR(128) = ${msg.payload};\n\nSELECT COLUMN_NAME, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH\nFROM INFORMATION_SCHEMA.COLUMNS\nWHERE TABLE_NAME = @tableName;\n`\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 960,
+        "y": 3940,
+        "wires": [
+            [
+                "3b9c332dd4d33397",
+                "38635c4a78aff483"
+            ]
+        ]
+    },
+    {
+        "id": "3b9c332dd4d33397",
+        "type": "function",
+        "z": "30b839ab81bb1134",
+        "name": "Buffer",
+        "func": "//infinite loop preventer\nlet loop = context.get('loop') || 0;\n/*\ncontext.set('loop', ++loop);\nif (loop >=  20) {\n    return null;\n}*/\n\n// initialize context variables\nlet buffer = context.get('buffer') || []; //The buffer that contains the whole incomming message\nlet ID = context.get('ID') || [];       // A unique identifier of the incomming message, which is indexed and spliced in unison with buffer\n//Indicator for whether the buffer is waiting for a message to return or not\nlet waiting = context.get('waiting');\nif (waiting == undefined) {\n    waiting = false; //Set the waiting or the current instance to false\n    context.set('waiting', true); // Sets the next message that'll be recieved to wait\n}\n\n// Set paramarams\n//Sets the trigger msg member name and what the value of it is \nlet msgTriggerName = 'lineFlag',\n    msgTriggerValue = 'fileReading',\n    incommingUniqueIDmsgMember = 'bufferID',\n    outgoingUniqueIDmsgMember = 'bufferID'\n\n// Check for trigger\nif (msg[msgTriggerName] == msgTriggerValue) {\n    let index = ID.indexOf(msg[incommingUniqueIDmsgMember]);\n    if (index != -1) { // Looking for the returned message in the context variables\n        buffer.splice(index, 1);\n        ID.splice(index, 1);\n    } else {\n        node.warn('Index not found');\n    }\n\n    // Sets the next msg to go out (FIFO)\n    msg = {\n        ...buffer[0]\n    }\n    msg[outgoingUniqueIDmsgMember] = ID[0];\n\n    context.set('buffer', buffer);\n    context.set('ID', ID);\n\n    //Testing checks //del\n    msg.check = {\n        buffer: buffer,\n        ID: ID,\n        loop: loop\n    }\n    if (ID[0] == undefined) {\n        context.set('buffer', []);\n        context.set('ID', []);\n        context.set('waiting', false);\n    } else {\n        msg[msgTriggerName] = msgTriggerValue\n        msg.bufferCount = ID.length\n        return msg;\n    }\n} else {\n\n    // Add the incoming message payload and topic to the buffer\n    buffer.push(msg);\n    ID.push(msg[incommingUniqueIDmsgMember]);\n\n    // Set the buffer array back to context\n    context.set('buffer', buffer);\n    context.set('ID', ID);\n\n    msg = {\n        ...buffer[0]\n    }\n    msg.ID = ID;\n\n    //Testing checks //del\n    msg.check = {\n        buffer: buffer,\n        ID: ID,\n        loop: loop\n    }\n\n    if (waiting) { // If we're waiting we do not return\n\n    } else {\n        if (buffer.length > 0)\n            context.set('waiting', true);\n        msg[msgTriggerName] = msgTriggerValue\n        msg.bufferCount = ID.length\n        return msg;\n    }\n}\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1110,
+        "y": 3940,
+        "wires": [
+            [
+                "68d08317c69576a0"
+            ]
+        ]
+    },
+    {
+        "id": "38635c4a78aff483",
+        "type": "debug",
+        "z": "30b839ab81bb1134",
+        "name": "debug 493",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1170,
+        "y": 4020,
+        "wires": []
+    },
+    {
+        "id": "12cf8896581cc862",
+        "type": "MSSQL",
+        "z": "30b839ab81bb1134",
+        "mssqlCN": "7cf223fe452c25b2",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 1470,
+        "y": 3940,
+        "wires": [
+            [
+                "b713700d2f5d5cd1",
+                "3b9c332dd4d33397",
+                "21aa35e0d3c74172"
+            ]
+        ]
+    },
+    {
+        "id": "68d08317c69576a0",
+        "type": "function",
+        "z": "30b839ab81bb1134",
+        "name": "Get Table Structure",
+        "func": "msg.payload = `\nUSE [ATEKA_DB]; -- Replace with your actual database name\n\n-- Replace 'YourTableName' with the actual name of your table\nDECLARE @tableName NVARCHAR(128) = 'AtekaTestResults';\n\nSELECT COLUMN_NAME, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH\nFROM INFORMATION_SCHEMA.COLUMNS\nWHERE TABLE_NAME = @tableName;\n`\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1290,
+        "y": 3940,
+        "wires": [
+            [
+                "12cf8896581cc862"
+            ]
+        ]
+    },
+    {
+        "id": "b713700d2f5d5cd1",
+        "type": "debug",
+        "z": "30b839ab81bb1134",
+        "name": "debug 491",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1630,
+        "y": 3900,
+        "wires": []
+    },
+    {
+        "id": "21aa35e0d3c74172",
+        "type": "function",
+        "z": "30b839ab81bb1134",
+        "name": "Write Table Descriptions",
+        "func": "// Make sure payload is an array and not empty\ntry {\n    if (msg.payload.length === 0) {\n        //Array is empty\n        node.warn('The table is empty')\n        return;\n    }\n} catch (error) {\n    node.error('Unexpected msg.payload value', msg)\n    return;\n}\n\n// Assign variables\n// SET\nmsg.filename = 'C:/Users/User/Documents/Work/Ateka automation/Projects/Defy/Database/' + msg.bufferID + '.csv'\n\nlet headers = Object.keys(msg.payload[0]) // The assumption is that every entry will have the same structure and order to the object\nlet text = ''\n\n// Assign headers to text\nfor (let i = 0; i < headers.length; i++) {\n    text += headers[i] + ', '\n}\n\n// Assign values\nfor (const item of msg.payload) {\n    for (const key in item) {\n        text += item[key] + ', '\n    }\n    text += '\\n'\n}\nmsg.payload = text\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1690,
+        "y": 3940,
+        "wires": [
+            [
+                "5d1c7450c0a9a77c",
+                "d434d6fff77a1cfb"
+            ]
+        ]
+    },
+    {
+        "id": "5d1c7450c0a9a77c",
+        "type": "file",
+        "z": "30b839ab81bb1134",
+        "name": "",
+        "filename": "filename",
+        "filenameType": "msg",
+        "appendNewline": false,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1880,
+        "y": 3940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d434d6fff77a1cfb",
+        "type": "debug",
+        "z": "30b839ab81bb1134",
+        "name": "debug 494",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1910,
+        "y": 4000,
+        "wires": []
+    },
+    {
+        "id": "d86a4cefd06e3d78",
+        "type": "MSSQL",
+        "z": "30b839ab81bb1134",
+        "mssqlCN": "7cf223fe452c25b2",
+        "name": "",
+        "query": "USE [ATEKA_DB]; -- Replace with your actual database name\n\n-- Replace 'YourTableName' with the actual name of your table\nDECLARE @tableName NVARCHAR(128) = 'AtekaTestResults';\n\nSELECT COLUMN_NAME, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH\nFROM INFORMATION_SCHEMA.COLUMNS\nWHERE TABLE_NAME = @tableName;",
+        "outField": "payload",
+        "x": 300,
+        "y": 4120,
+        "wires": [
+            [
+                "d905dd68d950bc1c"
+            ]
+        ]
+    },
+    {
+        "id": "586ade26502b354d",
+        "type": "inject",
+        "z": "30b839ab81bb1134",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 4120,
+        "wires": [
+            [
+                "d86a4cefd06e3d78"
+            ]
+        ]
+    },
+    {
+        "id": "d905dd68d950bc1c",
+        "type": "debug",
+        "z": "30b839ab81bb1134",
+        "name": "debug 495",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 470,
+        "y": 4120,
+        "wires": []
+    },
+    {
+        "id": "75e8d0b4af4fd836",
+        "type": "MSSQL",
+        "z": "30b839ab81bb1134",
+        "mssqlCN": "7cf223fe452c25b2",
+        "name": "",
+        "query": "USE [ATEKA_DB]; -- Replace with your actual database name\n\n-- Replace 'YourTableName' with the actual name of your table\nDECLARE @tableName NVARCHAR(128) = 'AtekaStepResults1';\n\nSELECT COLUMN_NAME, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH\nFROM INFORMATION_SCHEMA.COLUMNS\nWHERE TABLE_NAME = @tableName;",
+        "outField": "payload",
+        "x": 300,
+        "y": 4180,
+        "wires": [
+            [
+                "75627468885bcbda"
+            ]
+        ]
+    },
+    {
+        "id": "4caba662701b7c99",
+        "type": "inject",
+        "z": "30b839ab81bb1134",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 4180,
+        "wires": [
+            [
+                "75e8d0b4af4fd836"
+            ]
+        ]
+    },
+    {
+        "id": "75627468885bcbda",
+        "type": "debug",
+        "z": "30b839ab81bb1134",
+        "name": "debug 496",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 470,
+        "y": 4180,
         "wires": []
     },
     {
