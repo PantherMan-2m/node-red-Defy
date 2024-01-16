@@ -112,7 +112,9 @@
             "f3179f625b0a3e92"
         ],
         "x": 3014,
-        "y": 4619
+        "y": 4619,
+        "w": 1252,
+        "h": 362
     },
     {
         "id": "d17f3c47f486e7a5",
@@ -149,7 +151,9 @@
             "dba7e7f49604d884"
         ],
         "x": 3014,
-        "y": 3599
+        "y": 3599,
+        "w": 1652,
+        "h": 222
     },
     {
         "id": "70073285574b9727",
@@ -180,7 +184,9 @@
             "3ff3bacafd1fe14b"
         ],
         "x": 3274,
-        "y": 4199
+        "y": 4199,
+        "w": 892,
+        "h": 222
     },
     {
         "id": "d37fa1f93b9645e2",
@@ -205,7 +211,9 @@
             "eace55568a246f18"
         ],
         "x": 4294,
-        "y": 4799
+        "y": 4799,
+        "w": 692,
+        "h": 182
     },
     {
         "id": "f981e1c265314e12",
@@ -239,7 +247,9 @@
             "71ecb682cfc58ea9"
         ],
         "x": 1474,
-        "y": 2999
+        "y": 2999,
+        "w": 1312,
+        "h": 222
     },
     {
         "id": "abe64c1a1e546309",
@@ -350,7 +360,9 @@
             "a2236018b9e667f4"
         ],
         "x": 24,
-        "y": 2299
+        "y": 2299,
+        "w": 2592,
+        "h": 422
     },
     {
         "id": "b750fd9a1e049df3",
@@ -926,7 +938,9 @@
             "848b20b9aaae9ab7"
         ],
         "x": 44,
-        "y": 3239
+        "y": 3239,
+        "w": 2942,
+        "h": 1782
     },
     {
         "id": "4e347896ac92be60",
@@ -953,7 +967,9 @@
             "941d80461e53565b"
         ],
         "x": 4194,
-        "y": 4199
+        "y": 4199,
+        "w": 592,
+        "h": 182
     },
     {
         "id": "d6adbcab7cef2569",
@@ -978,7 +994,9 @@
             "7ea79b52a3145ef8"
         ],
         "x": 4194,
-        "y": 4399
+        "y": 4399,
+        "w": 712,
+        "h": 202
     },
     {
         "id": "827fa831eff54f82",
@@ -1009,10 +1027,13 @@
             "012f6873a87a421c",
             "ef6e5d343b8bb94e",
             "6410f60462818572",
-            "1af4e1b2f640a324"
+            "1af4e1b2f640a324",
+            "34b831cb3028662e"
         ],
         "x": 3014,
-        "y": 3879
+        "y": 3879,
+        "w": 972,
+        "h": 302
     },
     {
         "id": "e3aa9ce8b9e41a04",
@@ -1036,7 +1057,9 @@
             "198d23f934462b99"
         ],
         "x": 14,
-        "y": 279
+        "y": 279,
+        "w": 912,
+        "h": 142
     },
     {
         "id": "eb76455ade74569f",
@@ -1095,7 +1118,9 @@
             "dcebfacc6a50241e"
         ],
         "x": 34,
-        "y": 2739
+        "y": 2739,
+        "w": 3752,
+        "h": 242
     },
     {
         "id": "5bd40d6fa0af9c0a",
@@ -1127,7 +1152,9 @@
             "b64c6cd1bbaa63d0"
         ],
         "x": 54,
-        "y": 3019
+        "y": 3019,
+        "w": 1352,
+        "h": 202
     },
     {
         "id": "3c74d756fb604c9d",
@@ -1153,7 +1180,9 @@
             "93fd52d16cb37d44"
         ],
         "x": 14,
-        "y": 19
+        "y": 19,
+        "w": 532,
+        "h": 242
     },
     {
         "id": "a59b805b8c8f97f5",
@@ -1286,7 +1315,9 @@
             "1eef91e3c32b8fb8"
         ],
         "x": 1214,
-        "y": 19
+        "y": 19,
+        "w": 1472,
+        "h": 1722
     },
     {
         "id": "9abed4f82199aefc",
@@ -1306,7 +1337,9 @@
             "7fb40c56476e17b5"
         ],
         "x": 594,
-        "y": 19
+        "y": 19,
+        "w": 252,
+        "h": 122
     },
     {
         "id": "29fdf49c57332f39",
@@ -1393,7 +1426,66 @@
             "97d2433977fd36bc"
         ],
         "x": -46,
-        "y": 639
+        "y": 639,
+        "w": 1192,
+        "h": 1162
+    },
+    {
+        "id": "82be87d2d564277b",
+        "type": "group",
+        "z": "18a7ffc09fc6eb29",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "9ec55fa2fbda9f0a",
+            "43ed187d88352ccc",
+            "17045099558f1cc4",
+            "703bca2ed96a963c",
+            "c6f978c010797a85",
+            "ee819b6e408a323e",
+            "c54b9f962880af80",
+            "881debac28ce0d1c",
+            "8c5c4f6fba27988a",
+            "37935ee26551b59c",
+            "4da074b02b4def1e",
+            "ef11eb710c3c7d22",
+            "78f2b9bab1f25ec0",
+            "07e015a9424fcb79",
+            "cd7d687aed4d1295",
+            "53b17e6ea06afca5",
+            "4ef8de7f639e5aea",
+            "e3c44730f87df273",
+            "7d6ad27c5d534fa8",
+            "d75f43d52a70b6d5",
+            "8d9ec08ea406741d",
+            "fb8a82a779e17bcb",
+            "66b0fd6da94ac194",
+            "4b848aff1f2a2885",
+            "2fec95ed1bf5c595",
+            "59d649b5eea840a0",
+            "d789332bb2ac8b93",
+            "43e9df946fe59724",
+            "4218c34177306dcf",
+            "6c1999fdda29d014",
+            "4592adeecc86c591",
+            "a6e0bcd274bb5a60",
+            "11e124c584953c86",
+            "4d97256b81ea5d71",
+            "ae25d314d7e54019",
+            "236c22d379da2d32",
+            "b7d670f1be6808ab"
+        ],
+        "x": 3014,
+        "y": 3119,
+        "w": 1422,
+        "h": 462
     },
     {
         "id": "96fa2931530e88be",
@@ -5386,7 +5478,8 @@
         "id": "e3c44730f87df273",
         "type": "junction",
         "z": "18a7ffc09fc6eb29",
-        "x": 3460,
+        "g": "82be87d2d564277b",
+        "x": 3440,
         "y": 3360,
         "wires": [
             [
@@ -5622,7 +5715,8 @@
         "id": "6c1999fdda29d014",
         "type": "junction",
         "z": "18a7ffc09fc6eb29",
-        "x": 3180,
+        "g": "82be87d2d564277b",
+        "x": 3160,
         "y": 3200,
         "wires": [
             [
@@ -5639,6 +5733,21 @@
         "wires": [
             [
                 "ef23d1df8a887529"
+            ]
+        ]
+    },
+    {
+        "id": "34b831cb3028662e",
+        "type": "junction",
+        "z": "18a7ffc09fc6eb29",
+        "g": "827fa831eff54f82",
+        "x": 3240,
+        "y": 4020,
+        "wires": [
+            [
+                "012f6873a87a421c",
+                "0ca2fefd0c760dfc",
+                "d9aca6a39ee68dc5"
             ]
         ]
     },
@@ -6014,28 +6123,6 @@
         "className": ""
     },
     {
-        "id": "05bf051581f2da76",
-        "type": "ftp",
-        "host": "192.168.1.10",
-        "port": "21",
-        "secureOptions": "",
-        "user": "ateka3",
-        "connTimeout": "",
-        "pasvTimeout": "",
-        "keepalive": ""
-    },
-    {
-        "id": "7415190bef9e3adb",
-        "type": "ftp",
-        "host": "10.27.6.208",
-        "port": "",
-        "secureOptions": "",
-        "user": "ateka3",
-        "connTimeout": "",
-        "pasvTimeout": "",
-        "keepalive": ""
-    },
-    {
         "id": "da9fe7a69397cf03",
         "type": "modbus-client",
         "name": "Ateka2",
@@ -6271,39 +6358,6 @@
         "className": ""
     },
     {
-        "id": "cba284f995b6a9ad",
-        "type": "ftp",
-        "host": "10.27.6.206",
-        "port": "",
-        "secureOptions": "",
-        "user": "ateka1",
-        "connTimeout": "",
-        "pasvTimeout": "",
-        "keepalive": ""
-    },
-    {
-        "id": "22ef728605d3719a",
-        "type": "ftp",
-        "host": "10.27.6.207",
-        "port": "",
-        "secureOptions": "",
-        "user": "ateka2",
-        "connTimeout": "",
-        "pasvTimeout": "",
-        "keepalive": ""
-    },
-    {
-        "id": "40dd813a15fb0880",
-        "type": "ftp",
-        "host": "10.27.6.209",
-        "port": "",
-        "secureOptions": "",
-        "user": "ateka4",
-        "connTimeout": "",
-        "pasvTimeout": "",
-        "keepalive": ""
-    },
-    {
         "id": "862fab04f4d863e2",
         "type": "modbus-client",
         "name": "Local Machine",
@@ -6481,50 +6535,6 @@
         "showLogs": true
     },
     {
-        "id": "5c2d06e024f58a13",
-        "type": "ftp",
-        "host": "10.27.6.215",
-        "port": "",
-        "secureOptions": "",
-        "user": "ateka3",
-        "connTimeout": "",
-        "pasvTimeout": "",
-        "keepalive": ""
-    },
-    {
-        "id": "38eabdcc99274a70",
-        "type": "ftp",
-        "host": "10.27.6.216",
-        "port": "",
-        "secureOptions": "",
-        "user": "ateka3",
-        "connTimeout": "",
-        "pasvTimeout": "",
-        "keepalive": ""
-    },
-    {
-        "id": "929f306b79852fb6",
-        "type": "ftp",
-        "host": "10.27.6.217",
-        "port": "",
-        "secureOptions": "",
-        "user": "ateka3",
-        "connTimeout": "",
-        "pasvTimeout": "",
-        "keepalive": ""
-    },
-    {
-        "id": "716bedc2c801b386",
-        "type": "ftp",
-        "host": "10.27.6.218",
-        "port": "",
-        "secureOptions": "",
-        "user": "ateka3",
-        "connTimeout": "",
-        "pasvTimeout": "",
-        "keepalive": ""
-    },
-    {
         "id": "619c4f759a8b39c8",
         "type": "ui_spacer",
         "z": "18a7ffc09fc6eb29",
@@ -6639,6 +6649,125 @@
         "server": "10.27.0.16",
         "encyption": true,
         "database": "Ateka_db"
+    },
+    {
+        "id": "05bf051581f2da76",
+        "type": "ftp",
+        "host": "192.168.1.10",
+        "port": "21",
+        "secureOptions": "",
+        "user": "ateka3",
+        "connTimeout": "",
+        "pasvTimeout": "",
+        "keepalive": ""
+    },
+    {
+        "id": "7415190bef9e3adb",
+        "type": "ftp",
+        "host": "10.27.6.208",
+        "port": "",
+        "secureOptions": "",
+        "user": "ateka3",
+        "connTimeout": "",
+        "pasvTimeout": "",
+        "keepalive": ""
+    },
+    {
+        "id": "cba284f995b6a9ad",
+        "type": "ftp",
+        "host": "10.27.6.206",
+        "port": "",
+        "secureOptions": "",
+        "user": "ateka1",
+        "connTimeout": "",
+        "pasvTimeout": "",
+        "keepalive": ""
+    },
+    {
+        "id": "22ef728605d3719a",
+        "type": "ftp",
+        "host": "10.27.6.207",
+        "port": "",
+        "secureOptions": "",
+        "user": "ateka2",
+        "connTimeout": "",
+        "pasvTimeout": "",
+        "keepalive": ""
+    },
+    {
+        "id": "40dd813a15fb0880",
+        "type": "ftp",
+        "host": "10.27.6.209",
+        "port": "",
+        "secureOptions": "",
+        "user": "ateka4",
+        "connTimeout": "",
+        "pasvTimeout": "",
+        "keepalive": ""
+    },
+    {
+        "id": "5c2d06e024f58a13",
+        "type": "ftp",
+        "host": "10.27.6.215",
+        "port": "",
+        "secureOptions": "",
+        "user": "ateka3",
+        "connTimeout": "",
+        "pasvTimeout": "",
+        "keepalive": ""
+    },
+    {
+        "id": "38eabdcc99274a70",
+        "type": "ftp",
+        "host": "10.27.6.216",
+        "port": "",
+        "secureOptions": "",
+        "user": "ateka3",
+        "connTimeout": "",
+        "pasvTimeout": "",
+        "keepalive": ""
+    },
+    {
+        "id": "929f306b79852fb6",
+        "type": "ftp",
+        "host": "10.27.6.217",
+        "port": "",
+        "secureOptions": "",
+        "user": "ateka3",
+        "connTimeout": "",
+        "pasvTimeout": "",
+        "keepalive": ""
+    },
+    {
+        "id": "716bedc2c801b386",
+        "type": "ftp",
+        "host": "10.27.6.218",
+        "port": "",
+        "secureOptions": "",
+        "user": "ateka3",
+        "connTimeout": "",
+        "pasvTimeout": "",
+        "keepalive": ""
+    },
+    {
+        "id": "f1bd9c67e38836f9",
+        "type": "ui_spacer",
+        "z": "18a7ffc09fc6eb29",
+        "name": "spacer",
+        "group": "ad3c4128defb0956",
+        "order": 1,
+        "width": "7",
+        "height": "1"
+    },
+    {
+        "id": "b1da904d4a3eda78",
+        "type": "ui_spacer",
+        "z": "18a7ffc09fc6eb29",
+        "name": "spacer",
+        "group": "6d0276f15a55c5b4",
+        "order": 1,
+        "width": "7",
+        "height": "1"
     },
     {
         "id": "d2727ddfa00b147b",
@@ -17572,9 +17701,7 @@
         "x": 105,
         "y": 4460,
         "wires": [
-            [
-                "f5b352ee10d45e39"
-            ]
+            []
         ],
         "l": false
     },
@@ -17705,9 +17832,7 @@
         "x": 3130,
         "y": 4340,
         "wires": [
-            [
-                "5392a7c2a1692cd3"
-            ]
+            []
         ]
     },
     {
@@ -17739,9 +17864,7 @@
         "x": 150,
         "y": 2120,
         "wires": [
-            [
-                "8e39b643f9694dd0"
-            ]
+            []
         ]
     },
     {
@@ -18355,11 +18478,7 @@
         "x": 3150,
         "y": 4020,
         "wires": [
-            [
-                "0ca2fefd0c760dfc",
-                "d9aca6a39ee68dc5",
-                "012f6873a87a421c"
-            ]
+            []
         ]
     },
     {
@@ -19187,6 +19306,7 @@
         "name": "Template HS Buffer",
         "func": "//infinite loop preventer\nlet loop = context.get('loop') || 0;\n/*\ncontext.set('loop', ++loop);\nif (loop >=  200) {\n    return null;\n}*/\n\n// initialize context variables\nlet buffer = context.get('buffer') || []; //The buffer that contains the whole incomming message\nlet ID = context.get('ID') || [];       // A unique identifier of the incomming message, which is indexed and spliced in unison with buffer\n//Indicator for whether the buffer is waiting for a message to return or not\nlet waiting = context.get('waiting');  \nif (waiting == undefined) {\n    waiting = false; //Set the waiting or the current instance to false\n    context.set('waiting', true); // Sets the next message that'll be recieved to wait\n}\n \n// Set paramarams\n    //Sets the trigger msg member name and what the value of it is \nlet msgTriggerName = 'lineFlag',\n    msgTriggerValue = 'sqlHandshake',\n    incommingUniqueIDmsgMember = 'machineID',\n    outgoingUniqueIDmsgMember = 'machineID'\n\n// Check for trigger\nif (msg[msgTriggerName] == msgTriggerValue) {\n    let index = ID.indexOf(msg[incommingUniqueIDmsgMember]);\n    if (index != -1) { // Looking for the returned message in the context variables\n        buffer.splice(index, 1);\n        ID.splice(index, 1);\n    } else {\n        return null;\n    }\n\n    //Make copy of incoming message\n    let msgCOPY = JSON.parse(JSON.stringify(msg));\n    // Sets the next msg to go out (FIFO)\n    msg = {\n        ...buffer[0]\n    }\n    msg[outgoingUniqueIDmsgMember] = ID[0];\n    \n    context.set('buffer', buffer);\n    context.set('ID', ID);\n\n    //Testing checks //del\n    msg.check = {\n        buffer: buffer, \n        ID: ID,\n        loop: loop\n    }\n    if (ID[0] == undefined) {\n        context.set('buffer', []);\n        context.set('ID', []);\n        context.set('waiting', false);\n        return [ ,msgCOPY]\n    } else {\n        return [msg, msgCOPY];\n    }  \n} else if (msg.topic == 'resetBuffer') {\n    context.set('ID', undefined)\n    context.set('buffer', undefined)\n    context.set('waiting', false)\n} else {\n\n    // Add the incoming message payload and topic to the buffer\n    let index = ID.indexOf(msg.machineID);\n    if (index != -1) { // The message already exists\n        buffer[index] = msg;\n    } else {\n        buffer.push(msg);\n        ID.push(msg[incommingUniqueIDmsgMember]); \n    }\n\n\n    // Set the buffer array back to context\n    context.set('buffer', buffer);\n    context.set('ID', ID);\n\n    msg = {\n        ...buffer[0]\n    }\n    msg.ID = ID;\n\n    //Testing checks //del\n    msg.check = {\n        buffer: buffer,\n        ID: ID,\n        loop: loop\n    }\n\n    if (waiting) { // If we're waiting we do not return\n    } else {\n        if (buffer.length > 0)\n            context.set('waiting', true);\n            return [msg, ];       \n    }\n}\n\n",
         "outputs": 2,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -19618,8 +19738,9 @@
         "z": "18a7ffc09fc6eb29",
         "g": "eb76455ade74569f",
         "name": "Set write -> HMI CSV",
-        "func": "//msg.payload = global.get(\"writeData\");\n\n//Set\nlet data = msg.payload,\n    parKeys,\n    basKey;\n\nif (msg.payload.parameterData != undefined) {\n    parKeys = Object.keys(msg.payload.parameterData) || [];\n} else {\n    parKeys = []\n}\nif (msg.payload.basic != undefined) {\n    basKey = Object.keys(msg.payload.basic) || [];\n} else {\n    basKey = []\n}\n    \nlet names = [],\n    values = [],\n    instructions = [],\n    output = [],\n    parameterCount = 20, // Set\n    basicCount = basKey.length,\n    totalCount = 35, //basicCount + parameterCount;\n    count = 1;\n\nmsg.recipeIdentity = data.File_Code;\n// First part is mostly hard coded parameters\noutput.push([data.File_Code, 5, totalCount, , , ,],\n            [8, 20, 0, 0, , ,],\n            [5, 2, 4, 2, , ,],\n            [5, 2, 4, 2, , ,],\n            [0, 1, 0, 0, , ,],\n            [8, 25, 0, 0, , ,]);\n\n//First line of data is special\noutput.push([count++, data.File_Name, 0, 0, + data.Powered_Inspection, ,]);\n\n//del\nlet basicHeaders = [\"Ground Bond\", \"ACW Test\", \"Insulation Resistance\", \"Earth Leakage\"],\n    j = 0,\n    i = 0;\n\nfor(i = 0; i < basicCount; i++) {\n    output.push([count++, basicHeaders[j++], data.basic[basKey[i]].lowerVal, data.basic[basKey[i]].upperVal, 0, ,]);\n}\n\n//node.warn('final i: ' + i);\n//output.push([count++, basicHeaders[j++], data.basic[basKey[--i]], 0, 0, ,]) // used for initial\n\n//Incomplete: Assumption 1 that the length of incoming Parameter data is < \nfor (let i = 0; i < parKeys.length; i++) {/*\n    names.push(data.parameterData[parKeys[i]].name);\n    values.push(data.parameterData[parKeys[i]].value);\n    instructions.push(data.parameterData[parKeys[i]].instructions);*/\n    let instructions = data.parameterData[parKeys[i]].instructions\n    if (instructions == undefined) { // No instructions were set\n        instructions = \"\"\n    } else {\n        instructions = instructions.substring(0, 50)\n    }\n        \n    output.push([count++, data.parameterData[parKeys[i]].name.substring(0, 40), data.parameterData[parKeys[i]].lowerVal, data.parameterData[parKeys[i]].upperVal, + data.parameterData[parKeys[i]].ifTestFailStop, instructions]);\n}\nwhile (count <= totalCount) {\n    output.push([count++, , 0, 0, 0, \"\"]);\n}\nlet text = \"\";\n//del\nnode.send([, {output: output}]);\n//\nfor (let i = 0; i < output.length; i++) { // Putting it all into text format\n    text += output[i].toString() + \"\\r\\n\";\n}\n\ntext += '\\r\\n';\n\nmsg.payload = {\n//    output: output,\n    text: text\n}\n\nmsg.check = {\n    basKey: basKey,\n    parKeys: parKeys\n}\nreturn msg;",
+        "func": "//msg.payload = global.get(\"writeData\");\n\n//Set\nlet data = msg.payload,\n    parKeys,\n    basKey;\n\nif (msg.payload.parameterData != undefined) {\n    parKeys = Object.keys(msg.payload.parameterData) || [];\n} else {\n    parKeys = []\n}\nif (msg.payload.basic != undefined) {\n    basKey = Object.keys(msg.payload.basic) || [];\n} else {\n    basKey = []\n}\n    \nlet names = [],\n    values = [],\n    instructions = [],\n    output = [],\n    parameterCount = 20, // Set\n    basicCount = basKey.length,\n    totalCount = 35, //basicCount + parameterCount;\n    count = 1;\n\nmsg.recipeIdentity = data.File_Code;\n// First part is mostly hard coded parameters\noutput.push([data.File_Code, 5, totalCount, , , ,],\n            [8, 20, 0, 0, , ,],\n            [5, 2, 4, 2, , ,],\n            [5, 2, 4, 2, , ,],\n            [0, 1, 0, 0, , ,],\n            [8, 25, 0, 0, , ,]);\n\n//First line of data is special\noutput.push([count++, data.File_Name, 0, 0, + data.Powered_Inspection, ,]);\n\n//del\nlet basicHeaders = [\"Ground Bond\", \"ACW Test\", \"Insulation Resistance\", \"Earth Leakage\"],\n    j = 0,\n    i = 0;\n\nfor(i = 0; i < basicCount; i++) {\n    output.push([count++, basicHeaders[j++], data.basic[basKey[i]].lowerVal, data.basic[basKey[i]].upperVal, 0, ,]);\n}\n\n//node.warn('final i: ' + i);\n//output.push([count++, basicHeaders[j++], data.basic[basKey[--i]], 0, 0, ,]) // used for initial\n\n//Incomplete: Assumption 1 that the length of incoming Parameter data is < \nfor (let i = 0; i < parKeys.length; i++) {/*\n    names.push(data.parameterData[parKeys[i]].name);\n    values.push(data.parameterData[parKeys[i]].value);\n    instructions.push(data.parameterData[parKeys[i]].instructions);*/\n    let instructions = data.parameterData[parKeys[i]].instructions\n    if (instructions == undefined) { // No instructions were set\n        instructions = \"\"\n    } else {\n        instructions = instructions.substring(0, 50)\n    }\n\n    let ifTestFailStop = false;\n    if (data.parameterData[parKeys[i]].hasOwnProperty('ifTestFailStop')) {\n        ifTestFailStop = data.parameterData[parKeys[i]].ifTestFailStop\n    } \n    output.push([count++, data.parameterData[parKeys[i]].name.substring(0, 40), data.parameterData[parKeys[i]].lowerVal, data.parameterData[parKeys[i]].upperVal, + ifTestFailStop, instructions]);\n}\nwhile (count <= totalCount) {\n    output.push([count++, , 0, 0, 0, \"\"]);\n}\nlet text = \"\";\n//del\nnode.send([, {output: output}]);\n//\nfor (let i = 0; i < output.length; i++) { // Putting it all into text format\n    text += output[i].toString() + \"\\r\\n\";\n}\n\ntext += '\\r\\n';\n\nmsg.payload = {\n//    output: output,\n    text: text\n}\n\nmsg.check = {\n    basKey: basKey,\n    parKeys: parKeys\n}\nreturn msg;",
         "outputs": 2,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -20184,7 +20305,7 @@
         "z": "18a7ffc09fc6eb29",
         "name": "Load to PLC",
         "info": "",
-        "x": 2750,
+        "x": 2730,
         "y": 1900,
         "wires": []
     },
@@ -20509,23 +20630,6 @@
         ]
     },
     {
-        "id": "d7a650e53ae58a3d",
-        "type": "ftp in",
-        "z": "18a7ffc09fc6eb29",
-        "ftp": "05bf051581f2da76",
-        "operation": "put",
-        "filename": "ATEKA_Params.csv",
-        "localFilename": "C:/Users/User/Documents/Coding/Node Red/Recipes/NewEnRcp.csv",
-        "name": "",
-        "x": 3220,
-        "y": 2020,
-        "wires": [
-            [
-                "7dff2e757238b19c"
-            ]
-        ]
-    },
-    {
         "id": "442d6bf580d6c736",
         "type": "delay",
         "z": "18a7ffc09fc6eb29",
@@ -20546,24 +20650,6 @@
         "y": 2060,
         "wires": [
             [
-                "fe17d97052bb31de"
-            ]
-        ]
-    },
-    {
-        "id": "23ae177bd08ba7bc",
-        "type": "ftp in",
-        "z": "18a7ffc09fc6eb29",
-        "ftp": "cba284f995b6a9ad",
-        "operation": "put",
-        "filename": "ATEKA_Params.csv",
-        "localFilename": "C:/Users/User/Documents/Coding/Node Red/Recipes/NewEnRcp.csv",
-        "name": "",
-        "x": 3230,
-        "y": 2100,
-        "wires": [
-            [
-                "f44af2c7236c682f",
                 "fe17d97052bb31de"
             ]
         ]
@@ -20594,24 +20680,6 @@
         ]
     },
     {
-        "id": "edab912191bbf980",
-        "type": "ftp in",
-        "z": "18a7ffc09fc6eb29",
-        "ftp": "22ef728605d3719a",
-        "operation": "put",
-        "filename": "ATEKA_Params.csv",
-        "localFilename": "C:/Users/User/Documents/Coding/Node Red/Recipes/NewEnRcp.csv",
-        "name": "",
-        "x": 3230,
-        "y": 2180,
-        "wires": [
-            [
-                "1f90d5bfb05e94fe",
-                "22e568250ac33374"
-            ]
-        ]
-    },
-    {
         "id": "2dbf9feaf7fd76ce",
         "type": "delay",
         "z": "18a7ffc09fc6eb29",
@@ -20637,24 +20705,6 @@
         ]
     },
     {
-        "id": "4edb97d935a44318",
-        "type": "ftp in",
-        "z": "18a7ffc09fc6eb29",
-        "ftp": "7415190bef9e3adb",
-        "operation": "put",
-        "filename": "ATEKA_Params.csv",
-        "localFilename": "C:/Users/User/Documents/Coding/Node Red/Recipes/NewEnRcp.csv",
-        "name": "",
-        "x": 3230,
-        "y": 2260,
-        "wires": [
-            [
-                "c47fc27b664e089a",
-                "19fdaf6b7b5fd447"
-            ]
-        ]
-    },
-    {
         "id": "7587247fd8856022",
         "type": "delay",
         "z": "18a7ffc09fc6eb29",
@@ -20675,24 +20725,6 @@
         "y": 2300,
         "wires": [
             [
-                "8bc02c6c90be28ba"
-            ]
-        ]
-    },
-    {
-        "id": "9140e8e92516ee75",
-        "type": "ftp in",
-        "z": "18a7ffc09fc6eb29",
-        "ftp": "40dd813a15fb0880",
-        "operation": "put",
-        "filename": "ATEKA_Params.csv",
-        "localFilename": "C:/Users/User/Documents/Coding/Node Red/Recipes/NewEnRcp.csv",
-        "name": "",
-        "x": 3230,
-        "y": 2340,
-        "wires": [
-            [
-                "c9d9ead5e439c368",
                 "8bc02c6c90be28ba"
             ]
         ]
@@ -22791,7 +22823,7 @@
         "z": "18a7ffc09fc6eb29",
         "g": "eb76455ade74569f",
         "name": "TESTING",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -22807,9 +22839,10 @@
         "id": "4d97256b81ea5d71",
         "type": "comment",
         "z": "18a7ffc09fc6eb29",
+        "g": "82be87d2d564277b",
         "name": "Dashboard login",
         "info": "",
-        "x": 3140,
+        "x": 3120,
         "y": 3160,
         "wires": []
     },
@@ -22817,6 +22850,7 @@
         "id": "9ec55fa2fbda9f0a",
         "type": "inject",
         "z": "18a7ffc09fc6eb29",
+        "g": "82be87d2d564277b",
         "name": "Autoload",
         "props": [
             {
@@ -22834,7 +22868,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 3160,
+        "x": 3140,
         "y": 3540,
         "wires": [
             [
@@ -22846,14 +22880,16 @@
         "id": "43ed187d88352ccc",
         "type": "function",
         "z": "18a7ffc09fc6eb29",
+        "g": "82be87d2d564277b",
         "name": "Config FL",
         "func": "msg.payload = {\n    \"start\": flow.get('dashboardCredentialsLocation'),\n    \"pattern\": flow.get('dashboardCredentialsName')\n}\nreturn msg;",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 3340,
+        "x": 3320,
         "y": 3540,
         "wires": [
             [
@@ -22865,6 +22901,7 @@
         "id": "17045099558f1cc4",
         "type": "fs-file-lister",
         "z": "18a7ffc09fc6eb29",
+        "g": "82be87d2d564277b",
         "name": "",
         "start": "/",
         "pattern": "*.*",
@@ -22876,7 +22913,7 @@
         "depth": 0,
         "stat": false,
         "showWarnings": true,
-        "x": 3500,
+        "x": 3480,
         "y": 3540,
         "wires": [
             [
@@ -22888,6 +22925,7 @@
         "id": "703bca2ed96a963c",
         "type": "switch",
         "z": "18a7ffc09fc6eb29",
+        "g": "82be87d2d564277b",
         "name": "",
         "property": "$count(msg.payload)",
         "propertyType": "jsonata",
@@ -22906,7 +22944,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 3650,
+        "x": 3630,
         "y": 3540,
         "wires": [
             [
@@ -22921,6 +22959,7 @@
         "id": "c6f978c010797a85",
         "type": "function",
         "z": "18a7ffc09fc6eb29",
+        "g": "82be87d2d564277b",
         "name": "Error",
         "func": "msg.payload = \"The Credential data cannot be found, please contact admin.\";\nreturn msg;",
         "outputs": 1,
@@ -22928,7 +22967,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 3790,
+        "x": 3770,
         "y": 3500,
         "wires": [
             [
@@ -22940,6 +22979,7 @@
         "id": "c54b9f962880af80",
         "type": "ui_toast",
         "z": "18a7ffc09fc6eb29",
+        "g": "82be87d2d564277b",
         "position": "dialog",
         "displayTime": "3",
         "highlight": "",
@@ -22951,7 +22991,7 @@
         "className": "",
         "topic": "",
         "name": "",
-        "x": 3950,
+        "x": 3930,
         "y": 3500,
         "wires": [
             []
@@ -22961,6 +23001,7 @@
         "id": "ee819b6e408a323e",
         "type": "function",
         "z": "18a7ffc09fc6eb29",
+        "g": "82be87d2d564277b",
         "name": "Config Read File",
         "func": "msg.filename = flow.get('dashboardCredentialsLocation') + flow.get('dashboardCredentialsName');\n\nreturn msg;",
         "outputs": 1,
@@ -22968,7 +23009,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 3830,
+        "x": 3810,
         "y": 3540,
         "wires": [
             [
@@ -22980,6 +23021,7 @@
         "id": "881debac28ce0d1c",
         "type": "file in",
         "z": "18a7ffc09fc6eb29",
+        "g": "82be87d2d564277b",
         "name": "",
         "filename": "filename",
         "filenameType": "msg",
@@ -22988,7 +23030,7 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 4020,
+        "x": 4000,
         "y": 3540,
         "wires": [
             [
@@ -23000,6 +23042,7 @@
         "id": "8c5c4f6fba27988a",
         "type": "csv",
         "z": "18a7ffc09fc6eb29",
+        "g": "82be87d2d564277b",
         "name": "",
         "sep": ",",
         "hdrin": true,
@@ -23011,7 +23054,7 @@
         "strings": true,
         "include_empty_strings": "",
         "include_null_values": "",
-        "x": 4170,
+        "x": 4150,
         "y": 3540,
         "wires": [
             [
@@ -23023,6 +23066,7 @@
         "id": "37935ee26551b59c",
         "type": "function",
         "z": "18a7ffc09fc6eb29",
+        "g": "82be87d2d564277b",
         "name": "Set Par from Data",
         "func": "/*\n    The headers for the columns of the dashboardCredentials\n    are hard coded.\n*/\nlet length = msg.payload.length,\n    usernames = [],\n    passwords = [],\n    userLevel = [],\n    credentialData = {};\nif (length <= 1) {\n    //The file is incorrectly set up\n    // Dev error handling\n} else {\n    for (let i = 0; i < length; i++) {\n        usernames.push(msg.payload[i].Username.toString());\n        passwords.push(msg.payload[i].Password.toString());\n        userLevel.push(msg.payload[i].Level);\n    }\n    //Set up the flows\n    credentialData = {\n        usernames: usernames,\n        passwords: passwords,\n        userLevel: userLevel\n    }\n    flow.set('credentialData', credentialData);\n    //checks\n    msg.check = {\n        credentialData: credentialData\n    }\n}\nreturn msg;",
         "outputs": 1,
@@ -23030,7 +23074,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 4340,
+        "x": 4320,
         "y": 3540,
         "wires": [
             []
@@ -23040,6 +23084,7 @@
         "id": "b7d670f1be6808ab",
         "type": "ui_text",
         "z": "18a7ffc09fc6eb29",
+        "g": "82be87d2d564277b",
         "group": "18ea443589aff38f",
         "order": 2,
         "width": 0,
@@ -23049,7 +23094,7 @@
         "format": "To log in as a Guest press LOGIN while all fields are empty.",
         "layout": "row-left",
         "className": "",
-        "x": 4240,
+        "x": 4220,
         "y": 3480,
         "wires": []
     },
@@ -23057,6 +23102,7 @@
         "id": "ae25d314d7e54019",
         "type": "ui_text",
         "z": "18a7ffc09fc6eb29",
+        "g": "82be87d2d564277b",
         "group": "494580998616b55b",
         "order": 1,
         "width": 0,
@@ -23066,7 +23112,7 @@
         "format": "Please sign in using the \"Settings\" tab.",
         "layout": "row-spread",
         "className": "",
-        "x": 4260,
+        "x": 4240,
         "y": 3400,
         "wires": []
     },
@@ -23074,6 +23120,7 @@
         "id": "07e015a9424fcb79",
         "type": "ui_form",
         "z": "18a7ffc09fc6eb29",
+        "g": "82be87d2d564277b",
         "name": "",
         "label": "Dashboard Login",
         "group": "18ea443589aff38f",
@@ -23107,7 +23154,7 @@
         "topicType": "msg",
         "splitLayout": "",
         "className": "",
-        "x": 3170,
+        "x": 3150,
         "y": 3400,
         "wires": [
             [
@@ -23119,14 +23166,16 @@
         "id": "78f2b9bab1f25ec0",
         "type": "function",
         "z": "18a7ffc09fc6eb29",
+        "g": "82be87d2d564277b",
         "name": "Check credentials",
-        "func": "let credentialData = flow.get('credentialData');\nlet usernameIndex = credentialData.usernames.indexOf(msg.payload.Username);\nif (msg.payload.Username == \"\" && msg.payload.Password == \"\") { //Case when the credentials are empty, logging in Guest\n    msg = {\n        userInfo: {\n            username: \"Guest\",\n            userLevel: 'Guest'\n        }\n    }\n    return [msg,];\n} else if (usernameIndex !== -1) { // Username exists\n    if (credentialData.passwords[usernameIndex] == msg.payload.Password ) { //Password matches\n        let userLevel = 'Error';\n        switch (credentialData.userLevel[usernameIndex]) {\n            case 1:\n                userLevel = 'Guest'\n                flow.set('userLevel', 'guest');\n                break;\n            case 2:\n                userLevel = 'Operator'\n                flow.set('userLevel', 'operator')\n                break;\n            case 3:\n                userLevel = 'Admin'\n                flow.set('userLevel', 'admin')\n                break;\n        }\n        msg = {\n            userInfo: {\n                username: credentialData.usernames[usernameIndex],\n                userLevel: userLevel,\n            }\n        }\n        return [msg, ];\n    }else {\n        msg.payload = 'Either the username or password are incorrect';\n        return [ ,msg];\n    }\n} else {\n     if (msg.payload.Username == \"dev\" && msg.payload.Password == \"Peanut\") { // Hard coded access for dev\n        msg = {\n            userInfo: {\n                username: 'Developer',\n                userLevel: 'Admin',\n            }\n        }\n        return [msg,];\n    } else {\n         msg.payload = 'Either the username or password are incorrect';\n         return [, msg];\n    }\n}",
+        "func": "let credentialData = flow.get('credentialData');\nlet usernameIndex = credentialData.usernames.indexOf(msg.payload.Username);\nif (msg.payload.Username == \"dev\" && msg.payload.Password == \"Peanut\") { // Hard coded access for dev\n    msg = {\n        userInfo: {\n            username: 'Developer',\n            userLevel: 'Admin',\n        }\n    }\n    return [msg,];\n} else if (msg.payload.Username == \"\" && msg.payload.Password == \"\") { //Case when the credentials are empty, logging in Guest\n    msg = {\n        userInfo: {\n            username: \"Guest\",\n            userLevel: 'Guest'\n        }\n    }\n    return [msg,];\n} else if (usernameIndex !== -1) { // Username exists\n    if (credentialData.passwords[usernameIndex] == msg.payload.Password ) { //Password matches\n        let userLevel = 'Error';\n        switch (credentialData.userLevel[usernameIndex]) {\n            case 1:\n                userLevel = 'Guest'\n                flow.set('userLevel', 'guest');\n                break;\n            case 2:\n                userLevel = 'Operator'\n                flow.set('userLevel', 'operator')\n                break;\n            case 3:\n                userLevel = 'Admin'\n                flow.set('userLevel', 'admin')\n                break;\n        }\n        msg = {\n            userInfo: {\n                username: credentialData.usernames[usernameIndex],\n                userLevel: userLevel,\n            }\n        }\n        return [msg, ];\n    }else {\n        msg.payload = 'Either the username or password are incorrect';\n        return [ ,msg];\n    }\n} else {\n        msg.payload = 'Either the username or password are incorrect';\n        return [, msg];\n}",
         "outputs": 2,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 3370,
+        "x": 3350,
         "y": 3400,
         "wires": [
             [
@@ -23142,6 +23191,7 @@
         "id": "cd7d687aed4d1295",
         "type": "function",
         "z": "18a7ffc09fc6eb29",
+        "g": "82be87d2d564277b",
         "name": "ui control",
         "func": "let msg1 = {};\n\n//Show the normal page\nif (msg.topic == 'logout') {\n    msg.payload = {\n        \"group\": {\n            \"hide\": [\n                \"Recipes_Parameter_Names_11_-_20\",\n                \"Recipes_Parameter_Values_11_-_20\",\n                \"Recipes_Parameter_Instructions_11_-_20\",\n                \"Recipes_Stop_On_Fail_11_-_20\",\n                \"Recipes_Parameter_Names_21_-_30\",\n                \"Recipes_Parameter_Values_21_-_30\",\n                \"Recipes_Parameter_Instructions_21_-_30\",\n                \"Recipes_Parameter_Names_1_-_10\",\n                \"Recipes_Parameter_Values_1_-_10\",\n                \"Recipes_Parameter_Instructions_1_-_10\",\n                \"Recipes_Stop_On_Fail_1_-_10\",\n                \"Recipes_Test_Name\",\n                \"Recipes_Basic_Tests\",\n                \"Settings_Registration\",\n                \"Settings_Update_Password\",\n                \"Settings_User_database\",\n                \"Settings_Insufficient_Rights\",\n                \"Settings_Delete\",\n                \"Testers_Communication_status\"\n            ],\n            \"show\": [\n                \"Recipes_Login\",\n                \"Settings_Login\"\n            ]\n        }\n    }\n} else if ('userInfo' in msg) { // If user is being logged in\n    if (msg.userInfo.userLevel == 'Operator') {\n        msg.payload = {\n            \"group\": {\n                \"hide\": [\n                    \"Recipes_Parameter_Names_11_-_20\",\n                    \"Recipes_Parameter_Values_11_-_20\",\n                    \"Recipes_Parameter_Instructions_11_-_20\",\n                    \"Recipes_Stop_On_Fail_11_-_20\",\n                    \"Recipes_Parameter_Names_21_-_30\",\n                    \"Recipes_Parameter_Values_21_-_30\",\n                    \"Recipes_Parameter_Instructions_21_-_30\",\n                    \"Recipes_Login\",\n                    \"Settings_Login\"\n                ],\n                \"show\": [\n                    \"Recipes_Parameter_Names_1_-_10\",\n                    \"Recipes_Parameter_Values_1_-_10\",\n                    \"Recipes_Parameter_Instructions_1_-_10\",\n                    \"Recipes_Stop_On_Fail_1_-_10\",\n                    \"Recipes_Test_Name\",\n                    \"Recipes_Basic_Tests\",\n                    \"Settings_Insufficient_Rights\",\n                    \"Testers_Communication_status\"\n                ]\n            }\n        };\n    } else if (msg.userInfo.userLevel == 'Admin') {\n        msg.payload = {\n            \"group\": {\n                \"hide\": [\n                    \"Recipes_Parameter_Names_11_-_20\",\n                    \"Recipes_Parameter_Values_11_-_20\",\n                    \"Recipes_Parameter_Instructions_11_-_20\",\n                    \"Recipes_Stop_On_Fail_11_-_20\",\n                    \"Recipes_Parameter_Names_21_-_30\",\n                    \"Recipes_Parameter_Values_21_-_30\",\n                    \"Recipes_Parameter_Instructions_21_-_30\",\n                    \"Recipes_Login\",\n                    \"Settings_Login\",\n                    \"Settings_Insufficient_Rights\"\n                ],\n                \"show\": [\n                    \"Recipes_Parameter_Names_1_-_10\",\n                    \"Recipes_Parameter_Values_1_-_10\",\n                    \"Recipes_Parameter_Instructions_1_-_10\",\n                    \"Recipes_Stop_On_Fail_1_-_10\",\n                    \"Recipes_Test_Name\",\n                    \"Recipes_Basic_Tests\",\n                    \"Settings_Registration\",\n                    \"Settings_Update_Password\",\n                    \"Settings_User_database\",\n                    \"Settings_Delete\",\n                    \"Testers_Communication_status\"\n                ]\n            }\n        };\n    }\n\n    // Set system logged in variables\n    let dashboardInfo = global.get('dashboardInfo') || {}\n    dashboardInfo.user = {\n        username: msg.userInfo.username,\n        userLevel: msg.userInfo.userLevel\n    }\n    global.set('dashboardInfo', dashboardInfo)\n/*\n    // Write to dashboard and write dashboard login event using\n    msg1 = {\n        payload: msg.userInfo.username,\n        level: msg.userInfo.userLevel,\n        dashboardInfo: {\n            username:   global.get('dashboardInfo').userInfo.username,\n            userLevel:  global.get('dashboardInfo').userInfo.userLevel,\n            event:      'Logged in',\n            changed:    'Nothing',\n            current:    '',\n            previous:   '',\n            timestamp:  new Date().toISOString\n        }\n    }*/\n}\n\nreturn [msg, msg1];",
         "outputs": 2,
@@ -23149,7 +23199,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 3580,
+        "x": 3560,
         "y": 3380,
         "wires": [
             [
@@ -23166,6 +23216,7 @@
         "id": "53b17e6ea06afca5",
         "type": "ui_toast",
         "z": "18a7ffc09fc6eb29",
+        "g": "82be87d2d564277b",
         "position": "dialog",
         "displayTime": "3",
         "highlight": "",
@@ -23177,7 +23228,7 @@
         "className": "",
         "topic": "",
         "name": "",
-        "x": 3590,
+        "x": 3570,
         "y": 3440,
         "wires": [
             []
@@ -23187,9 +23238,10 @@
         "id": "7d6ad27c5d534fa8",
         "type": "ui_ui_control",
         "z": "18a7ffc09fc6eb29",
+        "g": "82be87d2d564277b",
         "name": "",
         "events": "all",
-        "x": 3740,
+        "x": 3720,
         "y": 3340,
         "wires": [
             []
@@ -23199,6 +23251,7 @@
         "id": "fb8a82a779e17bcb",
         "type": "ui_text",
         "z": "18a7ffc09fc6eb29",
+        "g": "82be87d2d564277b",
         "group": "0465010f96f3dad5",
         "order": 4,
         "width": 3,
@@ -23208,7 +23261,7 @@
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
-        "x": 3780,
+        "x": 3760,
         "y": 3400,
         "wires": []
     },
@@ -23216,6 +23269,7 @@
         "id": "59d649b5eea840a0",
         "type": "ui_button",
         "z": "18a7ffc09fc6eb29",
+        "g": "82be87d2d564277b",
         "name": "",
         "group": "0465010f96f3dad5",
         "order": 18,
@@ -23232,7 +23286,7 @@
         "payloadType": "str",
         "topic": "logout",
         "topicType": "str",
-        "x": 3320,
+        "x": 3300,
         "y": 3360,
         "wires": [
             [
@@ -23244,6 +23298,7 @@
         "id": "236c22d379da2d32",
         "type": "ui_text",
         "z": "18a7ffc09fc6eb29",
+        "g": "82be87d2d564277b",
         "group": "d343b6541bd84142",
         "order": 0,
         "width": 0,
@@ -23253,7 +23308,7 @@
         "format": "Insufficient rights to access.",
         "layout": "row-spread",
         "className": "",
-        "x": 4260,
+        "x": 4240,
         "y": 3440,
         "wires": []
     },
@@ -23261,9 +23316,10 @@
         "id": "4da074b02b4def1e",
         "type": "comment",
         "z": "18a7ffc09fc6eb29",
+        "g": "82be87d2d564277b",
         "name": "Read dashboardCredentials.csv",
         "info": "",
-        "x": 3290,
+        "x": 3270,
         "y": 3480,
         "wires": []
     },
@@ -23283,17 +23339,15 @@
         ],
         "repeat": "",
         "crontab": "",
-        "once": false,
+        "once": true,
         "onceDelay": 0.1,
         "topic": "logout",
         "payload": "",
         "payloadType": "date",
-        "x": 3320,
+        "x": 3300,
         "y": 3320,
         "wires": [
-            [
-                "e3c44730f87df273"
-            ]
+            []
         ]
     },
     {
@@ -24269,24 +24323,6 @@
         ]
     },
     {
-        "id": "aad403d0af8154ee",
-        "type": "ftp in",
-        "z": "18a7ffc09fc6eb29",
-        "ftp": "5c2d06e024f58a13",
-        "operation": "put",
-        "filename": "ATEKA_Params.csv",
-        "localFilename": "C:/Users/User/Documents/Coding/Node Red/Recipes/NewEnRcp.csv",
-        "name": "",
-        "x": 3230,
-        "y": 2420,
-        "wires": [
-            [
-                "d24b44d39368a066",
-                "bdb92c4532060ca3"
-            ]
-        ]
-    },
-    {
         "id": "ea5e963d38729955",
         "type": "function",
         "z": "18a7ffc09fc6eb29",
@@ -24473,24 +24509,6 @@
         "y": 2460,
         "wires": [
             [
-                "c913988ae8fc2704"
-            ]
-        ]
-    },
-    {
-        "id": "17e2d72d34e643e5",
-        "type": "ftp in",
-        "z": "18a7ffc09fc6eb29",
-        "ftp": "38eabdcc99274a70",
-        "operation": "put",
-        "filename": "ATEKA_Params.csv",
-        "localFilename": "C:/Users/User/Documents/Coding/Node Red/Recipes/NewEnRcp.csv",
-        "name": "",
-        "x": 3230,
-        "y": 2500,
-        "wires": [
-            [
-                "69abf898eef9d135",
                 "c913988ae8fc2704"
             ]
         ]
@@ -24687,24 +24705,6 @@
         ]
     },
     {
-        "id": "a5730c1a6a7b62d1",
-        "type": "ftp in",
-        "z": "18a7ffc09fc6eb29",
-        "ftp": "929f306b79852fb6",
-        "operation": "put",
-        "filename": "ATEKA_Params.csv",
-        "localFilename": "C:/Users/User/Documents/Coding/Node Red/Recipes/NewEnRcp.csv",
-        "name": "",
-        "x": 3230,
-        "y": 2580,
-        "wires": [
-            [
-                "c2f32d64b7ec9882",
-                "ca67a02b2df70aae"
-            ]
-        ]
-    },
-    {
         "id": "78f550e2128d5e59",
         "type": "function",
         "z": "18a7ffc09fc6eb29",
@@ -24891,24 +24891,6 @@
         "y": 2620,
         "wires": [
             [
-                "1092b21bd5aa3330"
-            ]
-        ]
-    },
-    {
-        "id": "78267eb3f6e2bfef",
-        "type": "ftp in",
-        "z": "18a7ffc09fc6eb29",
-        "ftp": "716bedc2c801b386",
-        "operation": "put",
-        "filename": "ATEKA_Params.csv",
-        "localFilename": "C:/Users/User/Documents/Coding/Node Red/Recipes/NewEnRcp.csv",
-        "name": "",
-        "x": 3230,
-        "y": 2660,
-        "wires": [
-            [
-                "2d812dadd99ca0e9",
                 "1092b21bd5aa3330"
             ]
         ]
@@ -25360,9 +25342,10 @@
         "id": "11e124c584953c86",
         "type": "comment",
         "z": "18a7ffc09fc6eb29",
+        "g": "82be87d2d564277b",
         "name": "Logout Timer",
         "info": "",
-        "x": 3330,
+        "x": 3310,
         "y": 3180,
         "wires": []
     },
@@ -25384,22 +25367,6 @@
             [
                 "8aa931598e19adc1"
             ]
-        ]
-    },
-    {
-        "id": "8aa931598e19adc1",
-        "type": "fs-ops-delete",
-        "z": "18a7ffc09fc6eb29",
-        "g": "5bd40d6fa0af9c0a",
-        "name": "",
-        "path": "filePath",
-        "pathType": "msg",
-        "filename": "actualFileName",
-        "filenameType": "msg",
-        "x": 1310,
-        "y": 3180,
-        "wires": [
-            []
         ]
     },
     {
@@ -25581,14 +25548,16 @@
         "id": "4ef8de7f639e5aea",
         "type": "function",
         "z": "18a7ffc09fc6eb29",
+        "g": "82be87d2d564277b",
         "name": "Check triggers",
-        "func": "if (msg.payload == 'Yes') { // Recieved from user dashboard query\n    context.set('isUserActive', true)\n} else if (msg.payload == 'No' || msg.payload == 0) {\n    msg.payload = 'logout'\n    msg.topic = 'logout'\n    return msg\n} ",
+        "func": "node.warn(msg.userInfo.username)\n\nif (msg.payload == 'Yes') { // Recieved from user dashboard query\n    context.set('isUserActive', true)\n} else if ((msg.payload == 'No' || msg.payload == 0) && msg.userInfo.username != 'Developer' ) {\n    msg.payload = 'logout'\n    msg.topic = 'logout'\n    return msg\n} ",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 3900,
+        "x": 3880,
         "y": 3300,
         "wires": [
             [
@@ -25601,6 +25570,7 @@
         "id": "66b0fd6da94ac194",
         "type": "function",
         "z": "18a7ffc09fc6eb29",
+        "g": "82be87d2d564277b",
         "name": "function 57",
         "func": "let msg2 = {payload: msg.payload, reset: true}; //resets the trigger if a response is given\nif (msg.payload == 'Yes') {\n    return [msg, msg2]\n} else {\n    return [ , msg2]\n}\n",
         "outputs": 2,
@@ -25608,7 +25578,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 3775,
+        "x": 3755,
         "y": 3240,
         "wires": [
             [
@@ -25625,6 +25595,7 @@
         "id": "4b848aff1f2a2885",
         "type": "trigger",
         "z": "18a7ffc09fc6eb29",
+        "g": "82be87d2d564277b",
         "name": "",
         "op1": "",
         "op2": "0",
@@ -25638,11 +25609,12 @@
         "bytopic": "all",
         "topic": "topic",
         "outputs": 1,
-        "x": 3650,
+        "x": 3630,
         "y": 3300,
         "wires": [
             [
-                "4ef8de7f639e5aea"
+                "4ef8de7f639e5aea",
+                "a6e0bcd274bb5a60"
             ]
         ]
     },
@@ -25650,6 +25622,7 @@
         "id": "4218c34177306dcf",
         "type": "ui_toast",
         "z": "18a7ffc09fc6eb29",
+        "g": "82be87d2d564277b",
         "position": "dialog",
         "displayTime": "3",
         "highlight": "",
@@ -25661,7 +25634,7 @@
         "className": "",
         "topic": "Are you there?",
         "name": "",
-        "x": 3650,
+        "x": 3630,
         "y": 3240,
         "wires": [
             [
@@ -25673,6 +25646,7 @@
         "id": "4592adeecc86c591",
         "type": "function",
         "z": "18a7ffc09fc6eb29",
+        "g": "82be87d2d564277b",
         "name": "Set payloads",
         "func": "if (msg.payload == 0) {\n    let msg1 = {\n        payload: 'Are you still using the dashboard?'\n    }\n    return[msg1, msg]\n}\n",
         "outputs": 2,
@@ -25680,7 +25654,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 3450,
+        "x": 3430,
         "y": 3260,
         "wires": [
             [
@@ -25695,6 +25669,7 @@
         "id": "43e9df946fe59724",
         "type": "trigger",
         "z": "18a7ffc09fc6eb29",
+        "g": "82be87d2d564277b",
         "name": "",
         "op1": "",
         "op2": "0",
@@ -25708,7 +25683,7 @@
         "bytopic": "all",
         "topic": "topic",
         "outputs": 1,
-        "x": 3290,
+        "x": 3270,
         "y": 3260,
         "wires": [
             [
@@ -25720,14 +25695,16 @@
         "id": "d789332bb2ac8b93",
         "type": "inject",
         "z": "18a7ffc09fc6eb29",
-        "name": "",
+        "g": "82be87d2d564277b",
+        "name": "Dev login",
         "props": [
             {
                 "p": "payload"
             },
             {
-                "p": "topic",
-                "vt": "str"
+                "p": "userInfo",
+                "v": "{\"username\":\"Developer\",\"userLevel\":\"Admin\"}",
+                "vt": "json"
             }
         ],
         "repeat": "",
@@ -25737,11 +25714,11 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 3155,
-        "y": 3240,
+        "x": 3405,
+        "y": 3320,
         "wires": [
             [
-                "43e9df946fe59724"
+                "e3c44730f87df273"
             ]
         ],
         "l": false
@@ -25750,6 +25727,7 @@
         "id": "d75f43d52a70b6d5",
         "type": "function",
         "z": "18a7ffc09fc6eb29",
+        "g": "82be87d2d564277b",
         "name": "Gate",
         "func": "if (msg.topic != \"logout\") {\n    return msg;\n}",
         "outputs": 1,
@@ -25757,7 +25735,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 3150,
+        "x": 3130,
         "y": 3300,
         "wires": [
             [
@@ -25769,6 +25747,7 @@
         "id": "8d9ec08ea406741d",
         "type": "debug",
         "z": "18a7ffc09fc6eb29",
+        "g": "82be87d2d564277b",
         "name": "debug 480",
         "active": true,
         "tosidebar": true,
@@ -25778,7 +25757,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 3900,
+        "x": 3880,
         "y": 3360,
         "wires": []
     },
@@ -25786,8 +25765,9 @@
         "id": "2fec95ed1bf5c595",
         "type": "debug",
         "z": "18a7ffc09fc6eb29",
+        "g": "82be87d2d564277b",
         "name": "debug 481",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -25795,7 +25775,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 4080,
+        "x": 4060,
         "y": 3260,
         "wires": []
     },
@@ -25805,8 +25785,9 @@
         "z": "18a7ffc09fc6eb29",
         "g": "3c74d756fb604c9d",
         "name": "Start up Flow Variables",
-        "func": "\n// Set the locations for files\n// Note that these locations need to end in a slash, and slashes should not be back slashes ( \\ )\nglobal.set('recipeJSONlocation', \"C:/Users/User/Documents/Work/Ateka automation/Projects/Defy/Node-red/Files/\");\nglobal.set('stepResultsCSVlocation', 'C:/Users/User/Documents/Work/Ateka automation/Projects/Defy/Node-red/Files/')\nglobal.set('userCredentialsLocation', 'C:/Users/User/Documents/Work/Ateka automation/Projects/Defy/Node-red/Files/'); // Gets altered by node red\nflow.set('dashboardCredentialsLocation', 'C:/Users/User/Documents/Work/Ateka automation/Projects/Defy/Node-red/Files/'); // CSV file with login data for Node Red Dashboard usage\nflow.set('HMIcsvLocation', \"C:/Users/User/Documents/Work/Ateka automation/Projects/Defy/Node-red/Files/\"); // HMI file that loads to HMI for recipe writing\n\n// Set file names\nglobal.set('userCredentialsFilename', 'userCredentials.csv');\nflow.set('dashboardCredentialsName', 'dashboardCredentials.csv');\nflow.set('HMIrecipeName', 'NewEnRcp.csv');\n\nif (flow.get('testResultID') == undefined) {\n    flow.set('testResultID', 236);\n}\nreturn msg;\n",
+        "func": "\n// Set the locations for files\n// Note that these locations need to end in a slash, and slashes should not be back slashes ( \\ )\nglobal.set('recipeJSONlocation',        \"C:/Users/softw/OneDrive/Documentos/Ateka/Projects/Defy/Node Red/Files/\");\nglobal.set('stepResultsCSVlocation',    'C:/Users/softw/OneDrive/Documentos/Ateka/Projects/Defy/Node Red/Files/')\nglobal.set('userCredentialsLocation',   'C:/Users/softw/OneDrive/Documentos/Ateka/Projects/Defy/Node Red/Files/'); // Gets altered by node red\nflow.set('dashboardCredentialsLocation', 'C:/Users/softw/OneDrive/Documentos/Ateka/Projects/Defy/Node Red/Files/'); // CSV file with login data for Node Red Dashboard usage\nflow.set('HMIcsvLocation',              \"C:/Users/softw/OneDrive/Documentos/Ateka/Projects/Defy/Node Red/Files/\"); // HMI file that loads to HMI for recipe writing\n\n// Set file names\nglobal.set('userCredentialsFilename', 'userCredentials.csv');\nflow.set('dashboardCredentialsName', 'dashboardCredentials.csv');\nflow.set('HMIrecipeName', 'NewEnRcp.csv');\n\nif (flow.get('testResultID') == undefined) {\n    flow.set('testResultID', 236);\n}\nreturn msg;\n",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -25887,8 +25868,9 @@
         "id": "ef11eb710c3c7d22",
         "type": "debug",
         "z": "18a7ffc09fc6eb29",
+        "g": "82be87d2d564277b",
         "name": "debug 486",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -25896,8 +25878,230 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 3620,
+        "x": 3600,
         "y": 3480,
+        "wires": []
+    },
+    {
+        "id": "d7a650e53ae58a3d",
+        "type": "ftp in",
+        "z": "18a7ffc09fc6eb29",
+        "ftp": "05bf051581f2da76",
+        "operation": "put",
+        "filename": "ATEKA_Params.csv",
+        "localFilename": "C:/Users/User/Documents/Coding/Node Red/Recipes/NewEnRcp.csv",
+        "name": "",
+        "x": 3220,
+        "y": 2020,
+        "wires": [
+            [
+                "7dff2e757238b19c"
+            ]
+        ]
+    },
+    {
+        "id": "23ae177bd08ba7bc",
+        "type": "ftp in",
+        "z": "18a7ffc09fc6eb29",
+        "ftp": "cba284f995b6a9ad",
+        "operation": "put",
+        "filename": "ATEKA_Params.csv",
+        "localFilename": "C:/Users/User/Documents/Coding/Node Red/Recipes/NewEnRcp.csv",
+        "name": "",
+        "x": 3230,
+        "y": 2100,
+        "wires": [
+            [
+                "f44af2c7236c682f",
+                "fe17d97052bb31de"
+            ]
+        ]
+    },
+    {
+        "id": "edab912191bbf980",
+        "type": "ftp in",
+        "z": "18a7ffc09fc6eb29",
+        "ftp": "22ef728605d3719a",
+        "operation": "put",
+        "filename": "ATEKA_Params.csv",
+        "localFilename": "C:/Users/User/Documents/Coding/Node Red/Recipes/NewEnRcp.csv",
+        "name": "",
+        "x": 3230,
+        "y": 2180,
+        "wires": [
+            [
+                "1f90d5bfb05e94fe",
+                "22e568250ac33374"
+            ]
+        ]
+    },
+    {
+        "id": "4edb97d935a44318",
+        "type": "ftp in",
+        "z": "18a7ffc09fc6eb29",
+        "ftp": "7415190bef9e3adb",
+        "operation": "put",
+        "filename": "ATEKA_Params.csv",
+        "localFilename": "C:/Users/User/Documents/Coding/Node Red/Recipes/NewEnRcp.csv",
+        "name": "",
+        "x": 3230,
+        "y": 2260,
+        "wires": [
+            [
+                "c47fc27b664e089a",
+                "19fdaf6b7b5fd447"
+            ]
+        ]
+    },
+    {
+        "id": "9140e8e92516ee75",
+        "type": "ftp in",
+        "z": "18a7ffc09fc6eb29",
+        "ftp": "40dd813a15fb0880",
+        "operation": "put",
+        "filename": "ATEKA_Params.csv",
+        "localFilename": "C:/Users/User/Documents/Coding/Node Red/Recipes/NewEnRcp.csv",
+        "name": "",
+        "x": 3230,
+        "y": 2340,
+        "wires": [
+            [
+                "c9d9ead5e439c368",
+                "8bc02c6c90be28ba"
+            ]
+        ]
+    },
+    {
+        "id": "aad403d0af8154ee",
+        "type": "ftp in",
+        "z": "18a7ffc09fc6eb29",
+        "ftp": "5c2d06e024f58a13",
+        "operation": "put",
+        "filename": "ATEKA_Params.csv",
+        "localFilename": "C:/Users/User/Documents/Coding/Node Red/Recipes/NewEnRcp.csv",
+        "name": "",
+        "x": 3230,
+        "y": 2420,
+        "wires": [
+            [
+                "d24b44d39368a066",
+                "bdb92c4532060ca3"
+            ]
+        ]
+    },
+    {
+        "id": "17e2d72d34e643e5",
+        "type": "ftp in",
+        "z": "18a7ffc09fc6eb29",
+        "ftp": "38eabdcc99274a70",
+        "operation": "put",
+        "filename": "ATEKA_Params.csv",
+        "localFilename": "C:/Users/User/Documents/Coding/Node Red/Recipes/NewEnRcp.csv",
+        "name": "",
+        "x": 3230,
+        "y": 2500,
+        "wires": [
+            [
+                "69abf898eef9d135",
+                "c913988ae8fc2704"
+            ]
+        ]
+    },
+    {
+        "id": "a5730c1a6a7b62d1",
+        "type": "ftp in",
+        "z": "18a7ffc09fc6eb29",
+        "ftp": "929f306b79852fb6",
+        "operation": "put",
+        "filename": "ATEKA_Params.csv",
+        "localFilename": "C:/Users/User/Documents/Coding/Node Red/Recipes/NewEnRcp.csv",
+        "name": "",
+        "x": 3230,
+        "y": 2580,
+        "wires": [
+            [
+                "c2f32d64b7ec9882",
+                "ca67a02b2df70aae"
+            ]
+        ]
+    },
+    {
+        "id": "78267eb3f6e2bfef",
+        "type": "ftp in",
+        "z": "18a7ffc09fc6eb29",
+        "ftp": "716bedc2c801b386",
+        "operation": "put",
+        "filename": "ATEKA_Params.csv",
+        "localFilename": "C:/Users/User/Documents/Coding/Node Red/Recipes/NewEnRcp.csv",
+        "name": "",
+        "x": 3230,
+        "y": 2660,
+        "wires": [
+            [
+                "2d812dadd99ca0e9",
+                "1092b21bd5aa3330"
+            ]
+        ]
+    },
+    {
+        "id": "8aa931598e19adc1",
+        "type": "fs-ops-delete",
+        "z": "18a7ffc09fc6eb29",
+        "g": "5bd40d6fa0af9c0a",
+        "name": "",
+        "path": "filePath",
+        "pathType": "msg",
+        "filename": "actualFileName",
+        "filenameType": "msg",
+        "x": 1310,
+        "y": 3180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1c411f21dc7393b6",
+        "type": "inject",
+        "z": "18a7ffc09fc6eb29",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"File_Code\":\"8100010047\",\"File_Name\":\"DSS553\",\"Powered_Inspection\":false,\"parameterData\":{\"Par01\":{\"name\":\"RIGHT FRONT MINIMUM\",\"value\":120,\"upperTol\":5,\"lowerTol\":10,\"upperVal\":126,\"lowerVal\":108,\"value_H\":null,\"value_L\":null,\"ifTestFailStop\":true},\"Par02\":{\"name\":\"RIGHT FRONT MAXIMUM\",\"value\":1000,\"upperTol\":5,\"lowerTol\":10,\"instructions\":\"\",\"upperVal\":1050,\"lowerVal\":900,\"value_H\":null,\"value_L\":null,\"ifTestFailStop\":true},\"Par03\":{\"name\":\"RIGHT BACK MINIMUM\",\"value\":150,\"upperTol\":5,\"lowerTol\":10,\"upperVal\":157.5,\"lowerVal\":135,\"value_H\":null,\"value_L\":null,\"ifTestFailStop\":true},\"Par04\":{\"name\":\"RIGHT BACK MAXIMUM\",\"value\":1500,\"upperTol\":5,\"lowerTol\":10,\"upperVal\":1575,\"lowerVal\":1350,\"value_H\":null,\"value_L\":null,\"ifTestFailStop\":true},\"Par05\":{\"name\":\"LEFT BACK MINIMUM\",\"value\":120,\"upperTol\":5,\"lowerTol\":10,\"upperVal\":126,\"lowerVal\":108,\"value_H\":null,\"value_L\":null},\"Par06\":{\"name\":\"LEFT BACK MAXIMUM\",\"value\":1000,\"upperTol\":5,\"lowerTol\":10,\"upperVal\":1050,\"lowerVal\":900,\"value_H\":null,\"value_L\":null},\"Par07\":{\"name\":\"LEFT FRONT MINIMUM\",\"value\":150,\"upperTol\":5,\"lowerTol\":10,\"upperVal\":157.5,\"lowerVal\":135,\"value_H\":null,\"value_L\":null},\"Par08\":{\"name\":\"LEFT FRONT MAXIMUM\",\"value\":1500,\"upperTol\":5,\"lowerTol\":10,\"upperVal\":1575,\"lowerVal\":1350,\"value_H\":null,\"value_L\":null},\"Par09\":{\"name\":\"BAKE MODE\",\"value\":1100,\"lowerTol\":10,\"upperTol\":5,\"upperVal\":1155,\"lowerVal\":990,\"value_H\":null,\"value_L\":null},\"Par10\":{\"name\":\"CONVENTIONAL BAKE\",\"value\":1900,\"upperTol\":5,\"lowerTol\":10,\"upperVal\":1995,\"lowerVal\":1710,\"value_H\":null,\"value_L\":null},\"Par11\":{\"name\":\"GRILL MODE\",\"value\":800,\"upperTol\":5,\"lowerTol\":10,\"upperVal\":840,\"lowerVal\":720,\"value_H\":null,\"value_L\":null}},\"basic\":{\"GB\":{\"value\":-1,\"upperTol\":-1,\"lowerTol\":-1,\"upperVal\":-1,\"lowerVal\":-1},\"ACW\":{\"value\":-1,\"upperTol\":-1,\"lowerTol\":-1,\"upperVal\":-1,\"lowerVal\":-1},\"IR\":{\"value\":-1,\"upperTol\":-1,\"lowerTol\":-1,\"upperVal\":-1,\"lowerVal\":-1},\"EL\":{\"value\":-1,\"upperTol\":-1,\"lowerTol\":-1,\"upperVal\":-1,\"lowerVal\":-1}}}",
+        "payloadType": "json",
+        "x": 130,
+        "y": 2160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a6e0bcd274bb5a60",
+        "type": "debug",
+        "z": "18a7ffc09fc6eb29",
+        "g": "82be87d2d564277b",
+        "name": "debug 497",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3900,
+        "y": 3240,
         "wires": []
     },
     {
@@ -26730,8 +26934,9 @@
         "type": "function",
         "z": "30b839ab81bb1134",
         "name": "Create data from PLC",
-        "func": "let results = flow.get('testResults'),\n    test = flow.get('test'),\n    testResultID = results.testResultID,\n    parCount = results.parCount,\n    headers = [ // Step ID gets done by MSQL\n        \"Test_Result_ID\",\n        \"Step_Number\",\n        \"Measurement\",\n        \"Max_Allowed\",\n        \"Min_Allowed\",\n        \"Result\",\n        \"Reason\",\n        \"Step_Name\",\n        \"Instructions\"\n    ],\n    output = [],\n    arr = [],\n    i = 0,\n    stepNum = 1,\n    basicStepNameHeaders = ['Dead Short', 'Ground Bond', 'ACW Test', 'Insulation Resistance', 'Earth Leakage'],\n    basicKeys = Object.keys(test.basic),\n    allParameterKeys = Object.keys(test.parameterData),\n    singleParameterKeys = Object.keys(test.parameterData[allParameterKeys[0]])\n\nmsg.headers = headers;\nmsg.results = results\n\n//Because dead short isn't in the recipe sent\narr.push(testResultID);\narr.push(stepNum); // Step Number\narr.push(parseFloat(results.basicResults[0].toFixed(2))); //Value\narr.push(1000)//max\narr.push(0)//min\narr.push(results.coilBasic[0]) // Result\narr.push('')//(results.coilBasic[0]) ? results.basicResults[0].toFixed(2) + 'mA is within range' : results.basicResults[0].toFixed(2) + 'mA is out of range') // Reason\narr.push(basicStepNameHeaders[stepNum - 1]) // stepName\narr.push(\"\"); // Instructions\nstepNum++;\noutput.push(arr);\narr = [];\n\n// Basic section\nfor (i = 0; i < basicStepNameHeaders.length - 2; i++) { // Basic section\n    arr.push(testResultID);\n    arr.push(stepNum);\n    arr.push(parseFloat(results.basicResults[stepNum - 1].toFixed(2))); //Value\n    arr.push(test.basic[basicKeys[i]].upperVal)//max\n    arr.push(test.basic[basicKeys[i]].lowerVal)//min\n    arr.push(results.coilBasic[stepNum - 1]) // Result\n    arr.push((results.coilBasic[stepNum - 1]) ? results.basicResults[stepNum - 1].toFixed(2) + 'mA is within range' : results.basicResults[stepNum - 1].toFixed(2) +'mA is out of range') // Reason\n    arr.push(basicStepNameHeaders[stepNum - 1]) // stepName\n    arr.push(\"\"); // Instructions\n    stepNum++;\n    output.push(arr);\n    arr = [];\n}\n// Last basic element doesn't have the min value\narr.push(testResultID);\narr.push(stepNum);\narr.push(parseFloat(results.basicResults[stepNum - 1].toFixed(2))); //Value\narr.push(test.basic[basicKeys[i]].upperVal)//max\narr.push(test.basic[basicKeys[i]].lowerVal)//min\narr.push(results.coilBasic[stepNum - 1]) // Result\narr.push((results.coilBasic[stepNum - 1]) ? results.basicResults[stepNum - 1].toFixed(2) + 'mA is within range' : results.basicResults[stepNum - 1].toFixed(2) + 'mA is out of range') // Reason\narr.push(basicStepNameHeaders[stepNum - 1]) // stepName\narr.push(\"\"); // Instructions\nstepNum++;\noutput.push(arr);\narr = [];\n\n//Parameter section \n\nfor (let i = 0; i < parCount; i++) {\n    arr.push(testResultID);\n    arr.push(stepNum);\n    arr.push(parseFloat(results.parameterResults[i].toFixed(2))); //Value\n    arr.push(test.parameterData[allParameterKeys[i]].upperVal)//max\n    arr.push(test.parameterData[allParameterKeys[i]].lowerVal)//min\n    arr.push(results.coilPar[i]) // Result\n    arr.push((results.coilPar[i]) ? results.parameterResults[i].toFixed(2) + 'W is within range' : results.parameterResults[i].toFixed(2) + 'W is out of range') // Reason\n    arr.push(test.parameterData[allParameterKeys[i]][singleParameterKeys[0]]) // stepName\n    arr.push(test.parameterData[allParameterKeys[i]].instructions) // Instructions\n    stepNum++;\n    output.push(arr);\n    arr = [];\n}\nflow.set('testResultID', flow.get('testResultID') + 1);\n\nmsg.check = {\n    test: test, \n    results: results\n}\n\nmsg.payload = output;\nreturn msg;\n",
+        "func": "let results = flow.get('testResults'),\n    test = flow.get('test'),\n    testResultID = results.testResultID,\n    parCount = results.parCount - 1,\n    headers = [ // Step ID gets done by MSQL\n        \"Test_Result_ID\",\n        \"Step_Number\",\n        \"Measurement\",\n        \"Max_Allowed\",\n        \"Min_Allowed\",\n        \"Result\",\n        \"Reason\",\n        \"Step_Name\",\n        \"Instructions\"\n    ],\n    output = [],\n    arr = [],\n    i = 0,\n    stepNum = 1,\n    basicStepNameHeaders = ['Dead Short', 'Ground Bond', 'ACW Test', 'Insulation Resistance', 'Earth Leakage'],\n    basicKeys = Object.keys(test.basic),\n    allParameterKeys = Object.keys(test.parameterData),\n    singleParameterKeys = Object.keys(test.parameterData[allParameterKeys[0]])\n\nmsg.headers = headers;\nmsg.results = results\n\n//Because dead short isn't in the recipe sent\narr.push(testResultID);\narr.push(stepNum); // Step Number\narr.push(parseFloat(results.basicResults[0].toFixed(2))); //Value\narr.push(1000)//max\narr.push(0)//min\narr.push(results.coilBasic[0]) // Result\narr.push('')//(results.coilBasic[0]) ? results.basicResults[0].toFixed(2) + 'mA is within range' : results.basicResults[0].toFixed(2) + 'mA is out of range') // Reason\narr.push(basicStepNameHeaders[stepNum - 1]) // stepName\narr.push(\"\"); // Instructions\nstepNum++;\noutput.push(arr);\narr = [];\n\n// Basic section\nfor (i = 0; i < basicStepNameHeaders.length - 2; i++) { // Basic section\n    arr.push(testResultID);\n    arr.push(stepNum);\n    arr.push(parseFloat(results.basicResults[stepNum - 1].toFixed(2))); //Value\n    arr.push(test.basic[basicKeys[i]].upperVal)//max\n    node.warn('1 We are here: ' + i)\n    arr.push(test.basic[basicKeys[i]].lowerVal)//min\n    arr.push(results.coilBasic[stepNum - 1]) // Result\n    arr.push((results.coilBasic[stepNum - 1]) ? results.basicResults[stepNum - 1].toFixed(2) + 'mA is within range' : results.basicResults[stepNum - 1].toFixed(2) +'mA is out of range') // Reason\n    arr.push(basicStepNameHeaders[stepNum - 1]) // stepName\n    arr.push(\"\"); // Instructions\n    stepNum++;\n    output.push(arr);\n    arr = [];\n}\n// Last basic element doesn't have the min value\narr.push(testResultID);\narr.push(stepNum);\narr.push(parseFloat(results.basicResults[stepNum - 1].toFixed(2))); //Value\narr.push(test.basic[basicKeys[i]].upperVal)//max\nnode.warn('2 We are here')\narr.push(test.basic[basicKeys[i]].lowerVal)//min\narr.push(results.coilBasic[stepNum - 1]) // Result\narr.push((results.coilBasic[stepNum - 1]) ? results.basicResults[stepNum - 1].toFixed(2) + 'mA is within range' : results.basicResults[stepNum - 1].toFixed(2) + 'mA is out of range') // Reason\narr.push(basicStepNameHeaders[stepNum - 1]) // stepName\narr.push(\"\"); // Instructions\nstepNum++;\noutput.push(arr);\narr = [];\n\n//Parameter section \n\nfor (let i = 0; i < parCount; i++) {\n    arr.push(testResultID);\n    arr.push(stepNum);\n    arr.push(parseFloat(results.parameterResults[i].toFixed(2))); //Value\n    arr.push(test.parameterData[allParameterKeys[i]].upperVal)//max\n    node.warn('3 We are here: ' + i)\n    arr.push(test.parameterData[allParameterKeys[i]].lowerVal)//min\n    arr.push(results.coilPar[i]) // Result\n    arr.push((results.coilPar[i]) ? results.parameterResults[i].toFixed(2) + 'W is within range' : results.parameterResults[i].toFixed(2) + 'W is out of range') // Reason\n    arr.push(test.parameterData[allParameterKeys[i]][singleParameterKeys[0]]) // stepName\n    arr.push(test.parameterData[allParameterKeys[i]].instructions) // Instructions\n    stepNum++;\n    output.push(arr);\n    arr = [];\n}\nflow.set('testResultID', flow.get('testResultID') + 1);\n\nmsg.check = {\n    test: test, \n    results: results\n}\n\nmsg.payload = output;\nreturn msg;\n",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -30157,23 +30362,6 @@
         "x": 1680,
         "y": 2920,
         "wires": []
-    },
-    {
-        "id": "0f0df45ff2eac772",
-        "type": "ftp in",
-        "z": "30b839ab81bb1134",
-        "ftp": "05bf051581f2da76",
-        "operation": "list",
-        "filename": "",
-        "localFilename": "",
-        "name": "",
-        "x": 370,
-        "y": 3620,
-        "wires": [
-            [
-                "38150b9e725130e2"
-            ]
-        ]
     },
     {
         "id": "73f2d297a306cd08",
@@ -35352,6 +35540,23 @@
         "x": 470,
         "y": 4180,
         "wires": []
+    },
+    {
+        "id": "0f0df45ff2eac772",
+        "type": "ftp in",
+        "z": "30b839ab81bb1134",
+        "ftp": "05bf051581f2da76",
+        "operation": "list",
+        "filename": "",
+        "localFilename": "",
+        "name": "",
+        "x": 370,
+        "y": 3620,
+        "wires": [
+            [
+                "38150b9e725130e2"
+            ]
+        ]
     },
     {
         "id": "5a41fe6fa121ed69",
